@@ -13,8 +13,8 @@
 const DEFAULT_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 const STORAGE_KEY = "custom_gemini_api_key";
 const CANDIDATE_MODELS = [
-  "gemini-3.5-flash",
   "gemini-3.5-flash-lite",
+  "gemini-3.5-flash",
   "gemini-3.6-flash",
   "gemini-3.8-flash",
 ];
