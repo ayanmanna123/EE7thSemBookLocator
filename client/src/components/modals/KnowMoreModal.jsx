@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Dialog, DialogHeader, DialogTitle, DialogClose, DialogBody } from "@/components/ui/dialog";
 import { getAllUniquePages } from "@/lib/searchUtils";
-import { ExternalLink, Globe, BookOpen, Search, Video, Code, FileText, GraduationCap, Sparkles } from "lucide-react";
+import { Globe, BookOpen, Search, Video, Code, FileText, GraduationCap, Sparkles } from "lucide-react";
 
 export function KnowMoreModal({
   isOpen,
@@ -150,13 +150,12 @@ export function KnowMoreModal({
                 onClose(false);
                 onAskAi?.(`Explain ${displayTitle} and where it is present in the textbooks`);
               }}
-              className="flex items-center gap-2 rounded-lg border border-sky-500/50 bg-gradient-to-r from-sky-500/20 via-indigo-500/20 to-purple-500/20 px-3 py-2 text-xs font-bold text-sky-300 hover:border-sky-400 hover:from-sky-500/30 transition-all hover:-translate-y-0.5 cursor-pointer col-span-2 sm:col-span-3 shadow-xs"
+              className="flex items-center gap-2 rounded-lg border border-sky-500/50 bg-gradient-to-r from-sky-500/20 via-indigo-500/20 to-purple-500/20 px-3.5 py-2 text-xs font-bold text-sky-300 hover:border-sky-400 hover:from-sky-500/30 transition-all hover:-translate-y-0.5 cursor-pointer col-span-2 sm:col-span-3 shadow-xs"
             >
-              <Sparkles className="size-4 text-amber-400 animate-pulse shrink-0" />
+              <Sparkles className="size-4 shrink-0 text-amber-400 animate-pulse" />
               <span className="truncate">
-                ✨ Ask Gemini AI about "{topicText}" (Deep Explanation & Exact Page Citations)
+                Ask Gemini AI about "{topicText}" (Citations & References)
               </span>
-              <ExternalLink className="size-3 ml-auto opacity-50 shrink-0" />
             </button>
 
             <a
@@ -165,9 +164,8 @@ export function KnowMoreModal({
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg border border-border/80 bg-secondary/50 px-3 py-2 text-xs font-semibold text-foreground hover:border-sky-500 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5"
             >
-              <Search className="size-4 text-sky-400" />
+              <Search className="size-4.5 shrink-0 text-sky-400" />
               <span>Google Search</span>
-              <ExternalLink className="size-3 ml-auto opacity-50" />
             </a>
 
             <a
@@ -176,9 +174,8 @@ export function KnowMoreModal({
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg border border-border/80 bg-secondary/50 px-3 py-2 text-xs font-semibold text-foreground hover:border-sky-500 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5"
             >
-              <BookOpen className="size-4 text-emerald-400" />
+              <BookOpen className="size-4.5 shrink-0 text-emerald-400" />
               <span>Wikipedia</span>
-              <ExternalLink className="size-3 ml-auto opacity-50" />
             </a>
 
             <a
@@ -187,9 +184,8 @@ export function KnowMoreModal({
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg border border-border/80 bg-secondary/50 px-3 py-2 text-xs font-semibold text-foreground hover:border-sky-500 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5"
             >
-              <Video className="size-4 text-rose-400" />
+              <Video className="size-4.5 shrink-0 text-rose-400" />
               <span>YouTube Lectures</span>
-              <ExternalLink className="size-3 ml-auto opacity-50" />
             </a>
 
             <a
@@ -198,9 +194,8 @@ export function KnowMoreModal({
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg border border-border/80 bg-secondary/50 px-3 py-2 text-xs font-semibold text-foreground hover:border-sky-500 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5"
             >
-              <Code className="size-4 text-amber-400" />
+              <Code className="size-4.5 shrink-0 text-amber-400" />
               <span>GeeksforGeeks</span>
-              <ExternalLink className="size-3 ml-auto opacity-50" />
             </a>
 
             <a
@@ -209,9 +204,8 @@ export function KnowMoreModal({
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg border border-border/80 bg-secondary/50 px-3 py-2 text-xs font-semibold text-foreground hover:border-sky-500 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5"
             >
-              <FileText className="size-4 text-purple-400" />
+              <FileText className="size-4.5 shrink-0 text-purple-400" />
               <span>IETF / RFC Standards</span>
-              <ExternalLink className="size-3 ml-auto opacity-50" />
             </a>
 
             <a
@@ -220,9 +214,8 @@ export function KnowMoreModal({
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg border border-border/80 bg-secondary/50 px-3 py-2 text-xs font-semibold text-foreground hover:border-sky-500 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5"
             >
-              <GraduationCap className="size-4 text-blue-400" />
+              <GraduationCap className="size-4.5 shrink-0 text-blue-400" />
               <span>Google Scholar</span>
-              <ExternalLink className="size-3 ml-auto opacity-50" />
             </a>
           </div>
         </div>
@@ -240,7 +233,7 @@ export function KnowMoreModal({
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-sky-400 hover:underline inline-flex items-center gap-1"
               >
-                Read Full Article <ExternalLink className="size-3" />
+                <span>Read Full Article →</span>
               </a>
             )}
           </div>

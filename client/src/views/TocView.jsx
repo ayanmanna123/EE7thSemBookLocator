@@ -1,5 +1,3 @@
-import { Search } from "lucide-react";
-
 export function TocView({
   tocData,
   subject,
@@ -57,10 +55,9 @@ export function TocView({
                       <div className="flex items-center gap-2 flex-wrap">
                         <button
                           onClick={() => onFilterByChapter(chapLabel)}
-                          className="inline-flex items-center gap-1.5 rounded-lg border border-sky-500/40 bg-sky-500/10 px-2.5 py-1 text-xs font-bold text-sky-400 hover:bg-sky-500 hover:text-white transition-colors cursor-pointer"
+                          className="rounded-lg border border-sky-500/40 bg-sky-500/10 px-2.5 py-1 text-xs font-bold text-sky-400 hover:bg-sky-500 hover:text-white transition-colors cursor-pointer"
                         >
-                          <Search className="size-3" />
-                          <span>View Index Topics in {ch.id}</span>
+                          View Index Topics in {ch.id} →
                         </button>
 
                         <button

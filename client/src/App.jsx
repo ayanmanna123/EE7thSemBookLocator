@@ -28,7 +28,6 @@ export function App() {
   const [query, setQuery] = useState("");
   const [selectedPart, setSelectedPart] = useState("ALL");
   const [selectedChapter, setSelectedChapter] = useState("ALL");
-  const [currentLetter, setCurrentLetter] = useState("ALL");
   const [includeSubtopics, setIncludeSubtopics] = useState(true);
   const [showPageBreakdown, setShowPageBreakdown] = useState(true);
   const [inspectorPage, setInspectorPage] = useState(
@@ -86,7 +85,6 @@ export function App() {
     setQuery(topicName);
     setSelectedPart("ALL");
     setSelectedChapter("ALL");
-    setCurrentLetter("ALL");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -95,7 +93,6 @@ export function App() {
     setQuery("");
     setSelectedPart("ALL");
     setSelectedChapter(chapLabel);
-    setCurrentLetter("ALL");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -112,7 +109,6 @@ export function App() {
     setQuery(chip);
     setSelectedPart("ALL");
     setSelectedChapter("ALL");
-    setCurrentLetter("ALL");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -123,7 +119,6 @@ export function App() {
     }
     setSelectedPart("ALL");
     setSelectedChapter("ALL");
-    setCurrentLetter("ALL");
     const sub = SUBJECTS.find((s) => s.id === subjectId) || SUBJECTS[0];
     setInspectorPage(sub.defaultInspectorPage || 1);
   };
@@ -200,8 +195,6 @@ export function App() {
                 setSelectedPart={setSelectedPart}
                 selectedChapter={selectedChapter}
                 setSelectedChapter={setSelectedChapter}
-                currentLetter={currentLetter}
-                setCurrentLetter={setCurrentLetter}
                 includeSubtopics={includeSubtopics}
                 setIncludeSubtopics={setIncludeSubtopics}
                 showPageBreakdown={showPageBreakdown}

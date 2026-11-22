@@ -1,4 +1,4 @@
-import { Sun, Moon, Search, BookOpen, Hash, Sparkles } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
 
 export function Header({
   subject,
@@ -80,12 +80,12 @@ export function Header({
             >
               {isDarkMode ? (
                 <>
-                  <Sun className="size-3.5 text-amber-400" />
+                  <Sun className="size-4 shrink-0 text-amber-400" />
                   <span>Light</span>
                 </>
               ) : (
                 <>
-                  <Moon className="size-3.5 text-sky-400" />
+                  <Moon className="size-4 shrink-0 text-sky-400" />
                   <span>Dark</span>
                 </>
               )}
@@ -95,54 +95,50 @@ export function Header({
 
         {/* Command Deck: Tabs & Quick Chips */}
         <div className="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-3">
-          {/* Navigation Tabs */}
-          <div className="flex items-center gap-1.5 bg-secondary/50 p-1 rounded-xl border border-border/70 self-start">
+          {/* Navigation Tabs - Clean, high contrast without micro icons */}
+          <div className="flex items-center gap-1 bg-secondary/50 p-1 rounded-xl border border-border/70 self-start flex-wrap">
             <button
               onClick={() => onChangeTab("search")}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all cursor-pointer ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "search"
                   ? "bg-background text-foreground shadow-xs border border-border"
-                  : "text-muted-foreground hover:text-foreground"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/40"
               }`}
             >
-              <Search className="size-3.5 text-sky-400" />
-              <span>Instant Topic Finder</span>
+              Instant Topic Finder
             </button>
 
             <button
               onClick={() => onChangeTab("toc")}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all cursor-pointer ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "toc"
                   ? "bg-background text-foreground shadow-xs border border-border"
-                  : "text-muted-foreground hover:text-foreground"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/40"
               }`}
             >
-              <BookOpen className="size-3.5 text-indigo-400" />
-              <span>Parts & Chapters Atlas</span>
+              Parts & Chapters Atlas
             </button>
 
             <button
               onClick={() => onChangeTab("page")}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all cursor-pointer ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "page"
                   ? "bg-background text-foreground shadow-xs border border-border"
-                  : "text-muted-foreground hover:text-foreground"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/40"
               }`}
             >
-              <Hash className="size-3.5 text-emerald-400" />
-              <span>Page Inspector (1–{subject?.totalPages || 1134})</span>
+              Page Inspector (1–{subject?.totalPages || 1134})
             </button>
 
             <button
               onClick={() => onChangeTab("ai")}
-              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all cursor-pointer ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-extrabold transition-all cursor-pointer ${
                 activeTab === "ai"
-                  ? "bg-gradient-to-r from-sky-500/20 via-indigo-500/20 to-purple-500/20 text-sky-300 shadow-xs border border-sky-400/50"
-                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+                  ? "bg-gradient-to-r from-sky-500/25 via-indigo-500/25 to-purple-500/25 text-sky-300 shadow-xs border border-sky-400/50"
+                  : "text-sky-400/90 hover:text-sky-300 hover:bg-sky-500/10"
               }`}
             >
-              <Sparkles className="size-3.5 text-amber-400 animate-pulse" />
-              <span>✨ AI Locator</span>
+              AI Locator
             </button>
           </div>
 

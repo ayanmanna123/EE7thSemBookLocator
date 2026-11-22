@@ -1,11 +1,10 @@
 import { useState, useMemo, useEffect } from "react";
-import { Search, X, Globe, ArrowRight, Sparkles, History as HistoryIcon } from "lucide-react";
+import { Search, X, Sparkles, History as HistoryIcon, ArrowRight } from "lucide-react";
 import { PartRibbon } from "@/components/layout/PartRibbon";
 import { SpotlightCard } from "@/components/cards/SpotlightCard";
 import { TopicCard } from "@/components/cards/TopicCard";
 import { scoreEntry } from "@/lib/searchUtils";
 
-const ALPHABET = ["ALL", "#", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")];
 const SEARCH_HISTORY_KEY = "ee7th_recent_searches";
 
 function getRecentSearches() {
@@ -30,8 +29,6 @@ export function SearchView({
   setSelectedPart,
   selectedChapter,
   setSelectedChapter,
-  currentLetter,
-  setCurrentLetter,
   includeSubtopics,
   setIncludeSubtopics,
   showPageBreakdown,
@@ -99,14 +96,6 @@ export function SearchView({
       list = list.filter((item) => (item.chapters || []).includes(selectedChapter));
     }
 
-    if (currentLetter !== "ALL") {
-      list = list.filter((item) => {
-        const first = (item.topic || "").trim().charAt(0).toUpperCase();
-        if (currentLetter === "#") return /[0-9]/.test(first);
-        return first === currentLetter;
-      });
-    }
-
     const q = query.trim();
     if (q) {
       const scored = [];
@@ -119,7 +108,7 @@ export function SearchView({
     }
 
     return list;
-  }, [allSearchData, selectedPart, selectedChapter, currentLetter, query, includeSubtopics]);
+  }, [allSearchData, selectedPart, selectedChapter, query, includeSubtopics]);
 
   // 2. Cross-Subject Search Matches (Searches across other registered subjects)
   const otherSubjectsMatches = useMemo(() => {
@@ -199,18 +188,13 @@ export function SearchView({
     setCurrentLimit(75);
   };
 
-  const handleLetterClick = (letter) => {
-    setCurrentLetter(letter);
-    setCurrentLimit(75);
-  };
-
   return (
     <div className="space-y-6">
       {/* Search Input & Command Hub */}
       <div className="rounded-2xl border border-border/80 bg-card/85 p-4 sm:p-5 shadow-sm space-y-4">
         {/* Main Search Input */}
         <div className="relative flex items-center">
-          <Search className="absolute left-3.5 size-5 text-muted-foreground pointer-events-none" />
+          <Search className="absolute left-3.5 size-4.5 shrink-0 text-muted-foreground pointer-events-none" />
           <input
             ref={searchInputRef}
             type="text"
@@ -227,10 +211,9 @@ export function SearchView({
             {query.trim() && (
               <button
                 onClick={() => onOpenKnowMore(query.trim(), "")}
-                className="hidden sm:inline-flex items-center gap-1 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-2.5 py-1.5 text-xs font-bold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer"
+                className="hidden sm:inline-flex items-center rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-2.5 py-1.5 text-xs font-bold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer"
                 title="Search this query across the web"
               >
-                <Globe className="size-3.5" />
                 <span>Web Search</span>
               </button>
             )}
@@ -247,7 +230,7 @@ export function SearchView({
                 className="rounded-lg p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors cursor-pointer"
                 title="Clear search"
               >
-                <X className="size-4" />
+                <X className="size-4 shrink-0" />
               </button>
             )}
           </div>
@@ -257,7 +240,7 @@ export function SearchView({
         {isQuestionLike && (
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-xl border border-sky-500/40 bg-gradient-to-r from-sky-500/15 via-indigo-500/10 to-transparent p-3 shadow-xs">
             <div className="flex items-center gap-2.5">
-              <Sparkles className="size-4 text-amber-400 animate-pulse shrink-0" />
+              <Sparkles className="size-4 shrink-0 text-amber-400 animate-pulse" />
               <div className="text-xs">
                 <span className="font-bold text-foreground">Have a concept or question? </span>
                 <span className="text-muted-foreground">
@@ -267,9 +250,8 @@ export function SearchView({
             </div>
             <button
               onClick={() => onAskAi?.(query.trim())}
-              className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-3 py-1.5 text-xs font-extrabold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer shrink-0 self-start sm:self-auto"
+              className="inline-flex items-center rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-3 py-1.5 text-xs font-extrabold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer shrink-0 self-start sm:self-auto"
             >
-              <Sparkles className="size-3" />
               <span>Ask AI Locator →</span>
             </button>
           </div>
@@ -279,7 +261,7 @@ export function SearchView({
         {!query.trim() && recentSearches.length > 0 && (
           <div className="flex items-center gap-2 flex-wrap text-xs pt-1">
             <span className="flex items-center gap-1 font-bold text-muted-foreground text-[11px] uppercase tracking-wider">
-              <HistoryIcon className="size-3 text-sky-400" />
+              <HistoryIcon className="size-3.5 shrink-0 text-sky-400" />
               Recent Searches:
             </span>
             {recentSearches.map((s, idx) => (
@@ -368,26 +350,6 @@ export function SearchView({
             </label>
           </div>
         </div>
-
-        {/* Alphabet Bar */}
-        <div className="flex items-center gap-1 overflow-x-auto pb-1 pt-1 no-scrollbar">
-          {ALPHABET.map((letter) => {
-            const isActive = currentLetter === letter;
-            return (
-              <button
-                key={letter}
-                onClick={() => handleLetterClick(letter)}
-                className={`rounded-md px-2 py-1 font-mono text-xs font-bold transition-all shrink-0 cursor-pointer ${
-                  isActive
-                    ? "bg-sky-500 text-white shadow-xs"
-                    : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-                }`}
-              >
-                {letter}
-              </button>
-            );
-          })}
-        </div>
       </div>
 
       {/* Part Visual Ribbon */}
@@ -439,7 +401,7 @@ export function SearchView({
                 title={`Switch to ${matchSub.name}`}
               >
                 <span>💡 {count} match{count === 1 ? "" : "es"} in {matchSub.name}</span>
-                <ArrowRight className="size-3" />
+                <ArrowRight className="size-3.5 shrink-0" />
               </button>
             ))}
           </div>
@@ -539,10 +501,9 @@ export function SearchView({
 
             <button
               onClick={() => onOpenKnowMore(query, "")}
-              className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-secondary px-4 py-2 text-xs font-bold text-foreground hover:bg-secondary/80 transition-colors cursor-pointer"
+              className="inline-flex items-center rounded-xl border border-border bg-secondary px-4 py-2 text-xs font-bold text-foreground hover:bg-secondary/80 transition-colors cursor-pointer"
             >
-              <Globe className="size-4" />
-              <span>Search on Web Resources</span>
+              <span>Search on Web Resources →</span>
             </button>
           </div>
         </div>

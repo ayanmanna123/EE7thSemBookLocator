@@ -1,12 +1,9 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import {
-  Sparkles,
   Search,
-  BookOpen,
   Key,
   RotateCcw,
   BookMarked,
-  ChevronRight,
   Lightbulb,
   CheckCircle2,
   Bookmark,
@@ -225,14 +222,11 @@ export function AiLocatorView({
               >
                 {loading ? (
                   <>
-                    <RotateCcw className="size-3.5 animate-spin" />
+                    <RotateCcw className="size-4 shrink-0 animate-spin" />
                     <span>Finding...</span>
                   </>
                 ) : (
-                  <>
-                    <Sparkles className="size-3.5" />
-                    <span>Find Pages</span>
-                  </>
+                  <span>Find Pages</span>
                 )}
               </button>
             </div>
@@ -241,7 +235,7 @@ export function AiLocatorView({
           {/* Suggested Starter Chips */}
           <div className="space-y-1.5 pt-1">
             <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
-              <Lightbulb className="size-3.5 text-amber-400" />
+              <Lightbulb className="size-4 shrink-0 text-amber-400" />
               <span>Quick Page Lookups:</span>
             </div>
             <div className="flex items-center gap-2 flex-wrap">
@@ -474,19 +468,17 @@ export function AiLocatorView({
                                 }
                                 onSelectPage(pageNum);
                               }}
-                              className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-3 py-1.5 text-xs font-extrabold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer"
+                              className="rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-3.5 py-1.5 text-xs font-extrabold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer"
                             >
-                              <BookOpen className="size-3.5" />
-                              <span>Open Page {cite.page} in Inspector →</span>
+                              Open Page {cite.page} in Inspector →
                             </button>
 
                             {cite.subjectId && cite.subjectId !== activeSubject.id && (
                               <button
                                 onClick={() => onSwitchSubject(cite.subjectId)}
-                                className="inline-flex items-center gap-1 rounded-lg bg-secondary px-2.5 py-1 text-xs font-semibold text-foreground hover:bg-secondary/80 border border-border transition-colors cursor-pointer"
+                                className="rounded-lg bg-secondary px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary/80 border border-border transition-colors cursor-pointer"
                               >
-                                <span>Switch Book</span>
-                                <ChevronRight className="size-3" />
+                                Switch Book →
                               </button>
                             )}
                           </div>

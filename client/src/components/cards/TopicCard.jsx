@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import { HighlightText } from "@/components/common/HighlightText";
 import { getAllUniquePages, getPartColorForEntry, pageMatchesNumber } from "@/lib/searchUtils";
-import { Globe, ExternalLink, ArrowRight } from "lucide-react";
 
 export function TopicCard({
   entry,
@@ -71,11 +70,10 @@ export function TopicCard({
           <div className="flex items-center gap-1.5 flex-wrap pt-1">
             <button
               onClick={() => onOpenKnowMore(entry.topic, "")}
-              className="inline-flex items-center gap-1 rounded-md border border-sky-500/40 bg-sky-500/10 px-2 py-0.5 text-[11px] font-bold text-sky-400 hover:bg-sky-500 hover:text-white transition-all shadow-xs cursor-pointer"
+              className="rounded-md border border-sky-500/40 bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-bold text-sky-400 hover:bg-sky-500 hover:text-white transition-all shadow-xs cursor-pointer"
               title="Read live topic explanation & explore resources"
             >
-              <Globe className="size-3" />
-              <span>Know More</span>
+              Know More
             </button>
 
             {searchUrls && (
@@ -84,33 +82,33 @@ export function TopicCard({
                   href={searchUrls.google}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1"
+                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors"
                 >
-                  Google <ExternalLink className="size-2.5 opacity-60" />
+                  Google
                 </a>
                 <a
                   href={searchUrls.wikipedia}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1"
+                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors"
                 >
-                  Wiki <ExternalLink className="size-2.5 opacity-60" />
+                  Wiki
                 </a>
                 <a
                   href={searchUrls.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1"
+                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors"
                 >
-                  YouTube <ExternalLink className="size-2.5 opacity-60" />
+                  YouTube
                 </a>
                 <a
                   href={searchUrls.gfg}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1"
+                  className="rounded border border-border/80 bg-background/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors"
                 >
-                  Tutorials <ExternalLink className="size-2.5 opacity-60" />
+                  Tutorials
                 </a>
               </>
             )}
@@ -155,9 +153,10 @@ export function TopicCard({
               <span>See:</span>
               <button
                 onClick={() => onSelectTopic(entry.see)}
-                className="font-bold text-sky-400 hover:underline inline-flex items-center gap-0.5 cursor-pointer"
+                className="font-bold text-sky-400 hover:underline inline-flex items-center gap-1 cursor-pointer"
               >
-                {entry.see} <ArrowRight className="size-3" />
+                <span>{entry.see}</span>
+                <span>→</span>
               </button>
             </span>
           )}
@@ -166,9 +165,10 @@ export function TopicCard({
               <span>See also:</span>
               <button
                 onClick={() => onSelectTopic(entry.see_also)}
-                className="font-bold text-sky-400 hover:underline inline-flex items-center gap-0.5 cursor-pointer"
+                className="font-bold text-sky-400 hover:underline inline-flex items-center gap-1 cursor-pointer"
               >
-                {entry.see_also} <ArrowRight className="size-3" />
+                <span>{entry.see_also}</span>
+                <span>→</span>
               </button>
             </span>
           )}

@@ -77,7 +77,7 @@ export function PageInspectorView({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border/60 pb-4">
           <div className="flex items-center gap-2">
             <span className="flex size-9 items-center justify-center rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20">
-              <Hash className="size-5" />
+              <Hash className="size-5 shrink-0" />
             </span>
             <div>
               <h3 className="text-base sm:text-lg font-bold text-foreground">
@@ -96,7 +96,7 @@ export function PageInspectorView({
               disabled={currentPage <= 1}
               className="flex items-center gap-1 rounded-lg border border-border bg-secondary px-3 py-1.5 text-xs font-bold text-foreground hover:bg-secondary/80 disabled:opacity-40 disabled:pointer-events-none cursor-pointer"
             >
-              <ChevronLeft className="size-4" />
+              <ChevronLeft className="size-4 shrink-0" />
               <span>Prev</span>
             </button>
 
@@ -117,7 +117,7 @@ export function PageInspectorView({
               className="flex items-center gap-1 rounded-lg border border-border bg-secondary px-3 py-1.5 text-xs font-bold text-foreground hover:bg-secondary/80 disabled:opacity-40 disabled:pointer-events-none cursor-pointer"
             >
               <span>Next</span>
-              <ChevronRight className="size-4" />
+              <ChevronRight className="size-4 shrink-0" />
             </button>
           </div>
         </div>
@@ -142,7 +142,7 @@ export function PageInspectorView({
         {/* Current Location Hierarchy Banner */}
         <div className="rounded-xl border border-sky-500/25 bg-gradient-to-r from-sky-500/10 via-indigo-500/5 to-transparent p-4 space-y-2">
           <div className="flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-sky-400">
-            <Compass className="size-3.5" />
+            <Compass className="size-4 shrink-0" />
             <span>Book Location for Page {currentPage}</span>
           </div>
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HighlightText } from "@/components/common/HighlightText";
 import { getAllUniquePages } from "@/lib/searchUtils";
-import { Zap, Copy, Check, Globe, ExternalLink } from "lucide-react";
+import { Zap, Copy, Check } from "lucide-react";
 
 export function SpotlightCard({
   entry,
@@ -34,8 +34,8 @@ export function SpotlightCard({
         {/* Left Side */}
         <div className="space-y-2 flex-1">
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1 rounded-md bg-sky-500/20 px-2 py-0.5 text-xs font-extrabold uppercase tracking-wider text-sky-400 border border-sky-500/30">
-              <Zap className="size-3.5 fill-sky-400" /> Instant Top Match
+            <span className="inline-flex items-center gap-1.5 rounded-md bg-sky-500/20 px-2 py-0.5 text-xs font-extrabold uppercase tracking-wider text-sky-400 border border-sky-500/30">
+              <Zap className="size-4 shrink-0 fill-sky-400" /> Instant Top Match
             </span>
             <span className="text-xs font-semibold text-muted-foreground">
               • {allPages.length} Total Page Reference{allPages.length === 1 ? "" : "s"}
@@ -80,10 +80,9 @@ export function SpotlightCard({
           <div className="flex items-center gap-2 flex-wrap pt-1">
             <button
               onClick={() => onOpenKnowMore(entry.topic, "")}
-              className="inline-flex items-center gap-1.5 rounded-lg bg-sky-500 px-3 py-1 text-xs font-bold text-white hover:bg-sky-600 transition-colors shadow-sm cursor-pointer"
+              className="rounded-lg bg-sky-500 px-3.5 py-1 text-xs font-bold text-white hover:bg-sky-600 transition-colors shadow-sm cursor-pointer"
             >
-              <Globe className="size-3.5" />
-              <span>Know More</span>
+              Know More
             </button>
 
             {searchUrls && (
@@ -92,25 +91,25 @@ export function SpotlightCard({
                   href={searchUrls.google}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg border border-border/80 bg-background/60 px-2.5 py-1 text-xs font-semibold text-foreground hover:border-sky-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1"
+                  className="rounded-lg border border-border/80 bg-background/60 px-2.5 py-1 text-xs font-semibold text-foreground hover:border-sky-400 hover:text-sky-400 transition-colors"
                 >
-                  Google <ExternalLink className="size-3 opacity-60" />
+                  Google
                 </a>
                 <a
                   href={searchUrls.wikipedia}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg border border-border/80 bg-background/60 px-2.5 py-1 text-xs font-semibold text-foreground hover:border-sky-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1"
+                  className="rounded-lg border border-border/80 bg-background/60 px-2.5 py-1 text-xs font-semibold text-foreground hover:border-sky-400 hover:text-sky-400 transition-colors"
                 >
-                  Wiki <ExternalLink className="size-3 opacity-60" />
+                  Wiki
                 </a>
                 <a
                   href={searchUrls.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg border border-border/80 bg-background/60 px-2.5 py-1 text-xs font-semibold text-foreground hover:border-sky-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1"
+                  className="rounded-lg border border-border/80 bg-background/60 px-2.5 py-1 text-xs font-semibold text-foreground hover:border-sky-400 hover:text-sky-400 transition-colors"
                 >
-                  YouTube <ExternalLink className="size-3 opacity-60" />
+                  YouTube
                 </a>
               </>
             )}
