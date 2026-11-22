@@ -25,35 +25,25 @@ export function Header({
                 className="h-full w-full object-contain"
               />
             </div>
-            <div>
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-lg sm:text-xl font-extrabold tracking-tight text-foreground">
-                  {subject?.bookTitle || "Book Locator"}
-                </span>
-                {subject?.editionBadge && (
-                  <span className="rounded-md bg-sky-500/10 px-2 py-0.5 text-xs font-semibold text-sky-400 border border-sky-500/20">
-                    {subject.editionBadge}
-                  </span>
-                )}
-                {subjects.length > 1 && (
-                  <div className="relative inline-block ml-1">
-                    <select
-                      value={subject?.id}
-                      onChange={(e) => onSelectSubject(e.target.value)}
-                      className="rounded-lg border border-border bg-secondary/80 px-2.5 py-1 text-xs font-bold text-foreground cursor-pointer outline-none focus:ring-1 focus:ring-sky-400"
-                    >
-                      {subjects.map((sub) => (
-                        <option key={sub.id} value={sub.id}>
-                          📚 {sub.name} ({sub.code})
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                )}
-              </div>
-              <div className="text-xs text-muted-foreground line-clamp-1">
-                {subject?.subtitle || "Instant Topic, Chapter & Page Reference Engine"}
-              </div>
+            <div className="flex items-center gap-2.5 flex-wrap">
+              <span className="text-lg sm:text-xl font-extrabold tracking-tight text-foreground">
+                {subject?.bookTitle || "Book Locator"}
+              </span>
+              {subjects.length > 1 && (
+                <div className="relative inline-block ml-1">
+                  <select
+                    value={subject?.id}
+                    onChange={(e) => onSelectSubject(e.target.value)}
+                    className="rounded-lg border border-border bg-secondary/80 px-2.5 py-1 text-xs font-bold text-foreground cursor-pointer outline-none focus:ring-1 focus:ring-sky-400"
+                  >
+                    {subjects.map((sub) => (
+                      <option key={sub.id} value={sub.id}>
+                        📚 {sub.name} ({sub.code})
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
             </div>
           </div>
 
@@ -136,10 +126,10 @@ export function Header({
 
             <button
               onClick={() => onChangeTab("ai")}
-              className={`rounded-lg px-3.5 py-1.5 text-xs font-extrabold transition-all cursor-pointer ${
+              className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "ai"
-                  ? "bg-gradient-to-r from-sky-500/25 via-indigo-500/25 to-purple-500/25 text-sky-300 shadow-xs border border-sky-400/50"
-                  : "text-sky-400/90 hover:text-sky-300 hover:bg-sky-500/10"
+                  ? "bg-background text-foreground shadow-xs border border-border"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/40"
               }`}
             >
               AI Locator

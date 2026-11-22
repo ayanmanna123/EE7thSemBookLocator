@@ -218,11 +218,7 @@ export function SearchView({
               </button>
             )}
 
-            {!query.trim() && (
-              <kbd className="hidden sm:inline-block rounded border border-border bg-muted/60 px-2 py-0.5 font-mono text-[11px] font-semibold text-muted-foreground">
-                Press /
-              </kbd>
-            )}
+
 
             {query.trim() && (
               <button

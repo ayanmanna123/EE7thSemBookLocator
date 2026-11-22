@@ -156,17 +156,9 @@ export function AiLocatorView({
                 />
               </div>
               <div>
-                <div className="flex items-center gap-2">
-                  <h2 className="text-lg sm:text-xl font-black tracking-tight text-foreground">
-                    Textbook Page & Chapter Pinpointer
-                  </h2>
-                  <span className="rounded-md bg-sky-500/15 border border-sky-500/30 px-2 py-0.5 text-[11px] font-extrabold text-sky-400">
-                    Fast AI Locator
-                  </span>
-                </div>
-                <p className="text-xs text-muted-foreground mt-0.5">
-                  Type any topic or question to pinpoint its exact Book, Chapter, Section & Page Numbers
-                </p>
+                <h2 className="text-lg sm:text-xl font-black tracking-tight text-foreground">
+                  Textbook Page & Chapter Pinpointer
+                </h2>
               </div>
             </div>
 
@@ -227,15 +219,9 @@ export function AiLocatorView({
           {/* Stored Queries in LocalStorage Quick Chips */}
           {history.length > 0 && (
             <div className="space-y-1.5 pt-1">
-              <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center justify-between">
-                <div className="flex items-center gap-1.5">
-                  <HistoryIcon className="size-3.5 text-sky-400" />
-                  <span>Recent Stored Queries ({history.length}):</span>
-                </div>
-                <span className="flex items-center gap-1 text-[10px] text-emerald-400 font-semibold">
-                  <span className="size-1.5 rounded-full bg-emerald-400" />
-                  Synced with LocalStorage
-                </span>
+              <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
+                <HistoryIcon className="size-3.5 text-sky-400" />
+                <span>Recent Stored Queries ({history.length}):</span>
               </div>
               <div className="flex items-center gap-2 flex-wrap">
                 {history.slice(0, 6).map((item) => (
@@ -301,10 +287,6 @@ export function AiLocatorView({
             <HistoryIcon className="size-4 text-sky-400" />
             <span className="text-xs font-black uppercase tracking-wider text-foreground">
               Stored Queries in Local Storage ({history.length})
-            </span>
-            <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
-              <span className="size-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              Persisted
             </span>
           </div>
 
