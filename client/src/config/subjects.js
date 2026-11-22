@@ -238,6 +238,90 @@ export const SUBJECTS = [
       };
     },
   },
+  {
+    id: "electric-drives",
+    name: "Electric Drives",
+    shortName: "ED",
+    code: "EE-701B",
+    bookTitle: "Dubey Electric Drives",
+    editionBadge: "Fundamentals of Electrical Drives (2nd Ed.)",
+    subtitle: "Dynamics, dc Motors, Induction & Synchronous Drives, Traction & Control",
+    author: "Gopal K. Dubey",
+    totalPages: 392,
+    defaultInspectorPage: 60,
+    topicsFile: "/data/drive/topics.json",
+    chaptersFile: "/data/drive/chapters.json",
+    quickChips: [
+      "Chopper Control",
+      "Regenerative Braking",
+      "Static Kramer Drive",
+      "VSI Induction Motor",
+      "Traction Drives",
+      "Ward Leonard",
+      "PLL Control",
+      "Brushless dc motor",
+      "Stepper Motors",
+      "Switched Reluctance",
+      "Dynamic Braking",
+      "Slip Power Recovery",
+    ],
+    partColors: {
+      "PART 1": "#38bdf8",
+      "PART 2": "#10b981",
+      "PART 3": "#6366f1",
+      "PART 4": "#a855f7",
+      "PART 5": "#ec4899",
+      "PART 6": "#f59e0b",
+      "APPENDICES": "#64748b",
+    },
+    acronyms: {
+      vsi: "Voltage Source Inverter",
+      csi: "Current Source Inverter",
+      pmac: "Permanent Magnet AC Motor",
+      bldc: "Brushless DC Motor",
+      srm: "Switched Reluctance Motor",
+      pll: "Phase-Locked Loop",
+      lci: "Load Commutated Inverter",
+      pam: "Pole Amplitude Modulation",
+      pwm: "Pulse-Width Modulation",
+      mppt: "Maximum Power Point Tracker",
+      ca: "Coefficient of Adhesion",
+      vscf: "Variable Speed Constant Frequency",
+      svc: "Static Var Compensator",
+      pcc: "Power Control Centre",
+      mcc: "Motor Control Centre",
+    },
+    getSearchUrls: (cleanTopic, parentTopic = "") => {
+      const fullContext = parentTopic ? `${parentTopic} ${cleanTopic}` : cleanTopic;
+      const expanded =
+        SUBJECTS[2]?.acronyms?.[cleanTopic.toLowerCase()] || fullContext;
+      const netQuery = encodeURIComponent(
+        `${expanded} Electrical Drives Dubey`
+      );
+      const ytQuery = encodeURIComponent(
+        `${expanded} Electrical Drives lecture Dubey NPTEL`
+      );
+      const gfgQuery = encodeURIComponent(
+        `site:geeksforgeeks.org ${expanded} electrical drives`
+      );
+      const wikiQuery = encodeURIComponent(expanded);
+      const scholarQuery = encodeURIComponent(`${expanded} Electrical Drives Dubey`);
+      const nptelQuery = encodeURIComponent(
+        `site:nptel.ac.in ${expanded} electrical drives`
+      );
+
+      return {
+        cleanTopic,
+        expanded,
+        google: `https://www.google.com/search?q=${netQuery}`,
+        wikipedia: `https://en.wikipedia.org/wiki/Special:Search?search=${wikiQuery}`,
+        youtube: `https://www.youtube.com/results?search_query=${ytQuery}`,
+        gfg: `https://www.google.com/search?q=${gfgQuery}`,
+        scholar: `https://scholar.google.com/scholar?q=${scholarQuery}`,
+        ietf: `https://www.google.com/search?q=${nptelQuery}`,
+      };
+    },
+  },
 ];
 
 export const DEFAULT_SUBJECT_ID = "computer-networks";

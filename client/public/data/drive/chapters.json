@@ -1,0 +1,5818 @@
+{
+  "parts": [
+    {
+      "id": "PART 1",
+      "title": "FUNDAMENTALS & DYNAMICS",
+      "start_page": 1,
+      "end_page": 59,
+      "chapters": [
+        {
+          "id": "Chapter 1",
+          "title": "Electrical Drives—An Introduction",
+          "start_page": 1,
+          "end_page": 10,
+          "part_id": "PART 1",
+          "part_title": "FUNDAMENTALS & DYNAMICS",
+          "sections": [
+            {
+              "id": "1.1",
+              "title": "Electrical Drives",
+              "start_page": 1,
+              "end_page": 1,
+              "subsections": []
+            },
+            {
+              "id": "1.2",
+              "title": "Advantages of Electrical Drives",
+              "start_page": 2,
+              "end_page": 2,
+              "subsections": []
+            },
+            {
+              "id": "1.3",
+              "title": "Parts of Electrical Drives",
+              "start_page": 3,
+              "end_page": 8,
+              "subsections": [
+                {
+                  "id": "1.3.1",
+                  "title": "Electrical motors",
+                  "start_page": 3
+                },
+                {
+                  "id": "1.3.2",
+                  "title": "Power modulators",
+                  "start_page": 4
+                },
+                {
+                  "id": "1.3.3",
+                  "title": "Sources",
+                  "start_page": 8
+                },
+                {
+                  "id": "1.3.4",
+                  "title": "Control unit",
+                  "start_page": 9
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "title": "Choice of Electrical Drives",
+              "start_page": 9,
+              "end_page": 9,
+              "subsections": []
+            },
+            {
+              "id": "1.5",
+              "title": "Status of dc and ac Drives",
+              "start_page": 9,
+              "end_page": 10,
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "id": "Chapter 2",
+          "title": "Dynamics of Electrical Drives",
+          "start_page": 11,
+          "end_page": 31,
+          "part_id": "PART 1",
+          "part_title": "FUNDAMENTALS & DYNAMICS",
+          "sections": [
+            {
+              "id": "2.1",
+              "title": "Fundamental Torque Equations",
+              "start_page": 11,
+              "end_page": 12,
+              "subsections": []
+            },
+            {
+              "id": "2.2",
+              "title": "Speed Torque Conventions and Multiquadrant Operation",
+              "start_page": 12,
+              "end_page": 13,
+              "subsections": []
+            },
+            {
+              "id": "2.3",
+              "title": "Equivalent Values of Drive Parameters",
+              "start_page": 14,
+              "end_page": 17,
+              "subsections": [
+                {
+                  "id": "2.3.1",
+                  "title": "Loads with rotational motion",
+                  "start_page": 14
+                },
+                {
+                  "id": "2.3.2",
+                  "title": "Loads with translational motion",
+                  "start_page": 15
+                },
+                {
+                  "id": "2.3.3",
+                  "title": "Measurement of moment of inertia",
+                  "start_page": 17
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "title": "Components of Load Torques",
+              "start_page": 18,
+              "end_page": 18,
+              "subsections": []
+            },
+            {
+              "id": "2.5",
+              "title": "Nature and Classification of Load Torques",
+              "start_page": 19,
+              "end_page": 20,
+              "subsections": []
+            },
+            {
+              "id": "2.6",
+              "title": "Calculation of Time and Energy-Loss in Transient Operations",
+              "start_page": 20,
+              "end_page": 22,
+              "subsections": []
+            },
+            {
+              "id": "2.7",
+              "title": "Steady State Stability",
+              "start_page": 23,
+              "end_page": 24,
+              "subsections": []
+            },
+            {
+              "id": "2.8",
+              "title": "Load Equalisation",
+              "start_page": 24,
+              "end_page": 31,
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "id": "Chapter 3",
+          "title": "Control of Electrical Drives",
+          "start_page": 32,
+          "end_page": 43,
+          "part_id": "PART 1",
+          "part_title": "FUNDAMENTALS & DYNAMICS",
+          "sections": [
+            {
+              "id": "3.1",
+              "title": "Modes of Operation",
+              "start_page": 32,
+              "end_page": 33,
+              "subsections": []
+            },
+            {
+              "id": "3.2",
+              "title": "Speed Control and Drive Classifications",
+              "start_page": 34,
+              "end_page": 35,
+              "subsections": []
+            },
+            {
+              "id": "3.3",
+              "title": "Closed-Loop Control of Drives",
+              "start_page": 35,
+              "end_page": 43,
+              "subsections": [
+                {
+                  "id": "3.3.1",
+                  "title": "Current-limit control",
+                  "start_page": 35
+                },
+                {
+                  "id": "3.3.2",
+                  "title": "Closed-loop torque control",
+                  "start_page": 36
+                },
+                {
+                  "id": "3.3.3",
+                  "title": "Closed-loop speed control",
+                  "start_page": 36
+                },
+                {
+                  "id": "3.3.4",
+                  "title": "Closed-loop speed control of multi-motor drives",
+                  "start_page": 37
+                },
+                {
+                  "id": "3.3.5",
+                  "title": "Speed sensing",
+                  "start_page": 40
+                },
+                {
+                  "id": "3.3.6",
+                  "title": "Current sensing",
+                  "start_page": 41
+                },
+                {
+                  "id": "3.3.7",
+                  "title": "Phase-locked-loop (PLL) control",
+                  "start_page": 42
+                },
+                {
+                  "id": "3.3.8",
+                  "title": "Closed-loop position control",
+                  "start_page": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Chapter 4",
+          "title": "Selection of Motor Power Rating",
+          "start_page": 44,
+          "end_page": 59,
+          "part_id": "PART 1",
+          "part_title": "FUNDAMENTALS & DYNAMICS",
+          "sections": [
+            {
+              "id": "4.1",
+              "title": "Thermal Model of Motor for Heating and Cooling",
+              "start_page": 45,
+              "end_page": 46,
+              "subsections": []
+            },
+            {
+              "id": "4.2",
+              "title": "Classes of Motor Duty",
+              "start_page": 47,
+              "end_page": 48,
+              "subsections": []
+            },
+            {
+              "id": "4.3",
+              "title": "Determination of Motor Rating",
+              "start_page": 49,
+              "end_page": 59,
+              "subsections": [
+                {
+                  "id": "4.3.1",
+                  "title": "Continuous duty",
+                  "start_page": 50
+                },
+                {
+                  "id": "4.3.2",
+                  "title": "Equivalent current, torque and power methods for fluctuating and intermittent loads",
+                  "start_page": 50
+                },
+                {
+                  "id": "4.3.3",
+                  "title": "Short time duty",
+                  "start_page": 53
+                },
+                {
+                  "id": "4.3.4",
+                  "title": "Intermittent periodic duty",
+                  "start_page": 54
+                },
+                {
+                  "id": "4.3.5",
+                  "title": "Frequency of operation of motors subjected to intermittent loads",
+                  "start_page": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PART 2",
+      "title": "DC MOTOR DRIVES",
+      "start_page": 60,
+      "end_page": 139,
+      "chapters": [
+        {
+          "id": "Chapter 5",
+          "title": "dc Motor Drives",
+          "start_page": 60,
+          "end_page": 139,
+          "part_id": "PART 2",
+          "part_title": "DC MOTOR DRIVES",
+          "sections": [
+            {
+              "id": "5.1",
+              "title": "dc Motors and Their Performance",
+              "start_page": 60,
+              "end_page": 66,
+              "subsections": [
+                {
+                  "id": "5.1.1",
+                  "title": "Shunt and separately excited motors",
+                  "start_page": 61
+                },
+                {
+                  "id": "5.1.2",
+                  "title": "Series motor",
+                  "start_page": 62
+                },
+                {
+                  "id": "5.1.3",
+                  "title": "Compound motor",
+                  "start_page": 64
+                },
+                {
+                  "id": "5.1.4",
+                  "title": "Universal motor",
+                  "start_page": 64
+                },
+                {
+                  "id": "5.1.5",
+                  "title": "Permanent magnet motors",
+                  "start_page": 65
+                },
+                {
+                  "id": "5.1.6",
+                  "title": "dc servo motors",
+                  "start_page": 65
+                },
+                {
+                  "id": "5.1.7",
+                  "title": "Moving coil motors",
+                  "start_page": 66
+                },
+                {
+                  "id": "5.1.8",
+                  "title": "Torque motors",
+                  "start_page": 67
+                }
+              ]
+            },
+            {
+              "id": "5.2",
+              "title": "Starting",
+              "start_page": 67,
+              "end_page": 68,
+              "subsections": []
+            },
+            {
+              "id": "5.3",
+              "title": "Braking",
+              "start_page": 68,
+              "end_page": 74,
+              "subsections": [
+                {
+                  "id": "5.3.1",
+                  "title": "Regenerative braking",
+                  "start_page": 68
+                },
+                {
+                  "id": "5.3.2",
+                  "title": "Dynamic braking",
+                  "start_page": 69
+                },
+                {
+                  "id": "5.3.3",
+                  "title": "Plugging",
+                  "start_page": 73
+                }
+              ]
+            },
+            {
+              "id": "5.4",
+              "title": "Transient Analysis",
+              "start_page": 75,
+              "end_page": 86,
+              "subsections": [
+                {
+                  "id": "5.4.1",
+                  "title": "Transient analysis of separately excited motor with armature control",
+                  "start_page": 76
+                },
+                {
+                  "id": "5.4.2",
+                  "title": "Transient analysis of starting of separately excited motor with armature control",
+                  "start_page": 77
+                },
+                {
+                  "id": "5.4.3",
+                  "title": "Transient analysis of dynamic braking of separately excited motor",
+                  "start_page": 79
+                },
+                {
+                  "id": "5.4.4",
+                  "title": "Energy losses during transient operations",
+                  "start_page": 80
+                },
+                {
+                  "id": "5.4.5",
+                  "title": "Transient analysis of separately excited motor with field control",
+                  "start_page": 83
+                }
+              ]
+            },
+            {
+              "id": "5.5",
+              "title": "Speed Control",
+              "start_page": 87,
+              "end_page": 91,
+              "subsections": []
+            },
+            {
+              "id": "5.6",
+              "title": "Methods of Armature Voltage Control",
+              "start_page": 92,
+              "end_page": 92,
+              "subsections": []
+            },
+            {
+              "id": "5.7",
+              "title": "Ward Leonard Drives",
+              "start_page": 92,
+              "end_page": 95,
+              "subsections": []
+            },
+            {
+              "id": "5.8",
+              "title": "Transformer and Uncontrolled Rectifier Control",
+              "start_page": 96,
+              "end_page": 96,
+              "subsections": []
+            },
+            {
+              "id": "5.9",
+              "title": "Controlled Rectifier Fed dc Drives",
+              "start_page": 97,
+              "end_page": 98,
+              "subsections": []
+            },
+            {
+              "id": "5.10",
+              "title": "Single-phase Fully-controlled Rectifier Control of dc Separately Excited Motor",
+              "start_page": 98,
+              "end_page": 106,
+              "subsections": []
+            },
+            {
+              "id": "5.11",
+              "title": "Single-phase Half-controlled Rectifier Control of dc Separately Excited Motor",
+              "start_page": 107,
+              "end_page": 110,
+              "subsections": []
+            },
+            {
+              "id": "5.12",
+              "title": "Three-phase Fully-controlled Rectifier Control of dc Separately Excited Motor",
+              "start_page": 111,
+              "end_page": 111,
+              "subsections": []
+            },
+            {
+              "id": "5.13",
+              "title": "Three-phase Half-controlled Rectifier Control of dc Separately Excited Motor",
+              "start_page": 112,
+              "end_page": 113,
+              "subsections": []
+            },
+            {
+              "id": "5.14",
+              "title": "Multiquadrant Operation of dc Separately Excited Motor Fed from Fully-controlled Rectifier",
+              "start_page": 114,
+              "end_page": 117,
+              "subsections": [
+                {
+                  "id": "5.14.1",
+                  "title": "Single fully-controlled rectifier with a reversing switch",
+                  "start_page": 114
+                },
+                {
+                  "id": "5.14.2",
+                  "title": "Dual converter",
+                  "start_page": 115
+                },
+                {
+                  "id": "5.14.3",
+                  "title": "Field current reversal",
+                  "start_page": 116
+                },
+                {
+                  "id": "5.14.4",
+                  "title": "Comparison of conventional and static Ward Leonard schemes",
+                  "start_page": 118
+                }
+              ]
+            },
+            {
+              "id": "5.15",
+              "title": "Rectifier Control of dc Series Motor",
+              "start_page": 118,
+              "end_page": 119,
+              "subsections": []
+            },
+            {
+              "id": "5.16",
+              "title": "Control of Fractional hp Motors",
+              "start_page": 120,
+              "end_page": 120,
+              "subsections": []
+            },
+            {
+              "id": "5.17",
+              "title": "Supply Harmonics, Power Factor and Ripple in Motor Current",
+              "start_page": 120,
+              "end_page": 121,
+              "subsections": []
+            },
+            {
+              "id": "5.18",
+              "title": "Chopper-Controlled dc Drives",
+              "start_page": 121,
+              "end_page": 122,
+              "subsections": []
+            },
+            {
+              "id": "5.19",
+              "title": "Chopper Control of Separately Excited dc Motors",
+              "start_page": 122,
+              "end_page": 126,
+              "subsections": []
+            },
+            {
+              "id": "5.20",
+              "title": "Chopper Control of Series Motor",
+              "start_page": 127,
+              "end_page": 130,
+              "subsections": []
+            },
+            {
+              "id": "5.21",
+              "title": "Source Current Harmonics in Choppers",
+              "start_page": 131,
+              "end_page": 131,
+              "subsections": []
+            },
+            {
+              "id": "5.22",
+              "title": "Converter Ratings and Closed-loop Control",
+              "start_page": 131,
+              "end_page": 139,
+              "subsections": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PART 3",
+      "title": "INDUCTION MOTOR DRIVES",
+      "start_page": 140,
+      "end_page": 243,
+      "chapters": [
+        {
+          "id": "Chapter 6",
+          "title": "Induction Motor Drives",
+          "start_page": 140,
+          "end_page": 243,
+          "part_id": "PART 3",
+          "part_title": "INDUCTION MOTOR DRIVES",
+          "sections": [
+            {
+              "id": "6.1",
+              "title": "Three-phase Induction Motors",
+              "start_page": 140,
+              "end_page": 143,
+              "subsections": [
+                {
+                  "id": "6.1.1",
+                  "title": "Analysis and performance",
+                  "start_page": 140
+                },
+                {
+                  "id": "6.1.2",
+                  "title": "Induction motors with special designs",
+                  "start_page": 143
+                }
+              ]
+            },
+            {
+              "id": "6.2",
+              "title": "Operation with Unbalanced Source Voltages and Single-Phasing",
+              "start_page": 144,
+              "end_page": 147,
+              "subsections": []
+            },
+            {
+              "id": "6.3",
+              "title": "Operation with Unbalanced Rotor Impedances",
+              "start_page": 148,
+              "end_page": 148,
+              "subsections": []
+            },
+            {
+              "id": "6.4",
+              "title": "Analysis of Induction Motor Fed from Non-Sinusoidal Voltage Supply",
+              "start_page": 149,
+              "end_page": 150,
+              "subsections": []
+            },
+            {
+              "id": "6.5",
+              "title": "Starting",
+              "start_page": 151,
+              "end_page": 157,
+              "subsections": [
+                {
+                  "id": "6.5.1",
+                  "title": "Star-delta starter",
+                  "start_page": 152
+                },
+                {
+                  "id": "6.5.2",
+                  "title": "Auto-transformer starter",
+                  "start_page": 153
+                },
+                {
+                  "id": "6.5.3",
+                  "title": "Closed circuit transition",
+                  "start_page": 153
+                },
+                {
+                  "id": "6.5.4",
+                  "title": "Reactor starter",
+                  "start_page": 153
+                },
+                {
+                  "id": "6.5.5",
+                  "title": "Soft start using saturable reactor starter",
+                  "start_page": 154
+                },
+                {
+                  "id": "6.5.6",
+                  "title": "Unbalanced starting scheme for soft start",
+                  "start_page": 154
+                },
+                {
+                  "id": "6.5.7",
+                  "title": "Part winding starting",
+                  "start_page": 155
+                },
+                {
+                  "id": "6.5.8",
+                  "title": "Rotor resistance starter",
+                  "start_page": 155
+                }
+              ]
+            },
+            {
+              "id": "6.6",
+              "title": "Braking",
+              "start_page": 158,
+              "end_page": 172,
+              "subsections": [
+                {
+                  "id": "6.6.1",
+                  "title": "Regenerative braking",
+                  "start_page": 158
+                },
+                {
+                  "id": "6.6.2",
+                  "title": "Plugging or reverse voltage braking",
+                  "start_page": 160
+                },
+                {
+                  "id": "6.6.3",
+                  "title": "Dynamic (or rheostatic) braking",
+                  "start_page": 163
+                }
+              ]
+            },
+            {
+              "id": "6.7",
+              "title": "Transient Analysis",
+              "start_page": 173,
+              "end_page": 177,
+              "subsections": [
+                {
+                  "id": "6.7.1",
+                  "title": "Starting and plugging",
+                  "start_page": 174
+                },
+                {
+                  "id": "6.7.2",
+                  "title": "Calculation of energy losses",
+                  "start_page": 175
+                }
+              ]
+            },
+            {
+              "id": "6.8",
+              "title": "Speed Control",
+              "start_page": 178,
+              "end_page": 178,
+              "subsections": []
+            },
+            {
+              "id": "6.9",
+              "title": "Pole Changing",
+              "start_page": 178,
+              "end_page": 180,
+              "subsections": []
+            },
+            {
+              "id": "6.10",
+              "title": "Pole Amplitude Modulation",
+              "start_page": 181,
+              "end_page": 182,
+              "subsections": []
+            },
+            {
+              "id": "6.11",
+              "title": "Stator Voltage Control",
+              "start_page": 183,
+              "end_page": 185,
+              "subsections": [
+                {
+                  "id": "6.11.1",
+                  "title": "Control by ac voltage controllers and soft start",
+                  "start_page": 184
+                }
+              ]
+            },
+            {
+              "id": "6.12",
+              "title": "Variable Frequency Control from Voltage Sources",
+              "start_page": 186,
+              "end_page": 190,
+              "subsections": [
+                {
+                  "id": "6.12.1",
+                  "title": "Variable frequency control of an induction motor",
+                  "start_page": 186
+                },
+                {
+                  "id": "6.12.2",
+                  "title": "Slip speed control",
+                  "start_page": 189
+                },
+                {
+                  "id": "6.12.3",
+                  "title": "Torque and power limitations, and modes of operation",
+                  "start_page": 190
+                }
+              ]
+            },
+            {
+              "id": "6.13",
+              "title": "Voltage Source Inverter (VSI) Control",
+              "start_page": 191,
+              "end_page": 196,
+              "subsections": [
+                {
+                  "id": "6.13.1",
+                  "title": "VSI induction motor drives",
+                  "start_page": 192
+                },
+                {
+                  "id": "6.13.2",
+                  "title": "Braking and multiquadrant operation of VSI induction motor drives",
+                  "start_page": 194
+                }
+              ]
+            },
+            {
+              "id": "6.14",
+              "title": "Cycloconverter Control",
+              "start_page": 197,
+              "end_page": 197,
+              "subsections": []
+            },
+            {
+              "id": "6.15",
+              "title": "Closed-loop Speed Control and Converter Rating for VSI and Cycloconverter Induction Motor Drives",
+              "start_page": 198,
+              "end_page": 204,
+              "subsections": []
+            },
+            {
+              "id": "6.16",
+              "title": "Variable Frequency Control from a Current Source",
+              "start_page": 205,
+              "end_page": 205,
+              "subsections": []
+            },
+            {
+              "id": "6.17",
+              "title": "Current Source Inverter Control",
+              "start_page": 206,
+              "end_page": 210,
+              "subsections": [
+                {
+                  "id": "6.17.1",
+                  "title": "Regenerative braking and multiquadrant operation",
+                  "start_page": 207
+                },
+                {
+                  "id": "6.17.2",
+                  "title": "Closed-loop speed control of CSI drives",
+                  "start_page": 208
+                },
+                {
+                  "id": "6.17.3",
+                  "title": "Comparison of Current source inverter (CSI) and voltage source inverter (VSI) drives",
+                  "start_page": 209
+                }
+              ]
+            },
+            {
+              "id": "6.18",
+              "title": "Current Regulated Voltage Source Inverter Control",
+              "start_page": 211,
+              "end_page": 212,
+              "subsections": []
+            },
+            {
+              "id": "6.19",
+              "title": "Eddy Current Drives",
+              "start_page": 213,
+              "end_page": 213,
+              "subsections": []
+            },
+            {
+              "id": "6.20",
+              "title": "Rotor Resistance Control",
+              "start_page": 214,
+              "end_page": 217,
+              "subsections": [
+                {
+                  "id": "6.20.1",
+                  "title": "Conventional methods",
+                  "start_page": 215
+                },
+                {
+                  "id": "6.20.2",
+                  "title": "Static rotor resistance control",
+                  "start_page": 216
+                }
+              ]
+            },
+            {
+              "id": "6.21",
+              "title": "Slip Power Recovery",
+              "start_page": 218,
+              "end_page": 226,
+              "subsections": [
+                {
+                  "id": "6.21.1",
+                  "title": "Static Scherbius drive",
+                  "start_page": 219
+                },
+                {
+                  "id": "6.21.2",
+                  "title": "Static Kramer drive",
+                  "start_page": 221
+                }
+              ]
+            },
+            {
+              "id": "6.22",
+              "title": "Variable Speed Constant Frequency Generation",
+              "start_page": 227,
+              "end_page": 228,
+              "subsections": [
+                {
+                  "id": "6.22.1",
+                  "title": "Squirrel-cage induction machine and cycloconverter scheme",
+                  "start_page": 227
+                },
+                {
+                  "id": "6.22.2",
+                  "title": "Wound-rotor induction motor and cycloconverter scheme",
+                  "start_page": 228
+                }
+              ]
+            },
+            {
+              "id": "6.23",
+              "title": "Single-Phase Induction Motors",
+              "start_page": 228,
+              "end_page": 229,
+              "subsections": []
+            },
+            {
+              "id": "6.24",
+              "title": "Starting Methods and Types of Single-phase Induction Motors",
+              "start_page": 230,
+              "end_page": 232,
+              "subsections": [
+                {
+                  "id": "6.24.1",
+                  "title": "Split-phase motors",
+                  "start_page": 230
+                },
+                {
+                  "id": "6.24.2",
+                  "title": "Capacitor-run motors",
+                  "start_page": 231
+                },
+                {
+                  "id": "6.24.3",
+                  "title": "Capacitor-start motors",
+                  "start_page": 232
+                },
+                {
+                  "id": "6.24.4",
+                  "title": "Capacitor-start and capacitor-run motors",
+                  "start_page": 232
+                },
+                {
+                  "id": "6.24.5",
+                  "title": "Shaded pole motor",
+                  "start_page": 232
+                }
+              ]
+            },
+            {
+              "id": "6.25",
+              "title": "Braking of Single-phase Induction Motors",
+              "start_page": 233,
+              "end_page": 233,
+              "subsections": []
+            },
+            {
+              "id": "6.26",
+              "title": "Speed Control of Single-phase Induction Motors",
+              "start_page": 234,
+              "end_page": 235,
+              "subsections": []
+            },
+            {
+              "id": "6.27",
+              "title": "Linear Induction Motor and Its Control",
+              "start_page": 236,
+              "end_page": 243,
+              "subsections": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PART 4",
+      "title": "SYNCHRONOUS & BLDC DRIVES",
+      "start_page": 244,
+      "end_page": 279,
+      "chapters": [
+        {
+          "id": "Chapter 7",
+          "title": "Synchronous Motor and Brushless dc Motor Drives",
+          "start_page": 244,
+          "end_page": 279,
+          "part_id": "PART 4",
+          "part_title": "SYNCHRONOUS & BLDC DRIVES",
+          "sections": [
+            {
+              "id": "7.1",
+              "title": "Synchronous Motors",
+              "start_page": 244,
+              "end_page": 251,
+              "subsections": [
+                {
+                  "id": "7.1.1",
+                  "title": "Cylindrical rotor wound field motor",
+                  "start_page": 246
+                },
+                {
+                  "id": "7.1.2",
+                  "title": "Salient pole wound field motor",
+                  "start_page": 249
+                },
+                {
+                  "id": "7.1.3",
+                  "title": "Permanent magnet motor",
+                  "start_page": 250
+                },
+                {
+                  "id": "7.1.4",
+                  "title": "Synchronous reluctance motor",
+                  "start_page": 251
+                },
+                {
+                  "id": "7.1.5",
+                  "title": "Damper winding",
+                  "start_page": 251
+                },
+                {
+                  "id": "7.1.6",
+                  "title": "Hysteresis synchronous motor",
+                  "start_page": 251
+                },
+                {
+                  "id": "7.1.7",
+                  "title": "Inductor machine",
+                  "start_page": 252
+                }
+              ]
+            },
+            {
+              "id": "7.2",
+              "title": "Operation from Fixed Frequency Supply",
+              "start_page": 252,
+              "end_page": 255,
+              "subsections": [
+                {
+                  "id": "7.2.1",
+                  "title": "Starting",
+                  "start_page": 252
+                },
+                {
+                  "id": "7.2.2",
+                  "title": "Pull-in",
+                  "start_page": 253
+                },
+                {
+                  "id": "7.2.3",
+                  "title": "Transients due to load disturbances",
+                  "start_page": 254
+                },
+                {
+                  "id": "7.2.4",
+                  "title": "Braking",
+                  "start_page": 255
+                }
+              ]
+            },
+            {
+              "id": "7.3",
+              "title": "Synchronous Motor Variable Speed Drives",
+              "start_page": 256,
+              "end_page": 256,
+              "subsections": [
+                {
+                  "id": "7.3.1",
+                  "title": "Variable frequency control",
+                  "start_page": 256
+                },
+                {
+                  "id": "7.3.2",
+                  "title": "Modes of variable frequency control",
+                  "start_page": 256
+                }
+              ]
+            },
+            {
+              "id": "7.4",
+              "title": "Variable Frequency Control of Multiple Synchronous Motors",
+              "start_page": 257,
+              "end_page": 259,
+              "subsections": []
+            },
+            {
+              "id": "7.5",
+              "title": "Self-controlled Synchronous Motor Drive Employing Load Commutated Thyristor Inverter",
+              "start_page": 260,
+              "end_page": 265,
+              "subsections": []
+            },
+            {
+              "id": "7.6",
+              "title": "Starting Large Synchronous Machines",
+              "start_page": 266,
+              "end_page": 266,
+              "subsections": []
+            },
+            {
+              "id": "7.7",
+              "title": "Self-controlled Synchronous Motor Drive Employing a Cycloconverter",
+              "start_page": 267,
+              "end_page": 267,
+              "subsections": []
+            },
+            {
+              "id": "7.8",
+              "title": "Permanent Magnet ac Motor Drives",
+              "start_page": 267,
+              "end_page": 268,
+              "subsections": []
+            },
+            {
+              "id": "7.9",
+              "title": "Sinusoidal PMAC Motor Drives",
+              "start_page": 268,
+              "end_page": 270,
+              "subsections": [
+                {
+                  "id": "7.9.1",
+                  "title": "Servo drive employing sinusoidal PMAC motor fed from a current regulated voltage source inverter",
+                  "start_page": 269
+                }
+              ]
+            },
+            {
+              "id": "7.10",
+              "title": "Brushless dc (or Trapezoidal PMAC) Motor Drives",
+              "start_page": 271,
+              "end_page": 279,
+              "subsections": [
+                {
+                  "id": "7.10.1",
+                  "title": "Brushless dc motor drive for servo applications",
+                  "start_page": 271
+                },
+                {
+                  "id": "7.10.2",
+                  "title": "Low cost brushless dc motor drives",
+                  "start_page": 274
+                },
+                {
+                  "id": "7.10.3",
+                  "title": "Important features and applications",
+                  "start_page": 275
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PART 5",
+      "title": "STEPPER & SRM DRIVES",
+      "start_page": 280,
+      "end_page": 296,
+      "chapters": [
+        {
+          "id": "Chapter 8",
+          "title": "Stepper Motor and Switched Reluctance Motor Drives",
+          "start_page": 280,
+          "end_page": 296,
+          "part_id": "PART 5",
+          "part_title": "STEPPER & SRM DRIVES",
+          "sections": [
+            {
+              "id": "8.1",
+              "title": "Stepper (or Stepping) Motors",
+              "start_page": 280,
+              "end_page": 287,
+              "subsections": [
+                {
+                  "id": "8.1.1",
+                  "title": "Variable reluctance",
+                  "start_page": 280
+                },
+                {
+                  "id": "8.1.2",
+                  "title": "Permanent magnet",
+                  "start_page": 283
+                },
+                {
+                  "id": "8.1.3",
+                  "title": "Important features of stepper motors",
+                  "start_page": 285
+                },
+                {
+                  "id": "8.1.4",
+                  "title": "Torque versus stepping (or pulsing) rate characteristics",
+                  "start_page": 285
+                },
+                {
+                  "id": "8.1.5",
+                  "title": "Drive circuits for stepper motors",
+                  "start_page": 286
+                }
+              ]
+            },
+            {
+              "id": "8.2",
+              "title": "Switched (or Variable) Reluctance Motor",
+              "start_page": 288,
+              "end_page": 296,
+              "subsections": [
+                {
+                  "id": "8.2.1",
+                  "title": "Operation and control requirements",
+                  "start_page": 289
+                },
+                {
+                  "id": "8.2.2",
+                  "title": "Converter circuits",
+                  "start_page": 293
+                },
+                {
+                  "id": "8.2.3",
+                  "title": "Modes of operation",
+                  "start_page": 294
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PART 6",
+      "title": "SOLAR, TRACTION & CONSERVATION",
+      "start_page": 297,
+      "end_page": 382,
+      "chapters": [
+        {
+          "id": "Chapter 9",
+          "title": "Solar and Battery Powered Drives",
+          "start_page": 297,
+          "end_page": 304,
+          "part_id": "PART 6",
+          "part_title": "SOLAR, TRACTION & CONSERVATION",
+          "sections": [
+            {
+              "id": "9.1",
+              "title": "Solar (or Photovoltaic) Panels",
+              "start_page": 297,
+              "end_page": 298,
+              "subsections": []
+            },
+            {
+              "id": "9.2",
+              "title": "Motors Suitable for Pump Drives",
+              "start_page": 298,
+              "end_page": 298,
+              "subsections": []
+            },
+            {
+              "id": "9.3",
+              "title": "Solar Powered Pump Drives",
+              "start_page": 298,
+              "end_page": 301,
+              "subsections": []
+            },
+            {
+              "id": "9.4",
+              "title": "Battery Powered Vehicles",
+              "start_page": 302,
+              "end_page": 303,
+              "subsections": []
+            },
+            {
+              "id": "9.5",
+              "title": "Solar-Powered Electrical Vehicles and Boats",
+              "start_page": 304,
+              "end_page": 304,
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "id": "Chapter 10",
+          "title": "Traction Drives",
+          "start_page": 305,
+          "end_page": 354,
+          "part_id": "PART 6",
+          "part_title": "SOLAR, TRACTION & CONSERVATION",
+          "sections": [
+            {
+              "id": "10.1",
+              "title": "Electric Traction Services",
+              "start_page": 305,
+              "end_page": 307,
+              "subsections": [
+                {
+                  "id": "10.1.1",
+                  "title": "Electric trains",
+                  "start_page": 305
+                },
+                {
+                  "id": "10.1.2",
+                  "title": "Electric buses, trams and trolleys",
+                  "start_page": 307
+                }
+              ]
+            },
+            {
+              "id": "10.2",
+              "title": "Nature of Traction Load",
+              "start_page": 308,
+              "end_page": 311,
+              "subsections": [
+                {
+                  "id": "10.2.1",
+                  "title": "Coefficient of adhesion (CA)",
+                  "start_page": 309
+                },
+                {
+                  "id": "10.2.2",
+                  "duty_cycle": "Duty cycle of traction drives",
+                  "start_page": 311
+                },
+                {
+                  "id": "10.2.3",
+                  "title": "Load sharing between traction motors",
+                  "start_page": 311
+                }
+              ]
+            },
+            {
+              "id": "10.3",
+              "title": "Main Line and Suburban Train Configurations",
+              "start_page": 312,
+              "end_page": 313,
+              "subsections": [
+                {
+                  "id": "10.3.1",
+                  "title": "Difference in construction of main line and suburban trains",
+                  "start_page": 312
+                },
+                {
+                  "id": "10.3.2",
+                  "title": "Driving axle code for locomotives",
+                  "start_page": 313
+                }
+              ]
+            },
+            {
+              "id": "10.4",
+              "title": "Braking",
+              "start_page": 313,
+              "end_page": 314,
+              "subsections": []
+            },
+            {
+              "id": "10.5",
+              "title": "Power Factor and Harmonics",
+              "start_page": 314,
+              "end_page": 315,
+              "subsections": []
+            },
+            {
+              "id": "10.6",
+              "title": "Calculations of Traction Drive Rating and Energy Consumption",
+              "start_page": 315,
+              "end_page": 326,
+              "subsections": [
+                {
+                  "id": "10.6.1",
+                  "title": "Tractive effort and drive ratings",
+                  "start_page": 316
+                },
+                {
+                  "id": "10.6.2",
+                  "title": "Specific energy consumption",
+                  "start_page": 319
+                },
+                {
+                  "id": "10.6.3",
+                  "title": "Maximum allowable tractive effort",
+                  "start_page": 320
+                }
+              ]
+            },
+            {
+              "id": "10.7",
+              "title": "Important Features of Traction Drives",
+              "start_page": 327,
+              "end_page": 328,
+              "subsections": []
+            },
+            {
+              "id": "10.8",
+              "title": "Traction Motors",
+              "start_page": 329,
+              "end_page": 330,
+              "subsections": [
+                {
+                  "id": "10.8.1",
+                  "title": "Motors employed in traction",
+                  "start_page": 329
+                },
+                {
+                  "id": "10.8.2",
+                  "title": "Traction motor control",
+                  "start_page": 330
+                }
+              ]
+            },
+            {
+              "id": "10.9",
+              "title": "Traction Drives",
+              "start_page": 330,
+              "end_page": 330,
+              "subsections": []
+            },
+            {
+              "id": "10.10",
+              "title": "Conventional dc and ac Traction Drives",
+              "start_page": 330,
+              "end_page": 334,
+              "subsections": [
+                {
+                  "id": "10.10.1",
+                  "title": "The dc traction drives employing resistance control",
+                  "start_page": 331
+                },
+                {
+                  "id": "10.10.2",
+                  "title": "The 25 KV, 50 Hz ac traction using on-load transformer tap changer",
+                  "start_page": 333
+                }
+              ]
+            },
+            {
+              "id": "10.11",
+              "title": "Semiconductor Converter Controlled Drives",
+              "start_page": 335,
+              "end_page": 335,
+              "subsections": []
+            },
+            {
+              "id": "10.12",
+              "title": "The 25 kV ac Traction Using Semiconductor Converter Controlled dc Motors",
+              "start_page": 335,
+              "end_page": 338,
+              "subsections": []
+            },
+            {
+              "id": "10.13",
+              "title": "The dc Traction Using Semiconductor Chopper Controlled dc Motors",
+              "start_page": 339,
+              "end_page": 340,
+              "subsections": []
+            },
+            {
+              "id": "10.14",
+              "title": "Polyphase ac Motors for Traction Drives",
+              "start_page": 341,
+              "end_page": 341,
+              "subsections": []
+            },
+            {
+              "id": "10.15",
+              "title": "The dc Traction Employing Polyphase ac Motors",
+              "start_page": 342,
+              "end_page": 344,
+              "subsections": [
+                {
+                  "id": "10.15.1",
+                  "title": "PWM voltage source inverter (VSI) induction motor drives",
+                  "start_page": 342
+                },
+                {
+                  "id": "10.15.2",
+                  "title": "Load commutated inverter fed synchronous motor drives",
+                  "start_page": 343
+                }
+              ]
+            },
+            {
+              "id": "10.16",
+              "title": "The ac Traction Employing Polyphase ac Motors",
+              "start_page": 345,
+              "end_page": 347,
+              "subsections": [
+                {
+                  "id": "10.16.1",
+                  "title": "CSI squirrel-cage induction motor drive",
+                  "start_page": 345
+                },
+                {
+                  "id": "10.16.2",
+                  "title": "PWM VSI squirrel-cage induction motor drive",
+                  "start_page": 346
+                },
+                {
+                  "id": "10.16.3",
+                  "title": "Load commutated inverter (LCI) synchronous motor drive",
+                  "start_page": 347
+                }
+              ]
+            },
+            {
+              "id": "10.17",
+              "title": "Diesel Electric Traction",
+              "start_page": 348,
+              "end_page": 354,
+              "subsections": [
+                {
+                  "id": "10.17.1",
+                  "title": "Diesel engine driven dc generator feeding dc series motors",
+                  "start_page": 349
+                },
+                {
+                  "id": "10.17.2",
+                  "title": "Diesel engine driven three-phase alternator supplying dc motors",
+                  "start_page": 350
+                },
+                {
+                  "id": "10.17.3",
+                  "title": "Diesel engine driven alternator feeding squirrel-cage induction motors through diode-bridge and inverter",
+                  "start_page": 351
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Chapter 11",
+          "title": "Energy Conservation in Electrical Drives",
+          "start_page": 355,
+          "end_page": 364,
+          "part_id": "PART 6",
+          "part_title": "SOLAR, TRACTION & CONSERVATION",
+          "sections": [
+            {
+              "id": "11.1",
+              "title": "Losses in Electrical Drive System",
+              "start_page": 355,
+              "end_page": 356,
+              "subsections": []
+            },
+            {
+              "id": "11.2",
+              "title": "Measures for Energy Conservation in Electrical Drives",
+              "start_page": 356,
+              "end_page": 356,
+              "subsections": []
+            },
+            {
+              "id": "11.3",
+              "title": "Use of Efficient Semiconductor Converters",
+              "start_page": 356,
+              "end_page": 357,
+              "subsections": [
+                {
+                  "id": "11.3.1",
+                  "title": "Replacement of resistance controllers",
+                  "start_page": 356
+                },
+                {
+                  "id": "11.3.2",
+                  "title": "Replacement of eddy-current couplings",
+                  "start_page": 356
+                },
+                {
+                  "id": "11.3.3",
+                  "title": "Replacement of Ward Leonard drives",
+                  "start_page": 357
+                }
+              ]
+            },
+            {
+              "id": "11.4",
+              "title": "Use of Efficient Motors",
+              "start_page": 357,
+              "end_page": 357,
+              "subsections": []
+            },
+            {
+              "id": "11.5",
+              "title": "Use of Variable Speed Drives",
+              "start_page": 357,
+              "end_page": 358,
+              "subsections": []
+            },
+            {
+              "id": "11.6",
+              "title": "Energy Efficient Operation of Drives",
+              "start_page": 358,
+              "end_page": 359,
+              "subsections": []
+            },
+            {
+              "id": "11.7",
+              "title": "Improvement of Power Factor",
+              "start_page": 360,
+              "end_page": 362,
+              "subsections": []
+            },
+            {
+              "id": "11.8",
+              "title": "Using a Motor of Right Rating",
+              "start_page": 363,
+              "end_page": 363,
+              "subsections": []
+            },
+            {
+              "id": "11.9",
+              "title": "Improvement of Quality of Supply",
+              "start_page": 363,
+              "end_page": 364,
+              "subsections": []
+            },
+            {
+              "id": "11.10",
+              "title": "Use of Single- to Three-Phase Semiconductor Converters in Rural Applications",
+              "start_page": 364,
+              "end_page": 364,
+              "subsections": []
+            },
+            {
+              "id": "11.11",
+              "title": "Regular and Preventive Maintenance of Motors, Transformers and Coupled Equipment",
+              "start_page": 364,
+              "end_page": 364,
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "id": "Chapter 12",
+          "title": "Electrical Drive Systems and Components",
+          "start_page": 365,
+          "end_page": 382,
+          "part_id": "PART 6",
+          "part_title": "SOLAR, TRACTION & CONSERVATION",
+          "sections": [
+            {
+              "id": "12.1",
+              "title": "Electrical Drive Systems",
+              "start_page": 365,
+              "end_page": 376,
+              "subsections": []
+            },
+            {
+              "id": "12.2",
+              "title": "Components Used for Obtaining Signals for Interlocking and Sequencing Operations, and Protection",
+              "start_page": 377,
+              "end_page": 382,
+              "subsections": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "APPENDICES",
+      "title": "BIBLIOGRAPHY, ANSWERS & INDEX",
+      "start_page": 383,
+      "end_page": 392,
+      "chapters": [
+        {
+          "id": "Bibliography",
+          "title": "Bibliography and References",
+          "start_page": 383,
+          "end_page": 384,
+          "part_id": "APPENDICES",
+          "part_title": "BIBLIOGRAPHY, ANSWERS & INDEX",
+          "sections": []
+        },
+        {
+          "id": "Answers",
+          "title": "Answers to Numerical Problems",
+          "start_page": 385,
+          "end_page": 388,
+          "part_id": "APPENDICES",
+          "part_title": "BIBLIOGRAPHY, ANSWERS & INDEX",
+          "sections": []
+        },
+        {
+          "id": "Index",
+          "title": "Subject Index",
+          "start_page": 389,
+          "end_page": 392,
+          "part_id": "APPENDICES",
+          "part_title": "BIBLIOGRAPHY, ANSWERS & INDEX",
+          "sections": []
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "Chapter 1",
+      "title": "Electrical Drives—An Introduction",
+      "start_page": 1,
+      "end_page": 10,
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS",
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Electrical Drives",
+          "start_page": 1,
+          "end_page": 1,
+          "subsections": []
+        },
+        {
+          "id": "1.2",
+          "title": "Advantages of Electrical Drives",
+          "start_page": 2,
+          "end_page": 2,
+          "subsections": []
+        },
+        {
+          "id": "1.3",
+          "title": "Parts of Electrical Drives",
+          "start_page": 3,
+          "end_page": 8,
+          "subsections": [
+            {
+              "id": "1.3.1",
+              "title": "Electrical motors",
+              "start_page": 3
+            },
+            {
+              "id": "1.3.2",
+              "title": "Power modulators",
+              "start_page": 4
+            },
+            {
+              "id": "1.3.3",
+              "title": "Sources",
+              "start_page": 8
+            },
+            {
+              "id": "1.3.4",
+              "title": "Control unit",
+              "start_page": 9
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Choice of Electrical Drives",
+          "start_page": 9,
+          "end_page": 9,
+          "subsections": []
+        },
+        {
+          "id": "1.5",
+          "title": "Status of dc and ac Drives",
+          "start_page": 9,
+          "end_page": 10,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 2",
+      "title": "Dynamics of Electrical Drives",
+      "start_page": 11,
+      "end_page": 31,
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS",
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Fundamental Torque Equations",
+          "start_page": 11,
+          "end_page": 12,
+          "subsections": []
+        },
+        {
+          "id": "2.2",
+          "title": "Speed Torque Conventions and Multiquadrant Operation",
+          "start_page": 12,
+          "end_page": 13,
+          "subsections": []
+        },
+        {
+          "id": "2.3",
+          "title": "Equivalent Values of Drive Parameters",
+          "start_page": 14,
+          "end_page": 17,
+          "subsections": [
+            {
+              "id": "2.3.1",
+              "title": "Loads with rotational motion",
+              "start_page": 14
+            },
+            {
+              "id": "2.3.2",
+              "title": "Loads with translational motion",
+              "start_page": 15
+            },
+            {
+              "id": "2.3.3",
+              "title": "Measurement of moment of inertia",
+              "start_page": 17
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Components of Load Torques",
+          "start_page": 18,
+          "end_page": 18,
+          "subsections": []
+        },
+        {
+          "id": "2.5",
+          "title": "Nature and Classification of Load Torques",
+          "start_page": 19,
+          "end_page": 20,
+          "subsections": []
+        },
+        {
+          "id": "2.6",
+          "title": "Calculation of Time and Energy-Loss in Transient Operations",
+          "start_page": 20,
+          "end_page": 22,
+          "subsections": []
+        },
+        {
+          "id": "2.7",
+          "title": "Steady State Stability",
+          "start_page": 23,
+          "end_page": 24,
+          "subsections": []
+        },
+        {
+          "id": "2.8",
+          "title": "Load Equalisation",
+          "start_page": 24,
+          "end_page": 31,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 3",
+      "title": "Control of Electrical Drives",
+      "start_page": 32,
+      "end_page": 43,
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS",
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Modes of Operation",
+          "start_page": 32,
+          "end_page": 33,
+          "subsections": []
+        },
+        {
+          "id": "3.2",
+          "title": "Speed Control and Drive Classifications",
+          "start_page": 34,
+          "end_page": 35,
+          "subsections": []
+        },
+        {
+          "id": "3.3",
+          "title": "Closed-Loop Control of Drives",
+          "start_page": 35,
+          "end_page": 43,
+          "subsections": [
+            {
+              "id": "3.3.1",
+              "title": "Current-limit control",
+              "start_page": 35
+            },
+            {
+              "id": "3.3.2",
+              "title": "Closed-loop torque control",
+              "start_page": 36
+            },
+            {
+              "id": "3.3.3",
+              "title": "Closed-loop speed control",
+              "start_page": 36
+            },
+            {
+              "id": "3.3.4",
+              "title": "Closed-loop speed control of multi-motor drives",
+              "start_page": 37
+            },
+            {
+              "id": "3.3.5",
+              "title": "Speed sensing",
+              "start_page": 40
+            },
+            {
+              "id": "3.3.6",
+              "title": "Current sensing",
+              "start_page": 41
+            },
+            {
+              "id": "3.3.7",
+              "title": "Phase-locked-loop (PLL) control",
+              "start_page": 42
+            },
+            {
+              "id": "3.3.8",
+              "title": "Closed-loop position control",
+              "start_page": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 4",
+      "title": "Selection of Motor Power Rating",
+      "start_page": 44,
+      "end_page": 59,
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS",
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Thermal Model of Motor for Heating and Cooling",
+          "start_page": 45,
+          "end_page": 46,
+          "subsections": []
+        },
+        {
+          "id": "4.2",
+          "title": "Classes of Motor Duty",
+          "start_page": 47,
+          "end_page": 48,
+          "subsections": []
+        },
+        {
+          "id": "4.3",
+          "title": "Determination of Motor Rating",
+          "start_page": 49,
+          "end_page": 59,
+          "subsections": [
+            {
+              "id": "4.3.1",
+              "title": "Continuous duty",
+              "start_page": 50
+            },
+            {
+              "id": "4.3.2",
+              "title": "Equivalent current, torque and power methods for fluctuating and intermittent loads",
+              "start_page": 50
+            },
+            {
+              "id": "4.3.3",
+              "title": "Short time duty",
+              "start_page": 53
+            },
+            {
+              "id": "4.3.4",
+              "title": "Intermittent periodic duty",
+              "start_page": 54
+            },
+            {
+              "id": "4.3.5",
+              "title": "Frequency of operation of motors subjected to intermittent loads",
+              "start_page": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 5",
+      "title": "dc Motor Drives",
+      "start_page": 60,
+      "end_page": 139,
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES",
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "dc Motors and Their Performance",
+          "start_page": 60,
+          "end_page": 66,
+          "subsections": [
+            {
+              "id": "5.1.1",
+              "title": "Shunt and separately excited motors",
+              "start_page": 61
+            },
+            {
+              "id": "5.1.2",
+              "title": "Series motor",
+              "start_page": 62
+            },
+            {
+              "id": "5.1.3",
+              "title": "Compound motor",
+              "start_page": 64
+            },
+            {
+              "id": "5.1.4",
+              "title": "Universal motor",
+              "start_page": 64
+            },
+            {
+              "id": "5.1.5",
+              "title": "Permanent magnet motors",
+              "start_page": 65
+            },
+            {
+              "id": "5.1.6",
+              "title": "dc servo motors",
+              "start_page": 65
+            },
+            {
+              "id": "5.1.7",
+              "title": "Moving coil motors",
+              "start_page": 66
+            },
+            {
+              "id": "5.1.8",
+              "title": "Torque motors",
+              "start_page": 67
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Starting",
+          "start_page": 67,
+          "end_page": 68,
+          "subsections": []
+        },
+        {
+          "id": "5.3",
+          "title": "Braking",
+          "start_page": 68,
+          "end_page": 74,
+          "subsections": [
+            {
+              "id": "5.3.1",
+              "title": "Regenerative braking",
+              "start_page": 68
+            },
+            {
+              "id": "5.3.2",
+              "title": "Dynamic braking",
+              "start_page": 69
+            },
+            {
+              "id": "5.3.3",
+              "title": "Plugging",
+              "start_page": 73
+            }
+          ]
+        },
+        {
+          "id": "5.4",
+          "title": "Transient Analysis",
+          "start_page": 75,
+          "end_page": 86,
+          "subsections": [
+            {
+              "id": "5.4.1",
+              "title": "Transient analysis of separately excited motor with armature control",
+              "start_page": 76
+            },
+            {
+              "id": "5.4.2",
+              "title": "Transient analysis of starting of separately excited motor with armature control",
+              "start_page": 77
+            },
+            {
+              "id": "5.4.3",
+              "title": "Transient analysis of dynamic braking of separately excited motor",
+              "start_page": 79
+            },
+            {
+              "id": "5.4.4",
+              "title": "Energy losses during transient operations",
+              "start_page": 80
+            },
+            {
+              "id": "5.4.5",
+              "title": "Transient analysis of separately excited motor with field control",
+              "start_page": 83
+            }
+          ]
+        },
+        {
+          "id": "5.5",
+          "title": "Speed Control",
+          "start_page": 87,
+          "end_page": 91,
+          "subsections": []
+        },
+        {
+          "id": "5.6",
+          "title": "Methods of Armature Voltage Control",
+          "start_page": 92,
+          "end_page": 92,
+          "subsections": []
+        },
+        {
+          "id": "5.7",
+          "title": "Ward Leonard Drives",
+          "start_page": 92,
+          "end_page": 95,
+          "subsections": []
+        },
+        {
+          "id": "5.8",
+          "title": "Transformer and Uncontrolled Rectifier Control",
+          "start_page": 96,
+          "end_page": 96,
+          "subsections": []
+        },
+        {
+          "id": "5.9",
+          "title": "Controlled Rectifier Fed dc Drives",
+          "start_page": 97,
+          "end_page": 98,
+          "subsections": []
+        },
+        {
+          "id": "5.10",
+          "title": "Single-phase Fully-controlled Rectifier Control of dc Separately Excited Motor",
+          "start_page": 98,
+          "end_page": 106,
+          "subsections": []
+        },
+        {
+          "id": "5.11",
+          "title": "Single-phase Half-controlled Rectifier Control of dc Separately Excited Motor",
+          "start_page": 107,
+          "end_page": 110,
+          "subsections": []
+        },
+        {
+          "id": "5.12",
+          "title": "Three-phase Fully-controlled Rectifier Control of dc Separately Excited Motor",
+          "start_page": 111,
+          "end_page": 111,
+          "subsections": []
+        },
+        {
+          "id": "5.13",
+          "title": "Three-phase Half-controlled Rectifier Control of dc Separately Excited Motor",
+          "start_page": 112,
+          "end_page": 113,
+          "subsections": []
+        },
+        {
+          "id": "5.14",
+          "title": "Multiquadrant Operation of dc Separately Excited Motor Fed from Fully-controlled Rectifier",
+          "start_page": 114,
+          "end_page": 117,
+          "subsections": [
+            {
+              "id": "5.14.1",
+              "title": "Single fully-controlled rectifier with a reversing switch",
+              "start_page": 114
+            },
+            {
+              "id": "5.14.2",
+              "title": "Dual converter",
+              "start_page": 115
+            },
+            {
+              "id": "5.14.3",
+              "title": "Field current reversal",
+              "start_page": 116
+            },
+            {
+              "id": "5.14.4",
+              "title": "Comparison of conventional and static Ward Leonard schemes",
+              "start_page": 118
+            }
+          ]
+        },
+        {
+          "id": "5.15",
+          "title": "Rectifier Control of dc Series Motor",
+          "start_page": 118,
+          "end_page": 119,
+          "subsections": []
+        },
+        {
+          "id": "5.16",
+          "title": "Control of Fractional hp Motors",
+          "start_page": 120,
+          "end_page": 120,
+          "subsections": []
+        },
+        {
+          "id": "5.17",
+          "title": "Supply Harmonics, Power Factor and Ripple in Motor Current",
+          "start_page": 120,
+          "end_page": 121,
+          "subsections": []
+        },
+        {
+          "id": "5.18",
+          "title": "Chopper-Controlled dc Drives",
+          "start_page": 121,
+          "end_page": 122,
+          "subsections": []
+        },
+        {
+          "id": "5.19",
+          "title": "Chopper Control of Separately Excited dc Motors",
+          "start_page": 122,
+          "end_page": 126,
+          "subsections": []
+        },
+        {
+          "id": "5.20",
+          "title": "Chopper Control of Series Motor",
+          "start_page": 127,
+          "end_page": 130,
+          "subsections": []
+        },
+        {
+          "id": "5.21",
+          "title": "Source Current Harmonics in Choppers",
+          "start_page": 131,
+          "end_page": 131,
+          "subsections": []
+        },
+        {
+          "id": "5.22",
+          "title": "Converter Ratings and Closed-loop Control",
+          "start_page": 131,
+          "end_page": 139,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 6",
+      "title": "Induction Motor Drives",
+      "start_page": 140,
+      "end_page": 243,
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES",
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Three-phase Induction Motors",
+          "start_page": 140,
+          "end_page": 143,
+          "subsections": [
+            {
+              "id": "6.1.1",
+              "title": "Analysis and performance",
+              "start_page": 140
+            },
+            {
+              "id": "6.1.2",
+              "title": "Induction motors with special designs",
+              "start_page": 143
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "Operation with Unbalanced Source Voltages and Single-Phasing",
+          "start_page": 144,
+          "end_page": 147,
+          "subsections": []
+        },
+        {
+          "id": "6.3",
+          "title": "Operation with Unbalanced Rotor Impedances",
+          "start_page": 148,
+          "end_page": 148,
+          "subsections": []
+        },
+        {
+          "id": "6.4",
+          "title": "Analysis of Induction Motor Fed from Non-Sinusoidal Voltage Supply",
+          "start_page": 149,
+          "end_page": 150,
+          "subsections": []
+        },
+        {
+          "id": "6.5",
+          "title": "Starting",
+          "start_page": 151,
+          "end_page": 157,
+          "subsections": [
+            {
+              "id": "6.5.1",
+              "title": "Star-delta starter",
+              "start_page": 152
+            },
+            {
+              "id": "6.5.2",
+              "title": "Auto-transformer starter",
+              "start_page": 153
+            },
+            {
+              "id": "6.5.3",
+              "title": "Closed circuit transition",
+              "start_page": 153
+            },
+            {
+              "id": "6.5.4",
+              "title": "Reactor starter",
+              "start_page": 153
+            },
+            {
+              "id": "6.5.5",
+              "title": "Soft start using saturable reactor starter",
+              "start_page": 154
+            },
+            {
+              "id": "6.5.6",
+              "title": "Unbalanced starting scheme for soft start",
+              "start_page": 154
+            },
+            {
+              "id": "6.5.7",
+              "title": "Part winding starting",
+              "start_page": 155
+            },
+            {
+              "id": "6.5.8",
+              "title": "Rotor resistance starter",
+              "start_page": 155
+            }
+          ]
+        },
+        {
+          "id": "6.6",
+          "title": "Braking",
+          "start_page": 158,
+          "end_page": 172,
+          "subsections": [
+            {
+              "id": "6.6.1",
+              "title": "Regenerative braking",
+              "start_page": 158
+            },
+            {
+              "id": "6.6.2",
+              "title": "Plugging or reverse voltage braking",
+              "start_page": 160
+            },
+            {
+              "id": "6.6.3",
+              "title": "Dynamic (or rheostatic) braking",
+              "start_page": 163
+            }
+          ]
+        },
+        {
+          "id": "6.7",
+          "title": "Transient Analysis",
+          "start_page": 173,
+          "end_page": 177,
+          "subsections": [
+            {
+              "id": "6.7.1",
+              "title": "Starting and plugging",
+              "start_page": 174
+            },
+            {
+              "id": "6.7.2",
+              "title": "Calculation of energy losses",
+              "start_page": 175
+            }
+          ]
+        },
+        {
+          "id": "6.8",
+          "title": "Speed Control",
+          "start_page": 178,
+          "end_page": 178,
+          "subsections": []
+        },
+        {
+          "id": "6.9",
+          "title": "Pole Changing",
+          "start_page": 178,
+          "end_page": 180,
+          "subsections": []
+        },
+        {
+          "id": "6.10",
+          "title": "Pole Amplitude Modulation",
+          "start_page": 181,
+          "end_page": 182,
+          "subsections": []
+        },
+        {
+          "id": "6.11",
+          "title": "Stator Voltage Control",
+          "start_page": 183,
+          "end_page": 185,
+          "subsections": [
+            {
+              "id": "6.11.1",
+              "title": "Control by ac voltage controllers and soft start",
+              "start_page": 184
+            }
+          ]
+        },
+        {
+          "id": "6.12",
+          "title": "Variable Frequency Control from Voltage Sources",
+          "start_page": 186,
+          "end_page": 190,
+          "subsections": [
+            {
+              "id": "6.12.1",
+              "title": "Variable frequency control of an induction motor",
+              "start_page": 186
+            },
+            {
+              "id": "6.12.2",
+              "title": "Slip speed control",
+              "start_page": 189
+            },
+            {
+              "id": "6.12.3",
+              "title": "Torque and power limitations, and modes of operation",
+              "start_page": 190
+            }
+          ]
+        },
+        {
+          "id": "6.13",
+          "title": "Voltage Source Inverter (VSI) Control",
+          "start_page": 191,
+          "end_page": 196,
+          "subsections": [
+            {
+              "id": "6.13.1",
+              "title": "VSI induction motor drives",
+              "start_page": 192
+            },
+            {
+              "id": "6.13.2",
+              "title": "Braking and multiquadrant operation of VSI induction motor drives",
+              "start_page": 194
+            }
+          ]
+        },
+        {
+          "id": "6.14",
+          "title": "Cycloconverter Control",
+          "start_page": 197,
+          "end_page": 197,
+          "subsections": []
+        },
+        {
+          "id": "6.15",
+          "title": "Closed-loop Speed Control and Converter Rating for VSI and Cycloconverter Induction Motor Drives",
+          "start_page": 198,
+          "end_page": 204,
+          "subsections": []
+        },
+        {
+          "id": "6.16",
+          "title": "Variable Frequency Control from a Current Source",
+          "start_page": 205,
+          "end_page": 205,
+          "subsections": []
+        },
+        {
+          "id": "6.17",
+          "title": "Current Source Inverter Control",
+          "start_page": 206,
+          "end_page": 210,
+          "subsections": [
+            {
+              "id": "6.17.1",
+              "title": "Regenerative braking and multiquadrant operation",
+              "start_page": 207
+            },
+            {
+              "id": "6.17.2",
+              "title": "Closed-loop speed control of CSI drives",
+              "start_page": 208
+            },
+            {
+              "id": "6.17.3",
+              "title": "Comparison of Current source inverter (CSI) and voltage source inverter (VSI) drives",
+              "start_page": 209
+            }
+          ]
+        },
+        {
+          "id": "6.18",
+          "title": "Current Regulated Voltage Source Inverter Control",
+          "start_page": 211,
+          "end_page": 212,
+          "subsections": []
+        },
+        {
+          "id": "6.19",
+          "title": "Eddy Current Drives",
+          "start_page": 213,
+          "end_page": 213,
+          "subsections": []
+        },
+        {
+          "id": "6.20",
+          "title": "Rotor Resistance Control",
+          "start_page": 214,
+          "end_page": 217,
+          "subsections": [
+            {
+              "id": "6.20.1",
+              "title": "Conventional methods",
+              "start_page": 215
+            },
+            {
+              "id": "6.20.2",
+              "title": "Static rotor resistance control",
+              "start_page": 216
+            }
+          ]
+        },
+        {
+          "id": "6.21",
+          "title": "Slip Power Recovery",
+          "start_page": 218,
+          "end_page": 226,
+          "subsections": [
+            {
+              "id": "6.21.1",
+              "title": "Static Scherbius drive",
+              "start_page": 219
+            },
+            {
+              "id": "6.21.2",
+              "title": "Static Kramer drive",
+              "start_page": 221
+            }
+          ]
+        },
+        {
+          "id": "6.22",
+          "title": "Variable Speed Constant Frequency Generation",
+          "start_page": 227,
+          "end_page": 228,
+          "subsections": [
+            {
+              "id": "6.22.1",
+              "title": "Squirrel-cage induction machine and cycloconverter scheme",
+              "start_page": 227
+            },
+            {
+              "id": "6.22.2",
+              "title": "Wound-rotor induction motor and cycloconverter scheme",
+              "start_page": 228
+            }
+          ]
+        },
+        {
+          "id": "6.23",
+          "title": "Single-Phase Induction Motors",
+          "start_page": 228,
+          "end_page": 229,
+          "subsections": []
+        },
+        {
+          "id": "6.24",
+          "title": "Starting Methods and Types of Single-phase Induction Motors",
+          "start_page": 230,
+          "end_page": 232,
+          "subsections": [
+            {
+              "id": "6.24.1",
+              "title": "Split-phase motors",
+              "start_page": 230
+            },
+            {
+              "id": "6.24.2",
+              "title": "Capacitor-run motors",
+              "start_page": 231
+            },
+            {
+              "id": "6.24.3",
+              "title": "Capacitor-start motors",
+              "start_page": 232
+            },
+            {
+              "id": "6.24.4",
+              "title": "Capacitor-start and capacitor-run motors",
+              "start_page": 232
+            },
+            {
+              "id": "6.24.5",
+              "title": "Shaded pole motor",
+              "start_page": 232
+            }
+          ]
+        },
+        {
+          "id": "6.25",
+          "title": "Braking of Single-phase Induction Motors",
+          "start_page": 233,
+          "end_page": 233,
+          "subsections": []
+        },
+        {
+          "id": "6.26",
+          "title": "Speed Control of Single-phase Induction Motors",
+          "start_page": 234,
+          "end_page": 235,
+          "subsections": []
+        },
+        {
+          "id": "6.27",
+          "title": "Linear Induction Motor and Its Control",
+          "start_page": 236,
+          "end_page": 243,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 7",
+      "title": "Synchronous Motor and Brushless dc Motor Drives",
+      "start_page": 244,
+      "end_page": 279,
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES",
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "Synchronous Motors",
+          "start_page": 244,
+          "end_page": 251,
+          "subsections": [
+            {
+              "id": "7.1.1",
+              "title": "Cylindrical rotor wound field motor",
+              "start_page": 246
+            },
+            {
+              "id": "7.1.2",
+              "title": "Salient pole wound field motor",
+              "start_page": 249
+            },
+            {
+              "id": "7.1.3",
+              "title": "Permanent magnet motor",
+              "start_page": 250
+            },
+            {
+              "id": "7.1.4",
+              "title": "Synchronous reluctance motor",
+              "start_page": 251
+            },
+            {
+              "id": "7.1.5",
+              "title": "Damper winding",
+              "start_page": 251
+            },
+            {
+              "id": "7.1.6",
+              "title": "Hysteresis synchronous motor",
+              "start_page": 251
+            },
+            {
+              "id": "7.1.7",
+              "title": "Inductor machine",
+              "start_page": 252
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "title": "Operation from Fixed Frequency Supply",
+          "start_page": 252,
+          "end_page": 255,
+          "subsections": [
+            {
+              "id": "7.2.1",
+              "title": "Starting",
+              "start_page": 252
+            },
+            {
+              "id": "7.2.2",
+              "title": "Pull-in",
+              "start_page": 253
+            },
+            {
+              "id": "7.2.3",
+              "title": "Transients due to load disturbances",
+              "start_page": 254
+            },
+            {
+              "id": "7.2.4",
+              "title": "Braking",
+              "start_page": 255
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "title": "Synchronous Motor Variable Speed Drives",
+          "start_page": 256,
+          "end_page": 256,
+          "subsections": [
+            {
+              "id": "7.3.1",
+              "title": "Variable frequency control",
+              "start_page": 256
+            },
+            {
+              "id": "7.3.2",
+              "title": "Modes of variable frequency control",
+              "start_page": 256
+            }
+          ]
+        },
+        {
+          "id": "7.4",
+          "title": "Variable Frequency Control of Multiple Synchronous Motors",
+          "start_page": 257,
+          "end_page": 259,
+          "subsections": []
+        },
+        {
+          "id": "7.5",
+          "title": "Self-controlled Synchronous Motor Drive Employing Load Commutated Thyristor Inverter",
+          "start_page": 260,
+          "end_page": 265,
+          "subsections": []
+        },
+        {
+          "id": "7.6",
+          "title": "Starting Large Synchronous Machines",
+          "start_page": 266,
+          "end_page": 266,
+          "subsections": []
+        },
+        {
+          "id": "7.7",
+          "title": "Self-controlled Synchronous Motor Drive Employing a Cycloconverter",
+          "start_page": 267,
+          "end_page": 267,
+          "subsections": []
+        },
+        {
+          "id": "7.8",
+          "title": "Permanent Magnet ac Motor Drives",
+          "start_page": 267,
+          "end_page": 268,
+          "subsections": []
+        },
+        {
+          "id": "7.9",
+          "title": "Sinusoidal PMAC Motor Drives",
+          "start_page": 268,
+          "end_page": 270,
+          "subsections": [
+            {
+              "id": "7.9.1",
+              "title": "Servo drive employing sinusoidal PMAC motor fed from a current regulated voltage source inverter",
+              "start_page": 269
+            }
+          ]
+        },
+        {
+          "id": "7.10",
+          "title": "Brushless dc (or Trapezoidal PMAC) Motor Drives",
+          "start_page": 271,
+          "end_page": 279,
+          "subsections": [
+            {
+              "id": "7.10.1",
+              "title": "Brushless dc motor drive for servo applications",
+              "start_page": 271
+            },
+            {
+              "id": "7.10.2",
+              "title": "Low cost brushless dc motor drives",
+              "start_page": 274
+            },
+            {
+              "id": "7.10.3",
+              "title": "Important features and applications",
+              "start_page": 275
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 8",
+      "title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "start_page": 280,
+      "end_page": 296,
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES",
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Stepper (or Stepping) Motors",
+          "start_page": 280,
+          "end_page": 287,
+          "subsections": [
+            {
+              "id": "8.1.1",
+              "title": "Variable reluctance",
+              "start_page": 280
+            },
+            {
+              "id": "8.1.2",
+              "title": "Permanent magnet",
+              "start_page": 283
+            },
+            {
+              "id": "8.1.3",
+              "title": "Important features of stepper motors",
+              "start_page": 285
+            },
+            {
+              "id": "8.1.4",
+              "title": "Torque versus stepping (or pulsing) rate characteristics",
+              "start_page": 285
+            },
+            {
+              "id": "8.1.5",
+              "title": "Drive circuits for stepper motors",
+              "start_page": 286
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "title": "Switched (or Variable) Reluctance Motor",
+          "start_page": 288,
+          "end_page": 296,
+          "subsections": [
+            {
+              "id": "8.2.1",
+              "title": "Operation and control requirements",
+              "start_page": 289
+            },
+            {
+              "id": "8.2.2",
+              "title": "Converter circuits",
+              "start_page": 293
+            },
+            {
+              "id": "8.2.3",
+              "title": "Modes of operation",
+              "start_page": 294
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 9",
+      "title": "Solar and Battery Powered Drives",
+      "start_page": 297,
+      "end_page": 304,
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION",
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "Solar (or Photovoltaic) Panels",
+          "start_page": 297,
+          "end_page": 298,
+          "subsections": []
+        },
+        {
+          "id": "9.2",
+          "title": "Motors Suitable for Pump Drives",
+          "start_page": 298,
+          "end_page": 298,
+          "subsections": []
+        },
+        {
+          "id": "9.3",
+          "title": "Solar Powered Pump Drives",
+          "start_page": 298,
+          "end_page": 301,
+          "subsections": []
+        },
+        {
+          "id": "9.4",
+          "title": "Battery Powered Vehicles",
+          "start_page": 302,
+          "end_page": 303,
+          "subsections": []
+        },
+        {
+          "id": "9.5",
+          "title": "Solar-Powered Electrical Vehicles and Boats",
+          "start_page": 304,
+          "end_page": 304,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 10",
+      "title": "Traction Drives",
+      "start_page": 305,
+      "end_page": 354,
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION",
+      "sections": [
+        {
+          "id": "10.1",
+          "title": "Electric Traction Services",
+          "start_page": 305,
+          "end_page": 307,
+          "subsections": [
+            {
+              "id": "10.1.1",
+              "title": "Electric trains",
+              "start_page": 305
+            },
+            {
+              "id": "10.1.2",
+              "title": "Electric buses, trams and trolleys",
+              "start_page": 307
+            }
+          ]
+        },
+        {
+          "id": "10.2",
+          "title": "Nature of Traction Load",
+          "start_page": 308,
+          "end_page": 311,
+          "subsections": [
+            {
+              "id": "10.2.1",
+              "title": "Coefficient of adhesion (CA)",
+              "start_page": 309
+            },
+            {
+              "id": "10.2.2",
+              "duty_cycle": "Duty cycle of traction drives",
+              "start_page": 311
+            },
+            {
+              "id": "10.2.3",
+              "title": "Load sharing between traction motors",
+              "start_page": 311
+            }
+          ]
+        },
+        {
+          "id": "10.3",
+          "title": "Main Line and Suburban Train Configurations",
+          "start_page": 312,
+          "end_page": 313,
+          "subsections": [
+            {
+              "id": "10.3.1",
+              "title": "Difference in construction of main line and suburban trains",
+              "start_page": 312
+            },
+            {
+              "id": "10.3.2",
+              "title": "Driving axle code for locomotives",
+              "start_page": 313
+            }
+          ]
+        },
+        {
+          "id": "10.4",
+          "title": "Braking",
+          "start_page": 313,
+          "end_page": 314,
+          "subsections": []
+        },
+        {
+          "id": "10.5",
+          "title": "Power Factor and Harmonics",
+          "start_page": 314,
+          "end_page": 315,
+          "subsections": []
+        },
+        {
+          "id": "10.6",
+          "title": "Calculations of Traction Drive Rating and Energy Consumption",
+          "start_page": 315,
+          "end_page": 326,
+          "subsections": [
+            {
+              "id": "10.6.1",
+              "title": "Tractive effort and drive ratings",
+              "start_page": 316
+            },
+            {
+              "id": "10.6.2",
+              "title": "Specific energy consumption",
+              "start_page": 319
+            },
+            {
+              "id": "10.6.3",
+              "title": "Maximum allowable tractive effort",
+              "start_page": 320
+            }
+          ]
+        },
+        {
+          "id": "10.7",
+          "title": "Important Features of Traction Drives",
+          "start_page": 327,
+          "end_page": 328,
+          "subsections": []
+        },
+        {
+          "id": "10.8",
+          "title": "Traction Motors",
+          "start_page": 329,
+          "end_page": 330,
+          "subsections": [
+            {
+              "id": "10.8.1",
+              "title": "Motors employed in traction",
+              "start_page": 329
+            },
+            {
+              "id": "10.8.2",
+              "title": "Traction motor control",
+              "start_page": 330
+            }
+          ]
+        },
+        {
+          "id": "10.9",
+          "title": "Traction Drives",
+          "start_page": 330,
+          "end_page": 330,
+          "subsections": []
+        },
+        {
+          "id": "10.10",
+          "title": "Conventional dc and ac Traction Drives",
+          "start_page": 330,
+          "end_page": 334,
+          "subsections": [
+            {
+              "id": "10.10.1",
+              "title": "The dc traction drives employing resistance control",
+              "start_page": 331
+            },
+            {
+              "id": "10.10.2",
+              "title": "The 25 KV, 50 Hz ac traction using on-load transformer tap changer",
+              "start_page": 333
+            }
+          ]
+        },
+        {
+          "id": "10.11",
+          "title": "Semiconductor Converter Controlled Drives",
+          "start_page": 335,
+          "end_page": 335,
+          "subsections": []
+        },
+        {
+          "id": "10.12",
+          "title": "The 25 kV ac Traction Using Semiconductor Converter Controlled dc Motors",
+          "start_page": 335,
+          "end_page": 338,
+          "subsections": []
+        },
+        {
+          "id": "10.13",
+          "title": "The dc Traction Using Semiconductor Chopper Controlled dc Motors",
+          "start_page": 339,
+          "end_page": 340,
+          "subsections": []
+        },
+        {
+          "id": "10.14",
+          "title": "Polyphase ac Motors for Traction Drives",
+          "start_page": 341,
+          "end_page": 341,
+          "subsections": []
+        },
+        {
+          "id": "10.15",
+          "title": "The dc Traction Employing Polyphase ac Motors",
+          "start_page": 342,
+          "end_page": 344,
+          "subsections": [
+            {
+              "id": "10.15.1",
+              "title": "PWM voltage source inverter (VSI) induction motor drives",
+              "start_page": 342
+            },
+            {
+              "id": "10.15.2",
+              "title": "Load commutated inverter fed synchronous motor drives",
+              "start_page": 343
+            }
+          ]
+        },
+        {
+          "id": "10.16",
+          "title": "The ac Traction Employing Polyphase ac Motors",
+          "start_page": 345,
+          "end_page": 347,
+          "subsections": [
+            {
+              "id": "10.16.1",
+              "title": "CSI squirrel-cage induction motor drive",
+              "start_page": 345
+            },
+            {
+              "id": "10.16.2",
+              "title": "PWM VSI squirrel-cage induction motor drive",
+              "start_page": 346
+            },
+            {
+              "id": "10.16.3",
+              "title": "Load commutated inverter (LCI) synchronous motor drive",
+              "start_page": 347
+            }
+          ]
+        },
+        {
+          "id": "10.17",
+          "title": "Diesel Electric Traction",
+          "start_page": 348,
+          "end_page": 354,
+          "subsections": [
+            {
+              "id": "10.17.1",
+              "title": "Diesel engine driven dc generator feeding dc series motors",
+              "start_page": 349
+            },
+            {
+              "id": "10.17.2",
+              "title": "Diesel engine driven three-phase alternator supplying dc motors",
+              "start_page": 350
+            },
+            {
+              "id": "10.17.3",
+              "title": "Diesel engine driven alternator feeding squirrel-cage induction motors through diode-bridge and inverter",
+              "start_page": 351
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 11",
+      "title": "Energy Conservation in Electrical Drives",
+      "start_page": 355,
+      "end_page": 364,
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION",
+      "sections": [
+        {
+          "id": "11.1",
+          "title": "Losses in Electrical Drive System",
+          "start_page": 355,
+          "end_page": 356,
+          "subsections": []
+        },
+        {
+          "id": "11.2",
+          "title": "Measures for Energy Conservation in Electrical Drives",
+          "start_page": 356,
+          "end_page": 356,
+          "subsections": []
+        },
+        {
+          "id": "11.3",
+          "title": "Use of Efficient Semiconductor Converters",
+          "start_page": 356,
+          "end_page": 357,
+          "subsections": [
+            {
+              "id": "11.3.1",
+              "title": "Replacement of resistance controllers",
+              "start_page": 356
+            },
+            {
+              "id": "11.3.2",
+              "title": "Replacement of eddy-current couplings",
+              "start_page": 356
+            },
+            {
+              "id": "11.3.3",
+              "title": "Replacement of Ward Leonard drives",
+              "start_page": 357
+            }
+          ]
+        },
+        {
+          "id": "11.4",
+          "title": "Use of Efficient Motors",
+          "start_page": 357,
+          "end_page": 357,
+          "subsections": []
+        },
+        {
+          "id": "11.5",
+          "title": "Use of Variable Speed Drives",
+          "start_page": 357,
+          "end_page": 358,
+          "subsections": []
+        },
+        {
+          "id": "11.6",
+          "title": "Energy Efficient Operation of Drives",
+          "start_page": 358,
+          "end_page": 359,
+          "subsections": []
+        },
+        {
+          "id": "11.7",
+          "title": "Improvement of Power Factor",
+          "start_page": 360,
+          "end_page": 362,
+          "subsections": []
+        },
+        {
+          "id": "11.8",
+          "title": "Using a Motor of Right Rating",
+          "start_page": 363,
+          "end_page": 363,
+          "subsections": []
+        },
+        {
+          "id": "11.9",
+          "title": "Improvement of Quality of Supply",
+          "start_page": 363,
+          "end_page": 364,
+          "subsections": []
+        },
+        {
+          "id": "11.10",
+          "title": "Use of Single- to Three-Phase Semiconductor Converters in Rural Applications",
+          "start_page": 364,
+          "end_page": 364,
+          "subsections": []
+        },
+        {
+          "id": "11.11",
+          "title": "Regular and Preventive Maintenance of Motors, Transformers and Coupled Equipment",
+          "start_page": 364,
+          "end_page": 364,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 12",
+      "title": "Electrical Drive Systems and Components",
+      "start_page": 365,
+      "end_page": 382,
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION",
+      "sections": [
+        {
+          "id": "12.1",
+          "title": "Electrical Drive Systems",
+          "start_page": 365,
+          "end_page": 376,
+          "subsections": []
+        },
+        {
+          "id": "12.2",
+          "title": "Components Used for Obtaining Signals for Interlocking and Sequencing Operations, and Protection",
+          "start_page": 377,
+          "end_page": 382,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Bibliography",
+      "title": "Bibliography and References",
+      "start_page": 383,
+      "end_page": 384,
+      "part_id": "APPENDICES",
+      "part_title": "BIBLIOGRAPHY, ANSWERS & INDEX",
+      "sections": []
+    },
+    {
+      "id": "Answers",
+      "title": "Answers to Numerical Problems",
+      "start_page": 385,
+      "end_page": 388,
+      "part_id": "APPENDICES",
+      "part_title": "BIBLIOGRAPHY, ANSWERS & INDEX",
+      "sections": []
+    },
+    {
+      "id": "Index",
+      "title": "Subject Index",
+      "start_page": 389,
+      "end_page": 392,
+      "part_id": "APPENDICES",
+      "part_title": "BIBLIOGRAPHY, ANSWERS & INDEX",
+      "sections": []
+    }
+  ],
+  "sections": [
+    {
+      "id": "1.1",
+      "title": "Electrical Drives",
+      "start_page": 1,
+      "end_page": 1,
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "1.2",
+      "title": "Advantages of Electrical Drives",
+      "start_page": 2,
+      "end_page": 2,
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "1.3",
+      "title": "Parts of Electrical Drives",
+      "start_page": 3,
+      "end_page": 8,
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "1.4",
+      "title": "Choice of Electrical Drives",
+      "start_page": 9,
+      "end_page": 9,
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "1.5",
+      "title": "Status of dc and ac Drives",
+      "start_page": 9,
+      "end_page": 10,
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.1",
+      "title": "Fundamental Torque Equations",
+      "start_page": 11,
+      "end_page": 12,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.2",
+      "title": "Speed Torque Conventions and Multiquadrant Operation",
+      "start_page": 12,
+      "end_page": 13,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.3",
+      "title": "Equivalent Values of Drive Parameters",
+      "start_page": 14,
+      "end_page": 17,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.4",
+      "title": "Components of Load Torques",
+      "start_page": 18,
+      "end_page": 18,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.5",
+      "title": "Nature and Classification of Load Torques",
+      "start_page": 19,
+      "end_page": 20,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.6",
+      "title": "Calculation of Time and Energy-Loss in Transient Operations",
+      "start_page": 20,
+      "end_page": 22,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.7",
+      "title": "Steady State Stability",
+      "start_page": 23,
+      "end_page": 24,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.8",
+      "title": "Load Equalisation",
+      "start_page": 24,
+      "end_page": 31,
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.1",
+      "title": "Modes of Operation",
+      "start_page": 32,
+      "end_page": 33,
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.2",
+      "title": "Speed Control and Drive Classifications",
+      "start_page": 34,
+      "end_page": 35,
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3",
+      "title": "Closed-Loop Control of Drives",
+      "start_page": 35,
+      "end_page": 43,
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.1",
+      "title": "Thermal Model of Motor for Heating and Cooling",
+      "start_page": 45,
+      "end_page": 46,
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.2",
+      "title": "Classes of Motor Duty",
+      "start_page": 47,
+      "end_page": 48,
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.3",
+      "title": "Determination of Motor Rating",
+      "start_page": 49,
+      "end_page": 59,
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "5.1",
+      "title": "dc Motors and Their Performance",
+      "start_page": 60,
+      "end_page": 66,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.2",
+      "title": "Starting",
+      "start_page": 67,
+      "end_page": 68,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.3",
+      "title": "Braking",
+      "start_page": 68,
+      "end_page": 74,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.4",
+      "title": "Transient Analysis",
+      "start_page": 75,
+      "end_page": 86,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.5",
+      "title": "Speed Control",
+      "start_page": 87,
+      "end_page": 91,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.6",
+      "title": "Methods of Armature Voltage Control",
+      "start_page": 92,
+      "end_page": 92,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.7",
+      "title": "Ward Leonard Drives",
+      "start_page": 92,
+      "end_page": 95,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.8",
+      "title": "Transformer and Uncontrolled Rectifier Control",
+      "start_page": 96,
+      "end_page": 96,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.9",
+      "title": "Controlled Rectifier Fed dc Drives",
+      "start_page": 97,
+      "end_page": 98,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.10",
+      "title": "Single-phase Fully-controlled Rectifier Control of dc Separately Excited Motor",
+      "start_page": 98,
+      "end_page": 106,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.11",
+      "title": "Single-phase Half-controlled Rectifier Control of dc Separately Excited Motor",
+      "start_page": 107,
+      "end_page": 110,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.12",
+      "title": "Three-phase Fully-controlled Rectifier Control of dc Separately Excited Motor",
+      "start_page": 111,
+      "end_page": 111,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.13",
+      "title": "Three-phase Half-controlled Rectifier Control of dc Separately Excited Motor",
+      "start_page": 112,
+      "end_page": 113,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.14",
+      "title": "Multiquadrant Operation of dc Separately Excited Motor Fed from Fully-controlled Rectifier",
+      "start_page": 114,
+      "end_page": 117,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.15",
+      "title": "Rectifier Control of dc Series Motor",
+      "start_page": 118,
+      "end_page": 119,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.16",
+      "title": "Control of Fractional hp Motors",
+      "start_page": 120,
+      "end_page": 120,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.17",
+      "title": "Supply Harmonics, Power Factor and Ripple in Motor Current",
+      "start_page": 120,
+      "end_page": 121,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.18",
+      "title": "Chopper-Controlled dc Drives",
+      "start_page": 121,
+      "end_page": 122,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.19",
+      "title": "Chopper Control of Separately Excited dc Motors",
+      "start_page": 122,
+      "end_page": 126,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.20",
+      "title": "Chopper Control of Series Motor",
+      "start_page": 127,
+      "end_page": 130,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.21",
+      "title": "Source Current Harmonics in Choppers",
+      "start_page": 131,
+      "end_page": 131,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.22",
+      "title": "Converter Ratings and Closed-loop Control",
+      "start_page": 131,
+      "end_page": 139,
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "6.1",
+      "title": "Three-phase Induction Motors",
+      "start_page": 140,
+      "end_page": 143,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.2",
+      "title": "Operation with Unbalanced Source Voltages and Single-Phasing",
+      "start_page": 144,
+      "end_page": 147,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.3",
+      "title": "Operation with Unbalanced Rotor Impedances",
+      "start_page": 148,
+      "end_page": 148,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.4",
+      "title": "Analysis of Induction Motor Fed from Non-Sinusoidal Voltage Supply",
+      "start_page": 149,
+      "end_page": 150,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5",
+      "title": "Starting",
+      "start_page": 151,
+      "end_page": 157,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.6",
+      "title": "Braking",
+      "start_page": 158,
+      "end_page": 172,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.7",
+      "title": "Transient Analysis",
+      "start_page": 173,
+      "end_page": 177,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.8",
+      "title": "Speed Control",
+      "start_page": 178,
+      "end_page": 178,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.9",
+      "title": "Pole Changing",
+      "start_page": 178,
+      "end_page": 180,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.10",
+      "title": "Pole Amplitude Modulation",
+      "start_page": 181,
+      "end_page": 182,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.11",
+      "title": "Stator Voltage Control",
+      "start_page": 183,
+      "end_page": 185,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.12",
+      "title": "Variable Frequency Control from Voltage Sources",
+      "start_page": 186,
+      "end_page": 190,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.13",
+      "title": "Voltage Source Inverter (VSI) Control",
+      "start_page": 191,
+      "end_page": 196,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.14",
+      "title": "Cycloconverter Control",
+      "start_page": 197,
+      "end_page": 197,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.15",
+      "title": "Closed-loop Speed Control and Converter Rating for VSI and Cycloconverter Induction Motor Drives",
+      "start_page": 198,
+      "end_page": 204,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.16",
+      "title": "Variable Frequency Control from a Current Source",
+      "start_page": 205,
+      "end_page": 205,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.17",
+      "title": "Current Source Inverter Control",
+      "start_page": 206,
+      "end_page": 210,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.18",
+      "title": "Current Regulated Voltage Source Inverter Control",
+      "start_page": 211,
+      "end_page": 212,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.19",
+      "title": "Eddy Current Drives",
+      "start_page": 213,
+      "end_page": 213,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.20",
+      "title": "Rotor Resistance Control",
+      "start_page": 214,
+      "end_page": 217,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.21",
+      "title": "Slip Power Recovery",
+      "start_page": 218,
+      "end_page": 226,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.22",
+      "title": "Variable Speed Constant Frequency Generation",
+      "start_page": 227,
+      "end_page": 228,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.23",
+      "title": "Single-Phase Induction Motors",
+      "start_page": 228,
+      "end_page": 229,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.24",
+      "title": "Starting Methods and Types of Single-phase Induction Motors",
+      "start_page": 230,
+      "end_page": 232,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.25",
+      "title": "Braking of Single-phase Induction Motors",
+      "start_page": 233,
+      "end_page": 233,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.26",
+      "title": "Speed Control of Single-phase Induction Motors",
+      "start_page": 234,
+      "end_page": 235,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.27",
+      "title": "Linear Induction Motor and Its Control",
+      "start_page": 236,
+      "end_page": 243,
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "7.1",
+      "title": "Synchronous Motors",
+      "start_page": 244,
+      "end_page": 251,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.2",
+      "title": "Operation from Fixed Frequency Supply",
+      "start_page": 252,
+      "end_page": 255,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.3",
+      "title": "Synchronous Motor Variable Speed Drives",
+      "start_page": 256,
+      "end_page": 256,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.4",
+      "title": "Variable Frequency Control of Multiple Synchronous Motors",
+      "start_page": 257,
+      "end_page": 259,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.5",
+      "title": "Self-controlled Synchronous Motor Drive Employing Load Commutated Thyristor Inverter",
+      "start_page": 260,
+      "end_page": 265,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.6",
+      "title": "Starting Large Synchronous Machines",
+      "start_page": 266,
+      "end_page": 266,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.7",
+      "title": "Self-controlled Synchronous Motor Drive Employing a Cycloconverter",
+      "start_page": 267,
+      "end_page": 267,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.8",
+      "title": "Permanent Magnet ac Motor Drives",
+      "start_page": 267,
+      "end_page": 268,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.9",
+      "title": "Sinusoidal PMAC Motor Drives",
+      "start_page": 268,
+      "end_page": 270,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.10",
+      "title": "Brushless dc (or Trapezoidal PMAC) Motor Drives",
+      "start_page": 271,
+      "end_page": 279,
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "8.1",
+      "title": "Stepper (or Stepping) Motors",
+      "start_page": 280,
+      "end_page": 287,
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.2",
+      "title": "Switched (or Variable) Reluctance Motor",
+      "start_page": 288,
+      "end_page": 296,
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "9.1",
+      "title": "Solar (or Photovoltaic) Panels",
+      "start_page": 297,
+      "end_page": 298,
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Solar and Battery Powered Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "9.2",
+      "title": "Motors Suitable for Pump Drives",
+      "start_page": 298,
+      "end_page": 298,
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Solar and Battery Powered Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "9.3",
+      "title": "Solar Powered Pump Drives",
+      "start_page": 298,
+      "end_page": 301,
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Solar and Battery Powered Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "9.4",
+      "title": "Battery Powered Vehicles",
+      "start_page": 302,
+      "end_page": 303,
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Solar and Battery Powered Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "9.5",
+      "title": "Solar-Powered Electrical Vehicles and Boats",
+      "start_page": 304,
+      "end_page": 304,
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Solar and Battery Powered Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.1",
+      "title": "Electric Traction Services",
+      "start_page": 305,
+      "end_page": 307,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.2",
+      "title": "Nature of Traction Load",
+      "start_page": 308,
+      "end_page": 311,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.3",
+      "title": "Main Line and Suburban Train Configurations",
+      "start_page": 312,
+      "end_page": 313,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.4",
+      "title": "Braking",
+      "start_page": 313,
+      "end_page": 314,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.5",
+      "title": "Power Factor and Harmonics",
+      "start_page": 314,
+      "end_page": 315,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.6",
+      "title": "Calculations of Traction Drive Rating and Energy Consumption",
+      "start_page": 315,
+      "end_page": 326,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.7",
+      "title": "Important Features of Traction Drives",
+      "start_page": 327,
+      "end_page": 328,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.8",
+      "title": "Traction Motors",
+      "start_page": 329,
+      "end_page": 330,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.9",
+      "title": "Traction Drives",
+      "start_page": 330,
+      "end_page": 330,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.10",
+      "title": "Conventional dc and ac Traction Drives",
+      "start_page": 330,
+      "end_page": 334,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.11",
+      "title": "Semiconductor Converter Controlled Drives",
+      "start_page": 335,
+      "end_page": 335,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.12",
+      "title": "The 25 kV ac Traction Using Semiconductor Converter Controlled dc Motors",
+      "start_page": 335,
+      "end_page": 338,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.13",
+      "title": "The dc Traction Using Semiconductor Chopper Controlled dc Motors",
+      "start_page": 339,
+      "end_page": 340,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.14",
+      "title": "Polyphase ac Motors for Traction Drives",
+      "start_page": 341,
+      "end_page": 341,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.15",
+      "title": "The dc Traction Employing Polyphase ac Motors",
+      "start_page": 342,
+      "end_page": 344,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.16",
+      "title": "The ac Traction Employing Polyphase ac Motors",
+      "start_page": 345,
+      "end_page": 347,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.17",
+      "title": "Diesel Electric Traction",
+      "start_page": 348,
+      "end_page": 354,
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.1",
+      "title": "Losses in Electrical Drive System",
+      "start_page": 355,
+      "end_page": 356,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.2",
+      "title": "Measures for Energy Conservation in Electrical Drives",
+      "start_page": 356,
+      "end_page": 356,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.3",
+      "title": "Use of Efficient Semiconductor Converters",
+      "start_page": 356,
+      "end_page": 357,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.4",
+      "title": "Use of Efficient Motors",
+      "start_page": 357,
+      "end_page": 357,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.5",
+      "title": "Use of Variable Speed Drives",
+      "start_page": 357,
+      "end_page": 358,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.6",
+      "title": "Energy Efficient Operation of Drives",
+      "start_page": 358,
+      "end_page": 359,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.7",
+      "title": "Improvement of Power Factor",
+      "start_page": 360,
+      "end_page": 362,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.8",
+      "title": "Using a Motor of Right Rating",
+      "start_page": 363,
+      "end_page": 363,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.9",
+      "title": "Improvement of Quality of Supply",
+      "start_page": 363,
+      "end_page": 364,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.10",
+      "title": "Use of Single- to Three-Phase Semiconductor Converters in Rural Applications",
+      "start_page": 364,
+      "end_page": 364,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.11",
+      "title": "Regular and Preventive Maintenance of Motors, Transformers and Coupled Equipment",
+      "start_page": 364,
+      "end_page": 364,
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "12.1",
+      "title": "Electrical Drive Systems",
+      "start_page": 365,
+      "end_page": 376,
+      "chapter_id": "Chapter 12",
+      "chapter_title": "Electrical Drive Systems and Components",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "12.2",
+      "title": "Components Used for Obtaining Signals for Interlocking and Sequencing Operations, and Protection",
+      "start_page": 377,
+      "end_page": 382,
+      "chapter_id": "Chapter 12",
+      "chapter_title": "Electrical Drive Systems and Components",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    }
+  ],
+  "subsections": [
+    {
+      "id": "1.3.1",
+      "title": "Electrical motors",
+      "start_page": 3,
+      "section_id": "1.3",
+      "section_title": "Parts of Electrical Drives",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "1.3.2",
+      "title": "Power modulators",
+      "start_page": 4,
+      "section_id": "1.3",
+      "section_title": "Parts of Electrical Drives",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "1.3.3",
+      "title": "Sources",
+      "start_page": 8,
+      "section_id": "1.3",
+      "section_title": "Parts of Electrical Drives",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "1.3.4",
+      "title": "Control unit",
+      "start_page": 9,
+      "section_id": "1.3",
+      "section_title": "Parts of Electrical Drives",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Electrical Drives—An Introduction",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Loads with rotational motion",
+      "start_page": 14,
+      "section_id": "2.3",
+      "section_title": "Equivalent Values of Drive Parameters",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Loads with translational motion",
+      "start_page": 15,
+      "section_id": "2.3",
+      "section_title": "Equivalent Values of Drive Parameters",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "2.3.3",
+      "title": "Measurement of moment of inertia",
+      "start_page": 17,
+      "section_id": "2.3",
+      "section_title": "Equivalent Values of Drive Parameters",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Dynamics of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.1",
+      "title": "Current-limit control",
+      "start_page": 35,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.2",
+      "title": "Closed-loop torque control",
+      "start_page": 36,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.3",
+      "title": "Closed-loop speed control",
+      "start_page": 36,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.4",
+      "title": "Closed-loop speed control of multi-motor drives",
+      "start_page": 37,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.5",
+      "title": "Speed sensing",
+      "start_page": 40,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.6",
+      "title": "Current sensing",
+      "start_page": 41,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.7",
+      "title": "Phase-locked-loop (PLL) control",
+      "start_page": 42,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "3.3.8",
+      "title": "Closed-loop position control",
+      "start_page": 43,
+      "section_id": "3.3",
+      "section_title": "Closed-Loop Control of Drives",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "Control of Electrical Drives",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Continuous duty",
+      "start_page": 50,
+      "section_id": "4.3",
+      "section_title": "Determination of Motor Rating",
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.3.2",
+      "title": "Equivalent current, torque and power methods for fluctuating and intermittent loads",
+      "start_page": 50,
+      "section_id": "4.3",
+      "section_title": "Determination of Motor Rating",
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Short time duty",
+      "start_page": 53,
+      "section_id": "4.3",
+      "section_title": "Determination of Motor Rating",
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.3.4",
+      "title": "Intermittent periodic duty",
+      "start_page": 54,
+      "section_id": "4.3",
+      "section_title": "Determination of Motor Rating",
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "4.3.5",
+      "title": "Frequency of operation of motors subjected to intermittent loads",
+      "start_page": 56,
+      "section_id": "4.3",
+      "section_title": "Determination of Motor Rating",
+      "chapter_id": "Chapter 4",
+      "chapter_title": "Selection of Motor Power Rating",
+      "part_id": "PART 1",
+      "part_title": "FUNDAMENTALS & DYNAMICS"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Shunt and separately excited motors",
+      "start_page": 61,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.1.2",
+      "title": "Series motor",
+      "start_page": 62,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.1.3",
+      "title": "Compound motor",
+      "start_page": 64,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.1.4",
+      "title": "Universal motor",
+      "start_page": 64,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.1.5",
+      "title": "Permanent magnet motors",
+      "start_page": 65,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.1.6",
+      "title": "dc servo motors",
+      "start_page": 65,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.1.7",
+      "title": "Moving coil motors",
+      "start_page": 66,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.1.8",
+      "title": "Torque motors",
+      "start_page": 67,
+      "section_id": "5.1",
+      "section_title": "dc Motors and Their Performance",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.3.1",
+      "title": "Regenerative braking",
+      "start_page": 68,
+      "section_id": "5.3",
+      "section_title": "Braking",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.3.2",
+      "title": "Dynamic braking",
+      "start_page": 69,
+      "section_id": "5.3",
+      "section_title": "Braking",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.3.3",
+      "title": "Plugging",
+      "start_page": 73,
+      "section_id": "5.3",
+      "section_title": "Braking",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.4.1",
+      "title": "Transient analysis of separately excited motor with armature control",
+      "start_page": 76,
+      "section_id": "5.4",
+      "section_title": "Transient Analysis",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.4.2",
+      "title": "Transient analysis of starting of separately excited motor with armature control",
+      "start_page": 77,
+      "section_id": "5.4",
+      "section_title": "Transient Analysis",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.4.3",
+      "title": "Transient analysis of dynamic braking of separately excited motor",
+      "start_page": 79,
+      "section_id": "5.4",
+      "section_title": "Transient Analysis",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.4.4",
+      "title": "Energy losses during transient operations",
+      "start_page": 80,
+      "section_id": "5.4",
+      "section_title": "Transient Analysis",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.4.5",
+      "title": "Transient analysis of separately excited motor with field control",
+      "start_page": 83,
+      "section_id": "5.4",
+      "section_title": "Transient Analysis",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.14.1",
+      "title": "Single fully-controlled rectifier with a reversing switch",
+      "start_page": 114,
+      "section_id": "5.14",
+      "section_title": "Multiquadrant Operation of dc Separately Excited Motor Fed from Fully-controlled Rectifier",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.14.2",
+      "title": "Dual converter",
+      "start_page": 115,
+      "section_id": "5.14",
+      "section_title": "Multiquadrant Operation of dc Separately Excited Motor Fed from Fully-controlled Rectifier",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.14.3",
+      "title": "Field current reversal",
+      "start_page": 116,
+      "section_id": "5.14",
+      "section_title": "Multiquadrant Operation of dc Separately Excited Motor Fed from Fully-controlled Rectifier",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "5.14.4",
+      "title": "Comparison of conventional and static Ward Leonard schemes",
+      "start_page": 118,
+      "section_id": "5.14",
+      "section_title": "Multiquadrant Operation of dc Separately Excited Motor Fed from Fully-controlled Rectifier",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "dc Motor Drives",
+      "part_id": "PART 2",
+      "part_title": "DC MOTOR DRIVES"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Analysis and performance",
+      "start_page": 140,
+      "section_id": "6.1",
+      "section_title": "Three-phase Induction Motors",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Induction motors with special designs",
+      "start_page": 143,
+      "section_id": "6.1",
+      "section_title": "Three-phase Induction Motors",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.1",
+      "title": "Star-delta starter",
+      "start_page": 152,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.2",
+      "title": "Auto-transformer starter",
+      "start_page": 153,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.3",
+      "title": "Closed circuit transition",
+      "start_page": 153,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.4",
+      "title": "Reactor starter",
+      "start_page": 153,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.5",
+      "title": "Soft start using saturable reactor starter",
+      "start_page": 154,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.6",
+      "title": "Unbalanced starting scheme for soft start",
+      "start_page": 154,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.7",
+      "title": "Part winding starting",
+      "start_page": 155,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.5.8",
+      "title": "Rotor resistance starter",
+      "start_page": 155,
+      "section_id": "6.5",
+      "section_title": "Starting",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.6.1",
+      "title": "Regenerative braking",
+      "start_page": 158,
+      "section_id": "6.6",
+      "section_title": "Braking",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.6.2",
+      "title": "Plugging or reverse voltage braking",
+      "start_page": 160,
+      "section_id": "6.6",
+      "section_title": "Braking",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.6.3",
+      "title": "Dynamic (or rheostatic) braking",
+      "start_page": 163,
+      "section_id": "6.6",
+      "section_title": "Braking",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.7.1",
+      "title": "Starting and plugging",
+      "start_page": 174,
+      "section_id": "6.7",
+      "section_title": "Transient Analysis",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.7.2",
+      "title": "Calculation of energy losses",
+      "start_page": 175,
+      "section_id": "6.7",
+      "section_title": "Transient Analysis",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.11.1",
+      "title": "Control by ac voltage controllers and soft start",
+      "start_page": 184,
+      "section_id": "6.11",
+      "section_title": "Stator Voltage Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.12.1",
+      "title": "Variable frequency control of an induction motor",
+      "start_page": 186,
+      "section_id": "6.12",
+      "section_title": "Variable Frequency Control from Voltage Sources",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.12.2",
+      "title": "Slip speed control",
+      "start_page": 189,
+      "section_id": "6.12",
+      "section_title": "Variable Frequency Control from Voltage Sources",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.12.3",
+      "title": "Torque and power limitations, and modes of operation",
+      "start_page": 190,
+      "section_id": "6.12",
+      "section_title": "Variable Frequency Control from Voltage Sources",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.13.1",
+      "title": "VSI induction motor drives",
+      "start_page": 192,
+      "section_id": "6.13",
+      "section_title": "Voltage Source Inverter (VSI) Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.13.2",
+      "title": "Braking and multiquadrant operation of VSI induction motor drives",
+      "start_page": 194,
+      "section_id": "6.13",
+      "section_title": "Voltage Source Inverter (VSI) Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.17.1",
+      "title": "Regenerative braking and multiquadrant operation",
+      "start_page": 207,
+      "section_id": "6.17",
+      "section_title": "Current Source Inverter Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.17.2",
+      "title": "Closed-loop speed control of CSI drives",
+      "start_page": 208,
+      "section_id": "6.17",
+      "section_title": "Current Source Inverter Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.17.3",
+      "title": "Comparison of Current source inverter (CSI) and voltage source inverter (VSI) drives",
+      "start_page": 209,
+      "section_id": "6.17",
+      "section_title": "Current Source Inverter Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.20.1",
+      "title": "Conventional methods",
+      "start_page": 215,
+      "section_id": "6.20",
+      "section_title": "Rotor Resistance Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.20.2",
+      "title": "Static rotor resistance control",
+      "start_page": 216,
+      "section_id": "6.20",
+      "section_title": "Rotor Resistance Control",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.21.1",
+      "title": "Static Scherbius drive",
+      "start_page": 219,
+      "section_id": "6.21",
+      "section_title": "Slip Power Recovery",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.21.2",
+      "title": "Static Kramer drive",
+      "start_page": 221,
+      "section_id": "6.21",
+      "section_title": "Slip Power Recovery",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.22.1",
+      "title": "Squirrel-cage induction machine and cycloconverter scheme",
+      "start_page": 227,
+      "section_id": "6.22",
+      "section_title": "Variable Speed Constant Frequency Generation",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.22.2",
+      "title": "Wound-rotor induction motor and cycloconverter scheme",
+      "start_page": 228,
+      "section_id": "6.22",
+      "section_title": "Variable Speed Constant Frequency Generation",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.24.1",
+      "title": "Split-phase motors",
+      "start_page": 230,
+      "section_id": "6.24",
+      "section_title": "Starting Methods and Types of Single-phase Induction Motors",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.24.2",
+      "title": "Capacitor-run motors",
+      "start_page": 231,
+      "section_id": "6.24",
+      "section_title": "Starting Methods and Types of Single-phase Induction Motors",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.24.3",
+      "title": "Capacitor-start motors",
+      "start_page": 232,
+      "section_id": "6.24",
+      "section_title": "Starting Methods and Types of Single-phase Induction Motors",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.24.4",
+      "title": "Capacitor-start and capacitor-run motors",
+      "start_page": 232,
+      "section_id": "6.24",
+      "section_title": "Starting Methods and Types of Single-phase Induction Motors",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "6.24.5",
+      "title": "Shaded pole motor",
+      "start_page": 232,
+      "section_id": "6.24",
+      "section_title": "Starting Methods and Types of Single-phase Induction Motors",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "Induction Motor Drives",
+      "part_id": "PART 3",
+      "part_title": "INDUCTION MOTOR DRIVES"
+    },
+    {
+      "id": "7.1.1",
+      "title": "Cylindrical rotor wound field motor",
+      "start_page": 246,
+      "section_id": "7.1",
+      "section_title": "Synchronous Motors",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.1.2",
+      "title": "Salient pole wound field motor",
+      "start_page": 249,
+      "section_id": "7.1",
+      "section_title": "Synchronous Motors",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.1.3",
+      "title": "Permanent magnet motor",
+      "start_page": 250,
+      "section_id": "7.1",
+      "section_title": "Synchronous Motors",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.1.4",
+      "title": "Synchronous reluctance motor",
+      "start_page": 251,
+      "section_id": "7.1",
+      "section_title": "Synchronous Motors",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.1.5",
+      "title": "Damper winding",
+      "start_page": 251,
+      "section_id": "7.1",
+      "section_title": "Synchronous Motors",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.1.6",
+      "title": "Hysteresis synchronous motor",
+      "start_page": 251,
+      "section_id": "7.1",
+      "section_title": "Synchronous Motors",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.1.7",
+      "title": "Inductor machine",
+      "start_page": 252,
+      "section_id": "7.1",
+      "section_title": "Synchronous Motors",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.2.1",
+      "title": "Starting",
+      "start_page": 252,
+      "section_id": "7.2",
+      "section_title": "Operation from Fixed Frequency Supply",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.2.2",
+      "title": "Pull-in",
+      "start_page": 253,
+      "section_id": "7.2",
+      "section_title": "Operation from Fixed Frequency Supply",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.2.3",
+      "title": "Transients due to load disturbances",
+      "start_page": 254,
+      "section_id": "7.2",
+      "section_title": "Operation from Fixed Frequency Supply",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.2.4",
+      "title": "Braking",
+      "start_page": 255,
+      "section_id": "7.2",
+      "section_title": "Operation from Fixed Frequency Supply",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.3.1",
+      "title": "Variable frequency control",
+      "start_page": 256,
+      "section_id": "7.3",
+      "section_title": "Synchronous Motor Variable Speed Drives",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.3.2",
+      "title": "Modes of variable frequency control",
+      "start_page": 256,
+      "section_id": "7.3",
+      "section_title": "Synchronous Motor Variable Speed Drives",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.9.1",
+      "title": "Servo drive employing sinusoidal PMAC motor fed from a current regulated voltage source inverter",
+      "start_page": 269,
+      "section_id": "7.9",
+      "section_title": "Sinusoidal PMAC Motor Drives",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.10.1",
+      "title": "Brushless dc motor drive for servo applications",
+      "start_page": 271,
+      "section_id": "7.10",
+      "section_title": "Brushless dc (or Trapezoidal PMAC) Motor Drives",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.10.2",
+      "title": "Low cost brushless dc motor drives",
+      "start_page": 274,
+      "section_id": "7.10",
+      "section_title": "Brushless dc (or Trapezoidal PMAC) Motor Drives",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "7.10.3",
+      "title": "Important features and applications",
+      "start_page": 275,
+      "section_id": "7.10",
+      "section_title": "Brushless dc (or Trapezoidal PMAC) Motor Drives",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "Synchronous Motor and Brushless dc Motor Drives",
+      "part_id": "PART 4",
+      "part_title": "SYNCHRONOUS & BLDC DRIVES"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Variable reluctance",
+      "start_page": 280,
+      "section_id": "8.1",
+      "section_title": "Stepper (or Stepping) Motors",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.1.2",
+      "title": "Permanent magnet",
+      "start_page": 283,
+      "section_id": "8.1",
+      "section_title": "Stepper (or Stepping) Motors",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.1.3",
+      "title": "Important features of stepper motors",
+      "start_page": 285,
+      "section_id": "8.1",
+      "section_title": "Stepper (or Stepping) Motors",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.1.4",
+      "title": "Torque versus stepping (or pulsing) rate characteristics",
+      "start_page": 285,
+      "section_id": "8.1",
+      "section_title": "Stepper (or Stepping) Motors",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.1.5",
+      "title": "Drive circuits for stepper motors",
+      "start_page": 286,
+      "section_id": "8.1",
+      "section_title": "Stepper (or Stepping) Motors",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Operation and control requirements",
+      "start_page": 289,
+      "section_id": "8.2",
+      "section_title": "Switched (or Variable) Reluctance Motor",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.2.2",
+      "title": "Converter circuits",
+      "start_page": 293,
+      "section_id": "8.2",
+      "section_title": "Switched (or Variable) Reluctance Motor",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "8.2.3",
+      "title": "Modes of operation",
+      "start_page": 294,
+      "section_id": "8.2",
+      "section_title": "Switched (or Variable) Reluctance Motor",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "Stepper Motor and Switched Reluctance Motor Drives",
+      "part_id": "PART 5",
+      "part_title": "STEPPER & SRM DRIVES"
+    },
+    {
+      "id": "10.1.1",
+      "title": "Electric trains",
+      "start_page": 305,
+      "section_id": "10.1",
+      "section_title": "Electric Traction Services",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.1.2",
+      "title": "Electric buses, trams and trolleys",
+      "start_page": 307,
+      "section_id": "10.1",
+      "section_title": "Electric Traction Services",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.2.1",
+      "title": "Coefficient of adhesion (CA)",
+      "start_page": 309,
+      "section_id": "10.2",
+      "section_title": "Nature of Traction Load",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.2.2",
+      "start_page": 311,
+      "section_id": "10.2",
+      "section_title": "Nature of Traction Load",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.2.3",
+      "title": "Load sharing between traction motors",
+      "start_page": 311,
+      "section_id": "10.2",
+      "section_title": "Nature of Traction Load",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.3.1",
+      "title": "Difference in construction of main line and suburban trains",
+      "start_page": 312,
+      "section_id": "10.3",
+      "section_title": "Main Line and Suburban Train Configurations",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.3.2",
+      "title": "Driving axle code for locomotives",
+      "start_page": 313,
+      "section_id": "10.3",
+      "section_title": "Main Line and Suburban Train Configurations",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.6.1",
+      "title": "Tractive effort and drive ratings",
+      "start_page": 316,
+      "section_id": "10.6",
+      "section_title": "Calculations of Traction Drive Rating and Energy Consumption",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.6.2",
+      "title": "Specific energy consumption",
+      "start_page": 319,
+      "section_id": "10.6",
+      "section_title": "Calculations of Traction Drive Rating and Energy Consumption",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.6.3",
+      "title": "Maximum allowable tractive effort",
+      "start_page": 320,
+      "section_id": "10.6",
+      "section_title": "Calculations of Traction Drive Rating and Energy Consumption",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.8.1",
+      "title": "Motors employed in traction",
+      "start_page": 329,
+      "section_id": "10.8",
+      "section_title": "Traction Motors",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.8.2",
+      "title": "Traction motor control",
+      "start_page": 330,
+      "section_id": "10.8",
+      "section_title": "Traction Motors",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.10.1",
+      "title": "The dc traction drives employing resistance control",
+      "start_page": 331,
+      "section_id": "10.10",
+      "section_title": "Conventional dc and ac Traction Drives",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.10.2",
+      "title": "The 25 KV, 50 Hz ac traction using on-load transformer tap changer",
+      "start_page": 333,
+      "section_id": "10.10",
+      "section_title": "Conventional dc and ac Traction Drives",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.15.1",
+      "title": "PWM voltage source inverter (VSI) induction motor drives",
+      "start_page": 342,
+      "section_id": "10.15",
+      "section_title": "The dc Traction Employing Polyphase ac Motors",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.15.2",
+      "title": "Load commutated inverter fed synchronous motor drives",
+      "start_page": 343,
+      "section_id": "10.15",
+      "section_title": "The dc Traction Employing Polyphase ac Motors",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.16.1",
+      "title": "CSI squirrel-cage induction motor drive",
+      "start_page": 345,
+      "section_id": "10.16",
+      "section_title": "The ac Traction Employing Polyphase ac Motors",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.16.2",
+      "title": "PWM VSI squirrel-cage induction motor drive",
+      "start_page": 346,
+      "section_id": "10.16",
+      "section_title": "The ac Traction Employing Polyphase ac Motors",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.16.3",
+      "title": "Load commutated inverter (LCI) synchronous motor drive",
+      "start_page": 347,
+      "section_id": "10.16",
+      "section_title": "The ac Traction Employing Polyphase ac Motors",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.17.1",
+      "title": "Diesel engine driven dc generator feeding dc series motors",
+      "start_page": 349,
+      "section_id": "10.17",
+      "section_title": "Diesel Electric Traction",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.17.2",
+      "title": "Diesel engine driven three-phase alternator supplying dc motors",
+      "start_page": 350,
+      "section_id": "10.17",
+      "section_title": "Diesel Electric Traction",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "10.17.3",
+      "title": "Diesel engine driven alternator feeding squirrel-cage induction motors through diode-bridge and inverter",
+      "start_page": 351,
+      "section_id": "10.17",
+      "section_title": "Diesel Electric Traction",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Traction Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.3.1",
+      "title": "Replacement of resistance controllers",
+      "start_page": 356,
+      "section_id": "11.3",
+      "section_title": "Use of Efficient Semiconductor Converters",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.3.2",
+      "title": "Replacement of eddy-current couplings",
+      "start_page": 356,
+      "section_id": "11.3",
+      "section_title": "Use of Efficient Semiconductor Converters",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    },
+    {
+      "id": "11.3.3",
+      "title": "Replacement of Ward Leonard drives",
+      "start_page": 357,
+      "section_id": "11.3",
+      "section_title": "Use of Efficient Semiconductor Converters",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Energy Conservation in Electrical Drives",
+      "part_id": "PART 6",
+      "part_title": "SOLAR, TRACTION & CONSERVATION"
+    }
+  ]
+}
