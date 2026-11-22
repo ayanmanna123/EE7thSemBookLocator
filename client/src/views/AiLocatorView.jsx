@@ -1,6 +1,12 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import {
   Search,
+  BookOpen,
+  Video,
+  Code,
+  FileText,
+  GraduationCap,
+  Sparkles,
   Key,
   RotateCcw,
   BookMarked,
@@ -16,6 +22,104 @@ import {
   setGeminiApiKey,
   hasGeminiApiKey,
 } from "@/services/geminiService";
+
+function ExternalResourceGrid({ topic, subject }) {
+  if (!topic || !topic.trim()) return null;
+  const cleanTopic = topic.trim();
+
+  const searchUrls = subject?.getSearchUrls
+    ? subject.getSearchUrls(cleanTopic)
+    : {
+        cleanTopic,
+        expanded: cleanTopic,
+        google: `https://www.google.com/search?q=${encodeURIComponent(`${cleanTopic} ${subject?.name || ""}`)}`,
+        wikipedia: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(cleanTopic)}`,
+        youtube: `https://www.youtube.com/results?search_query=${encodeURIComponent(`${cleanTopic} lecture`)}`,
+        gfg: `https://www.google.com/search?q=${encodeURIComponent(`site:geeksforgeeks.org ${cleanTopic}`)}`,
+        scholar: `https://scholar.google.com/scholar?q=${encodeURIComponent(cleanTopic)}`,
+        ietf: `https://www.google.com/search?q=${encodeURIComponent(`site:datatracker.ietf.org ${cleanTopic}`)}`,
+      };
+
+  const standardsLabel =
+    subject?.id === "electric-drives" ? "NPTEL / Video Lectures" : "IETF / RFC Standards";
+
+  return (
+    <div className="space-y-2 pt-1">
+      <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+        <Sparkles className="size-3.5 text-sky-400" />
+        <span>Quick Web & Video Learning Options:</span>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+        <a
+          href={searchUrls.google}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Search ${cleanTopic} on Google Search`}
+          className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-secondary/50 dark:bg-card/70 px-4 py-2.5 text-xs sm:text-sm font-semibold text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5 shadow-2xs"
+        >
+          <Search className="size-4.5 shrink-0 text-sky-500" />
+          <span>Google Search</span>
+        </a>
+
+        <a
+          href={searchUrls.wikipedia}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Search ${cleanTopic} on Wikipedia`}
+          className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-secondary/50 dark:bg-card/70 px-4 py-2.5 text-xs sm:text-sm font-semibold text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5 shadow-2xs"
+        >
+          <BookOpen className="size-4.5 shrink-0 text-emerald-500" />
+          <span>Wikipedia</span>
+        </a>
+
+        <a
+          href={searchUrls.youtube}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Search ${cleanTopic} on YouTube Lectures`}
+          className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-secondary/50 dark:bg-card/70 px-4 py-2.5 text-xs sm:text-sm font-semibold text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5 shadow-2xs"
+        >
+          <Video className="size-4.5 shrink-0 text-rose-500" />
+          <span>YouTube Lectures</span>
+        </a>
+
+        <a
+          href={searchUrls.gfg}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Search ${cleanTopic} on GeeksforGeeks`}
+          className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-secondary/50 dark:bg-card/70 px-4 py-2.5 text-xs sm:text-sm font-semibold text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5 shadow-2xs"
+        >
+          <Code className="size-4.5 shrink-0 text-amber-500" />
+          <span>GeeksforGeeks</span>
+        </a>
+
+        <a
+          href={searchUrls.ietf}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Search ${cleanTopic} on ${standardsLabel}`}
+          className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-secondary/50 dark:bg-card/70 px-4 py-2.5 text-xs sm:text-sm font-semibold text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5 shadow-2xs"
+        >
+          <FileText className="size-4.5 shrink-0 text-purple-500" />
+          <span>{standardsLabel}</span>
+        </a>
+
+        <a
+          href={searchUrls.scholar}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Search ${cleanTopic} on Google Scholar`}
+          className="flex items-center gap-2.5 rounded-xl border border-border/80 bg-secondary/50 dark:bg-card/70 px-4 py-2.5 text-xs sm:text-sm font-semibold text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-all hover:-translate-y-0.5 shadow-2xs"
+        >
+          <GraduationCap className="size-4.5 shrink-0 text-blue-500" />
+          <span>Google Scholar</span>
+        </a>
+      </div>
+    </div>
+  );
+}
 
 const AI_HISTORY_STORAGE_KEY = "ee7th_ai_locator_queries";
 
@@ -50,6 +154,7 @@ export function AiLocatorView({
   const [showKeyModal, setShowKeyModal] = useState(false);
   const [tempKey, setTempKey] = useState(apiKey);
   const [agentSteps, setAgentSteps] = useState([]);
+  const [currentSearchingTopic, setCurrentSearchingTopic] = useState("");
 
   const inputRef = useRef(null);
   const resultsEndRef = useRef(null);
@@ -79,6 +184,7 @@ export function AiLocatorView({
     setLoading(true);
     setError(null);
     setAgentSteps([]);
+    setCurrentSearchingTopic(q);
 
     try {
       const response = await askGeminiTextbookLocator(
@@ -313,11 +419,21 @@ export function AiLocatorView({
       {loading && (
         <div className="rounded-2xl border border-sky-500/40 bg-gradient-to-br from-card via-sky-500/5 to-indigo-500/10 p-5 sm:p-6 shadow-xl space-y-4 backdrop-blur-md">
           {/* Header */}
-          <div className="border-b border-border/50 pb-3">
+          <div className="border-b border-border/50 pb-3 flex items-center justify-between gap-3">
             <span className="text-sm font-black tracking-tight text-foreground">
               AI Agentic Search Active
             </span>
+            {currentSearchingTopic && (
+              <span className="text-xs font-semibold text-sky-400 bg-sky-500/10 border border-sky-500/30 px-2.5 py-0.5 rounded-md truncate max-w-[250px]">
+                "{currentSearchingTopic}"
+              </span>
+            )}
           </div>
+
+          {/* Quick Learning & Web Resource Options while searching */}
+          {currentSearchingTopic && (
+            <ExternalResourceGrid topic={currentSearchingTopic} subject={activeSubject} />
+          )}
 
           {/* Steps Stream */}
           <div className="space-y-2">
@@ -466,6 +582,9 @@ export function AiLocatorView({
                   </div>
                 </div>
               )}
+
+              {/* Quick Learning & Web Resource Options */}
+              <ExternalResourceGrid topic={question} subject={activeSubject} />
 
               {/* Exact Textbook Citations (Hero Section) */}
               {citations.length > 0 ? (
