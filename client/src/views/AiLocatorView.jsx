@@ -312,24 +312,10 @@ export function AiLocatorView({
       {/* Live Agentic Search Timeline & Progress */}
       {loading && (
         <div className="rounded-2xl border border-sky-500/40 bg-gradient-to-br from-card via-sky-500/5 to-indigo-500/10 p-5 sm:p-6 shadow-xl space-y-4 backdrop-blur-md">
-          {/* Header Beacon */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border/50 pb-3">
-            <div className="flex items-center gap-2.5">
-              <div className="relative flex size-3.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75" />
-                <span className="relative inline-flex rounded-full size-3.5 bg-sky-500 shadow-xs" />
-              </div>
-              <div>
-                <span className="text-sm font-black tracking-tight text-foreground">
-                  AI Agentic Search Active
-                </span>
-                <span className="text-xs text-muted-foreground ml-2 hidden sm:inline">
-                  (Thinking keywords → Searching verified dataset → Self-refining)
-                </span>
-              </div>
-            </div>
-            <span className="text-[11px] font-mono font-bold text-sky-400 bg-sky-500/15 border border-sky-500/30 px-2.5 py-1 rounded-lg self-start sm:self-auto shadow-xs">
-              Iterative Tool Calling Loop (Max 5 Steps)
+          {/* Header */}
+          <div className="border-b border-border/50 pb-3">
+            <span className="text-sm font-black tracking-tight text-foreground">
+              AI Agentic Search Active
             </span>
           </div>
 

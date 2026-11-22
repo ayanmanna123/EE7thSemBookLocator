@@ -144,7 +144,12 @@ export function clearGeminiCache() {
 
 export function getGeminiApiKey() {
   if (typeof window === "undefined") return DEFAULT_API_KEY;
-  return localStorage.getItem(STORAGE_KEY) || DEFAULT_API_KEY;
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored && stored.includes("AQ.Ab8RN6LTGJ9F6c2wcFdkkNeASXpQH2otTgdUEe")) {
+    localStorage.setItem(STORAGE_KEY, DEFAULT_API_KEY);
+    return DEFAULT_API_KEY;
+  }
+  return stored || DEFAULT_API_KEY;
 }
 
 export function setGeminiApiKey(key) {
@@ -178,8 +183,9 @@ export function searchLocalIndex(
   allSearchData = [],
   allSubjectsDataMap = null
 ) {
-  if (!keywords || !keywords.trim()) return [];
-  const q = keywords.toLowerCase().trim();
+  const kwStr = (Array.isArray(keywords) ? keywords.join(" ") : String(keywords || "")).trim();
+  if (!kwStr) return [];
+  const q = kwStr.toLowerCase();
   const words = q.split(/\s+/).filter((w) => w.length > 2);
   const matched = [];
 
@@ -320,10 +326,10 @@ export async function askGeminiAgenticLocator(
           name: "search_textbook_index",
           description: `Searches the verified ${subjectName} (${bookTitle}) index and Table of Contents for topics, concepts, formulas, and exact page numbers.`,
           parameters: {
-            type: "OBJECT",
+            type: "object",
             properties: {
               keywords: {
-                type: "STRING",
+                type: "string",
                 description:
                   "1 to 3 search terms or technical concepts (e.g. 'regenerative braking', 'slip energy recovery', 'CRC calculation', 'MQTT packet')",
               },
@@ -393,7 +399,6 @@ CRITICAL RULES:
         temperature: 0.1,
         topP: 0.8,
         maxOutputTokens: 800,
-        thinkingConfig: { thinkingBudget: 0 },
       },
     };
 
@@ -404,62 +409,73 @@ CRITICAL RULES:
     }
 
     contents.push(candidate.content);
-    const part =
-      candidate.content.parts.find((p) => p.functionCall) || candidate.content.parts[0];
+    const functionCallParts = candidate.content.parts.filter((p) => p.functionCall);
 
-    // Case 1: AI calls the tool
-    if (part.functionCall) {
-      const args = part.functionCall.args || {};
-      const kw = (args.keywords || "").trim();
-      searchedTerms.push(kw);
+    // Case 1: AI calls the tool (one or multiple function calls)
+    if (functionCallParts.length > 0) {
+      const functionResponseParts = [];
 
-      onStep({
-        step,
-        type: "tool_call",
-        keywords: kw,
-        text: `Tool Call (Step ${step}/${MAX_STEPS}): Querying verified index for "${kw}"...`,
-      });
+      for (const fcp of functionCallParts) {
+        const args = fcp.functionCall.args || {};
+        const rawKw = args.keywords ?? args.query ?? args.term ?? "";
+        const kw = (Array.isArray(rawKw) ? rawKw.join(" ") : String(rawKw || "")).trim();
+        searchedTerms.push(kw);
 
-      const searchResults = searchLocalIndex(kw, activeSubject, allSearchData, allSubjectsDataMap);
-
-      if (searchResults.length > 0) {
         onStep({
           step,
-          type: "tool_result",
+          type: "tool_call",
           keywords: kw,
-          count: searchResults.length,
-          matches: searchResults.map((r) => r.topic),
-          text: `Found ${searchResults.length} verified match(es): ${searchResults.map((r) => r.topic).join(", ")}`,
+          text: `Tool Call (Step ${step}/${MAX_STEPS}): Querying verified index for "${kw}"...`,
         });
-      } else {
-        onStep({
-          step,
-          type: "tool_miss",
-          keywords: kw,
-          text: `No direct matches for "${kw}". AI thinking of alternative concepts (Step ${step + 1}/${MAX_STEPS})...`,
-        });
+
+        const searchResults = searchLocalIndex(kw, activeSubject, allSearchData, allSubjectsDataMap);
+
+        if (searchResults.length > 0) {
+          onStep({
+            step,
+            type: "tool_result",
+            keywords: kw,
+            count: searchResults.length,
+            matches: searchResults.map((r) => r.topic),
+            text: `Found ${searchResults.length} verified match(es): ${searchResults.map((r) => r.topic).join(", ")}`,
+          });
+        } else {
+          onStep({
+            step,
+            type: "tool_miss",
+            keywords: kw,
+            text: `No direct matches for "${kw}". AI thinking of alternative concepts (Step ${step + 1}/${MAX_STEPS})...`,
+          });
+        }
+
+        const respItem = {
+          functionResponse: {
+            name: fcp.functionCall.name,
+            response: {
+              query: kw,
+              resultsCount: searchResults.length,
+              results: searchResults,
+              tip:
+                searchResults.length === 0
+                  ? "No exact match. Try alternative technical terms, acronyms, or related chapter concepts."
+                  : "Matches found. You may synthesize the final JSON answer now or search again if needed.",
+            },
+          },
+        };
+
+        if (fcp.functionCall.id) {
+          respItem.functionResponse.id = fcp.functionCall.id;
+        }
+
+        functionResponseParts.push(respItem);
       }
 
       contents.push({
         role: "user",
-        parts: [
-          {
-            functionResponse: {
-              name: part.functionCall.name,
-              response: {
-                query: kw,
-                resultsCount: searchResults.length,
-                results: searchResults,
-                tip:
-                  searchResults.length === 0
-                    ? "No exact match. Try alternative technical terms, acronyms, or related chapter concepts."
-                    : "Matches found. You may synthesize the final JSON answer now or search again if needed.",
-              },
-            },
-          },
-        ],
+        parts: functionResponseParts,
       });
-    } else if (part.text) {
+    } else if (candidate.content.parts[0]?.text) {
+      const part = candidate.content.parts[0];
       // Case 2: AI completed and returned text / JSON
       onStep({
         step,
