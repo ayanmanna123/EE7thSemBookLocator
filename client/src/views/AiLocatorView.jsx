@@ -35,6 +35,9 @@ function getStoredHistory() {
 export function AiLocatorView({
   subjects = [],
   activeSubject,
+  allSearchData = [],
+  allSubjectsDataMap,
+  tocData: _tocData,
   onSwitchSubject,
   onSelectPage,
   initialQuery = "",
@@ -46,6 +49,7 @@ export function AiLocatorView({
   const [apiKey, setApiKeyState] = useState(getGeminiApiKey());
   const [showKeyModal, setShowKeyModal] = useState(false);
   const [tempKey, setTempKey] = useState(apiKey);
+  const [agentSteps, setAgentSteps] = useState([]);
 
   const inputRef = useRef(null);
   const resultsEndRef = useRef(null);
@@ -74,12 +78,23 @@ export function AiLocatorView({
 
     setLoading(true);
     setError(null);
+    setAgentSteps([]);
 
     try {
-      const response = await askGeminiTextbookLocator(q);
+      const response = await askGeminiTextbookLocator(
+        q,
+        activeSubject,
+        allSearchData,
+        allSubjectsDataMap,
+        (stepInfo) => {
+          setAgentSteps((prev) => [...prev, stepInfo]);
+        }
+      );
       const newEntry = {
         id: Date.now(),
         question: q,
+        subjectId: activeSubject?.id,
+        subjectTitle: activeSubject?.name || activeSubject?.title,
         timestamp: new Date().toLocaleTimeString([], {
           hour: "2-digit",
           minute: "2-digit",
@@ -107,7 +122,7 @@ export function AiLocatorView({
     } finally {
       setLoading(false);
     }
-  }, [query]);
+  }, [query, activeSubject, allSearchData, allSubjectsDataMap]);
 
   // Auto-run if initialQuery passed from search view
   useEffect(() => {
@@ -159,25 +174,56 @@ export function AiLocatorView({
                 <h2 className="text-lg sm:text-xl font-black tracking-tight text-foreground">
                   Textbook Page & Chapter Pinpointer
                 </h2>
+                {activeSubject && (
+                  <p className="text-xs text-muted-foreground font-medium pt-0.5">
+                    Focused on: <span className="text-sky-500 dark:text-sky-400 font-bold">{activeSubject.name}</span>{" "}
+                    <span className="text-muted-foreground/75 font-mono">({activeSubject.bookTitle})</span>
+                  </p>
+                )}
               </div>
             </div>
 
-            {/* API Key Status / Setting */}
-            <button
-              onClick={() => {
-                setTempKey(apiKey);
-                setShowKeyModal(true);
-              }}
-              className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-background/80 px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary transition-colors cursor-pointer self-start sm:self-auto"
-            >
-              <Key className="size-3.5 text-amber-400" />
-              <span>{hasGeminiApiKey() ? "API Connected" : "Set API Key"}</span>
-              <span
-                className={`size-2 rounded-full ${
-                  hasGeminiApiKey() ? "bg-emerald-500" : "bg-destructive animate-ping"
-                }`}
-              />
-            </button>
+            <div className="flex items-center gap-2 flex-wrap self-start sm:self-auto">
+              {/* Quick Subject Switcher */}
+              {subjects && subjects.length > 1 && (
+                <div className="flex items-center gap-1.5 p-1 rounded-xl bg-background/70 border border-border/80">
+                  {subjects.map((sub) => {
+                    const isSelected = activeSubject?.id === sub.id;
+                    return (
+                      <button
+                        key={sub.id}
+                        onClick={() => onSwitchSubject?.(sub.id)}
+                        className={`rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer ${
+                          isSelected
+                            ? "bg-sky-500 text-white shadow-xs"
+                            : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+                        }`}
+                        title={sub.name}
+                      >
+                        {sub.shortName || sub.name}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* API Key Status / Setting */}
+              <button
+                onClick={() => {
+                  setTempKey(apiKey);
+                  setShowKeyModal(true);
+                }}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-background/80 px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary transition-colors cursor-pointer"
+              >
+                <Key className="size-3.5 text-amber-400" />
+                <span>{hasGeminiApiKey() ? "API Connected" : "Set API Key"}</span>
+                <span
+                  className={`size-2 rounded-full ${
+                    hasGeminiApiKey() ? "bg-emerald-500" : "bg-destructive animate-ping"
+                  }`}
+                />
+              </button>
+            </div>
           </div>
 
           {/* AI Search & Prompt Input */}
@@ -194,7 +240,7 @@ export function AiLocatorView({
                   handleAsk();
                 }
               }}
-              placeholder="Ask where any topic is in the book... e.g., 'Where is regenerative braking in Dubey?'"
+              placeholder={`Ask where any topic is in ${activeSubject?.name || "the textbook"}... e.g., 'Where is regenerative braking?'`}
               className="w-full rounded-xl border-2 border-sky-500/40 bg-background/90 py-3.5 pl-12 pr-32 text-sm sm:text-base font-medium text-foreground placeholder:text-muted-foreground outline-none transition-all focus:border-sky-400 focus:ring-4 focus:ring-sky-500/20 shadow-inner"
             />
 
@@ -263,19 +309,82 @@ export function AiLocatorView({
         </div>
       )}
 
-      {/* Loading Skeleton */}
+      {/* Live Agentic Search Timeline & Progress */}
       {loading && (
-        <div className="rounded-2xl border border-sky-500/30 bg-card/80 p-6 space-y-4 animate-pulse">
-          <div className="flex items-center gap-3">
-            <div className="size-8 rounded-lg bg-sky-500/20" />
-            <div className="space-y-1.5 flex-1">
-              <div className="h-4 w-1/4 bg-sky-500/20 rounded" />
-              <div className="h-3 w-1/3 bg-muted rounded" />
+        <div className="rounded-2xl border border-sky-500/40 bg-gradient-to-br from-card via-sky-500/5 to-indigo-500/10 p-5 sm:p-6 shadow-xl space-y-4 backdrop-blur-md">
+          {/* Header Beacon */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border/50 pb-3">
+            <div className="flex items-center gap-2.5">
+              <div className="relative flex size-3.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75" />
+                <span className="relative inline-flex rounded-full size-3.5 bg-sky-500 shadow-xs" />
+              </div>
+              <div>
+                <span className="text-sm font-black tracking-tight text-foreground">
+                  AI Agentic Search Active
+                </span>
+                <span className="text-xs text-muted-foreground ml-2 hidden sm:inline">
+                  (Thinking keywords → Searching verified dataset → Self-refining)
+                </span>
+              </div>
             </div>
+            <span className="text-[11px] font-mono font-bold text-sky-400 bg-sky-500/15 border border-sky-500/30 px-2.5 py-1 rounded-lg self-start sm:self-auto shadow-xs">
+              Iterative Tool Calling Loop (Max 5 Steps)
+            </span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <div className="h-28 bg-secondary/50 rounded-xl" />
-            <div className="h-28 bg-secondary/50 rounded-xl" />
+
+          {/* Steps Stream */}
+          <div className="space-y-2">
+            {agentSteps.length === 0 ? (
+              <div className="flex items-center gap-2.5 text-xs text-muted-foreground p-3 rounded-xl bg-background/50 border border-border/60 animate-pulse">
+                <RotateCcw className="size-3.5 animate-spin text-sky-400 shrink-0" />
+                <span>AI analyzing question and formulating initial textbook search concepts...</span>
+              </div>
+            ) : (
+              agentSteps.map((s, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 text-xs rounded-xl p-3 bg-card/80 border border-border/70 shadow-xs transition-all"
+                >
+                  <span className="text-base select-none mt-0.5">
+                    {s.type === "tool_call"
+                      ? "🔍"
+                      : s.type === "tool_result"
+                      ? "✅"
+                      : s.type === "tool_miss"
+                      ? "🔄"
+                      : s.type === "synthesizing"
+                      ? "✨"
+                      : s.type === "cache_hit"
+                      ? "⚡"
+                      : "🧠"}
+                  </span>
+                  <div className="flex-1 space-y-1">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      {s.step && (
+                        <span className="text-[10px] font-mono font-black uppercase px-2 py-0.5 rounded bg-sky-500/15 text-sky-400 border border-sky-500/30">
+                          Step {s.step}
+                        </span>
+                      )}
+                      <span className="font-semibold text-foreground">{s.text}</span>
+                    </div>
+                    {s.matches && s.matches.length > 0 && (
+                      <div className="flex items-center gap-1.5 flex-wrap pt-1">
+                        <span className="text-[10px] font-bold text-muted-foreground uppercase">Matches:</span>
+                        {s.matches.slice(0, 4).map((m, mIdx) => (
+                          <span
+                            key={mIdx}
+                            className="text-[10px] font-mono font-medium bg-secondary/80 text-foreground px-2 py-0.5 rounded-md border border-border/70"
+                          >
+                            {m}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       )}
@@ -336,6 +445,30 @@ export function AiLocatorView({
                   </button>
                 </div>
               </div>
+
+              {/* Agentic Tool-Search Verification Badge */}
+              {data?.searchedTerms && data.searchedTerms.length > 0 && (
+                <div className="flex items-center gap-2 flex-wrap text-xs rounded-xl bg-sky-500/5 border border-sky-500/20 px-3 py-2">
+                  <span className="font-bold text-sky-400 flex items-center gap-1.5 text-[11px] uppercase tracking-wider">
+                    <span>⚡ Verified via Real Index Data:</span>
+                  </span>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {data.searchedTerms.map((term, tIdx) => (
+                      <span
+                        key={tIdx}
+                        className="font-mono text-[11px] font-semibold bg-background px-2 py-0.5 rounded-md border border-border text-foreground shadow-xs"
+                      >
+                        "{term}"
+                      </span>
+                    ))}
+                    {data.stepCount && (
+                      <span className="text-[10px] text-muted-foreground font-mono">
+                        ({data.stepCount} tool {data.stepCount === 1 ? "call" : "calls"})
+                      </span>
+                    )}
+                  </div>
+                </div>
+              )}
 
               {/* Direct 1-Line Locator Answer */}
               {quickAnswer && (

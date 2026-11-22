@@ -242,6 +242,9 @@ export function App() {
               <AiLocatorView
                 subjects={SUBJECTS}
                 activeSubject={activeSubject}
+                allSearchData={allSearchData}
+                allSubjectsDataMap={allSubjectsDataMap}
+                tocData={tocData}
                 onSwitchSubject={(subId) => handleSubjectChange(subId, true)}
                 onSelectPage={handleSelectPage}
                 onSelectTopic={handleSelectTopic}

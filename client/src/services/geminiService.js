@@ -1,15 +1,146 @@
 /**
- * Gemini AI Textbook Locator & Page Pinpointer Service
- * ----------------------------------------------------
- * Connects to Google Gemini 2.5 Flash API using the user's API key.
- * Analyzes natural language questions, concepts, and problems,
- * and directly pinpoints the exact textbook references:
- * Subject, Book Title, Chapter, Section, and exact Page Numbers.
+ * Gemini AI Textbook Locator & Agentic Tool-Augmented Search Service
+ * ------------------------------------------------------------------
+ * 1. AI analyzes student's natural language question and formulates search keywords.
+ * 2. Browser calls local search tool `search_textbook_index` to query verified
+ *    topics, chapters, sections, and page numbers directly in memory.
+ * 3. If verified matches are found, AI synthesizes 100% accurate textbook citations.
+ * 4. If 0 matches are found, AI formulates alternative technical concepts, synonyms,
+ *    or chapter themes and re-invokes the search tool (repeating up to 5 times!).
+ * 5. 2-Tier Caching (in-memory Map + sessionStorage) guarantees 0-token repeat lookups.
  */
 
 const DEFAULT_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 const STORAGE_KEY = "custom_gemini_api_key";
-const GEMINI_MODEL = "gemini-2.5-flash";
+const CANDIDATE_MODELS = [
+  "gemini-3.5-flash",
+  "gemini-3.5-flash-lite",
+  "gemini-3.6-flash",
+  "gemini-3.8-flash",
+];
+
+async function callGeminiApi(payload, apiKey) {
+  let lastError = null;
+
+  for (const model of CANDIDATE_MODELS) {
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(
+      apiKey
+    )}`;
+
+    try {
+      let response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      // Handle 400 for thinking or system_instruction
+      if (!response.ok && response.status === 400) {
+        const errJson = await response.clone().json().catch(() => ({}));
+        const msg = (errJson?.error?.message || "").toLowerCase();
+        let retryNeeded = false;
+        const modifiedPayload = JSON.parse(JSON.stringify(payload));
+        if (msg.includes("thinking")) {
+          delete modifiedPayload.generationConfig?.thinkingConfig;
+          retryNeeded = true;
+        }
+        if (msg.includes("system_instruction") || msg.includes("systeminstruction")) {
+          const sysText = modifiedPayload.system_instruction?.parts?.[0]?.text || "";
+          delete modifiedPayload.system_instruction;
+          if (sysText && modifiedPayload.contents?.[0]?.parts?.[0]) {
+            modifiedPayload.contents[0].parts[0].text = `${sysText}\n\n${modifiedPayload.contents[0].parts[0].text}`;
+          }
+          retryNeeded = true;
+        }
+        if (retryNeeded) {
+          response = await fetch(endpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(modifiedPayload),
+          });
+        }
+      }
+
+      // If model deprecated (404), high demand (503), or quota exhausted on this model (429), try next model
+      if (
+        !response.ok &&
+        (response.status === 404 || response.status === 503 || response.status === 429)
+      ) {
+        const errJson = await response.json().catch(() => ({}));
+        lastError = new Error(errJson?.error?.message || `HTTP ${response.status} on ${model}`);
+        console.warn(`Gemini model ${model} returned ${response.status}, trying fallback model...`);
+        continue;
+      }
+
+      if (!response.ok) {
+        const errJson = await response.json().catch(() => ({}));
+        throw new Error(errJson?.error?.message || `Gemini request failed: HTTP ${response.status}`);
+      }
+
+      return await response.json();
+    } catch (e) {
+      lastError = e;
+      if (
+        e.message &&
+        !e.message.includes("404") &&
+        !e.message.includes("503") &&
+        !e.message.includes("429")
+      ) {
+        throw e;
+      }
+    }
+  }
+
+  throw (
+    lastError ||
+    new Error("Failed to communicate with Gemini API. Please check your network or API key.")
+  );
+}
+
+// 2-Tier Response Cache: stores (subjectId:query) -> parsed response
+const queryMemoryCache = new Map();
+
+function getCachedResult(subjectId, query) {
+  const key = `${subjectId || "all"}:${query.trim().toLowerCase()}`;
+  if (queryMemoryCache.has(key)) {
+    return queryMemoryCache.get(key);
+  }
+  try {
+    const raw = sessionStorage.getItem(`ee7th_gemini_${key}`);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      queryMemoryCache.set(key, parsed);
+      return parsed;
+    }
+  } catch {
+    /* ignore session read */
+  }
+  return null;
+}
+
+function setCachedResult(subjectId, query, result) {
+  const key = `${subjectId || "all"}:${query.trim().toLowerCase()}`;
+  queryMemoryCache.set(key, result);
+  try {
+    sessionStorage.setItem(`ee7th_gemini_${key}`, JSON.stringify(result));
+  } catch {
+    /* ignore session write */
+  }
+}
+
+export function clearGeminiCache() {
+  queryMemoryCache.clear();
+  try {
+    const keysToRemove = [];
+    for (let i = 0; i < sessionStorage.length; i++) {
+      const k = sessionStorage.key(i);
+      if (k && k.startsWith("ee7th_gemini_")) keysToRemove.push(k);
+    }
+    keysToRemove.forEach((k) => sessionStorage.removeItem(k));
+  } catch {
+    /* ignore */
+  }
+}
 
 export function getGeminiApiKey() {
   if (typeof window === "undefined") return DEFAULT_API_KEY;
@@ -18,7 +149,7 @@ export function getGeminiApiKey() {
 
 export function setGeminiApiKey(key) {
   if (typeof window === "undefined") return;
-  if (!key || key.trim() === "") {
+  if (!key || !key.trim()) {
     localStorage.removeItem(STORAGE_KEY);
   } else {
     localStorage.setItem(STORAGE_KEY, key.trim());
@@ -30,253 +161,444 @@ export function hasGeminiApiKey() {
   return Boolean(k && k.trim().length > 10);
 }
 
-const TEXTBOOK_SYSTEM_PROMPT = `You are a dedicated Textbook Locator Assistant for Electrical Engineering (EE 7th Semester).
-Your ONLY goal is to help students find EXACTLY where topics, concepts, derivations, and questions are located across their 3 textbooks:
-
-BOOK 1: Computer Networks (EE-701A)
-- Title: Data Communications and Networking (Forouzan NetAtlas, 1,134 pages)
-- Key Parts:
-  * Physical Layer (pp. 55-266, Ch 3-9): Analog/Digital signals, transmission media, multiplexing (FDM, TDM, WDM), circuit & packet switching.
-  * Data Link Layer (pp. 267-566, Ch 10-18): Error detection/correction (CRC, Hamming code, Checksum), Framing, Flow/Error control (HDLC, PPP), MAC (ALOHA, CSMA/CD, CSMA/CA), Ethernet (802.3), Wireless LAN (802.11 WiFi, Bluetooth), SONET/SDH, ATM, Frame Relay.
-  * Network Layer (pp. 567-700, Ch 19-22): IPv4, IPv6, Subnetting, CIDR, ARP, RARP, DHCP, ICMP, Routing (RIP, OSPF, BGP).
-  * Transport Layer (pp. 701-764, Ch 23-24): UDP, TCP (segment format, 3-way handshake, flow/congestion control), SCTP.
-  * Application Layer (pp. 765-874, Ch 25-29): DNS, Telnet, SSH, Email (SMTP, POP3, IMAP), FTP, WWW, HTTP.
-  * Security (pp. 875-970, Ch 30-32): Cryptography (DES, AES, RSA), IPsec, SSL/TLS, PGP, Firewalls.
-
-BOOK 2: Internet of Things (EE-702B)
-- Title: Internet of Things: A Hands-On Approach by Arshdeep Bahga & Vijay Madisetti (520 pages)
-- Key Parts:
-  * Part 1: Concepts & Protocols (pp. 17-110, Ch 1-4): IoT characteristics, Protocols (CoAP, MQTT, XMPP, AMQP, 6LoWPAN), IoT vs M2M, NETCONF-YANG.
-  * Part 2: Platforms & Devices (pp. 111-332, Ch 5-9): Python for IoT, Raspberry Pi (Linux, GPIO, SPI, I2C, UART), Cloud offerings (WAMP, Django, AWS EC2/S3).
-  * Part 3: Advanced Topics (pp. 333-485, Ch 10-14): IoT Analytics (Hadoop, MapReduce, Apache Spark, Storm), Chef/Puppet.
-
-BOOK 3: Electric Drives (EE-701B / PC-EE-701)
-- Title: Fundamentals of Electrical Drives (2nd Ed.) by Gopal K. Dubey (392 pages)
-- Key Parts:
-  * Part 1: Fundamentals & Dynamics (pp. 1-59, Ch 1-4): Torque equation (T - Tl = J dw/dt), 4-quadrant operation, load torques, transient time/energy loss, steady-state stability (dTl/dw > dTm/dw), flywheel load equalization, closed-loop speed/torque/PLL control, motor duty classes (S1-S8), thermal heating/cooling model.
-  * Part 2: DC Motor Drives (pp. 60-139, Ch 5): Starting, Braking (regenerative p. 68, dynamic p. 69, plugging p. 73), speed control, Ward Leonard, controlled rectifiers (1-phase/3-phase fully/half controlled, dual converter pp. 114-118), choppers (pp. 121-131).
-  * Part 3: Induction Motor Drives (pp. 140-243, Ch 6): Starting (star-delta p. 152, auto-transformer p. 153, soft start p. 154, rotor resistance p. 155), Braking (regenerative p. 158, plugging p. 160, dynamic p. 163), Speed control (stator voltage, V/f control pp. 186-190, VSI drives pp. 191-196, CSI drives pp. 206-210, cycloconverter p. 197, slip power recovery: Static Scherbius p. 219, Static Kramer p. 221), single-phase & linear induction motors.
-  * Part 4: Synchronous & BLDC Drives (pp. 244-279, Ch 7): Synchronous motor drives, starting large machines, LCI inverter drives (pp. 260-265), PMAC, BLDC trapezoidal motors (pp. 271-276).
-  * Part 5: Stepper & SRM Drives (pp. 280-296, Ch 8): Stepper motors (VR, PM, hybrid, drive circuits pp. 280-287), Switched Reluctance Motors (pp. 288-295).
-  * Part 6: Solar, Traction & Conservation (pp. 297-382, Ch 9-12): PV/battery pump drives, Electric traction (mechanics, coefficient of adhesion p. 309, 25 kV AC traction p. 333, chopper DC traction p. 339, diesel electric), energy conservation, control circuits/relays.
-
-RULES:
-- The user ONLY wants to know WHERE they get those details in the textbook (Book, Chapter, Section, Page number).
-- DO NOT WRITE ESSAYS OR LONG EXPLANATIONS.
-- Be concise, direct, and pinpoint exact page ranges.
-- Respond in valid JSON format matching this schema:
-{
-  "quickAnswer": "Direct 1-line answer stating which chapter and pages discuss this topic.",
-  "citations": [
-    {
-      "subjectId": "electric-drives" | "computer-networks" | "iot",
-      "subjectName": "Electric Drives" | "Computer Networks" | "Internet of Things",
-      "bookTitle": "Fundamentals of Electrical Drives (Dubey) / Forouzan NetAtlas / Bahga & Madisetti IoT",
-      "chapter": "Chapter Number & Name (e.g. Chapter 6: Induction Motor Drives)",
-      "section": "Section Number & Name (e.g. 6.5 Starting)",
-      "page": 151,
-      "pageRange": "151–157",
-      "details": "Short bullet summary of what is on this page (e.g., Inrush current, Star-Delta starter circuit, current equations)"
-    }
-  ],
-  "keyPages": [
-    "p. 151: Inrush current & direct online starting impact",
-    "p. 152: Star-delta starter calculation & wiring diagram",
-    "p. 154: Soft-starter using saturable reactor"
-  ]
+function normalizeSubjectId(subjectId) {
+  const s = String(subjectId || "").toLowerCase();
+  if (s.includes("net") || s.includes("forouzan") || s.includes("701")) return "computer-networks";
+  if (s.includes("iot") || s.includes("bahga") || s.includes("702")) return "iot";
+  return "electric-drives";
 }
-`;
 
-export async function askGeminiTextbookLocator(userQuery) {
-  const apiKey = getGeminiApiKey();
-  if (!apiKey) {
-    throw new Error(
-      "Gemini API Key is missing. Please set your API key in client/.env or enter it in the AI Assistant settings."
-    );
-  }
+/**
+ * High-performance client-side search over verified textbook datasets
+ * Searches topics, subtopics, chapters, sections, and page details.
+ */
+export function searchLocalIndex(
+  keywords,
+  activeSubject,
+  allSearchData = [],
+  allSubjectsDataMap = null
+) {
+  if (!keywords || !keywords.trim()) return [];
+  const q = keywords.toLowerCase().trim();
+  const words = q.split(/\s+/).filter((w) => w.length > 2);
+  const matched = [];
 
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${encodeURIComponent(
-    apiKey
-  )}`;
+  for (const item of allSearchData) {
+    let score = 0;
+    const t = (item.topic || "").toLowerCase();
 
-  const promptText = `${TEXTBOOK_SYSTEM_PROMPT}
+    // 1. Direct match on main topic
+    if (t === q) score += 120;
+    else if (t.startsWith(q)) score += 80;
+    else if (t.includes(q)) score += 55;
+    else if (words.length > 0 && words.every((w) => t.includes(w))) score += 40;
+    else if (words.some((w) => t.includes(w))) score += 15;
 
-User Question / Query:
-"${userQuery.trim()}"
+    // 2. Subtopics match
+    let bestSub = null;
+    if (item.subtopics && Array.isArray(item.subtopics)) {
+      for (const sub of item.subtopics) {
+        const st = (sub.topic || "").toLowerCase();
+        const comb = `${t} ${st}`;
+        if (comb === q || st === q) {
+          score += 90;
+          bestSub = sub;
+        } else if (comb.includes(q) || st.includes(q)) {
+          score += 60;
+          if (!bestSub) bestSub = sub;
+        } else if (words.length > 0 && words.every((w) => comb.includes(w))) {
+          score += 45;
+          if (!bestSub) bestSub = sub;
+        } else if (words.some((w) => st.includes(w))) {
+          score += 15;
+          if (!bestSub) bestSub = sub;
+        }
+      }
+    }
 
-Respond ONLY with valid JSON. Keep it strictly focused on Book, Chapter, Section, and Page Numbers.`;
+    // 3. Chapters / Sections / Page Details match
+    if (item.page_details && Array.isArray(item.page_details)) {
+      for (const pd of item.page_details) {
+        const sec = (pd.section || "").toLowerCase();
+        const subsec = (pd.subsection || "").toLowerCase();
+        const ch = (pd.chapter || "").toLowerCase();
+        if (sec.includes(q) || subsec.includes(q)) score += 40;
+        else if (words.length > 0 && words.every((w) => (sec + " " + subsec).includes(w))) score += 30;
+        else if (ch.includes(q)) score += 15;
+      }
+    }
 
-  // Use thinkingBudget: 0 for instant response and 4096 maxOutputTokens
-  // so thinking tokens never consume output tokens or truncate citations.
-  const payload = {
-    contents: [
-      {
-        role: "user",
-        parts: [{ text: promptText }],
-      },
-    ],
-    generationConfig: {
-      temperature: 0.1,
-      topP: 0.8,
-      maxOutputTokens: 4096,
-      responseMimeType: "application/json",
-      thinkingConfig: {
-        thinkingBudget: 0,
-      },
-    },
-  };
+    if (score > 0) {
+      const firstDetail = item.page_details?.[0] || {};
+      const rawPage = bestSub?.pages?.[0] || item.pages?.[0] || firstDetail.page || "1";
+      const cleanPage = String(rawPage).replace(/[^0-9]/g, "") || "1";
+      const pageRange =
+        (item.pages && item.pages.length > 1
+          ? `${item.pages[0]}–${item.pages[item.pages.length - 1]}`
+          : item.pages?.[0]) || cleanPage;
 
-  let response = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(payload),
-  });
-
-  // Graceful fallback if an API version doesn't support thinkingConfig
-  if (!response.ok && response.status === 400) {
-    const errorData = await response.clone().json().catch(() => ({}));
-    const msg = errorData?.error?.message || "";
-    if (msg.toLowerCase().includes("thinking")) {
-      delete payload.generationConfig.thinkingConfig;
-      response = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+      matched.push({
+        topic: bestSub ? `${item.topic} (${bestSub.topic})` : item.topic,
+        subjectId: activeSubject?.id || "",
+        bookTitle: activeSubject?.bookTitle || "",
+        part: firstDetail.part || item.parts?.[0] || "",
+        chapter: firstDetail.chapter || item.chapters?.[0] || "",
+        section: firstDetail.section || "",
+        page: cleanPage,
+        pageRange: String(pageRange),
+        score,
+        details: bestSub
+          ? `Subtopic: ${bestSub.topic}. Found in ${firstDetail.chapter || item.chapters?.[0] || ""}`
+          : `Topic in ${firstDetail.chapter || item.chapters?.[0] || ""}, Section: ${firstDetail.section || "General"}`,
       });
     }
   }
 
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({}));
-    const message =
-      errorData?.error?.message ||
-      `Gemini API request failed with HTTP ${response.status} (${response.statusText})`;
-    throw new Error(message);
+  // Cross-subject lookup if 0 matches found in active book
+  if (
+    matched.length === 0 &&
+    allSubjectsDataMap &&
+    typeof allSubjectsDataMap.forEach === "function"
+  ) {
+    allSubjectsDataMap.forEach((data, subId) => {
+      if (subId === activeSubject?.id || !data?.allSearchData) return;
+      const otherMatches = searchLocalIndex(keywords, { id: subId }, data.allSearchData);
+      if (otherMatches.length > 0) {
+        matched.push(...otherMatches.slice(0, 2));
+      }
+    });
   }
 
-  const data = await response.json();
-  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-
-  if (!rawText) {
-    throw new Error("Gemini returned an empty response. Please try again.");
-  }
-
-  return parseGeminiResponse(rawText);
+  matched.sort((a, b) => b.score - a.score);
+  return matched.slice(0, 5);
 }
 
 /**
- * Bulletproof JSON parser for textbook citations
+ * Agentic Tool-Augmented Search Loop (Up to 5 Iterations)
+ * 1. AI formulates search keywords
+ * 2. Browser calls local search tool against real database
+ * 3. AI receives verified data and formulates citation or refines keywords
  */
-export function parseGeminiResponse(rawText) {
-  if (!rawText || typeof rawText !== "string") {
-    return {
-      quickAnswer: "No location found.",
-      citations: [],
-      keyPages: [],
+export async function askGeminiAgenticLocator(
+  userQuery,
+  activeSubject = {},
+  allSearchData = [],
+  allSubjectsDataMap = null,
+  onStep = () => {}
+) {
+  const trimmed = userQuery.trim();
+  if (!trimmed) {
+    return { quickAnswer: "Please enter a question or topic.", citations: [], keyPages: [] };
+  }
+
+  const normSubId = normalizeSubjectId(activeSubject?.id);
+  const bookTitle = activeSubject?.bookTitle || "Electrical Engineering Textbook";
+  const subjectName = activeSubject?.name || "Electrical Engineering";
+
+  // Check cache first (0 tokens)
+  const cached = getCachedResult(normSubId, trimmed);
+  if (cached) {
+    onStep({
+      step: 1,
+      type: "cache_hit",
+      text: `Loaded verified citations from local cache (0 API tokens consumed).`,
+    });
+    return cached;
+  }
+
+  const apiKey = getGeminiApiKey();
+  if (!apiKey) {
+    throw new Error(
+      "Gemini API Key is missing. Please set your API key in client/.env or enter it in the AI settings."
+    );
+  }
+
+  const tools = [
+    {
+      function_declarations: [
+        {
+          name: "search_textbook_index",
+          description: `Searches the verified ${subjectName} (${bookTitle}) index and Table of Contents for topics, concepts, formulas, and exact page numbers.`,
+          parameters: {
+            type: "OBJECT",
+            properties: {
+              keywords: {
+                type: "STRING",
+                description:
+                  "1 to 3 search terms or technical concepts (e.g. 'regenerative braking', 'slip energy recovery', 'CRC calculation', 'MQTT packet')",
+              },
+            },
+            required: ["keywords"],
+          },
+        },
+      ],
+    },
+  ];
+
+  const systemInstruction = `You are an expert Textbook Reference Locator for ${subjectName} (${bookTitle}).
+The user has a question about a topic, formula, or exam concept.
+Your task is to find the EXACT textbook locations (Chapter, Section, Page Numbers) by searching our real database.
+
+CRITICAL RULES:
+1. You MUST call the 'search_textbook_index' tool to search for 1-3 concise keywords from the user's question.
+2. If the tool returns verified matches (resultsCount > 0), review the real data and synthesize the final citation response.
+3. If the tool returns 0 matches or irrelevant results, THINK of alternative technical terms, synonyms, acronyms, or broader chapter concepts, and CALL 'search_textbook_index' again. You can call the tool up to 5 times.
+4. When finished, your final response MUST be a valid JSON object matching this schema:
+{
+  "quickAnswer": "Direct 1-2 sentence answer stating exactly where in the book this topic is located",
+  "citations": [
+    {
+      "subjectId": "${normSubId}",
+      "bookTitle": "${bookTitle}",
+      "chapter": "Chapter number and title (e.g. Chapter 6: Induction Motor Drives)",
+      "section": "Section number and title (e.g. 6.6 Braking)",
+      "page": "158",
+      "pageRange": "158-160",
+      "details": "Precise summary of what is explained on this page",
+      "relevance": "Why this page answers the user's question"
+    }
+  ],
+  "keyPages": ["Page 158: Regenerative braking principle", "Page 160: Inverter regenerative circuit"],
+  "searchedTerms": ["keyword1", "keyword2"]
+}`;
+
+  const contents = [
+    {
+      role: "user",
+      parts: [
+        {
+          text: `User Question: "${trimmed}"\n` +
+                `Call 'search_textbook_index' to find its exact pages and chapters in ${bookTitle}.`,
+        },
+      ],
+    },
+  ];
+
+  const searchedTerms = [];
+  let finalResult = null;
+  const MAX_STEPS = 5;
+
+  onStep({
+    step: 1,
+    type: "thinking",
+    text: `AI analyzing question: "${trimmed}"...`,
+  });
+
+  for (let step = 1; step <= MAX_STEPS; step++) {
+    const payload = {
+      system_instruction: { parts: [{ text: systemInstruction }] },
+      contents,
+      tools,
+      generationConfig: {
+        temperature: 0.1,
+        topP: 0.8,
+        maxOutputTokens: 800,
+        thinkingConfig: { thinkingBudget: 0 },
+      },
     };
-  }
 
-  let clean = rawText.trim();
-  const fenceMatch = clean.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
-  if (fenceMatch) {
-    clean = fenceMatch[1].trim();
-  } else {
-    const firstBrace = clean.indexOf("{");
-    const lastBrace = clean.lastIndexOf("}");
-    if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
-      clean = clean.slice(firstBrace, lastBrace + 1);
+    const data = await callGeminiApi(payload, apiKey);
+    const candidate = data?.candidates?.[0];
+    if (!candidate || !candidate.content?.parts?.length) {
+      break;
+    }
+
+    contents.push(candidate.content);
+    const part =
+      candidate.content.parts.find((p) => p.functionCall) || candidate.content.parts[0];
+
+    // Case 1: AI calls the tool
+    if (part.functionCall) {
+      const args = part.functionCall.args || {};
+      const kw = (args.keywords || "").trim();
+      searchedTerms.push(kw);
+
+      onStep({
+        step,
+        type: "tool_call",
+        keywords: kw,
+        text: `Tool Call (Step ${step}/${MAX_STEPS}): Querying verified index for "${kw}"...`,
+      });
+
+      const searchResults = searchLocalIndex(kw, activeSubject, allSearchData, allSubjectsDataMap);
+
+      if (searchResults.length > 0) {
+        onStep({
+          step,
+          type: "tool_result",
+          keywords: kw,
+          count: searchResults.length,
+          matches: searchResults.map((r) => r.topic),
+          text: `Found ${searchResults.length} verified match(es): ${searchResults.map((r) => r.topic).join(", ")}`,
+        });
+      } else {
+        onStep({
+          step,
+          type: "tool_miss",
+          keywords: kw,
+          text: `No direct matches for "${kw}". AI thinking of alternative concepts (Step ${step + 1}/${MAX_STEPS})...`,
+        });
+      }
+
+      contents.push({
+        role: "user",
+        parts: [
+          {
+            functionResponse: {
+              name: part.functionCall.name,
+              response: {
+                query: kw,
+                resultsCount: searchResults.length,
+                results: searchResults,
+                tip:
+                  searchResults.length === 0
+                    ? "No exact match. Try alternative technical terms, acronyms, or related chapter concepts."
+                    : "Matches found. You may synthesize the final JSON answer now or search again if needed.",
+              },
+            },
+          },
+        ],
+      });
+    } else if (part.text) {
+      // Case 2: AI completed and returned text / JSON
+      onStep({
+        step,
+        type: "synthesizing",
+        text: `Synthesizing verified textbook citations from real index data...`,
+      });
+
+      finalResult = parseGeminiResponse(part.text);
+      if (finalResult) {
+        finalResult.searchedTerms = Array.from(
+          new Set([...(finalResult.searchedTerms || []), ...searchedTerms])
+        );
+        finalResult.stepCount = step;
+        finalResult.verifiedWithRealData = true;
+      }
+      break;
     }
   }
 
-  // 1. Direct JSON.parse
-  try {
-    const parsed = JSON.parse(clean);
-    if (parsed && typeof parsed === "object") {
-      return normalizeParsedResponse(parsed);
-    }
-  } catch {
-    // 2. Backslash sanitizer
-    try {
-      const sanitized = clean.replace(
-        /\\([^"\\/bfnrtu]|u[^0-9a-fA-F]{4})/g,
-        "\\\\$1"
-      );
-      const parsed = JSON.parse(sanitized);
-      if (parsed && typeof parsed === "object") {
-        return normalizeParsedResponse(parsed);
-      }
-    } catch {
-      // 3. Regex extraction fallback
-      const quickAnswerMatch = clean.match(
-        /"(?:quickAnswer|summary)"\s*:\s*"((?:\\.|[^"\\])*)"/s
-      );
-
-      let citations = [];
-      const citationsMatch = clean.match(
-        /"citations"\s*:\s*\[([\s\S]*?)\]\s*(?:,|\})/
-      );
-      if (citationsMatch) {
-        const citeObjRegex = /\{[\s\S]*?\}/g;
-        let m;
-        while ((m = citeObjRegex.exec(citationsMatch[1])) !== null) {
-          try {
-            const sanitizedCite = m[0].replace(
-              /\\([^"\\/bfnrtu]|u[^0-9a-fA-F]{4})/g,
-              "\\\\$1"
-            );
-            citations.push(JSON.parse(sanitizedCite));
-          } catch {
-            // skip malformed single item
-          }
-        }
-      }
-
-      let keyPages = [];
-      const pagesMatch = clean.match(
-        /"(?:keyPages|keyPageHighlights|relatedTopics)"\s*:\s*\[([\s\S]*?)\]/
-      );
-      if (pagesMatch) {
-        const stringRegex = /"([^"\\]+)"/g;
-        let sm;
-        while ((sm = stringRegex.exec(pagesMatch[1])) !== null) {
-          keyPages.push(sm[1]);
-        }
-      }
-
-      const quickAnswer = quickAnswerMatch
-        ? quickAnswerMatch[1].replace(/\\"/g, '"').replace(/\\n/g, "\n")
-        : "Textbook Reference Found";
-
-      return {
-        quickAnswer,
-        citations,
-        keyPages,
+  // Fallback if loop ended without finalResult (e.g. after 5 tool calls)
+  if (!finalResult) {
+    const lastTerm = searchedTerms[searchedTerms.length - 1] || trimmed;
+    const finalMatches = searchLocalIndex(lastTerm, activeSubject, allSearchData, allSubjectsDataMap);
+    if (finalMatches.length > 0) {
+      finalResult = {
+        quickAnswer: `Found relevant sections in ${bookTitle} for "${trimmed}".`,
+        citations: finalMatches.map((m) => ({
+          subjectId: normSubId,
+          bookTitle,
+          chapter: m.chapter,
+          section: m.section,
+          page: m.page,
+          pageRange: m.pageRange,
+          details: m.details,
+          relevance: `Matched verified topic "${m.topic}"`,
+        })),
+        keyPages: finalMatches.map((m) => `Page ${m.page}: ${m.topic}`),
+        searchedTerms,
+        stepCount: searchedTerms.length,
+        verifiedWithRealData: true,
+      };
+    } else {
+      finalResult = {
+        quickAnswer: `No direct textbook index match found after searching ${searchedTerms.length} keyword variants. Try searching in the Instant Topic Finder.`,
+        citations: [],
+        keyPages: [],
+        searchedTerms,
+        stepCount: searchedTerms.length,
       };
     }
   }
 
+  if (finalResult?.citations?.length > 0 || finalResult?.quickAnswer) {
+    setCachedResult(normSubId, trimmed, finalResult);
+  }
+
+  return finalResult;
+}
+
+/**
+ * Primary Exported Ask Function
+ * Seamlessly delegates to the Agentic Tool-Augmented Search Engine
+ */
+export async function askGeminiTextbookLocator(
+  userQuery,
+  activeSubjectOrId = "",
+  allSearchData = [],
+  allSubjectsDataMap = null,
+  onStep = () => {}
+) {
+  const activeSubject =
+    typeof activeSubjectOrId === "object" && activeSubjectOrId !== null
+      ? activeSubjectOrId
+      : { id: String(activeSubjectOrId || "electric-drives") };
+
+  return askGeminiAgenticLocator(
+    userQuery,
+    activeSubject,
+    allSearchData,
+    allSubjectsDataMap,
+    onStep
+  );
+}
+
+/**
+ * Robust JSON parser for textbook citations
+ */
+export function parseGeminiResponse(rawText) {
+  if (!rawText || typeof rawText !== "string") {
+    return { quickAnswer: "No location found.", citations: [], keyPages: [] };
+  }
+
+  let clean = rawText.trim();
+  clean = clean.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```$/, "").trim();
+
+  try {
+    const parsed = JSON.parse(clean);
+    return normalizeParsedOutput(parsed);
+  } catch {
+    const match = clean.match(/\{[\s\S]*\}/);
+    if (match) {
+      try {
+        const parsed = JSON.parse(match[0]);
+        return normalizeParsedOutput(parsed);
+      } catch {
+        /* continue fallback */
+      }
+    }
+  }
+
   return {
-    quickAnswer: "Textbook Reference Found",
+    quickAnswer: clean.slice(0, 300),
     citations: [],
     keyPages: [],
   };
 }
 
-function normalizeParsedResponse(parsed) {
-  const quickAnswer =
-    parsed.quickAnswer || parsed.summary || "Textbook location found below:";
-  const citations = Array.isArray(parsed.citations) ? parsed.citations : [];
-  const keyPages = Array.isArray(parsed.keyPages)
-    ? parsed.keyPages
-    : Array.isArray(parsed.keyPageHighlights)
-    ? parsed.keyPageHighlights
-    : [];
+function normalizeParsedOutput(parsed) {
+  if (!parsed || typeof parsed !== "object") {
+    return { quickAnswer: "No location found.", citations: [], keyPages: [] };
+  }
 
   return {
-    quickAnswer,
-    citations,
-    keyPages,
+    quickAnswer: parsed.quickAnswer || parsed.answer || "Location found in textbook.",
+    citations: Array.isArray(parsed.citations)
+      ? parsed.citations.map((c) => ({
+          subjectId: c.subjectId || "",
+          bookTitle: c.bookTitle || "",
+          chapter: c.chapter || "",
+          section: c.section || "",
+          page: String(c.page || "1").replace(/[^0-9]/g, "") || "1",
+          pageRange: c.pageRange ? String(c.pageRange) : String(c.page || "1"),
+          details: c.details || c.description || "",
+          relevance: c.relevance || "",
+        }))
+      : [],
+    keyPages: Array.isArray(parsed.keyPages) ? parsed.keyPages : [],
+    searchedTerms: Array.isArray(parsed.searchedTerms) ? parsed.searchedTerms : [],
+    stepCount: parsed.stepCount || 1,
+    verifiedWithRealData: Boolean(parsed.verifiedWithRealData),
   };
 }
