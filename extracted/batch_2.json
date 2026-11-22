@@ -1,0 +1,5448 @@
+[
+  {
+    "image": "IMG_20261115_231756.jpg",
+    "index_page": 1115,
+    "entries": [
+      {
+        "topic": "class C address",
+        "pages": ["553"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "classful addressing",
+        "pages": ["552"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "blocks",
+            "pages": ["553"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "classes",
+            "pages": ["553"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "classless addressing",
+            "pages": ["554"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "classless addressing",
+        "pages": ["555"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "address allocation",
+            "pages": ["561"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "classful addressing",
+            "pages": ["554"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "first address",
+            "pages": ["556"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "hierarchy",
+            "pages": ["561"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "last address",
+            "pages": ["556"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "restrictions",
+            "pages": ["555"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "routing table",
+            "pages": ["656"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Classless Interdomain Routing",
+        "pages": [],
+        "see": "CIDR",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "clear to send (CTS)",
+        "pages": ["425"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "CLEC",
+        "pages": ["242", "1059"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "POP",
+            "pages": ["243"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "client",
+        "pages": ["704"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "client program",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "port number",
+            "pages": ["704"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "client/server",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "DNS",
+            "pages": ["797"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "e-mail",
+            "pages": ["827"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "LANE",
+            "pages": ["539"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "paradigm",
+            "pages": ["704"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "remote login",
+            "pages": ["817"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "types",
+            "pages": ["797"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "WWW",
+            "pages": ["851"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "client-server paradigm",
+        "pages": ["704"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Clos criteria",
+        "pages": ["230"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "closed-loop congestion control",
+        "pages": ["765"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "coax",
+        "pages": [],
+        "see": "coaxial cable",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "coaxial cable",
+        "pages": ["192", "195"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "applications",
+            "pages": ["197"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "cable TV",
+            "pages": ["197", "256"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "conductor",
+            "pages": ["196"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "connector",
+            "pages": ["196"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Ethernet",
+            "pages": ["198"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "frequency range",
+            "pages": ["195"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "HFC",
+            "pages": ["257"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "performance",
+            "pages": ["197"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "sheath",
+            "pages": ["196"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "standards",
+            "pages": ["196"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "telephone network",
+            "pages": ["197"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "code",
+        "pages": ["5"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "code division multiple access",
+        "pages": [],
+        "see": "CDMA",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "codepoint",
+        "pages": ["585"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "codeword",
+        "pages": ["271", "275"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "dataword",
+            "pages": ["292"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "geometry",
+            "pages": ["276"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "coding",
+        "pages": ["101", "269"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "AMI",
+            "pages": ["110"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "complexity",
+            "pages": ["106"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "error detection",
+            "pages": ["106"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "noise coding",
+            "pages": ["106"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "NRZ",
+            "pages": ["107"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "schemes",
+            "pages": ["106"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "summary",
+            "pages": ["114"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "coding theory",
+        "pages": ["386"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "coherent BFSK",
+        "pages": ["147"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "ColdFusion",
+        "pages": ["859"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "collision",
+        "pages": ["364"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "CSMA",
+            "pages": ["370"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "CSSMA/CD",
+            "pages": ["374"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "hash function",
+            "pages": ["967"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "slot time",
+            "pages": ["401"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "wireless",
+            "pages": ["425"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "collision domain",
+        "pages": ["407"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Committed",
+        "pages": ["787"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "committed burst size",
+        "pages": [],
+        "see": "Bc",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "committed information rate",
+        "pages": [],
+        "see": null,
+        "see_also": "CIR",
+        "subtopics": [
+          {
+            "topic": "calculation",
+            "pages": ["788"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "common carrier",
+        "pages": ["242"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "after 1996",
+            "pages": ["1059"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Common Gateway Interface",
+        "pages": [],
+        "see": "CGI",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "community antenna TV",
+        "pages": ["256"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "compatible address",
+        "pages": ["571"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "competitive local exchange carrier",
+        "pages": [],
+        "see": "CLEC",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "complement",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "Walsh table",
+            "pages": ["389"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "complementary code keying",
+        "pages": [],
+        "see": "CCK",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "composite analog signal",
+        "pages": ["74"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "composite signal",
+        "pages": ["66", "1046"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "distortion",
+            "pages": ["83"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "compression",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "FTP",
+            "pages": ["843"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "MPEG",
+            "pages": ["907"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "spatial",
+            "pages": ["907"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "computer data",
+        "pages": ["80"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "conductor",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "twisted-pair",
+            "pages": ["193"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "unguided media",
+            "pages": ["203"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "confidentiality",
+        "pages": ["962", "964", "991"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "configuration management",
+        "pages": ["874"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "documentation",
+            "pages": ["874"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "hardware reconfiguration",
+            "pages": ["874"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "reconfiguration",
+            "pages": ["874"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "subsystems",
+            "pages": ["874"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "congestion",
+        "pages": ["521", "763", "773"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "additive increase",
+            "pages": ["770"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "buffer",
+            "pages": ["623"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "destination host",
+            "pages": ["623"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "example",
+            "pages": ["763"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Frame Relay",
+            "pages": ["521"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "ICMPv6",
+            "pages": ["639"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "leaky bucket",
+            "pages": ["778"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "multiplicative decrease",
+            "pages": ["771"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "prevention",
+            "pages": ["766"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "queue",
+            "pages": ["764"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "routers",
+            "pages": ["623"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "congestion avoidance",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "Frame Relay",
+            "pages": ["773"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "congestion avoidance (additive increase)",
+        "pages": ["772"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "congestion control",
+        "pages": ["522", "720", "761", "763", "765"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "closed-loop",
+            "pages": ["767"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Frame Relay",
+            "pages": ["773"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "network role",
+            "pages": ["769"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "open-loop",
+            "pages": ["766"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SCTP",
+            "pages": ["742", "753"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "congestion policy",
+        "pages": ["769"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "congestion window",
+        "pages": ["769"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "congestion window (cwnd)",
+        "pages": ["730"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "congestion-controlled traffic",
+        "pages": ["599"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connecting device",
+        "pages": ["36", "445"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connection",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "nonpersistent",
+            "pages": ["868"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "persistent",
+            "pages": ["868"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "connection control",
+        "pages": ["38"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connection establishment",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "procedure",
+            "pages": ["723"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "three-way handshaking",
+            "pages": ["723"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "connection setup",
+        "pages": ["217"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connection teardown",
+        "pages": ["217"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connection termination",
+        "pages": ["748"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connectionless",
+        "pages": ["219"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connectionless network",
+        "pages": ["219"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connectionless service",
+        "pages": ["582", "707"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "UDP",
+            "pages": ["713"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "connectionless transport layer",
+        "pages": ["38", "701"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connection-oriented",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "protocol",
+            "pages": ["538"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "connection-oriented service",
+        "pages": ["582", "707", "718", "738"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "TCP",
+            "pages": ["45"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "connection-oriented transport layer",
+        "pages": ["38", "701"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "connector",
+        "pages": ["193"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "coaxial cable",
+            "pages": ["196"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "optical fiber",
+            "pages": ["200"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "constant bit rate traffic",
+        "pages": ["762"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "constellation diagram",
+        "pages": ["150"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Consultative Committee for International Telegraphy and Telephony",
+        "pages": [],
+        "see": "CCITT",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "contact address",
+        "pages": ["1061"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "contention",
+        "pages": ["364"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "contention window",
+        "pages": ["378"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "control chunk",
+        "pages": ["742"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "control field",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "HDLC",
+            "pages": ["342"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "types",
+            "pages": ["343"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "control frame",
+        "pages": ["428"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "control information",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "SCTP",
+            "pages": ["740"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "control variable",
+        "pages": ["319"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "controlled access",
+        "pages": ["379"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "controller",
+        "pages": ["10", "852"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "convergence sublayer",
+        "pages": [],
+        "see": "CS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "convolution coding",
+        "pages": ["269"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "cookie",
+        "pages": ["725", "744-745", "853-854"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "advertising agency",
+            "pages": ["854"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "COOKIE ACK chunk",
+        "pages": ["744"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "COOKIE ECHO chunk",
+        "pages": ["744"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "core",
+        "pages": ["198"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "core router",
+        "pages": ["684", "690"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Core-Based Tree",
+        "pages": [],
+        "see": "CBT",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "corrupted frame",
+        "pages": ["318"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "cosine wave",
+        "pages": ["1045"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "cosmic ray",
+        "pages": ["192"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "cotangent",
+        "pages": ["1046"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "country domain",
+        "pages": ["805"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "example",
+            "pages": ["805"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "mapping",
+            "pages": ["807"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "CPI",
+        "pages": ["534-535"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "CRC",
+        "pages": ["284", "535"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "ATM",
+            "pages": ["532"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "design",
+            "pages": ["290"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "hardware implementation",
+            "pages": ["287"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "HDLC",
+            "pages": ["342"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "PPP",
+            "pages": ["348"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "standard polynomial",
+            "pages": ["297"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "CRC-32",
+        "pages": ["399"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "wireless",
+            "pages": ["427"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "critical angle",
+        "pages": ["198"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "crossbar switch",
+        "pages": ["228", "233"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "limitation",
+            "pages": ["228"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "crosspoint",
+        "pages": ["228"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "crosstalk",
+        "pages": ["84", "193"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "cryptography",
+        "pages": ["931", "957"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "comparison",
+            "pages": ["934"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "cryptosystem",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "Diffie-Hellman",
+            "pages": ["952"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "CS",
+        "pages": ["532"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "CSMA",
+        "pages": ["370", "377"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "collision",
+            "pages": ["370"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "vulnerable time",
+            "pages": ["371"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "image": "IMG_20261115_231801.jpg",
+    "index_page": 1116,
+    "entries": [
+      {
+        "topic": "CSMA/CA",
+        "pages": ["365", "377"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "procedure",
+            "pages": ["378"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "wireless network",
+            "pages": ["378"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "CSMA/CD",
+        "pages": ["365", "373", "377", "401"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "Ethernet",
+            "pages": ["399", "401"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "frame size",
+            "pages": ["374"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "full-duplex switched Ethernet",
+            "pages": ["408"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "procedure",
+            "pages": ["375"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "wireless",
+            "pages": ["423", "425"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "CTS",
+        "pages": ["425"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "CU",
+        "pages": ["785"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "curTSN",
+        "pages": ["749"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "cycle",
+        "pages": ["58"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "infinite",
+            "pages": ["62"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "phase",
+            "pages": ["63"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "cyclic code",
+        "pages": ["284"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "advantages",
+            "pages": ["297"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "analysis",
+            "pages": ["293"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "cyclic redundancy check",
+        "pages": [],
+        "see": "CRC",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DA",
+        "pages": ["399"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "D-AMPS",
+        "pages": ["471"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data",
+        "pages": ["4", "311"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "transmission",
+            "pages": ["57"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "data chunk",
+        "pages": ["742"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data communications",
+        "pages": ["4"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data compression",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "presentation layer",
+            "pages": ["41"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "data delivery",
+        "pages": ["747"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data element",
+        "pages": ["102", "142"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Data Encryption Standard",
+        "pages": [],
+        "see": "DES",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data frame",
+        "pages": ["428"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "in poll",
+            "pages": ["381"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Data Link Connection Identifier",
+        "pages": [],
+        "see": "DLCI",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data link control",
+        "pages": ["307", "311", "363"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data link layer",
+        "pages": ["34", "307"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "access control",
+            "pages": ["35"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "addressing",
+            "pages": ["35"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "error control",
+            "pages": ["35", "311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "flow control",
+            "pages": ["35", "311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "framing",
+            "pages": ["35", "308"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "function",
+            "pages": ["34"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "physical addressing",
+            "pages": ["35"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "PPP",
+            "pages": ["347"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "sub-layers",
+            "pages": ["363", "395"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "virtual-circuit network",
+            "pages": ["227"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "data link processor",
+        "pages": ["232"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Data over Cable System Interface Specification",
+        "pages": [],
+        "see": "DOCSIS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data rate",
+        "pages": ["103"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bandwidth",
+            "pages": ["104"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "maximum",
+            "pages": ["129"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "signal rate",
+            "pages": ["103"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "data rate limits",
+        "pages": ["85"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "data traffic",
+        "pages": ["761"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "descriptor",
+            "pages": ["761"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "data transfer",
+        "pages": ["725", "747"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "circuit switching",
+            "pages": ["217"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "multi-homing",
+            "pages": ["747"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SCTP",
+            "pages": ["745"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "virtual-circuit network",
+            "pages": ["223"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "vs data delivery",
+            "pages": ["747"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "database",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "DHCP",
+            "pages": ["620"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "multicasting",
+            "pages": ["681"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "datagram",
+        "pages": ["45", "219", "583"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "format",
+            "pages": ["583"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "in IPv4",
+            "pages": ["583"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "IP",
+            "pages": ["44"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "datagram network",
+        "pages": ["214", "219"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dataword",
+        "pages": ["271", "275"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "augmented",
+            "pages": ["288"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "codeword",
+            "pages": ["292"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "dc component",
+        "pages": ["105"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "8B6T",
+            "pages": ["112"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "bipolar",
+            "pages": ["110"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Manchester",
+            "pages": ["109"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "NRZ-I and NRZ-L",
+            "pages": ["108"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DCF",
+        "pages": ["423", "442"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "PIFS",
+            "pages": ["425"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "repetition interval",
+            "pages": ["426"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DCT",
+        "pages": ["905"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "AC value",
+            "pages": ["905"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "gradient case",
+            "pages": ["905"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "sharp change case",
+            "pages": ["905"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "uniform gray scale case",
+            "pages": ["905"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DDNS",
+        "pages": ["812"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "DHCP",
+            "pages": ["812"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DDS",
+        "pages": ["248"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "de facto standard",
+        "pages": ["20"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "de jure standard",
+        "pages": ["20"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DE PHB",
+        "pages": ["785"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "decibel",
+        "pages": ["81"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "decimal number",
+        "pages": ["1037"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "decimal system",
+        "pages": ["1037"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "symbols",
+            "pages": ["1037"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "to binary",
+            "pages": ["1038"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "weight and value",
+            "pages": ["1038"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "decision logic analyzer",
+        "pages": ["280"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "decoder",
+        "pages": ["278"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "decoding",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "CDMA",
+            "pages": ["387"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "decryption",
+        "pages": ["932"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "RSA",
+            "pages": ["950"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "default mask",
+        "pages": ["553"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "default method",
+        "pages": ["649"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "default router",
+        "pages": ["624"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "degree of polynomial",
+        "pages": ["291"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "delay",
+        "pages": ["90", "764"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "circuit switching",
+            "pages": ["217"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "datagram network",
+            "pages": ["221"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "load",
+            "pages": ["765"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "real-time",
+            "pages": ["912"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "time-division switch",
+            "pages": ["231"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "virtual-circuit network",
+            "pages": ["226"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "delayed response",
+        "pages": ["633"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "delimiter",
+        "pages": ["309"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "delivery",
+        "pages": ["647"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "direct",
+            "pages": ["647"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "end-to-end",
+            "pages": ["37", "701"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "indirect",
+            "pages": ["647"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "source-to-destination",
+            "pages": ["36-37", "547", "701"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "station-to-station",
+            "pages": ["36", "547"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "delta modulation",
+        "pages": [],
+        "see": "DM",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "demodulator",
+        "pages": ["164"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "demultiplexer",
+        "pages": ["162"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "demultiplexing",
+        "pages": ["164", "707"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "filters",
+            "pages": ["164"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "transport layer",
+            "pages": ["707"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DEMUX",
+        "pages": [],
+        "see": "demultiplexer",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "denial of service attack",
+        "pages": ["725"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dense WDM",
+        "pages": ["168"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Department of Defense",
+        "pages": [],
+        "see": "DOD",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DES",
+        "pages": ["941"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "triple",
+            "pages": ["943"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "designated parent router",
+        "pages": ["688"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "destination address",
+        "pages": [],
+        "see": "DA",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "destination host",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "reassembly",
+            "pages": ["590"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "destination option",
+        "pages": ["603"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "destination service access point (DSAP)",
+        "pages": ["396"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "destination unreachable",
+        "pages": ["623"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "ICMPv6",
+            "pages": ["639"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DHCP",
+        "pages": ["620"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "BOOTP",
+            "pages": ["620"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "configuration",
+            "pages": ["620"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "database",
+            "pages": ["620"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "DDNS",
+            "pages": ["812"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "dynamic configuration protocol",
+            "pages": ["620"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "dialog control",
+        "pages": ["39"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Differential Manchester",
+        "pages": ["109"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Differentiated Services",
+        "pages": [],
+        "see": "DF",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Diffie-Hellman",
+        "pages": ["952"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DIFS",
+        "pages": ["425"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "vs analog",
+            "pages": ["57"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "digital AMPS",
+        "pages": [],
+        "see": "D-AMPS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital cellular telephone",
+        "pages": ["80"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital data",
+        "pages": ["57", "101"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital data service",
+        "pages": [],
+        "see": "DDS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital service",
+        "pages": ["247"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "noise",
+            "pages": ["247"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "digital service unit",
+        "pages": [],
+        "see": "DSU",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital signal",
+        "pages": ["57-58", "71", "101"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bandwidth",
+            "pages": ["74"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "bit rate",
+            "pages": ["73"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "composite analog signal",
+            "pages": ["74", "79"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "levels",
+            "pages": ["71"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "non-periodic",
+            "pages": ["74"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "digital signal service",
+        "pages": [],
+        "see": "DS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital subscriber line",
+        "pages": [],
+        "see": "DSL",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital subscriber line access multiplexer",
+        "pages": [],
+        "see": "DSLAM",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital to analog",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "encoding",
+            "pages": ["142"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "digital transmission",
+        "pages": ["101"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "digital-to-analog",
+        "pages": ["141-142"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bandwidth",
+            "pages": ["143"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "digital-to-digital",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "conversion",
+            "pages": ["101"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Dijkstra algorithm",
+        "pages": ["668"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "multicast link state routing",
+            "pages": ["685"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "direct current",
+        "pages": ["105"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "direct delivery",
+        "pages": ["647"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "direct sequence spread spectrum",
+        "pages": [],
+        "see": "DSSS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "directory services",
+        "pages": ["42"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "discarding policy",
+        "pages": ["766"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Discrete Cosine Transform",
+        "pages": [],
+        "see": "DCT",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "discrete multitone technique",
+        "pages": [],
+        "see": "DMT",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "diskless machine",
+        "pages": ["618"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "distance learning",
+        "pages": ["682"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Distance Vector Multicast Routing Protocol",
+        "pages": [],
+        "see": "DVMRP",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "distance vector routing",
+        "pages": ["660"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "initial tables",
+            "pages": ["661"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "instability",
+            "pages": ["663"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "RIP",
+            "pages": ["665"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "sharing",
+            "pages": ["661"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "distortion",
+        "pages": ["83"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "distributed coordination function",
+        "pages": [],
+        "see": "DCF",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "distributed interframe space (DIFS)",
+        "pages": ["425"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "distributed processing",
+        "pages": ["7"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "distribution hub",
+        "pages": ["257"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      }
+    ]
+  },
+  {
+    "image": "IMG_20261115_231805.jpg",
+    "index_page": 1117,
+    "entries": [
+      {
+        "topic": "distribution system",
+        "pages": ["422"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "divisor",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "CRC",
+            "pages": ["286-287"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DLCI",
+        "pages": ["519"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "Frame Relay",
+            "pages": ["520"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DM",
+        "pages": ["129"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "adaptive",
+            "pages": ["131"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "demodulator",
+            "pages": ["130"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "modulator",
+            "pages": ["130"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "quantization error",
+            "pages": ["131"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DMT",
+        "pages": ["252", "255"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "ADSL",
+            "pages": ["253"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "division of bandwidth",
+            "pages": ["252"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "FDM",
+            "pages": ["252"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "QAM",
+            "pages": ["252"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "VDSL",
+            "pages": ["255"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "voice",
+            "pages": ["252"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DNS",
+        "pages": ["797-798"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "caching",
+            "pages": ["808"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "country domain",
+            "pages": ["805"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "divisions",
+            "pages": ["803"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "domain",
+            "pages": ["802"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "encapsulation",
+            "pages": ["812"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "generic domain",
+            "pages": ["804"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Internet",
+            "pages": ["803"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "inverted-tree structure",
+            "pages": ["799"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "labels",
+            "pages": ["799"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "levels",
+            "pages": ["799"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "message",
+            "pages": ["809"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "primary server",
+            "pages": ["803"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "question record",
+            "pages": ["811"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "record types",
+            "pages": ["811"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "resolver",
+            "pages": ["806"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "resource record",
+            "pages": ["811"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "reverse domain",
+            "pages": ["805"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "root server",
+            "pages": ["803"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "secondary server",
+            "pages": ["803"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "server",
+            "pages": ["802"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "TCP",
+            "pages": ["812"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "UDP",
+            "pages": ["812"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "updating",
+            "pages": ["812"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "zone",
+            "pages": ["802"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DNS message",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "additional information section",
+            "pages": ["811"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "answer section",
+            "pages": ["810"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "authoritative section",
+            "pages": ["811"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "header",
+            "pages": ["809"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "identification field",
+            "pages": ["809"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "question section",
+            "pages": ["810"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DNS response",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "answer records field",
+            "pages": ["810"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "question records field",
+            "pages": ["810"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DO command",
+        "pages": ["822"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "do not fragment bit",
+        "pages": ["591"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DOCSIS",
+        "pages": ["260"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "downstream",
+            "pages": ["261"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "upstream",
+            "pages": ["260"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "document",
+        "pages": ["854", "965"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "active",
+            "pages": ["860"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "dynamic",
+            "pages": ["857"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "static",
+            "pages": ["855"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DOD",
+        "pages": ["17"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "domain",
+        "pages": ["801"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "country",
+            "pages": ["805"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "generic",
+            "pages": ["805"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "inverse",
+            "pages": ["805"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "domain name",
+        "pages": ["799", "831"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "full",
+            "pages": ["799"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Domain Name System",
+        "pages": [],
+        "see": "DNS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "domains",
+        "pages": ["802"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DONT command",
+        "pages": ["822"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dotted-decimal notation",
+        "pages": ["550"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "downlink",
+        "pages": ["481"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "downloading",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "V.90",
+            "pages": ["250"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "drop cable",
+        "pages": ["256"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "drop line",
+        "pages": ["11"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dropper",
+        "pages": ["786"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DS",
+        "pages": ["176", "785"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "DS-0 service",
+            "pages": ["176"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "DS-1 service",
+            "pages": ["176"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "DS-2 service",
+            "pages": ["176"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "DS-3 service",
+            "pages": ["177"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "DS-4 service",
+            "pages": ["177"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "field",
+            "pages": ["785"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "hierarchy of digital signals",
+            "pages": ["176"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DS-0",
+        "pages": ["177"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DSCP",
+        "pages": ["785"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DSL",
+        "pages": ["241", "251"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "limitation",
+            "pages": ["257"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DSLAM",
+        "pages": ["254"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DSSS",
+        "pages": ["184", "474-475"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bandwidth sharing",
+            "pages": ["185"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "HR-DSSS",
+            "pages": ["434"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "wireless",
+            "pages": ["432"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DSU",
+        "pages": ["248"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dual ring topology",
+        "pages": ["382"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dual stack",
+        "pages": ["604"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "duplex",
+        "pages": ["7"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "duplicate ACKs",
+        "pages": ["732"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "DVMRP",
+        "pages": ["686", "690"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "CBT",
+            "pages": ["690"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "MBONE",
+            "pages": ["693"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "PIM-DM",
+            "pages": ["692"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "DWDM",
+        "pages": ["168"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic",
+        "pages": ["658"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic database",
+        "pages": ["620"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic document",
+        "pages": ["857"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "example",
+            "pages": ["857"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "script",
+            "pages": ["859"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Dynamic Domain Name System",
+        "pages": [],
+        "see": "DDNS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Dynamic Host Configuration Protocol",
+        "pages": [],
+        "see": "DHCP",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic mapping",
+        "pages": ["612"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic port",
+        "pages": ["705"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic routing",
+        "pages": ["655"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic routing table",
+        "pages": ["656"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "dynamic table",
+        "pages": ["658"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "E line",
+        "pages": ["178"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "capacity",
+            "pages": ["178"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "eavesdropping",
+        "pages": ["603"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "ECB",
+        "pages": ["946"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "echo request and reply messages",
+        "pages": ["625"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "ICMPv6",
+            "pages": ["640"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "e-commerce",
+        "pages": ["854"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "EF PHB",
+        "pages": ["785"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "effective bandwidth",
+        "pages": ["104", "762"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "efficiency",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "circuit switching",
+            "pages": ["217"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "datagram network",
+            "pages": ["220"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "virtual-circuit network",
+            "pages": ["226"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "EHF",
+        "pages": ["204"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "EIA",
+        "pages": ["20"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "interfaces",
+            "pages": ["21"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "manufacturing concerns",
+            "pages": ["21"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "electromagnetic energy",
+        "pages": ["192"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "electromagnetic signals",
+        "pages": ["57"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "electromagnetic spectrum",
+        "pages": ["192", "203"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bands",
+            "pages": ["204"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Electronic Code Block (ECB)",
+        "pages": ["946"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "electronic code book mode",
+        "pages": [],
+        "see": "ECB",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Electronic Industries Association",
+        "pages": [],
+        "see": "EIA",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "electronic mail",
+        "pages": [],
+        "see": "e-mail",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "electronic serial number (ESN)",
+        "pages": ["474"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "elm",
+        "pages": ["829"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "e-mail",
+        "pages": ["824"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "address",
+            "pages": ["831"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "alias",
+            "pages": ["831"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "architecture",
+            "pages": ["824"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "composing",
+            "pages": ["828"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "forwarding",
+            "pages": ["829"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "reading",
+            "pages": ["829"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "replying",
+            "pages": ["829"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "encapsulation",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "ARP",
+            "pages": ["615"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "DNS",
+            "pages": ["812"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "IGMP",
+            "pages": ["635"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Encapsulation Security Payload",
+        "pages": [],
+        "see": "ESP",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "encoder",
+        "pages": ["278"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "CRC",
+            "pages": ["286"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "encoding",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "Ethernet",
+            "pages": ["403"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "RZ",
+            "pages": ["108"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "encrypted security payload",
+        "pages": [],
+        "see": "ESP",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "encryption",
+        "pages": ["932"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "DES",
+            "pages": ["941"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "IPv6",
+            "pages": ["596"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "presentation layer",
+            "pages": ["40"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "RSA",
+            "pages": ["950"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "symmetric-key",
+            "pages": ["933"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "end office",
+        "pages": ["241-242"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "end switch",
+        "pages": ["243"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "POP",
+            "pages": ["243"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "ending tag",
+        "pages": ["534"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "end-of-option option",
+        "pages": ["595"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "energy level",
+        "pages": ["375"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "entity",
+        "pages": ["19"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "envelope",
+        "pages": ["830"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "AM",
+            "pages": ["153"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "ephemeral port number",
+        "pages": ["704"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "queue",
+            "pages": ["714"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "error",
+        "pages": ["267"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "error control",
+        "pages": ["38", "307", "311", "702", "720", "731"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "concept",
+            "pages": ["311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "data link layer",
+            "pages": ["311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "HDLC",
+            "pages": ["343"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "PPP",
+            "pages": ["348"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "retransmission",
+            "pages": ["311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SACK chunk",
+            "pages": ["753"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SCTP",
+            "pages": ["742", "751"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "TCP",
+            "pages": ["715"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "transport layer",
+            "pages": ["37", "701"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "UDP",
+            "pages": ["713"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "error correction",
+        "pages": ["269", "273"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "block coding",
+            "pages": ["273"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "minimum distance",
+            "pages": ["276"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "retransmission",
+            "pages": ["269"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "error detection",
+        "pages": ["269"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "block coding",
+            "pages": ["116", "272"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "checksum",
+            "pages": ["298"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Frame Relay",
+            "pages": ["518"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "HDLC",
+            "pages": ["342"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "tools",
+            "pages": ["731"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "error reporting",
+        "pages": ["638"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "ICMP",
+            "pages": ["622"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "ICMPv6",
+            "pages": ["639"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "escape character (ESC)",
+        "pages": ["309"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "ESP",
+        "pages": ["603", "1000"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "AH protocol",
+            "pages": ["1001"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "authentication data field",
+            "pages": ["1001"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "image": "IMG_20261115_231810.jpg",
+    "index_page": 1118,
+    "entries": [
+      {
+        "topic": "ESP",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "next header field",
+            "pages": ["1000"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "pad length field",
+            "pages": ["1000"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "padding field",
+            "pages": ["1000"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "procedure",
+            "pages": ["1000"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "sequence number field",
+            "pages": ["1000"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SPI field",
+            "pages": ["1000"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "ESS",
+        "pages": ["421"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "communication",
+            "pages": ["422"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "composition",
+            "pages": ["422"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "stations",
+            "pages": ["422"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "ESS-transition mobility",
+        "pages": ["423"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "established",
+        "pages": ["528"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "establishment state",
+        "pages": ["349"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Etag",
+        "pages": ["534"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Ethernet",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "address transmission",
+            "pages": ["400"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "addressing",
+            "pages": ["400"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "BNC",
+            "pages": ["196"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "bridged",
+            "pages": ["406"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "collision",
+            "pages": ["401"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "collision domain",
+            "pages": ["407"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "CRC",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "CSMA/CD",
+            "pages": ["408"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "DA",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "data field",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "fields",
+            "pages": ["398"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "frame length",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "full-duplex switched",
+            "pages": ["408"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "implementations",
+            "pages": ["402"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "IPv6 address",
+            "pages": ["570"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "length/type field",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "MAC control sublayer",
+            "pages": ["409"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "MAC frame",
+            "pages": ["398"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "MAC sublayer",
+            "pages": ["409"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "maximum frame length",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "minimum data length",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "multicast address",
+            "pages": ["400"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "multicasting",
+            "pages": ["636"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "network length",
+            "pages": ["402"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "preamble",
+            "pages": ["398"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SA",
+            "pages": ["399"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SFD",
+            "pages": ["398"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "shared capacity",
+            "pages": ["406"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "slot time",
+            "pages": ["401"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "switched",
+            "pages": ["407"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "thick",
+            "pages": ["403-405"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "thin",
+            "pages": ["404"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "unicast address",
+            "pages": ["400"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Ethernet address",
+        "pages": ["46"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Eudora",
+        "pages": ["830"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Eve",
+        "pages": ["932"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "excess burst size",
+        "pages": [],
+        "see": "Be",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "exclusive OR",
+        "pages": [],
+        "see": "XOR",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "exponential function",
+        "pages": ["1050"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "exponential increase",
+        "pages": ["769"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "exposed station",
+        "pages": ["429", "431"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "extended address",
+        "pages": ["521"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Extended ASCII",
+        "pages": ["1029"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "extended service set",
+        "pages": [],
+        "see": "ESS",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "extension header",
+        "pages": ["602"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "authentication",
+            "pages": ["602"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "destination option",
+            "pages": ["603"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "ESP",
+            "pages": ["603"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "fragmentation",
+            "pages": ["602"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "hop-by-hop option",
+            "pages": ["602"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "source routing",
+            "pages": ["602"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "external BGP (E-BGP)",
+        "pages": ["677"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "extremely high frequency",
+        "pages": [],
+        "see": "EHF",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fall-back",
+        "pages": ["249"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fall-forward",
+        "pages": ["249"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Fast Ethernet",
+        "pages": ["397", "409"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "autonegotiation",
+            "pages": ["409"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "backward compatibility",
+            "pages": ["409"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "encoding",
+            "pages": ["411"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "MAC sublayer",
+            "pages": ["409"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "physical layer",
+            "pages": ["410"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "fast retransmission",
+        "pages": ["732"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fault identification",
+        "pages": ["10"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fault isolation",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "ring",
+            "pages": ["12"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "fault management",
+        "pages": ["875"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "isolating the fault",
+            "pages": ["875"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "performance management",
+            "pages": ["876"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "proactive",
+            "pages": ["876"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "reactive",
+            "pages": ["875"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "subsystems",
+            "pages": ["875"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FCC",
+        "pages": ["205", "477"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "address",
+            "pages": ["1061"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FCS",
+        "pages": ["342"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "HDLC",
+            "pages": ["342"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "PPP",
+            "pages": ["348"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FDM",
+        "pages": ["162"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "applications",
+            "pages": ["167"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "carrier",
+            "pages": ["162"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "cellular telephone",
+            "pages": ["167"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "channels",
+            "pages": ["162"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "circuit-switched network",
+            "pages": ["214"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "FDMA",
+            "pages": ["384"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "guard bands",
+            "pages": ["163"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "implementation",
+            "pages": ["167"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "OFDM",
+            "pages": ["433"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "process",
+            "pages": ["163"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "telephone system",
+            "pages": ["165"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "TV",
+            "pages": ["167"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FDMA",
+        "pages": ["383", "470", "473", "478"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "FDM",
+            "pages": ["384"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FECN",
+        "pages": ["521"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "receiver",
+            "pages": ["773"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "Federal Communications Committee",
+        "pages": [],
+        "see": "FCC",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Feistel",
+        "pages": ["942"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "DES",
+            "pages": ["941"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FHSS",
+        "pages": ["181"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bandwidth",
+            "pages": ["182"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "bandwidth sharing",
+            "pages": ["183"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Bluetooth",
+            "pages": ["437"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "wireless",
+            "pages": ["432"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "fiber",
+        "pages": ["168", "491"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fiber node",
+        "pages": ["257"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fiber-optic cable",
+        "pages": ["192"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "banddwidth capabilities",
+            "pages": ["491"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "trunk",
+            "pages": ["242"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FIFO queueing",
+        "pages": ["776"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "leaky bucket",
+            "pages": ["778"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "priority queueing",
+            "pages": ["777"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "fifth harmonic",
+        "pages": ["68"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "file transfer",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "problems",
+            "pages": ["840"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "file transfer protocol",
+        "pages": [],
+        "see": "FTP",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "filter",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "local loop",
+            "pages": ["252"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "filtering",
+        "pages": ["448"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "FIN segment",
+        "pages": ["727-728"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "FIN+ACK segment",
+        "pages": ["728"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "final",
+        "pages": ["343"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fingerprint",
+        "pages": ["965"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "firewall",
+        "pages": ["1021"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "packet filter",
+            "pages": ["1022"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "proxy",
+            "pages": ["1023"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "first harmonic",
+        "pages": ["68", "77"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "fixed filter style",
+        "pages": ["784"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "flag",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "character-oriented protocol",
+            "pages": ["308"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "flag field",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "HDLC",
+            "pages": ["342"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "flat-top sampling",
+        "pages": ["121"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "flickering",
+        "pages": ["903"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "flooding",
+        "pages": ["667"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "multicast distance vector routing",
+            "pages": ["686"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "RPF",
+            "pages": ["686"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "flow characteristics",
+        "pages": ["775"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "flow class",
+        "pages": ["776"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "flow control",
+        "pages": ["38", "307", "311", "701", "720"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "buffer",
+            "pages": ["311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "concept",
+            "pages": ["311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "congestion",
+            "pages": ["623"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "data link layer",
+            "pages": ["311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "Frame Relay",
+            "pages": ["773"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "HDLC",
+            "pages": ["343"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "in IP",
+            "pages": ["623"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "PPP",
+            "pages": ["348"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "receiver",
+            "pages": ["311"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "SCTP",
+            "pages": ["742", "748"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "TCP",
+            "pages": ["715"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "transport layer",
+            "pages": ["37", "701"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "UDP",
+            "pages": ["713"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "flow label",
+        "pages": ["597", "600"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "real-time transmission",
+            "pages": ["601"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "rules for use",
+            "pages": ["601"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "flow specification",
+        "pages": ["780-781"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "FM",
+        "pages": ["153"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bandwidth",
+            "pages": ["154"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FM radio",
+        "pages": ["71", "167"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "bandwidth",
+            "pages": ["167"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "footprint",
+        "pages": ["480"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "LEO",
+            "pages": ["484"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "forums",
+        "pages": ["20-21"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "forward error correction",
+        "pages": ["269"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "forward explicit congestion notification",
+        "pages": [],
+        "see": "FECN",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "forward signal",
+        "pages": ["768"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "forwarding",
+        "pages": ["647-648"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "classless addrressing",
+            "pages": ["650"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "forwarding techniques",
+        "pages": ["648"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "four-dimensional five-level pulse amplitude modulation",
+        "pages": [],
+        "see": "4D-PAM5",
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Fourier analysis",
+        "pages": ["67", "74", "1046"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Fourier series",
+        "pages": ["1046"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "Fourier transform",
+        "pages": ["1048"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "four-way handshake",
+        "pages": ["722", "744"],
+        "see": null,
+        "see_also": null,
+        "subtopics": []
+      },
+      {
+        "topic": "FQDN",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "DNS server",
+            "pages": ["800"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "FRAD",
+        "pages": ["522"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "Frame Relay",
+            "pages": ["522"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "fragmenation",
+        "pages": [],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "fragment of a fragment",
+            "pages": ["593"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      },
+      {
+        "topic": "fragmentation",
+        "pages": ["589", "602", "747"],
+        "see": null,
+        "see_also": null,
+        "subtopics": [
+          {
+            "topic": "checksum",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "definition",
+            "pages": ["590"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "do not fragment bit",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "example",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "fields copied",
+            "pages": ["590"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "flags field",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "fragmentation offset",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "header fields",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "ICMP error message",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "identification field",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "IPv6",
+            "pages": ["639"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "more fragment bit",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          },
+          {
+            "topic": "offset",
+            "pages": ["591"],
+            "see": null,
+            "see_also": null
+          }
+        ]
+      }
+    ]
+  }
+]
