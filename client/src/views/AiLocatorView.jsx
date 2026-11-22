@@ -4,7 +4,6 @@ import {
   Key,
   RotateCcw,
   BookMarked,
-  Lightbulb,
   CheckCircle2,
   Bookmark,
   Trash2,
@@ -32,17 +31,6 @@ function getStoredHistory() {
     return [];
   }
 }
-
-const SUGGESTED_PROMPTS = [
-  "Where is regenerative braking in DC and induction motors?",
-  "Where is MQTT packet format and architecture in IoT?",
-  "Which page explains CRC calculation with generator polynomial?",
-  "Where are VSI and CSI induction motor drives compared?",
-  "Which page has steady state stability criterion in drives?",
-  "Where is TCP 3-way handshake and segment header?",
-  "Where is Raspberry Pi GPIO pin layout and SPI/I2C in IoT?",
-  "Where are Static Scherbius and Kramer slip recovery drives?",
-];
 
 export function AiLocatorView({
   subjects = [],
@@ -160,8 +148,12 @@ export function AiLocatorView({
         <div className="relative z-10 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border/50 pb-4">
             <div className="flex items-center gap-3">
-              <div className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-600 to-purple-600 text-white shadow-md shadow-sky-500/25">
-                <Bookmark className="size-6 animate-pulse" />
+              <div className="relative flex size-12 shrink-0 items-center justify-center rounded-xl bg-white p-1 shadow-md shadow-sky-500/20 border border-border overflow-hidden">
+                <img
+                  src="/logo.svg"
+                  alt="EE Book Locator Logo"
+                  className="size-full object-contain"
+                />
               </div>
               <div>
                 <div className="flex items-center gap-2">
@@ -232,31 +224,9 @@ export function AiLocatorView({
             </div>
           </div>
 
-          {/* Suggested Starter Chips */}
-          <div className="space-y-1.5 pt-1">
-            <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
-              <Lightbulb className="size-4 shrink-0 text-amber-400" />
-              <span>Quick Page Lookups:</span>
-            </div>
-            <div className="flex items-center gap-2 flex-wrap">
-              {SUGGESTED_PROMPTS.map((prompt, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    setQuery(prompt);
-                    handleAsk(prompt);
-                  }}
-                  className="rounded-lg border border-border/70 bg-card/70 px-2.5 py-1 text-[11px] font-medium text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-colors cursor-pointer text-left"
-                >
-                  {prompt}
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* Stored Queries in LocalStorage Quick Chips */}
           {history.length > 0 && (
-            <div className="space-y-1.5 pt-2 border-t border-border/40">
+            <div className="space-y-1.5 pt-1">
               <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <HistoryIcon className="size-3.5 text-sky-400" />

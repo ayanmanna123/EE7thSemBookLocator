@@ -484,6 +484,9 @@ export function SearchView({
       {/* 4. CASE: 0 results anywhere */}
       {filteredResults.length === 0 && otherSubjectsMatches.length === 0 && (
         <div className="rounded-2xl border border-dashed border-border/80 bg-card/60 p-10 text-center space-y-4">
+          <div className="size-14 mx-auto rounded-xl bg-white p-1.5 border border-border shadow-sm flex items-center justify-center">
+            <img src="/logo.svg" alt="EE Book Locator" className="size-full object-contain" />
+          </div>
           <div className="text-base font-bold text-foreground">
             No textbook index entry found matching "{query}"
           </div>

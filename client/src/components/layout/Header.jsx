@@ -1,4 +1,5 @@
 import { Sun, Moon } from "lucide-react";
+import logoSvg from "@/assets/Electrical Engineering Book Locator Logo.svg";
 
 export function Header({
   subject,
@@ -9,7 +10,6 @@ export function Header({
   onChangeTab,
   isDarkMode,
   onToggleTheme,
-  onQuickChipClick,
 }) {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/85 backdrop-blur-xl shadow-sm transition-colors">
@@ -18,8 +18,12 @@ export function Header({
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 py-3.5 border-b border-border/50">
           {/* Brand Left */}
           <div className="flex items-center gap-3.5">
-            <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 font-mono text-base font-black text-white shadow-md shadow-sky-500/20">
-              {subject?.shortName || "EE"}
+            <div className="relative flex size-12 shrink-0 items-center justify-center rounded-xl bg-white/95 p-1 border border-border shadow-md shadow-sky-500/10 overflow-hidden transition-transform hover:scale-105">
+              <img
+                src={logoSvg}
+                alt="Electrical Engineering Book Locator"
+                className="h-full w-full object-contain"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2 flex-wrap">
@@ -141,22 +145,6 @@ export function Header({
               AI Locator
             </button>
           </div>
-
-          {/* Quick Search Chips */}
-          {subject?.quickChips && (
-            <div className="flex items-center gap-1.5 flex-wrap text-xs">
-              <span className="font-bold text-muted-foreground text-[11px] mr-0.5">Try:</span>
-              {subject.quickChips.map((chip, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => onQuickChipClick(chip)}
-                  className="rounded-full border border-border/70 bg-card/60 px-2.5 py-0.5 text-[11px] font-semibold text-muted-foreground hover:border-sky-400 hover:text-sky-400 hover:bg-sky-500/10 transition-colors cursor-pointer"
-                >
-                  {chip}
-                </button>
-              ))}
-            </div>
-          )}
         </div>
       </div>
     </header>

@@ -7,7 +7,7 @@ import { TocView } from "@/views/TocView";
 import { PageInspectorView } from "@/views/PageInspectorView";
 import { AiLocatorView } from "@/views/AiLocatorView";
 import { KnowMoreModal } from "@/components/modals/KnowMoreModal";
-import { BookOpen, AlertCircle, RefreshCw } from "lucide-react";
+import { AlertCircle, RefreshCw } from "lucide-react";
 
 export function App() {
   const [activeSubjectId, setActiveSubjectId] = useState(DEFAULT_SUBJECT_ID);
@@ -34,7 +34,15 @@ export function App() {
     activeSubject?.defaultInspectorPage || 523
   );
 
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    try {
+      const saved = localStorage.getItem("ee7th_theme");
+      if (saved !== null) return saved === "dark";
+      return false; // Default: Light theme
+    } catch {
+      return false;
+    }
+  });
   const [aiInitialQuery, setAiInitialQuery] = useState("");
   const [modalState, setModalState] = useState({
     isOpen: false,
@@ -49,6 +57,11 @@ export function App() {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
+    }
+    try {
+      localStorage.setItem("ee7th_theme", isDarkMode ? "dark" : "light");
+    } catch {
+      /* ignore theme persistence error */
     }
   }, [isDarkMode]);
 
@@ -104,14 +117,6 @@ export function App() {
     });
   };
 
-  const handleQuickChipClick = (chip) => {
-    setActiveTab("search");
-    setQuery(chip);
-    setSelectedPart("ALL");
-    setSelectedChapter("ALL");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   const handleSubjectChange = (subjectId, keepQuery = false) => {
     setActiveSubjectId(subjectId);
     if (!keepQuery) {
@@ -140,15 +145,18 @@ export function App() {
         onChangeTab={setActiveTab}
         isDarkMode={isDarkMode}
         onToggleTheme={() => setIsDarkMode(!isDarkMode)}
-        onQuickChipClick={handleQuickChipClick}
       />
 
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6">
         {loading && (
           <div className="py-24 flex flex-col items-center justify-center text-center space-y-4">
             <div className="relative">
-              <div className="size-16 rounded-2xl bg-gradient-to-tr from-sky-500 to-indigo-600 animate-pulse flex items-center justify-center text-white shadow-xl shadow-sky-500/25">
-                <BookOpen className="size-8" />
+              <div className="size-20 rounded-2xl bg-white p-2.5 shadow-xl shadow-sky-500/20 border border-border flex items-center justify-center overflow-hidden">
+                <img
+                  src="/logo.svg"
+                  alt="EE Book Locator Logo"
+                  className="size-full object-contain animate-pulse"
+                />
               </div>
               <div className="absolute -inset-1 rounded-2xl border-2 border-sky-400/40 animate-ping" />
             </div>
@@ -257,8 +265,13 @@ export function App() {
 
       <footer className="border-t border-border/60 bg-secondary/30 py-6 text-center text-xs text-muted-foreground">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div>
-            EE 7th Semester Multi-Subject Book Locator • Built with React, Tailwind CSS & Shadcn UI
+          <div className="flex items-center gap-2.5">
+            <img
+              src="/logo.svg"
+              alt="EE Book Locator Logo"
+              className="size-6 object-contain rounded bg-white/90 p-0.5 border border-border"
+            />
+            <span>EE 7th Semester Multi-Subject Book Locator • Built with React, Tailwind CSS & Shadcn UI</span>
           </div>
           <div className="font-mono text-[11px]">
             {activeSubject.name} ({activeSubject.code}) • {activeSubject.bookTitle}

@@ -19,12 +19,18 @@ export function PartRibbon({
         className={`flex flex-col justify-between rounded-xl p-3 text-left transition-all border cursor-pointer ${
           selectedPart === "ALL"
             ? "border-sky-400 bg-sky-500/15 shadow-md ring-2 ring-sky-500/40"
-            : "border-border/70 bg-card/60 hover:border-sky-500/40 hover:bg-card"
+            : "border-border/70 bg-card/60 hover:border-border hover:bg-card"
         }`}
-        style={{ borderTopWidth: "3px", borderTopColor: "#38bdf8" }}
+        style={
+          selectedPart === "ALL"
+            ? { borderTopWidth: "3px", borderTopColor: "#38bdf8" }
+            : undefined
+        }
       >
         <div className="flex items-center justify-between text-xs font-black text-foreground">
-          <span>ALL</span>
+          <span className={selectedPart === "ALL" ? "text-sky-400" : "text-foreground"}>
+            ALL
+          </span>
           <span className="font-mono text-[10px] text-muted-foreground">1–{maxPage}</span>
         </div>
         <div className="mt-1 text-xs font-semibold text-muted-foreground truncate">
@@ -46,18 +52,27 @@ export function PartRibbon({
             className={`flex flex-col justify-between rounded-xl p-3 text-left transition-all border cursor-pointer ${
               isActive
                 ? "shadow-md ring-2"
-                : "border-border/70 bg-card/60 hover:bg-card"
+                : "border-border/70 bg-card/60 hover:border-border hover:bg-card"
             }`}
-            style={{
-              borderTopWidth: "3px",
-              borderTopColor: clr,
-              borderColor: isActive ? clr : undefined,
-              backgroundColor: isActive ? `${clr}22` : undefined,
-              "--tw-ring-color": isActive ? `${clr}66` : undefined,
-            }}
+            style={
+              isActive
+                ? {
+                    borderTopWidth: "3px",
+                    borderTopColor: clr,
+                    borderColor: clr,
+                    backgroundColor: `${clr}1a`,
+                    "--tw-ring-color": `${clr}66`,
+                  }
+                : undefined
+            }
           >
             <div className="flex items-center justify-between text-xs font-black text-foreground">
-              <span style={{ color: clr }}>{shortId}</span>
+              <span
+                style={isActive ? { color: clr } : undefined}
+                className={isActive ? "" : "text-foreground"}
+              >
+                {shortId}
+              </span>
               <span className="font-mono text-[10px] text-muted-foreground">
                 {pt.start_page}–{pt.end_page}
               </span>
