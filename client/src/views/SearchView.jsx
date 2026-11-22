@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Search, X, Globe } from "lucide-react";
+import { Search, X, Globe, ArrowRight } from "lucide-react";
 import { PartRibbon } from "@/components/layout/PartRibbon";
 import { SpotlightCard } from "@/components/cards/SpotlightCard";
 import { TopicCard } from "@/components/cards/TopicCard";
@@ -9,7 +9,9 @@ const ALPHABET = ["ALL", "#", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")];
 
 export function SearchView({
   subject,
+  subjects = [],
   allSearchData = [],
+  allSubjectsDataMap = new Map(),
   tocData,
   query,
   setQuery,
@@ -26,10 +28,12 @@ export function SearchView({
   onSelectPage,
   onSelectTopic,
   onOpenKnowMore,
+  onSwitchSubject,
   searchInputRef,
 }) {
   const [currentLimit, setCurrentLimit] = useState(75);
 
+  // 1. Current Subject Filtered Results
   const filteredResults = useMemo(() => {
     let list = allSearchData;
 
@@ -63,11 +67,55 @@ export function SearchView({
     return list;
   }, [allSearchData, selectedPart, selectedChapter, currentLetter, query, includeSubtopics]);
 
+  // 2. Cross-Subject Search Matches (Searches across other registered subjects)
+  const otherSubjectsMatches = useMemo(() => {
+    const q = query.trim();
+    if (!q) return [];
+
+    const matches = [];
+    for (const otherSub of subjects) {
+      if (otherSub.id === subject.id) continue;
+      const otherData = allSubjectsDataMap.get(otherSub.id);
+      if (!otherData || !otherData.allSearchData) continue;
+
+      const scored = [];
+      for (const item of otherData.allSearchData) {
+        const s = scoreEntry(item, q, includeSubtopics);
+        if (s > 0) scored.push({ item, s });
+      }
+
+      if (scored.length > 0) {
+        scored.sort((a, b) => b.s - a.s || (a.item.topic || "").localeCompare(b.item.topic || ""));
+        matches.push({
+          subject: otherSub,
+          results: scored.map((x) => x.item),
+          count: scored.length,
+        });
+      }
+    }
+    return matches;
+  }, [query, allSubjectsDataMap, subject.id, subjects, includeSubtopics]);
+
   const displayedList = useMemo(() => {
     return filteredResults.slice(0, currentLimit);
   }, [filteredResults, currentLimit]);
 
   const topMatch = query.trim() ? filteredResults[0] : null;
+
+  // Available chapters filtered by selected part
+  const availableChapters = useMemo(() => {
+    const allChaps = tocData?.chapters || [];
+    if (selectedPart === "ALL") return allChaps;
+    const pt = (tocData?.parts || []).find(
+      (p) => `${p.id}: ${p.title}` === selectedPart || p.id === selectedPart
+    );
+    if (!pt) return allChaps;
+    return allChaps.filter(
+      (ch) =>
+        ch.part_id === pt.id ||
+        `${ch.part_id}: ${ch.part_title}` === selectedPart
+    );
+  }, [tocData, selectedPart]);
 
   const handleClear = () => {
     setQuery("");
@@ -77,11 +125,23 @@ export function SearchView({
 
   const handlePartFilterChange = (val) => {
     setSelectedPart(val);
+    setSelectedChapter("ALL");
     setCurrentLimit(75);
   };
 
   const handleChapterFilterChange = (val) => {
     setSelectedChapter(val);
+    if (val !== "ALL") {
+      const ch = (tocData?.chapters || []).find(
+        (c) => `${c.id}: ${c.title}` === val || c.id === val
+      );
+      if (ch && ch.part_id) {
+        const pt = (tocData?.parts || []).find((p) => p.id === ch.part_id);
+        if (pt) {
+          setSelectedPart(`${pt.id}: ${pt.title}`);
+        }
+      }
+    }
     setCurrentLimit(75);
   };
 
@@ -105,7 +165,7 @@ export function SearchView({
               setQuery(e.target.value);
               setCurrentLimit(75);
             }}
-            placeholder={`Search any topic (e.g., ATM, ARP, CRC, TCP, firewall) or page number (e.g., 523)...`}
+            placeholder={`Search any topic (e.g., ATM, ARP, CRC, TCP, firewall, Raspberry Pi, MQTT) or page number...`}
             className="w-full rounded-xl border-2 border-border/80 bg-background/90 py-3.5 pl-11 pr-32 text-sm sm:text-base font-medium text-foreground placeholder:text-muted-foreground outline-none transition-all focus:border-sky-500 focus:ring-3 focus:ring-sky-500/20"
           />
 
@@ -142,12 +202,15 @@ export function SearchView({
         {/* Filters Toolbar */}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pt-1 border-t border-border/50">
           <div className="flex items-center gap-2 flex-wrap">
+            {/* Parts Dropdown */}
             <select
               value={selectedPart}
               onChange={(e) => handlePartFilterChange(e.target.value)}
               className="rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground outline-none focus:border-sky-400 cursor-pointer"
             >
-              <option value="ALL">All Book Parts (Parts 1–7 & Appendices)</option>
+              <option value="ALL">
+                All Book Parts ({tocData?.parts?.length || 0} Parts)
+              </option>
               {(tocData?.parts || []).map((pt) => {
                 const label = `${pt.id}: ${pt.title}`;
                 return (
@@ -158,13 +221,18 @@ export function SearchView({
               })}
             </select>
 
+            {/* Chapters Dropdown */}
             <select
               value={selectedChapter}
               onChange={(e) => handleChapterFilterChange(e.target.value)}
               className="rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground outline-none focus:border-sky-400 cursor-pointer max-w-[280px]"
             >
-              <option value="ALL">All Chapters (Ch 1–32 & Appendices)</option>
-              {(tocData?.chapters || []).map((ch) => {
+              <option value="ALL">
+                {selectedPart === "ALL"
+                  ? `All Chapters (${tocData?.chapters?.length || 0} Chapters)`
+                  : `All Chapters in this Part (${availableChapters.length} Chapters)`}
+              </option>
+              {availableChapters.map((ch) => {
                 const label = `${ch.id}: ${ch.title}`;
                 return (
                   <option key={ch.id} value={label}>
@@ -175,6 +243,7 @@ export function SearchView({
             </select>
           </div>
 
+          {/* Search Toggles */}
           <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground flex-wrap">
             <label className="flex items-center gap-1.5 cursor-pointer hover:text-foreground">
               <input
@@ -219,14 +288,16 @@ export function SearchView({
         </div>
       </div>
 
+      {/* Part Visual Ribbon */}
       <PartRibbon
         tocData={tocData}
         selectedPart={selectedPart}
         onSelectPart={handlePartFilterChange}
         partColors={subject?.partColors}
-        totalPages={subject?.totalPages || 1134}
+        totalPages={subject?.totalPages}
       />
 
+      {/* Spotlight Top Match Banner */}
       {topMatch && (
         <SpotlightCard
           entry={topMatch}
@@ -237,13 +308,15 @@ export function SearchView({
         />
       )}
 
-      <div className="flex items-center justify-between text-xs text-muted-foreground px-1">
+      {/* Results Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-muted-foreground px-1">
         <div>
           {query.trim() ? (
             <span>
               Found <strong className="text-foreground">{filteredResults.length.toLocaleString()}</strong>{" "}
-              matching result{filteredResults.length === 1 ? "" : "s"} for "
-              <strong className="text-sky-400">{query.trim()}</strong>"
+              matching result{filteredResults.length === 1 ? "" : "s"} in{" "}
+              <strong className="text-sky-400">{subject.name}</strong> for "
+              <strong className="text-foreground">{query.trim()}</strong>"
             </span>
           ) : (
             <span>
@@ -252,12 +325,100 @@ export function SearchView({
             </span>
           )}
         </div>
-        <div className="hidden sm:block text-[11px]">
-          Click <strong className="text-sky-400">🌐 Know More</strong> on any card for live explanation & web search
-        </div>
+
+        {/* Other subjects indicator pills */}
+        {otherSubjectsMatches.length > 0 && (
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {otherSubjectsMatches.map(({ subject: matchSub, count }) => (
+              <button
+                key={matchSub.id}
+                onClick={() => onSwitchSubject(matchSub.id)}
+                className="inline-flex items-center gap-1 rounded-full border border-indigo-500/40 bg-indigo-500/10 px-2.5 py-0.5 text-[11px] font-bold text-indigo-300 hover:bg-indigo-500 hover:text-white transition-colors cursor-pointer"
+                title={`Switch to ${matchSub.name}`}
+              >
+                <span>💡 {count} match{count === 1 ? "" : "es"} in {matchSub.name}</span>
+                <ArrowRight className="size-3" />
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
-      {filteredResults.length === 0 && (
+      {/* 3. CASE: Current subject has 0 results, but other subjects DO have results! */}
+      {filteredResults.length === 0 && otherSubjectsMatches.length > 0 && (
+        <div className="space-y-6 pt-2">
+          {/* Banner notification */}
+          <div className="rounded-2xl border-2 border-indigo-500/40 bg-gradient-to-br from-indigo-500/15 via-sky-500/10 to-transparent p-5 sm:p-6 shadow-md backdrop-blur-md">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <span className="inline-flex items-center gap-1.5 rounded-md bg-indigo-500/20 px-2.5 py-1 text-xs font-extrabold uppercase tracking-wider text-indigo-300 border border-indigo-500/30">
+                  🔍 Found in Other Subject
+                </span>
+                <h3 className="text-base sm:text-lg font-bold text-foreground mt-2">
+                  No index topics found in <span className="text-sky-400">{subject.name}</span> for "
+                  <span className="text-amber-400">{query.trim()}</span>"
+                </h3>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  However, we found matching results in another textbook below:
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2 flex-wrap">
+                {otherSubjectsMatches.map(({ subject: matchSub, count }) => (
+                  <button
+                    key={matchSub.id}
+                    onClick={() => onSwitchSubject(matchSub.id)}
+                    className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 px-4 py-2 text-xs font-extrabold text-white shadow-md hover:opacity-90 transition-all cursor-pointer hover:scale-102 active:scale-98"
+                  >
+                    <span>Switch to {matchSub.name} ({count} match{count === 1 ? "" : "es"})</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Render the matching topic cards from the other subjects */}
+          {otherSubjectsMatches.map(({ subject: matchSub, results }) => (
+            <div key={matchSub.id} className="space-y-3">
+              <div className="flex items-center justify-between text-xs text-muted-foreground px-1 border-b border-border/60 pb-2">
+                <div className="font-bold text-foreground flex items-center gap-2">
+                  <span>📚 Results from {matchSub.name} ({matchSub.bookTitle}):</span>
+                  <span className="rounded bg-indigo-500/15 px-2 py-0.5 text-[11px] font-bold text-indigo-300 border border-indigo-500/25">
+                    {results.length} match{results.length === 1 ? "" : "es"}
+                  </span>
+                </div>
+                <button
+                  onClick={() => onSwitchSubject(matchSub.id)}
+                  className="text-xs font-bold text-sky-400 hover:underline cursor-pointer"
+                >
+                  Make {matchSub.name} active →
+                </button>
+              </div>
+
+              <div className="space-y-4">
+                {results.slice(0, 30).map((entry, idx) => (
+                  <TopicCard
+                    key={idx}
+                    entry={entry}
+                    query={query}
+                    subject={matchSub}
+                    showPageBreakdown={showPageBreakdown}
+                    onSelectPage={(pageNum) => {
+                      onSwitchSubject(matchSub.id);
+                      onSelectPage(pageNum);
+                    }}
+                    onSelectTopic={onSelectTopic}
+                    onOpenKnowMore={onOpenKnowMore}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* 4. CASE: 0 results anywhere */}
+      {filteredResults.length === 0 && otherSubjectsMatches.length === 0 && (
         <div className="rounded-2xl border border-dashed border-border/80 bg-card/60 p-12 text-center space-y-4">
           <div className="text-base font-bold text-foreground">
             No textbook index entry found matching "{query}"
@@ -275,6 +436,7 @@ export function SearchView({
         </div>
       )}
 
+      {/* 5. CASE: Display active subject results */}
       {displayedList.length > 0 && (
         <div className="space-y-4">
           {displayedList.map((entry, idx) => (
@@ -292,6 +454,7 @@ export function SearchView({
         </div>
       )}
 
+      {/* Load More Button */}
       {filteredResults.length > currentLimit && (
         <div className="pt-2 text-center">
           <button
@@ -300,6 +463,54 @@ export function SearchView({
           >
             Show More Topics ({(filteredResults.length - currentLimit).toLocaleString()} remaining)
           </button>
+        </div>
+      )}
+
+      {/* 6. CASE: Active subject had results, and other subjects ALSO have results (Bottom section) */}
+      {displayedList.length > 0 && otherSubjectsMatches.length > 0 && (
+        <div className="mt-10 pt-6 border-t border-border/60 space-y-4">
+          <div className="flex items-center justify-between text-xs text-muted-foreground">
+            <div className="font-bold text-foreground text-sm flex items-center gap-2">
+              <span>💡 Also Found in Other Course Subjects:</span>
+            </div>
+          </div>
+
+          {otherSubjectsMatches.map(({ subject: matchSub, results }) => (
+            <div
+              key={matchSub.id}
+              className="rounded-xl border border-indigo-500/30 bg-indigo-500/5 p-4 space-y-3"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-indigo-300">
+                  {matchSub.name} ({results.length} match{results.length === 1 ? "" : "es"}):
+                </span>
+                <button
+                  onClick={() => onSwitchSubject(matchSub.id)}
+                  className="text-xs font-bold text-sky-400 hover:underline cursor-pointer"
+                >
+                  Switch to {matchSub.name} →
+                </button>
+              </div>
+
+              <div className="space-y-3">
+                {results.slice(0, 5).map((entry, idx) => (
+                  <TopicCard
+                    key={idx}
+                    entry={entry}
+                    query={query}
+                    subject={matchSub}
+                    showPageBreakdown={showPageBreakdown}
+                    onSelectPage={(pageNum) => {
+                      onSwitchSubject(matchSub.id);
+                      onSelectPage(pageNum);
+                    }}
+                    onSelectTopic={onSelectTopic}
+                    onOpenKnowMore={onOpenKnowMore}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       )}
     </div>

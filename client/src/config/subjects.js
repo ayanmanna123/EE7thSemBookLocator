@@ -1,7 +1,7 @@
 /**
  * Subject Registry & Configuration for EE 7th Semester Book Locator
  * -----------------------------------------------------------------
- * To add a new subject in the future:
+ * To add a new subject:
  * 1. Put its `topics.json` and `chapters.json` inside `public/data/<subjectId>/`
  * 2. Add an entry to the `SUBJECTS` array below with metadata and colors.
  * 3. The UI will automatically render it in the subject switcher, load its TOC,
@@ -151,25 +151,93 @@ export const SUBJECTS = [
       };
     },
   },
-  // Template for future subjects:
-  // {
-  //   id: "electric-drives",
-  //   name: "Electric Drives",
-  //   shortName: "ED",
-  //   code: "EE-702",
-  //   bookTitle: "Dubey Electric Drives",
-  //   editionBadge: "Fundamentals of Electrical Drives",
-  //   subtitle: "Motor Dynamics, Inverter Control & Closed-Loop Drives",
-  //   author: "G.K. Dubey",
-  //   totalPages: 600,
-  //   defaultInspectorPage: 120,
-  //   topicsFile: "/data/electric-drives/topics.json",
-  //   chaptersFile: "/data/electric-drives/chapters.json",
-  //   quickChips: ["Chopper Fed DC Drive", "V/f Control", "Vector Control", "Braking", "PMSM"],
-  //   partColors: { ... },
-  //   acronyms: { ... },
-  //   getSearchUrls: (cleanTopic, parentTopic) => ({ ... })
-  // }
+  {
+    id: "iot",
+    name: "Internet of Things",
+    shortName: "IoT",
+    code: "EE-702B",
+    bookTitle: "Bahga & Madisetti IoT",
+    editionBadge: "A Hands-On Approach (1st Ed.)",
+    subtitle: "Sensors, Raspberry Pi, Cloud, Networking Protocols & Analytics",
+    author: "Arshdeep Bahga & Vijay Madisetti",
+    totalPages: 520,
+    defaultInspectorPage: 28,
+    topicsFile: "/data/iot/topics.json",
+    chaptersFile: "/data/iot/chapters.json",
+    quickChips: [
+      "Raspberry Pi",
+      "MQTT",
+      "CoAP",
+      "NETCONF",
+      "YANG",
+      "Hadoop",
+      "Apache Storm",
+      "Amazon EC2",
+      "Django",
+      "6LoWPAN",
+      "ZigBee",
+      "Smart Irrigation",
+      "WAMP",
+    ],
+    partColors: {
+      "PART 1": "#38bdf8",
+      "PART 2": "#10b981",
+      "PART 3": "#a855f7",
+      "APPENDICES": "#64748b",
+    },
+    acronyms: {
+      mqtt: "Message Queuing Telemetry Transport",
+      coap: "Constrained Application Protocol",
+      amqp: "Advanced Message Queuing Protocol",
+      xmpp: "Extensible Messaging and Presence Protocol",
+      "6lowpan": "IPv6 over Low-Power Wireless Personal Area Networks",
+      wsn: "Wireless Sensor Network",
+      m2m: "Machine to Machine",
+      sdn: "Software-Defined Networking",
+      nfv: "Network Functions Virtualization",
+      snmp: "Simple Network Management Protocol",
+      netconf: "Network Configuration Protocol",
+      yang: "Yet Another Next Generation",
+      wamp: "Web Application Messaging Protocol",
+      rest: "Representational State Transfer",
+      spi: "Serial Peripheral Interface",
+      i2c: "Inter-Integrated Circuit",
+      yarn: "Yet Another Resource Negotiator",
+      ldr: "Light Dependent Resistor",
+      dds: "Data Distribution Service",
+      gpio: "General-Purpose Input/Output",
+    },
+    getSearchUrls: (cleanTopic, parentTopic = "") => {
+      const fullContext = parentTopic ? `${parentTopic} ${cleanTopic}` : cleanTopic;
+      const expanded =
+        SUBJECTS[1]?.acronyms?.[cleanTopic.toLowerCase()] || fullContext;
+      const netQuery = encodeURIComponent(
+        `${expanded} Internet of Things Bahga Madisetti`
+      );
+      const ytQuery = encodeURIComponent(
+        `${expanded} IoT lecture hands on approach`
+      );
+      const gfgQuery = encodeURIComponent(
+        `site:geeksforgeeks.org ${expanded} IoT`
+      );
+      const wikiQuery = encodeURIComponent(expanded);
+      const scholarQuery = encodeURIComponent(`${expanded} Internet of Things`);
+      const rfcQuery = encodeURIComponent(
+        `site:datatracker.ietf.org ${expanded}`
+      );
+
+      return {
+        cleanTopic,
+        expanded,
+        google: `https://www.google.com/search?q=${netQuery}`,
+        wikipedia: `https://en.wikipedia.org/wiki/Special:Search?search=${wikiQuery}`,
+        youtube: `https://www.youtube.com/results?search_query=${ytQuery}`,
+        gfg: `https://www.google.com/search?q=${gfgQuery}`,
+        scholar: `https://scholar.google.com/scholar?q=${scholarQuery}`,
+        ietf: `https://www.google.com/search?q=${rfcQuery}`,
+      };
+    },
+  },
 ];
 
 export const DEFAULT_SUBJECT_ID = "computer-networks";

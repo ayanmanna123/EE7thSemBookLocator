@@ -13,8 +13,15 @@ export function App() {
   const activeSubject =
     SUBJECTS.find((s) => s.id === activeSubjectId) || SUBJECTS[0];
 
-  const { loading, error, tocData, indexData, allSearchData, kpiStats } =
-    useSubjectData(activeSubject);
+  const {
+    loading,
+    error,
+    tocData,
+    indexData,
+    allSearchData,
+    kpiStats,
+    allSubjectsDataMap,
+  } = useSubjectData(SUBJECTS, activeSubjectId);
 
   const [activeTab, setActiveTab] = useState("search");
   const [query, setQuery] = useState("");
@@ -107,9 +114,11 @@ export function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleSubjectChange = (subjectId) => {
+  const handleSubjectChange = (subjectId, keepQuery = false) => {
     setActiveSubjectId(subjectId);
-    setQuery("");
+    if (!keepQuery) {
+      setQuery("");
+    }
     setSelectedPart("ALL");
     setSelectedChapter("ALL");
     setCurrentLetter("ALL");
@@ -173,7 +182,9 @@ export function App() {
             {activeTab === "search" && (
               <SearchView
                 subject={activeSubject}
+                subjects={SUBJECTS}
                 allSearchData={allSearchData}
+                allSubjectsDataMap={allSubjectsDataMap}
                 tocData={tocData}
                 query={query}
                 setQuery={setQuery}
@@ -190,6 +201,7 @@ export function App() {
                 onSelectPage={handleSelectPage}
                 onSelectTopic={handleSelectTopic}
                 onOpenKnowMore={handleOpenKnowMore}
+                onSwitchSubject={(subId) => handleSubjectChange(subId, true)}
                 searchInputRef={searchInputRef}
               />
             )}

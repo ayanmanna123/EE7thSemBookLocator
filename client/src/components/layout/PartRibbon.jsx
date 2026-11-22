@@ -3,9 +3,13 @@ export function PartRibbon({
   selectedPart,
   onSelectPart,
   partColors = {},
-  totalPages = 1134,
+  totalPages,
 }) {
   const parts = tocData?.parts || [];
+  const maxPage =
+    totalPages ||
+    (parts.length > 0 && parts[parts.length - 1]?.end_page) ||
+    1134;
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 mb-6">
@@ -21,7 +25,7 @@ export function PartRibbon({
       >
         <div className="flex items-center justify-between text-xs font-black text-foreground">
           <span>ALL</span>
-          <span className="font-mono text-[10px] text-muted-foreground">1–{totalPages}</span>
+          <span className="font-mono text-[10px] text-muted-foreground">1–{maxPage}</span>
         </div>
         <div className="mt-1 text-xs font-semibold text-muted-foreground truncate">
           All Book Parts

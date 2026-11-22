@@ -1,0 +1,5571 @@
+{
+  "parts": [
+    {
+      "id": "PART 1",
+      "title": "INTRODUCTION & CONCEPTS",
+      "start_page": 17,
+      "end_page": 110,
+      "chapters": [
+        {
+          "id": "Chapter 1",
+          "title": "Introduction to Internet of Things",
+          "start_page": 19,
+          "end_page": 52,
+          "part_id": "PART 1",
+          "part_title": "INTRODUCTION & CONCEPTS",
+          "sections": [
+            {
+              "id": "1.1",
+              "title": "Introduction",
+              "start_page": 20,
+              "end_page": 23,
+              "subsections": [
+                {
+                  "id": "1.1.1",
+                  "title": "Definition & Characteristics of IoT",
+                  "start_page": 22
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "title": "Physical Design of IoT",
+              "start_page": 24,
+              "end_page": 30,
+              "subsections": [
+                {
+                  "id": "1.2.1",
+                  "title": "Things in IoT",
+                  "start_page": 24
+                },
+                {
+                  "id": "1.2.2",
+                  "title": "IoT Protocols",
+                  "start_page": 24
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "title": "Logical Design of IoT",
+              "start_page": 31,
+              "end_page": 37,
+              "subsections": [
+                {
+                  "id": "1.3.1",
+                  "title": "IoT Functional Blocks",
+                  "start_page": 31
+                },
+                {
+                  "id": "1.3.2",
+                  "title": "IoT Communication Models",
+                  "start_page": 31
+                },
+                {
+                  "id": "1.3.3",
+                  "title": "IoT Communication APIs",
+                  "start_page": 34
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "title": "IoT Enabling Technologies",
+              "start_page": 38,
+              "end_page": 42,
+              "subsections": [
+                {
+                  "id": "1.4.1",
+                  "title": "Wireless Sensor Networks",
+                  "start_page": 39
+                },
+                {
+                  "id": "1.4.2",
+                  "title": "Cloud Computing",
+                  "start_page": 39
+                },
+                {
+                  "id": "1.4.3",
+                  "title": "Big Data Analytics",
+                  "start_page": 40
+                },
+                {
+                  "id": "1.4.4",
+                  "title": "Communication Protocols",
+                  "start_page": 41
+                },
+                {
+                  "id": "1.4.5",
+                  "title": "Embedded Systems",
+                  "start_page": 42
+                }
+              ]
+            },
+            {
+              "id": "1.5",
+              "title": "IoT Levels & Deployment Templates",
+              "start_page": 42,
+              "end_page": 52,
+              "subsections": [
+                {
+                  "id": "1.5.1",
+                  "title": "IoT Level-1",
+                  "start_page": 44
+                },
+                {
+                  "id": "1.5.2",
+                  "title": "IoT Level-2",
+                  "start_page": 44
+                },
+                {
+                  "id": "1.5.3",
+                  "title": "IoT Level-3",
+                  "start_page": 44
+                },
+                {
+                  "id": "1.5.4",
+                  "title": "IoT Level-4",
+                  "start_page": 46
+                },
+                {
+                  "id": "1.5.5",
+                  "title": "IoT Level-5",
+                  "start_page": 48
+                },
+                {
+                  "id": "1.5.6",
+                  "title": "IoT Level-6",
+                  "start_page": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Chapter 2",
+          "title": "Domain Specific IoTs",
+          "start_page": 53,
+          "end_page": 74,
+          "part_id": "PART 1",
+          "part_title": "INTRODUCTION & CONCEPTS",
+          "sections": [
+            {
+              "id": "2.1",
+              "title": "Introduction",
+              "start_page": 54,
+              "end_page": 54,
+              "subsections": []
+            },
+            {
+              "id": "2.2",
+              "title": "Home Automation",
+              "start_page": 54,
+              "end_page": 56,
+              "subsections": [
+                {
+                  "id": "2.2.1",
+                  "title": "Smart Lighting",
+                  "start_page": 54
+                },
+                {
+                  "id": "2.2.2",
+                  "title": "Smart Appliances",
+                  "start_page": 54
+                },
+                {
+                  "id": "2.2.3",
+                  "title": "Intrusion Detection",
+                  "start_page": 56
+                },
+                {
+                  "id": "2.2.4",
+                  "title": "Smoke/Gas Detectors",
+                  "start_page": 56
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "title": "Cities",
+              "start_page": 56,
+              "end_page": 58,
+              "subsections": [
+                {
+                  "id": "2.3.1",
+                  "title": "Smart Parking",
+                  "start_page": 56
+                },
+                {
+                  "id": "2.3.2",
+                  "title": "Smart Lighting",
+                  "start_page": 57
+                },
+                {
+                  "id": "2.3.3",
+                  "title": "Smart Roads",
+                  "start_page": 58
+                },
+                {
+                  "id": "2.3.4",
+                  "title": "Structural Health Monitoring",
+                  "start_page": 58
+                },
+                {
+                  "id": "2.3.5",
+                  "title": "Surveillance",
+                  "start_page": 58
+                },
+                {
+                  "id": "2.3.6",
+                  "title": "Emergency Response",
+                  "start_page": 58
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "title": "Environment",
+              "start_page": 59,
+              "end_page": 61,
+              "subsections": [
+                {
+                  "id": "2.4.1",
+                  "title": "Weather Monitoring",
+                  "start_page": 59
+                },
+                {
+                  "id": "2.4.2",
+                  "title": "Air Pollution Monitoring",
+                  "start_page": 59
+                },
+                {
+                  "id": "2.4.3",
+                  "title": "Noise Pollution Monitoring",
+                  "start_page": 60
+                },
+                {
+                  "id": "2.4.4",
+                  "title": "Forest Fire Detection",
+                  "start_page": 61
+                },
+                {
+                  "id": "2.4.5",
+                  "title": "River Floods Detection",
+                  "start_page": 61
+                }
+              ]
+            },
+            {
+              "id": "2.5",
+              "title": "Energy",
+              "start_page": 61,
+              "end_page": 63,
+              "subsections": [
+                {
+                  "id": "2.5.1",
+                  "title": "Smart Grids",
+                  "start_page": 61
+                },
+                {
+                  "id": "2.5.2",
+                  "title": "Renewable Energy Systems",
+                  "start_page": 61
+                },
+                {
+                  "id": "2.5.3",
+                  "title": "Prognostics",
+                  "start_page": 62
+                }
+              ]
+            },
+            {
+              "id": "2.6",
+              "title": "Retail",
+              "start_page": 64,
+              "end_page": 64,
+              "subsections": [
+                {
+                  "id": "2.6.1",
+                  "title": "Inventory Management",
+                  "start_page": 64
+                },
+                {
+                  "id": "2.6.2",
+                  "title": "Smart Payments",
+                  "start_page": 64
+                },
+                {
+                  "id": "2.6.3",
+                  "title": "Smart Vending Machines",
+                  "start_page": 64
+                }
+              ]
+            },
+            {
+              "id": "2.7",
+              "title": "Logistics",
+              "start_page": 65,
+              "end_page": 67,
+              "subsections": [
+                {
+                  "id": "2.7.1",
+                  "title": "Route Generation & Scheduling",
+                  "start_page": 65
+                },
+                {
+                  "id": "2.7.2",
+                  "title": "Fleet Tracking",
+                  "start_page": 66
+                },
+                {
+                  "id": "2.7.3",
+                  "title": "Shipment Monitoring",
+                  "start_page": 66
+                },
+                {
+                  "id": "2.7.4",
+                  "title": "Remote Vehicle Diagnostics",
+                  "start_page": 67
+                }
+              ]
+            },
+            {
+              "id": "2.8",
+              "title": "Agriculture",
+              "start_page": 68,
+              "end_page": 69,
+              "subsections": [
+                {
+                  "id": "2.8.1",
+                  "title": "Smart Irrigation",
+                  "start_page": 68
+                },
+                {
+                  "id": "2.8.2",
+                  "title": "Green House Control",
+                  "start_page": 69
+                }
+              ]
+            },
+            {
+              "id": "2.9",
+              "title": "Industry",
+              "start_page": 69,
+              "end_page": 70,
+              "subsections": [
+                {
+                  "id": "2.9.1",
+                  "title": "Machine Diagnosis & Prognosis",
+                  "start_page": 69
+                },
+                {
+                  "id": "2.9.2",
+                  "title": "Indoor Air Quality Monitoring",
+                  "start_page": 70
+                }
+              ]
+            },
+            {
+              "id": "2.10",
+              "title": "Health & Lifestyle",
+              "start_page": 71,
+              "end_page": 74,
+              "subsections": [
+                {
+                  "id": "2.10.1",
+                  "title": "Health & Fitness Monitoring",
+                  "start_page": 71
+                },
+                {
+                  "id": "2.10.2",
+                  "title": "Wearable Electronics",
+                  "start_page": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Chapter 3",
+          "title": "IoT and M2M",
+          "start_page": 75,
+          "end_page": 90,
+          "part_id": "PART 1",
+          "part_title": "INTRODUCTION & CONCEPTS",
+          "sections": [
+            {
+              "id": "3.1",
+              "title": "Introduction",
+              "start_page": 76,
+              "end_page": 76,
+              "subsections": []
+            },
+            {
+              "id": "3.2",
+              "title": "M2M",
+              "start_page": 76,
+              "end_page": 77,
+              "subsections": []
+            },
+            {
+              "id": "3.3",
+              "title": "Difference between IoT and M2M",
+              "start_page": 77,
+              "end_page": 80,
+              "subsections": []
+            },
+            {
+              "id": "3.4",
+              "title": "SDN and NFV for IoT",
+              "start_page": 80,
+              "end_page": 90,
+              "subsections": [
+                {
+                  "id": "3.4.1",
+                  "title": "Software Defined Networking",
+                  "start_page": 81
+                },
+                {
+                  "id": "3.4.2",
+                  "title": "Network Function Virtualization",
+                  "start_page": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Chapter 4",
+          "title": "IoT System Management with NETCONF-YANG",
+          "start_page": 91,
+          "end_page": 110,
+          "part_id": "PART 1",
+          "part_title": "INTRODUCTION & CONCEPTS",
+          "sections": [
+            {
+              "id": "4.1",
+              "title": "Need for IoT Systems Management",
+              "start_page": 92,
+              "end_page": 93,
+              "subsections": []
+            },
+            {
+              "id": "4.2",
+              "title": "Simple Network Management Protocol (SNMP)",
+              "start_page": 93,
+              "end_page": 94,
+              "subsections": [
+                {
+                  "id": "4.2.1",
+                  "title": "Limitations of SNMP",
+                  "start_page": 93
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "title": "Network Operator Requirements",
+              "start_page": 94,
+              "end_page": 96,
+              "subsections": []
+            },
+            {
+              "id": "4.4",
+              "title": "NETCONF",
+              "start_page": 96,
+              "end_page": 97,
+              "subsections": []
+            },
+            {
+              "id": "4.5",
+              "title": "YANG",
+              "start_page": 97,
+              "end_page": 106,
+              "subsections": []
+            },
+            {
+              "id": "4.6",
+              "title": "IoT Systems Management with NETCONF-YANG",
+              "start_page": 106,
+              "end_page": 110,
+              "subsections": [
+                {
+                  "id": "4.6.1",
+                  "title": "NETOPEER",
+                  "start_page": 107
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PART 2",
+      "title": "DEVELOPING INTERNET OF THINGS",
+      "start_page": 111,
+      "end_page": 332,
+      "chapters": [
+        {
+          "id": "Chapter 5",
+          "title": "IoT Platforms Design Methodology",
+          "start_page": 113,
+          "end_page": 138,
+          "part_id": "PART 2",
+          "part_title": "DEVELOPING INTERNET OF THINGS",
+          "sections": [
+            {
+              "id": "5.1",
+              "title": "Introduction",
+              "start_page": 114,
+              "end_page": 114,
+              "subsections": []
+            },
+            {
+              "id": "5.2",
+              "title": "IoT Design Methodology",
+              "start_page": 114,
+              "end_page": 127,
+              "subsections": [
+                {
+                  "id": "5.2.1",
+                  "title": "Step 1: Purpose & Requirements Specification",
+                  "start_page": 114
+                },
+                {
+                  "id": "5.2.2",
+                  "title": "Step 2: Process Specification",
+                  "start_page": 116
+                },
+                {
+                  "id": "5.2.3",
+                  "title": "Step 3: Domain Model Specification",
+                  "start_page": 117
+                },
+                {
+                  "id": "5.2.4",
+                  "title": "Step 4: Information Model Specification",
+                  "start_page": 119
+                },
+                {
+                  "id": "5.2.5",
+                  "title": "Step 5: Service Specifications",
+                  "start_page": 119
+                },
+                {
+                  "id": "5.2.6",
+                  "title": "Step 6: IoT Level Specification",
+                  "start_page": 121
+                },
+                {
+                  "id": "5.2.7",
+                  "title": "Step 7: Functional View Specification",
+                  "start_page": 121
+                },
+                {
+                  "id": "5.2.8",
+                  "title": "Step 8: Operational View Specification",
+                  "start_page": 125
+                },
+                {
+                  "id": "5.2.9",
+                  "title": "Step 9: Device & Component Integration",
+                  "start_page": 127
+                },
+                {
+                  "id": "5.2.10",
+                  "title": "Step 10: Application Development",
+                  "start_page": 127
+                }
+              ]
+            },
+            {
+              "id": "5.3",
+              "title": "Case Study on IoT System for Weather Monitoring",
+              "start_page": 127,
+              "end_page": 131,
+              "subsections": []
+            },
+            {
+              "id": "5.4",
+              "title": "Motivation for Using Python",
+              "start_page": 131,
+              "end_page": 138,
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "id": "Chapter 6",
+          "title": "IoT Systems - Logical Design using Python",
+          "start_page": 139,
+          "end_page": 176,
+          "part_id": "PART 2",
+          "part_title": "DEVELOPING INTERNET OF THINGS",
+          "sections": [
+            {
+              "id": "6.1",
+              "title": "Introduction",
+              "start_page": 140,
+              "end_page": 141,
+              "subsections": []
+            },
+            {
+              "id": "6.2",
+              "title": "Installing Python",
+              "start_page": 141,
+              "end_page": 142,
+              "subsections": []
+            },
+            {
+              "id": "6.3",
+              "title": "Python Data Types & Data Structures",
+              "start_page": 142,
+              "end_page": 148,
+              "subsections": [
+                {
+                  "id": "6.3.1",
+                  "title": "Numbers",
+                  "start_page": 142
+                },
+                {
+                  "id": "6.3.2",
+                  "title": "Strings",
+                  "start_page": 143
+                },
+                {
+                  "id": "6.3.3",
+                  "title": "Lists",
+                  "start_page": 145
+                },
+                {
+                  "id": "6.3.4",
+                  "title": "Tuples",
+                  "start_page": 146
+                },
+                {
+                  "id": "6.3.5",
+                  "title": "Dictionaries",
+                  "start_page": 147
+                },
+                {
+                  "id": "6.3.6",
+                  "title": "Type Conversions",
+                  "start_page": 148
+                }
+              ]
+            },
+            {
+              "id": "6.4",
+              "title": "Control Flow",
+              "start_page": 149,
+              "end_page": 153,
+              "subsections": [
+                {
+                  "id": "6.4.1",
+                  "title": "if",
+                  "start_page": 149
+                },
+                {
+                  "id": "6.4.2",
+                  "title": "for",
+                  "start_page": 150
+                },
+                {
+                  "id": "6.4.3",
+                  "title": "while",
+                  "start_page": 151
+                },
+                {
+                  "id": "6.4.4",
+                  "title": "range",
+                  "start_page": 151
+                },
+                {
+                  "id": "6.4.5",
+                  "title": "break/continue",
+                  "start_page": 151
+                },
+                {
+                  "id": "6.4.6",
+                  "title": "pass",
+                  "start_page": 152
+                }
+              ]
+            },
+            {
+              "id": "6.5",
+              "title": "Functions",
+              "start_page": 153,
+              "end_page": 156,
+              "subsections": []
+            },
+            {
+              "id": "6.6",
+              "title": "Modules",
+              "start_page": 156,
+              "end_page": 159,
+              "subsections": []
+            },
+            {
+              "id": "6.7",
+              "title": "Packages",
+              "start_page": 159,
+              "end_page": 159,
+              "subsections": []
+            },
+            {
+              "id": "6.8",
+              "title": "File Handling",
+              "start_page": 159,
+              "end_page": 162,
+              "subsections": []
+            },
+            {
+              "id": "6.9",
+              "title": "Date/Time Operations",
+              "start_page": 162,
+              "end_page": 163,
+              "subsections": []
+            },
+            {
+              "id": "6.10",
+              "title": "Classes",
+              "start_page": 163,
+              "end_page": 167,
+              "subsections": []
+            },
+            {
+              "id": "6.11",
+              "title": "Python Packages of Interest for IoT",
+              "start_page": 167,
+              "end_page": 176,
+              "subsections": [
+                {
+                  "id": "6.11.1",
+                  "title": "JSON",
+                  "start_page": 167
+                },
+                {
+                  "id": "6.11.2",
+                  "title": "XML",
+                  "start_page": 169
+                },
+                {
+                  "id": "6.11.3",
+                  "title": "HTTPLib & URLLib",
+                  "start_page": 171
+                },
+                {
+                  "id": "6.11.4",
+                  "title": "SMTPLib",
+                  "start_page": 173
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Chapter 7",
+          "title": "IoT Physical Devices & Endpoints",
+          "start_page": 177,
+          "end_page": 196,
+          "part_id": "PART 2",
+          "part_title": "DEVELOPING INTERNET OF THINGS",
+          "sections": [
+            {
+              "id": "7.1",
+              "title": "What is an IoT Device",
+              "start_page": 178,
+              "end_page": 179,
+              "subsections": [
+                {
+                  "id": "7.1.1",
+                  "title": "Basic building blocks of an IoT Device",
+                  "start_page": 178
+                }
+              ]
+            },
+            {
+              "id": "7.2",
+              "title": "Exemplary Device: Raspberry Pi",
+              "start_page": 179,
+              "end_page": 180,
+              "subsections": []
+            },
+            {
+              "id": "7.3",
+              "title": "About the Board",
+              "start_page": 180,
+              "end_page": 181,
+              "subsections": []
+            },
+            {
+              "id": "7.4",
+              "title": "Linux on Raspberry Pi",
+              "start_page": 181,
+              "end_page": 185,
+              "subsections": []
+            },
+            {
+              "id": "7.5",
+              "title": "Raspberry Pi Interfaces",
+              "start_page": 186,
+              "end_page": 186,
+              "subsections": [
+                {
+                  "id": "7.5.1",
+                  "title": "Serial",
+                  "start_page": 186
+                },
+                {
+                  "id": "7.5.2",
+                  "title": "SPI",
+                  "start_page": 186
+                },
+                {
+                  "id": "7.5.3",
+                  "title": "I2C",
+                  "start_page": 186
+                }
+              ]
+            },
+            {
+              "id": "7.6",
+              "title": "Programming Raspberry Pi with Python",
+              "start_page": 186,
+              "end_page": 192,
+              "subsections": [
+                {
+                  "id": "7.6.1",
+                  "title": "Controlling LED with Raspberry Pi",
+                  "start_page": 186
+                },
+                {
+                  "id": "7.6.2",
+                  "title": "Interfacing an LED and Switch with Raspberry Pi",
+                  "start_page": 188
+                },
+                {
+                  "id": "7.6.3",
+                  "title": "Interfacing a Light Sensor (LDR) with Raspberry Pi",
+                  "start_page": 191
+                }
+              ]
+            },
+            {
+              "id": "7.7",
+              "title": "Other IoT Devices",
+              "start_page": 193,
+              "end_page": 196,
+              "subsections": [
+                {
+                  "id": "7.7.1",
+                  "title": "pcDuino",
+                  "start_page": 193
+                },
+                {
+                  "id": "7.7.2",
+                  "title": "BeagleBone Black",
+                  "start_page": 194
+                },
+                {
+                  "id": "7.7.3",
+                  "title": "Cubieboard",
+                  "start_page": 194
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Chapter 8",
+          "title": "IoT Physical Servers & Cloud Offerings",
+          "start_page": 197,
+          "end_page": 252,
+          "part_id": "PART 2",
+          "part_title": "DEVELOPING INTERNET OF THINGS",
+          "sections": [
+            {
+              "id": "8.1",
+              "title": "Introduction to Cloud Storage Models & Communication APIs",
+              "start_page": 198,
+              "end_page": 198,
+              "subsections": []
+            },
+            {
+              "id": "8.2",
+              "title": "WAMP - AutoBahn for IoT",
+              "start_page": 198,
+              "end_page": 202,
+              "subsections": []
+            },
+            {
+              "id": "8.3",
+              "title": "Xively Cloud for IoT",
+              "start_page": 202,
+              "end_page": 206,
+              "subsections": []
+            },
+            {
+              "id": "8.4",
+              "title": "Python Web Application Framework - Django",
+              "start_page": 206,
+              "end_page": 218,
+              "subsections": [
+                {
+                  "id": "8.4.1",
+                  "title": "Django Architecture",
+                  "start_page": 208
+                },
+                {
+                  "id": "8.4.2",
+                  "title": "Starting Development with Django",
+                  "start_page": 208
+                }
+              ]
+            },
+            {
+              "id": "8.5",
+              "title": "Designing a RESTful Web API",
+              "start_page": 218,
+              "end_page": 224,
+              "subsections": []
+            },
+            {
+              "id": "8.6",
+              "title": "Amazon Web Services for IoT",
+              "start_page": 225,
+              "end_page": 245,
+              "subsections": [
+                {
+                  "id": "8.6.1",
+                  "title": "Amazon EC2",
+                  "start_page": 225
+                },
+                {
+                  "id": "8.6.2",
+                  "title": "Amazon AutoScaling",
+                  "start_page": 227
+                },
+                {
+                  "id": "8.6.3",
+                  "title": "Amazon S3",
+                  "start_page": 230
+                },
+                {
+                  "id": "8.6.4",
+                  "title": "Amazon RDS",
+                  "start_page": 231
+                },
+                {
+                  "id": "8.6.5",
+                  "title": "Amazon DynamoDB",
+                  "start_page": 234
+                },
+                {
+                  "id": "8.6.6",
+                  "title": "Amazon Kinesis",
+                  "start_page": 237
+                },
+                {
+                  "id": "8.6.7",
+                  "title": "Amazon SQS",
+                  "start_page": 240
+                },
+                {
+                  "id": "8.6.8",
+                  "title": "Amazon EMR",
+                  "start_page": 243
+                }
+              ]
+            },
+            {
+              "id": "8.7",
+              "title": "SkyNet IoT Messaging Platform",
+              "start_page": 246,
+              "end_page": 252,
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "id": "Chapter 9",
+          "title": "Case Studies Illustrating IoT Design",
+          "start_page": 253,
+          "end_page": 332,
+          "part_id": "PART 2",
+          "part_title": "DEVELOPING INTERNET OF THINGS",
+          "sections": [
+            {
+              "id": "9.1",
+              "title": "Introduction",
+              "start_page": 254,
+              "end_page": 254,
+              "subsections": []
+            },
+            {
+              "id": "9.2",
+              "title": "Home Automation",
+              "start_page": 254,
+              "end_page": 276,
+              "subsections": [
+                {
+                  "id": "9.2.1",
+                  "title": "Smart Lighting",
+                  "start_page": 254
+                },
+                {
+                  "id": "9.2.2",
+                  "title": "Home Intrusion Detection",
+                  "start_page": 264
+                }
+              ]
+            },
+            {
+              "id": "9.3",
+              "title": "Cities",
+              "start_page": 277,
+              "end_page": 288,
+              "subsections": [
+                {
+                  "id": "9.3.1",
+                  "title": "Smart Parking",
+                  "start_page": 277
+                }
+              ]
+            },
+            {
+              "id": "9.4",
+              "title": "Environment",
+              "start_page": 289,
+              "end_page": 322,
+              "subsections": [
+                {
+                  "id": "9.4.1",
+                  "title": "Weather Monitoring System",
+                  "start_page": 289
+                },
+                {
+                  "id": "9.4.2",
+                  "title": "Weather Reporting Bot",
+                  "start_page": 308
+                },
+                {
+                  "id": "9.4.3",
+                  "title": "Air Pollution Monitoring",
+                  "start_page": 312
+                },
+                {
+                  "id": "9.4.4",
+                  "title": "Forest Fire Detection",
+                  "start_page": 317
+                }
+              ]
+            },
+            {
+              "id": "9.5",
+              "title": "Agriculture",
+              "start_page": 323,
+              "end_page": 326,
+              "subsections": [
+                {
+                  "id": "9.5.1",
+                  "title": "Smart Irrigation",
+                  "start_page": 323
+                }
+              ]
+            },
+            {
+              "id": "9.6",
+              "title": "Productivity Applications",
+              "start_page": 327,
+              "end_page": 332,
+              "subsections": [
+                {
+                  "id": "9.6.1",
+                  "title": "IoT Printer",
+                  "start_page": 327
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PART 3",
+      "title": "ADVANCED TOPICS",
+      "start_page": 333,
+      "end_page": 485,
+      "chapters": [
+        {
+          "id": "Chapter 10",
+          "title": "Data Analytics for IoT",
+          "start_page": 335,
+          "end_page": 412,
+          "part_id": "PART 3",
+          "part_title": "ADVANCED TOPICS",
+          "sections": [
+            {
+              "id": "10.1",
+              "title": "Introduction",
+              "start_page": 336,
+              "end_page": 342,
+              "subsections": []
+            },
+            {
+              "id": "10.2",
+              "title": "Apache Hadoop",
+              "start_page": 343,
+              "end_page": 353,
+              "subsections": [
+                {
+                  "id": "10.2.1",
+                  "title": "MapReduce Programming Model",
+                  "start_page": 343
+                },
+                {
+                  "id": "10.2.2",
+                  "title": "Hadoop MapReduce Job Execution",
+                  "start_page": 344
+                },
+                {
+                  "id": "10.2.3",
+                  "title": "MapReduce Job Execution Workflow",
+                  "start_page": 345
+                },
+                {
+                  "id": "10.2.4",
+                  "title": "Hadoop Cluster Setup",
+                  "start_page": 347
+                }
+              ]
+            },
+            {
+              "id": "10.3",
+              "title": "Using Hadoop MapReduce for Batch Data Analysis",
+              "start_page": 354,
+              "end_page": 365,
+              "subsections": [
+                {
+                  "id": "10.3.1",
+                  "title": "Hadoop YARN",
+                  "start_page": 357
+                }
+              ]
+            },
+            {
+              "id": "10.4",
+              "title": "Apache Oozie",
+              "start_page": 366,
+              "end_page": 376,
+              "subsections": [
+                {
+                  "id": "10.4.1",
+                  "title": "Setting up Oozie",
+                  "start_page": 366
+                },
+                {
+                  "id": "10.4.2",
+                  "title": "Oozie Workflows for IoT Data Analysis",
+                  "start_page": 368
+                }
+              ]
+            },
+            {
+              "id": "10.5",
+              "title": "Apache Spark",
+              "start_page": 377,
+              "end_page": 383,
+              "subsections": []
+            },
+            {
+              "id": "10.6",
+              "title": "Apache Storm",
+              "start_page": 384,
+              "end_page": 387,
+              "subsections": [
+                {
+                  "id": "10.6.1",
+                  "title": "Setting up a Storm Cluster",
+                  "start_page": 385
+                }
+              ]
+            },
+            {
+              "id": "10.7",
+              "title": "Using Apache Storm for Real-time Data Analysis",
+              "start_page": 388,
+              "end_page": 403,
+              "subsections": [
+                {
+                  "id": "10.7.1",
+                  "title": "REST-based approach",
+                  "start_page": 389
+                },
+                {
+                  "id": "10.7.2",
+                  "title": "WebSocket-based approach",
+                  "start_page": 398
+                }
+              ]
+            },
+            {
+              "id": "10.8",
+              "title": "Structural Health Monitoring Case Study",
+              "start_page": 404,
+              "end_page": 412,
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "id": "Chapter 11",
+          "title": "Tools for IoT",
+          "start_page": 413,
+          "end_page": 485,
+          "part_id": "PART 3",
+          "part_title": "ADVANCED TOPICS",
+          "sections": [
+            {
+              "id": "11.1",
+              "title": "Introduction",
+              "start_page": 414,
+              "end_page": 414,
+              "subsections": []
+            },
+            {
+              "id": "11.2",
+              "title": "Chef",
+              "start_page": 414,
+              "end_page": 417,
+              "subsections": [
+                {
+                  "id": "11.2.1",
+                  "title": "Setting up Chef",
+                  "start_page": 417
+                }
+              ]
+            },
+            {
+              "id": "11.3",
+              "title": "Chef Case Studies",
+              "start_page": 417,
+              "end_page": 437,
+              "subsections": [
+                {
+                  "id": "11.3.1",
+                  "title": "Multi-tier Application Deployment",
+                  "start_page": 417
+                },
+                {
+                  "id": "11.3.2",
+                  "title": "Hadoop Cluster",
+                  "start_page": 424
+                },
+                {
+                  "id": "11.3.3",
+                  "title": "Storm Cluster",
+                  "start_page": 433
+                }
+              ]
+            },
+            {
+              "id": "11.4",
+              "title": "Puppet",
+              "start_page": 438,
+              "end_page": 440,
+              "subsections": []
+            },
+            {
+              "id": "11.5",
+              "title": "Puppet Case Study - Multi-tier Deployment",
+              "start_page": 440,
+              "end_page": 443,
+              "subsections": []
+            },
+            {
+              "id": "11.6",
+              "title": "NETCONF-YANG Case Studies",
+              "start_page": 444,
+              "end_page": 475,
+              "subsections": [
+                {
+                  "id": "11.6.1",
+                  "title": "Steps for IoT device Management with NETCONF-YANG",
+                  "start_page": 445
+                },
+                {
+                  "id": "11.6.2",
+                  "title": "Managing Smart Irrigation IoT System with NETCONF-YANG",
+                  "start_page": 446
+                },
+                {
+                  "id": "11.6.3",
+                  "title": "Managing Home Intrusion Detection IoT System with NETCONF-YANG",
+                  "start_page": 462
+                }
+              ]
+            },
+            {
+              "id": "11.7",
+              "title": "IoT Code Generator",
+              "start_page": 476,
+              "end_page": 485,
+              "subsections": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "APPENDICES",
+      "title": "APPENDICES & REFERENCE",
+      "start_page": 486,
+      "end_page": 520,
+      "chapters": [
+        {
+          "id": "Appendix A",
+          "title": "Setting up Raspberry Pi",
+          "start_page": 486,
+          "end_page": 489,
+          "part_id": "APPENDICES",
+          "part_title": "APPENDICES & REFERENCE",
+          "sections": []
+        },
+        {
+          "id": "Appendix B",
+          "title": "Setting up Ubuntu VM",
+          "start_page": 490,
+          "end_page": 505,
+          "part_id": "APPENDICES",
+          "part_title": "APPENDICES & REFERENCE",
+          "sections": []
+        },
+        {
+          "id": "Appendix C",
+          "title": "Setting up Django",
+          "start_page": 506,
+          "end_page": 514,
+          "part_id": "APPENDICES",
+          "part_title": "APPENDICES & REFERENCE",
+          "sections": []
+        },
+        {
+          "id": "Bibliography",
+          "title": "Bibliography",
+          "start_page": 515,
+          "end_page": 516,
+          "part_id": "APPENDICES",
+          "part_title": "APPENDICES & REFERENCE",
+          "sections": []
+        },
+        {
+          "id": "Index",
+          "title": "Book Index",
+          "start_page": 517,
+          "end_page": 520,
+          "part_id": "APPENDICES",
+          "part_title": "APPENDICES & REFERENCE",
+          "sections": []
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "Chapter 1",
+      "title": "Introduction to Internet of Things",
+      "start_page": 19,
+      "end_page": 52,
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS",
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Introduction",
+          "start_page": 20,
+          "end_page": 23,
+          "subsections": [
+            {
+              "id": "1.1.1",
+              "title": "Definition & Characteristics of IoT",
+              "start_page": 22
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Physical Design of IoT",
+          "start_page": 24,
+          "end_page": 30,
+          "subsections": [
+            {
+              "id": "1.2.1",
+              "title": "Things in IoT",
+              "start_page": 24
+            },
+            {
+              "id": "1.2.2",
+              "title": "IoT Protocols",
+              "start_page": 24
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "Logical Design of IoT",
+          "start_page": 31,
+          "end_page": 37,
+          "subsections": [
+            {
+              "id": "1.3.1",
+              "title": "IoT Functional Blocks",
+              "start_page": 31
+            },
+            {
+              "id": "1.3.2",
+              "title": "IoT Communication Models",
+              "start_page": 31
+            },
+            {
+              "id": "1.3.3",
+              "title": "IoT Communication APIs",
+              "start_page": 34
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "IoT Enabling Technologies",
+          "start_page": 38,
+          "end_page": 42,
+          "subsections": [
+            {
+              "id": "1.4.1",
+              "title": "Wireless Sensor Networks",
+              "start_page": 39
+            },
+            {
+              "id": "1.4.2",
+              "title": "Cloud Computing",
+              "start_page": 39
+            },
+            {
+              "id": "1.4.3",
+              "title": "Big Data Analytics",
+              "start_page": 40
+            },
+            {
+              "id": "1.4.4",
+              "title": "Communication Protocols",
+              "start_page": 41
+            },
+            {
+              "id": "1.4.5",
+              "title": "Embedded Systems",
+              "start_page": 42
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "title": "IoT Levels & Deployment Templates",
+          "start_page": 42,
+          "end_page": 52,
+          "subsections": [
+            {
+              "id": "1.5.1",
+              "title": "IoT Level-1",
+              "start_page": 44
+            },
+            {
+              "id": "1.5.2",
+              "title": "IoT Level-2",
+              "start_page": 44
+            },
+            {
+              "id": "1.5.3",
+              "title": "IoT Level-3",
+              "start_page": 44
+            },
+            {
+              "id": "1.5.4",
+              "title": "IoT Level-4",
+              "start_page": 46
+            },
+            {
+              "id": "1.5.5",
+              "title": "IoT Level-5",
+              "start_page": 48
+            },
+            {
+              "id": "1.5.6",
+              "title": "IoT Level-6",
+              "start_page": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 2",
+      "title": "Domain Specific IoTs",
+      "start_page": 53,
+      "end_page": 74,
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS",
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Introduction",
+          "start_page": 54,
+          "end_page": 54,
+          "subsections": []
+        },
+        {
+          "id": "2.2",
+          "title": "Home Automation",
+          "start_page": 54,
+          "end_page": 56,
+          "subsections": [
+            {
+              "id": "2.2.1",
+              "title": "Smart Lighting",
+              "start_page": 54
+            },
+            {
+              "id": "2.2.2",
+              "title": "Smart Appliances",
+              "start_page": 54
+            },
+            {
+              "id": "2.2.3",
+              "title": "Intrusion Detection",
+              "start_page": 56
+            },
+            {
+              "id": "2.2.4",
+              "title": "Smoke/Gas Detectors",
+              "start_page": 56
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Cities",
+          "start_page": 56,
+          "end_page": 58,
+          "subsections": [
+            {
+              "id": "2.3.1",
+              "title": "Smart Parking",
+              "start_page": 56
+            },
+            {
+              "id": "2.3.2",
+              "title": "Smart Lighting",
+              "start_page": 57
+            },
+            {
+              "id": "2.3.3",
+              "title": "Smart Roads",
+              "start_page": 58
+            },
+            {
+              "id": "2.3.4",
+              "title": "Structural Health Monitoring",
+              "start_page": 58
+            },
+            {
+              "id": "2.3.5",
+              "title": "Surveillance",
+              "start_page": 58
+            },
+            {
+              "id": "2.3.6",
+              "title": "Emergency Response",
+              "start_page": 58
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Environment",
+          "start_page": 59,
+          "end_page": 61,
+          "subsections": [
+            {
+              "id": "2.4.1",
+              "title": "Weather Monitoring",
+              "start_page": 59
+            },
+            {
+              "id": "2.4.2",
+              "title": "Air Pollution Monitoring",
+              "start_page": 59
+            },
+            {
+              "id": "2.4.3",
+              "title": "Noise Pollution Monitoring",
+              "start_page": 60
+            },
+            {
+              "id": "2.4.4",
+              "title": "Forest Fire Detection",
+              "start_page": 61
+            },
+            {
+              "id": "2.4.5",
+              "title": "River Floods Detection",
+              "start_page": 61
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "Energy",
+          "start_page": 61,
+          "end_page": 63,
+          "subsections": [
+            {
+              "id": "2.5.1",
+              "title": "Smart Grids",
+              "start_page": 61
+            },
+            {
+              "id": "2.5.2",
+              "title": "Renewable Energy Systems",
+              "start_page": 61
+            },
+            {
+              "id": "2.5.3",
+              "title": "Prognostics",
+              "start_page": 62
+            }
+          ]
+        },
+        {
+          "id": "2.6",
+          "title": "Retail",
+          "start_page": 64,
+          "end_page": 64,
+          "subsections": [
+            {
+              "id": "2.6.1",
+              "title": "Inventory Management",
+              "start_page": 64
+            },
+            {
+              "id": "2.6.2",
+              "title": "Smart Payments",
+              "start_page": 64
+            },
+            {
+              "id": "2.6.3",
+              "title": "Smart Vending Machines",
+              "start_page": 64
+            }
+          ]
+        },
+        {
+          "id": "2.7",
+          "title": "Logistics",
+          "start_page": 65,
+          "end_page": 67,
+          "subsections": [
+            {
+              "id": "2.7.1",
+              "title": "Route Generation & Scheduling",
+              "start_page": 65
+            },
+            {
+              "id": "2.7.2",
+              "title": "Fleet Tracking",
+              "start_page": 66
+            },
+            {
+              "id": "2.7.3",
+              "title": "Shipment Monitoring",
+              "start_page": 66
+            },
+            {
+              "id": "2.7.4",
+              "title": "Remote Vehicle Diagnostics",
+              "start_page": 67
+            }
+          ]
+        },
+        {
+          "id": "2.8",
+          "title": "Agriculture",
+          "start_page": 68,
+          "end_page": 69,
+          "subsections": [
+            {
+              "id": "2.8.1",
+              "title": "Smart Irrigation",
+              "start_page": 68
+            },
+            {
+              "id": "2.8.2",
+              "title": "Green House Control",
+              "start_page": 69
+            }
+          ]
+        },
+        {
+          "id": "2.9",
+          "title": "Industry",
+          "start_page": 69,
+          "end_page": 70,
+          "subsections": [
+            {
+              "id": "2.9.1",
+              "title": "Machine Diagnosis & Prognosis",
+              "start_page": 69
+            },
+            {
+              "id": "2.9.2",
+              "title": "Indoor Air Quality Monitoring",
+              "start_page": 70
+            }
+          ]
+        },
+        {
+          "id": "2.10",
+          "title": "Health & Lifestyle",
+          "start_page": 71,
+          "end_page": 74,
+          "subsections": [
+            {
+              "id": "2.10.1",
+              "title": "Health & Fitness Monitoring",
+              "start_page": 71
+            },
+            {
+              "id": "2.10.2",
+              "title": "Wearable Electronics",
+              "start_page": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 3",
+      "title": "IoT and M2M",
+      "start_page": 75,
+      "end_page": 90,
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS",
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Introduction",
+          "start_page": 76,
+          "end_page": 76,
+          "subsections": []
+        },
+        {
+          "id": "3.2",
+          "title": "M2M",
+          "start_page": 76,
+          "end_page": 77,
+          "subsections": []
+        },
+        {
+          "id": "3.3",
+          "title": "Difference between IoT and M2M",
+          "start_page": 77,
+          "end_page": 80,
+          "subsections": []
+        },
+        {
+          "id": "3.4",
+          "title": "SDN and NFV for IoT",
+          "start_page": 80,
+          "end_page": 90,
+          "subsections": [
+            {
+              "id": "3.4.1",
+              "title": "Software Defined Networking",
+              "start_page": 81
+            },
+            {
+              "id": "3.4.2",
+              "title": "Network Function Virtualization",
+              "start_page": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 4",
+      "title": "IoT System Management with NETCONF-YANG",
+      "start_page": 91,
+      "end_page": 110,
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS",
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Need for IoT Systems Management",
+          "start_page": 92,
+          "end_page": 93,
+          "subsections": []
+        },
+        {
+          "id": "4.2",
+          "title": "Simple Network Management Protocol (SNMP)",
+          "start_page": 93,
+          "end_page": 94,
+          "subsections": [
+            {
+              "id": "4.2.1",
+              "title": "Limitations of SNMP",
+              "start_page": 93
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Network Operator Requirements",
+          "start_page": 94,
+          "end_page": 96,
+          "subsections": []
+        },
+        {
+          "id": "4.4",
+          "title": "NETCONF",
+          "start_page": 96,
+          "end_page": 97,
+          "subsections": []
+        },
+        {
+          "id": "4.5",
+          "title": "YANG",
+          "start_page": 97,
+          "end_page": 106,
+          "subsections": []
+        },
+        {
+          "id": "4.6",
+          "title": "IoT Systems Management with NETCONF-YANG",
+          "start_page": 106,
+          "end_page": 110,
+          "subsections": [
+            {
+              "id": "4.6.1",
+              "title": "NETOPEER",
+              "start_page": 107
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 5",
+      "title": "IoT Platforms Design Methodology",
+      "start_page": 113,
+      "end_page": 138,
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS",
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Introduction",
+          "start_page": 114,
+          "end_page": 114,
+          "subsections": []
+        },
+        {
+          "id": "5.2",
+          "title": "IoT Design Methodology",
+          "start_page": 114,
+          "end_page": 127,
+          "subsections": [
+            {
+              "id": "5.2.1",
+              "title": "Step 1: Purpose & Requirements Specification",
+              "start_page": 114
+            },
+            {
+              "id": "5.2.2",
+              "title": "Step 2: Process Specification",
+              "start_page": 116
+            },
+            {
+              "id": "5.2.3",
+              "title": "Step 3: Domain Model Specification",
+              "start_page": 117
+            },
+            {
+              "id": "5.2.4",
+              "title": "Step 4: Information Model Specification",
+              "start_page": 119
+            },
+            {
+              "id": "5.2.5",
+              "title": "Step 5: Service Specifications",
+              "start_page": 119
+            },
+            {
+              "id": "5.2.6",
+              "title": "Step 6: IoT Level Specification",
+              "start_page": 121
+            },
+            {
+              "id": "5.2.7",
+              "title": "Step 7: Functional View Specification",
+              "start_page": 121
+            },
+            {
+              "id": "5.2.8",
+              "title": "Step 8: Operational View Specification",
+              "start_page": 125
+            },
+            {
+              "id": "5.2.9",
+              "title": "Step 9: Device & Component Integration",
+              "start_page": 127
+            },
+            {
+              "id": "5.2.10",
+              "title": "Step 10: Application Development",
+              "start_page": 127
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Case Study on IoT System for Weather Monitoring",
+          "start_page": 127,
+          "end_page": 131,
+          "subsections": []
+        },
+        {
+          "id": "5.4",
+          "title": "Motivation for Using Python",
+          "start_page": 131,
+          "end_page": 138,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 6",
+      "title": "IoT Systems - Logical Design using Python",
+      "start_page": 139,
+      "end_page": 176,
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS",
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "Introduction",
+          "start_page": 140,
+          "end_page": 141,
+          "subsections": []
+        },
+        {
+          "id": "6.2",
+          "title": "Installing Python",
+          "start_page": 141,
+          "end_page": 142,
+          "subsections": []
+        },
+        {
+          "id": "6.3",
+          "title": "Python Data Types & Data Structures",
+          "start_page": 142,
+          "end_page": 148,
+          "subsections": [
+            {
+              "id": "6.3.1",
+              "title": "Numbers",
+              "start_page": 142
+            },
+            {
+              "id": "6.3.2",
+              "title": "Strings",
+              "start_page": 143
+            },
+            {
+              "id": "6.3.3",
+              "title": "Lists",
+              "start_page": 145
+            },
+            {
+              "id": "6.3.4",
+              "title": "Tuples",
+              "start_page": 146
+            },
+            {
+              "id": "6.3.5",
+              "title": "Dictionaries",
+              "start_page": 147
+            },
+            {
+              "id": "6.3.6",
+              "title": "Type Conversions",
+              "start_page": 148
+            }
+          ]
+        },
+        {
+          "id": "6.4",
+          "title": "Control Flow",
+          "start_page": 149,
+          "end_page": 153,
+          "subsections": [
+            {
+              "id": "6.4.1",
+              "title": "if",
+              "start_page": 149
+            },
+            {
+              "id": "6.4.2",
+              "title": "for",
+              "start_page": 150
+            },
+            {
+              "id": "6.4.3",
+              "title": "while",
+              "start_page": 151
+            },
+            {
+              "id": "6.4.4",
+              "title": "range",
+              "start_page": 151
+            },
+            {
+              "id": "6.4.5",
+              "title": "break/continue",
+              "start_page": 151
+            },
+            {
+              "id": "6.4.6",
+              "title": "pass",
+              "start_page": 152
+            }
+          ]
+        },
+        {
+          "id": "6.5",
+          "title": "Functions",
+          "start_page": 153,
+          "end_page": 156,
+          "subsections": []
+        },
+        {
+          "id": "6.6",
+          "title": "Modules",
+          "start_page": 156,
+          "end_page": 159,
+          "subsections": []
+        },
+        {
+          "id": "6.7",
+          "title": "Packages",
+          "start_page": 159,
+          "end_page": 159,
+          "subsections": []
+        },
+        {
+          "id": "6.8",
+          "title": "File Handling",
+          "start_page": 159,
+          "end_page": 162,
+          "subsections": []
+        },
+        {
+          "id": "6.9",
+          "title": "Date/Time Operations",
+          "start_page": 162,
+          "end_page": 163,
+          "subsections": []
+        },
+        {
+          "id": "6.10",
+          "title": "Classes",
+          "start_page": 163,
+          "end_page": 167,
+          "subsections": []
+        },
+        {
+          "id": "6.11",
+          "title": "Python Packages of Interest for IoT",
+          "start_page": 167,
+          "end_page": 176,
+          "subsections": [
+            {
+              "id": "6.11.1",
+              "title": "JSON",
+              "start_page": 167
+            },
+            {
+              "id": "6.11.2",
+              "title": "XML",
+              "start_page": 169
+            },
+            {
+              "id": "6.11.3",
+              "title": "HTTPLib & URLLib",
+              "start_page": 171
+            },
+            {
+              "id": "6.11.4",
+              "title": "SMTPLib",
+              "start_page": 173
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 7",
+      "title": "IoT Physical Devices & Endpoints",
+      "start_page": 177,
+      "end_page": 196,
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS",
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "What is an IoT Device",
+          "start_page": 178,
+          "end_page": 179,
+          "subsections": [
+            {
+              "id": "7.1.1",
+              "title": "Basic building blocks of an IoT Device",
+              "start_page": 178
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "title": "Exemplary Device: Raspberry Pi",
+          "start_page": 179,
+          "end_page": 180,
+          "subsections": []
+        },
+        {
+          "id": "7.3",
+          "title": "About the Board",
+          "start_page": 180,
+          "end_page": 181,
+          "subsections": []
+        },
+        {
+          "id": "7.4",
+          "title": "Linux on Raspberry Pi",
+          "start_page": 181,
+          "end_page": 185,
+          "subsections": []
+        },
+        {
+          "id": "7.5",
+          "title": "Raspberry Pi Interfaces",
+          "start_page": 186,
+          "end_page": 186,
+          "subsections": [
+            {
+              "id": "7.5.1",
+              "title": "Serial",
+              "start_page": 186
+            },
+            {
+              "id": "7.5.2",
+              "title": "SPI",
+              "start_page": 186
+            },
+            {
+              "id": "7.5.3",
+              "title": "I2C",
+              "start_page": 186
+            }
+          ]
+        },
+        {
+          "id": "7.6",
+          "title": "Programming Raspberry Pi with Python",
+          "start_page": 186,
+          "end_page": 192,
+          "subsections": [
+            {
+              "id": "7.6.1",
+              "title": "Controlling LED with Raspberry Pi",
+              "start_page": 186
+            },
+            {
+              "id": "7.6.2",
+              "title": "Interfacing an LED and Switch with Raspberry Pi",
+              "start_page": 188
+            },
+            {
+              "id": "7.6.3",
+              "title": "Interfacing a Light Sensor (LDR) with Raspberry Pi",
+              "start_page": 191
+            }
+          ]
+        },
+        {
+          "id": "7.7",
+          "title": "Other IoT Devices",
+          "start_page": 193,
+          "end_page": 196,
+          "subsections": [
+            {
+              "id": "7.7.1",
+              "title": "pcDuino",
+              "start_page": 193
+            },
+            {
+              "id": "7.7.2",
+              "title": "BeagleBone Black",
+              "start_page": 194
+            },
+            {
+              "id": "7.7.3",
+              "title": "Cubieboard",
+              "start_page": 194
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 8",
+      "title": "IoT Physical Servers & Cloud Offerings",
+      "start_page": 197,
+      "end_page": 252,
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS",
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Introduction to Cloud Storage Models & Communication APIs",
+          "start_page": 198,
+          "end_page": 198,
+          "subsections": []
+        },
+        {
+          "id": "8.2",
+          "title": "WAMP - AutoBahn for IoT",
+          "start_page": 198,
+          "end_page": 202,
+          "subsections": []
+        },
+        {
+          "id": "8.3",
+          "title": "Xively Cloud for IoT",
+          "start_page": 202,
+          "end_page": 206,
+          "subsections": []
+        },
+        {
+          "id": "8.4",
+          "title": "Python Web Application Framework - Django",
+          "start_page": 206,
+          "end_page": 218,
+          "subsections": [
+            {
+              "id": "8.4.1",
+              "title": "Django Architecture",
+              "start_page": 208
+            },
+            {
+              "id": "8.4.2",
+              "title": "Starting Development with Django",
+              "start_page": 208
+            }
+          ]
+        },
+        {
+          "id": "8.5",
+          "title": "Designing a RESTful Web API",
+          "start_page": 218,
+          "end_page": 224,
+          "subsections": []
+        },
+        {
+          "id": "8.6",
+          "title": "Amazon Web Services for IoT",
+          "start_page": 225,
+          "end_page": 245,
+          "subsections": [
+            {
+              "id": "8.6.1",
+              "title": "Amazon EC2",
+              "start_page": 225
+            },
+            {
+              "id": "8.6.2",
+              "title": "Amazon AutoScaling",
+              "start_page": 227
+            },
+            {
+              "id": "8.6.3",
+              "title": "Amazon S3",
+              "start_page": 230
+            },
+            {
+              "id": "8.6.4",
+              "title": "Amazon RDS",
+              "start_page": 231
+            },
+            {
+              "id": "8.6.5",
+              "title": "Amazon DynamoDB",
+              "start_page": 234
+            },
+            {
+              "id": "8.6.6",
+              "title": "Amazon Kinesis",
+              "start_page": 237
+            },
+            {
+              "id": "8.6.7",
+              "title": "Amazon SQS",
+              "start_page": 240
+            },
+            {
+              "id": "8.6.8",
+              "title": "Amazon EMR",
+              "start_page": 243
+            }
+          ]
+        },
+        {
+          "id": "8.7",
+          "title": "SkyNet IoT Messaging Platform",
+          "start_page": 246,
+          "end_page": 252,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 9",
+      "title": "Case Studies Illustrating IoT Design",
+      "start_page": 253,
+      "end_page": 332,
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS",
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "Introduction",
+          "start_page": 254,
+          "end_page": 254,
+          "subsections": []
+        },
+        {
+          "id": "9.2",
+          "title": "Home Automation",
+          "start_page": 254,
+          "end_page": 276,
+          "subsections": [
+            {
+              "id": "9.2.1",
+              "title": "Smart Lighting",
+              "start_page": 254
+            },
+            {
+              "id": "9.2.2",
+              "title": "Home Intrusion Detection",
+              "start_page": 264
+            }
+          ]
+        },
+        {
+          "id": "9.3",
+          "title": "Cities",
+          "start_page": 277,
+          "end_page": 288,
+          "subsections": [
+            {
+              "id": "9.3.1",
+              "title": "Smart Parking",
+              "start_page": 277
+            }
+          ]
+        },
+        {
+          "id": "9.4",
+          "title": "Environment",
+          "start_page": 289,
+          "end_page": 322,
+          "subsections": [
+            {
+              "id": "9.4.1",
+              "title": "Weather Monitoring System",
+              "start_page": 289
+            },
+            {
+              "id": "9.4.2",
+              "title": "Weather Reporting Bot",
+              "start_page": 308
+            },
+            {
+              "id": "9.4.3",
+              "title": "Air Pollution Monitoring",
+              "start_page": 312
+            },
+            {
+              "id": "9.4.4",
+              "title": "Forest Fire Detection",
+              "start_page": 317
+            }
+          ]
+        },
+        {
+          "id": "9.5",
+          "title": "Agriculture",
+          "start_page": 323,
+          "end_page": 326,
+          "subsections": [
+            {
+              "id": "9.5.1",
+              "title": "Smart Irrigation",
+              "start_page": 323
+            }
+          ]
+        },
+        {
+          "id": "9.6",
+          "title": "Productivity Applications",
+          "start_page": 327,
+          "end_page": 332,
+          "subsections": [
+            {
+              "id": "9.6.1",
+              "title": "IoT Printer",
+              "start_page": 327
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chapter 10",
+      "title": "Data Analytics for IoT",
+      "start_page": 335,
+      "end_page": 412,
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS",
+      "sections": [
+        {
+          "id": "10.1",
+          "title": "Introduction",
+          "start_page": 336,
+          "end_page": 342,
+          "subsections": []
+        },
+        {
+          "id": "10.2",
+          "title": "Apache Hadoop",
+          "start_page": 343,
+          "end_page": 353,
+          "subsections": [
+            {
+              "id": "10.2.1",
+              "title": "MapReduce Programming Model",
+              "start_page": 343
+            },
+            {
+              "id": "10.2.2",
+              "title": "Hadoop MapReduce Job Execution",
+              "start_page": 344
+            },
+            {
+              "id": "10.2.3",
+              "title": "MapReduce Job Execution Workflow",
+              "start_page": 345
+            },
+            {
+              "id": "10.2.4",
+              "title": "Hadoop Cluster Setup",
+              "start_page": 347
+            }
+          ]
+        },
+        {
+          "id": "10.3",
+          "title": "Using Hadoop MapReduce for Batch Data Analysis",
+          "start_page": 354,
+          "end_page": 365,
+          "subsections": [
+            {
+              "id": "10.3.1",
+              "title": "Hadoop YARN",
+              "start_page": 357
+            }
+          ]
+        },
+        {
+          "id": "10.4",
+          "title": "Apache Oozie",
+          "start_page": 366,
+          "end_page": 376,
+          "subsections": [
+            {
+              "id": "10.4.1",
+              "title": "Setting up Oozie",
+              "start_page": 366
+            },
+            {
+              "id": "10.4.2",
+              "title": "Oozie Workflows for IoT Data Analysis",
+              "start_page": 368
+            }
+          ]
+        },
+        {
+          "id": "10.5",
+          "title": "Apache Spark",
+          "start_page": 377,
+          "end_page": 383,
+          "subsections": []
+        },
+        {
+          "id": "10.6",
+          "title": "Apache Storm",
+          "start_page": 384,
+          "end_page": 387,
+          "subsections": [
+            {
+              "id": "10.6.1",
+              "title": "Setting up a Storm Cluster",
+              "start_page": 385
+            }
+          ]
+        },
+        {
+          "id": "10.7",
+          "title": "Using Apache Storm for Real-time Data Analysis",
+          "start_page": 388,
+          "end_page": 403,
+          "subsections": [
+            {
+              "id": "10.7.1",
+              "title": "REST-based approach",
+              "start_page": 389
+            },
+            {
+              "id": "10.7.2",
+              "title": "WebSocket-based approach",
+              "start_page": 398
+            }
+          ]
+        },
+        {
+          "id": "10.8",
+          "title": "Structural Health Monitoring Case Study",
+          "start_page": 404,
+          "end_page": 412,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Chapter 11",
+      "title": "Tools for IoT",
+      "start_page": 413,
+      "end_page": 485,
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS",
+      "sections": [
+        {
+          "id": "11.1",
+          "title": "Introduction",
+          "start_page": 414,
+          "end_page": 414,
+          "subsections": []
+        },
+        {
+          "id": "11.2",
+          "title": "Chef",
+          "start_page": 414,
+          "end_page": 417,
+          "subsections": [
+            {
+              "id": "11.2.1",
+              "title": "Setting up Chef",
+              "start_page": 417
+            }
+          ]
+        },
+        {
+          "id": "11.3",
+          "title": "Chef Case Studies",
+          "start_page": 417,
+          "end_page": 437,
+          "subsections": [
+            {
+              "id": "11.3.1",
+              "title": "Multi-tier Application Deployment",
+              "start_page": 417
+            },
+            {
+              "id": "11.3.2",
+              "title": "Hadoop Cluster",
+              "start_page": 424
+            },
+            {
+              "id": "11.3.3",
+              "title": "Storm Cluster",
+              "start_page": 433
+            }
+          ]
+        },
+        {
+          "id": "11.4",
+          "title": "Puppet",
+          "start_page": 438,
+          "end_page": 440,
+          "subsections": []
+        },
+        {
+          "id": "11.5",
+          "title": "Puppet Case Study - Multi-tier Deployment",
+          "start_page": 440,
+          "end_page": 443,
+          "subsections": []
+        },
+        {
+          "id": "11.6",
+          "title": "NETCONF-YANG Case Studies",
+          "start_page": 444,
+          "end_page": 475,
+          "subsections": [
+            {
+              "id": "11.6.1",
+              "title": "Steps for IoT device Management with NETCONF-YANG",
+              "start_page": 445
+            },
+            {
+              "id": "11.6.2",
+              "title": "Managing Smart Irrigation IoT System with NETCONF-YANG",
+              "start_page": 446
+            },
+            {
+              "id": "11.6.3",
+              "title": "Managing Home Intrusion Detection IoT System with NETCONF-YANG",
+              "start_page": 462
+            }
+          ]
+        },
+        {
+          "id": "11.7",
+          "title": "IoT Code Generator",
+          "start_page": 476,
+          "end_page": 485,
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "Appendix A",
+      "title": "Setting up Raspberry Pi",
+      "start_page": 486,
+      "end_page": 489,
+      "part_id": "APPENDICES",
+      "part_title": "APPENDICES & REFERENCE",
+      "sections": []
+    },
+    {
+      "id": "Appendix B",
+      "title": "Setting up Ubuntu VM",
+      "start_page": 490,
+      "end_page": 505,
+      "part_id": "APPENDICES",
+      "part_title": "APPENDICES & REFERENCE",
+      "sections": []
+    },
+    {
+      "id": "Appendix C",
+      "title": "Setting up Django",
+      "start_page": 506,
+      "end_page": 514,
+      "part_id": "APPENDICES",
+      "part_title": "APPENDICES & REFERENCE",
+      "sections": []
+    },
+    {
+      "id": "Bibliography",
+      "title": "Bibliography",
+      "start_page": 515,
+      "end_page": 516,
+      "part_id": "APPENDICES",
+      "part_title": "APPENDICES & REFERENCE",
+      "sections": []
+    },
+    {
+      "id": "Index",
+      "title": "Book Index",
+      "start_page": 517,
+      "end_page": 520,
+      "part_id": "APPENDICES",
+      "part_title": "APPENDICES & REFERENCE",
+      "sections": []
+    }
+  ],
+  "sections": [
+    {
+      "id": "1.1",
+      "title": "Introduction",
+      "start_page": 20,
+      "end_page": 23,
+      "subsections": [
+        {
+          "id": "1.1.1",
+          "title": "Definition & Characteristics of IoT",
+          "start_page": 22
+        }
+      ],
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.2",
+      "title": "Physical Design of IoT",
+      "start_page": 24,
+      "end_page": 30,
+      "subsections": [
+        {
+          "id": "1.2.1",
+          "title": "Things in IoT",
+          "start_page": 24
+        },
+        {
+          "id": "1.2.2",
+          "title": "IoT Protocols",
+          "start_page": 24
+        }
+      ],
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.3",
+      "title": "Logical Design of IoT",
+      "start_page": 31,
+      "end_page": 37,
+      "subsections": [
+        {
+          "id": "1.3.1",
+          "title": "IoT Functional Blocks",
+          "start_page": 31
+        },
+        {
+          "id": "1.3.2",
+          "title": "IoT Communication Models",
+          "start_page": 31
+        },
+        {
+          "id": "1.3.3",
+          "title": "IoT Communication APIs",
+          "start_page": 34
+        }
+      ],
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.4",
+      "title": "IoT Enabling Technologies",
+      "start_page": 38,
+      "end_page": 42,
+      "subsections": [
+        {
+          "id": "1.4.1",
+          "title": "Wireless Sensor Networks",
+          "start_page": 39
+        },
+        {
+          "id": "1.4.2",
+          "title": "Cloud Computing",
+          "start_page": 39
+        },
+        {
+          "id": "1.4.3",
+          "title": "Big Data Analytics",
+          "start_page": 40
+        },
+        {
+          "id": "1.4.4",
+          "title": "Communication Protocols",
+          "start_page": 41
+        },
+        {
+          "id": "1.4.5",
+          "title": "Embedded Systems",
+          "start_page": 42
+        }
+      ],
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.5",
+      "title": "IoT Levels & Deployment Templates",
+      "start_page": 42,
+      "end_page": 52,
+      "subsections": [
+        {
+          "id": "1.5.1",
+          "title": "IoT Level-1",
+          "start_page": 44
+        },
+        {
+          "id": "1.5.2",
+          "title": "IoT Level-2",
+          "start_page": 44
+        },
+        {
+          "id": "1.5.3",
+          "title": "IoT Level-3",
+          "start_page": 44
+        },
+        {
+          "id": "1.5.4",
+          "title": "IoT Level-4",
+          "start_page": 46
+        },
+        {
+          "id": "1.5.5",
+          "title": "IoT Level-5",
+          "start_page": 48
+        },
+        {
+          "id": "1.5.6",
+          "title": "IoT Level-6",
+          "start_page": 49
+        }
+      ],
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.1",
+      "title": "Introduction",
+      "start_page": 54,
+      "end_page": 54,
+      "subsections": [],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.2",
+      "title": "Home Automation",
+      "start_page": 54,
+      "end_page": 56,
+      "subsections": [
+        {
+          "id": "2.2.1",
+          "title": "Smart Lighting",
+          "start_page": 54
+        },
+        {
+          "id": "2.2.2",
+          "title": "Smart Appliances",
+          "start_page": 54
+        },
+        {
+          "id": "2.2.3",
+          "title": "Intrusion Detection",
+          "start_page": 56
+        },
+        {
+          "id": "2.2.4",
+          "title": "Smoke/Gas Detectors",
+          "start_page": 56
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.3",
+      "title": "Cities",
+      "start_page": 56,
+      "end_page": 58,
+      "subsections": [
+        {
+          "id": "2.3.1",
+          "title": "Smart Parking",
+          "start_page": 56
+        },
+        {
+          "id": "2.3.2",
+          "title": "Smart Lighting",
+          "start_page": 57
+        },
+        {
+          "id": "2.3.3",
+          "title": "Smart Roads",
+          "start_page": 58
+        },
+        {
+          "id": "2.3.4",
+          "title": "Structural Health Monitoring",
+          "start_page": 58
+        },
+        {
+          "id": "2.3.5",
+          "title": "Surveillance",
+          "start_page": 58
+        },
+        {
+          "id": "2.3.6",
+          "title": "Emergency Response",
+          "start_page": 58
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.4",
+      "title": "Environment",
+      "start_page": 59,
+      "end_page": 61,
+      "subsections": [
+        {
+          "id": "2.4.1",
+          "title": "Weather Monitoring",
+          "start_page": 59
+        },
+        {
+          "id": "2.4.2",
+          "title": "Air Pollution Monitoring",
+          "start_page": 59
+        },
+        {
+          "id": "2.4.3",
+          "title": "Noise Pollution Monitoring",
+          "start_page": 60
+        },
+        {
+          "id": "2.4.4",
+          "title": "Forest Fire Detection",
+          "start_page": 61
+        },
+        {
+          "id": "2.4.5",
+          "title": "River Floods Detection",
+          "start_page": 61
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.5",
+      "title": "Energy",
+      "start_page": 61,
+      "end_page": 63,
+      "subsections": [
+        {
+          "id": "2.5.1",
+          "title": "Smart Grids",
+          "start_page": 61
+        },
+        {
+          "id": "2.5.2",
+          "title": "Renewable Energy Systems",
+          "start_page": 61
+        },
+        {
+          "id": "2.5.3",
+          "title": "Prognostics",
+          "start_page": 62
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.6",
+      "title": "Retail",
+      "start_page": 64,
+      "end_page": 64,
+      "subsections": [
+        {
+          "id": "2.6.1",
+          "title": "Inventory Management",
+          "start_page": 64
+        },
+        {
+          "id": "2.6.2",
+          "title": "Smart Payments",
+          "start_page": 64
+        },
+        {
+          "id": "2.6.3",
+          "title": "Smart Vending Machines",
+          "start_page": 64
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.7",
+      "title": "Logistics",
+      "start_page": 65,
+      "end_page": 67,
+      "subsections": [
+        {
+          "id": "2.7.1",
+          "title": "Route Generation & Scheduling",
+          "start_page": 65
+        },
+        {
+          "id": "2.7.2",
+          "title": "Fleet Tracking",
+          "start_page": 66
+        },
+        {
+          "id": "2.7.3",
+          "title": "Shipment Monitoring",
+          "start_page": 66
+        },
+        {
+          "id": "2.7.4",
+          "title": "Remote Vehicle Diagnostics",
+          "start_page": 67
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.8",
+      "title": "Agriculture",
+      "start_page": 68,
+      "end_page": 69,
+      "subsections": [
+        {
+          "id": "2.8.1",
+          "title": "Smart Irrigation",
+          "start_page": 68
+        },
+        {
+          "id": "2.8.2",
+          "title": "Green House Control",
+          "start_page": 69
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.9",
+      "title": "Industry",
+      "start_page": 69,
+      "end_page": 70,
+      "subsections": [
+        {
+          "id": "2.9.1",
+          "title": "Machine Diagnosis & Prognosis",
+          "start_page": 69
+        },
+        {
+          "id": "2.9.2",
+          "title": "Indoor Air Quality Monitoring",
+          "start_page": 70
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.10",
+      "title": "Health & Lifestyle",
+      "start_page": 71,
+      "end_page": 74,
+      "subsections": [
+        {
+          "id": "2.10.1",
+          "title": "Health & Fitness Monitoring",
+          "start_page": 71
+        },
+        {
+          "id": "2.10.2",
+          "title": "Wearable Electronics",
+          "start_page": 72
+        }
+      ],
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "3.1",
+      "title": "Introduction",
+      "start_page": 76,
+      "end_page": 76,
+      "subsections": [],
+      "chapter_id": "Chapter 3",
+      "chapter_title": "IoT and M2M",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "3.2",
+      "title": "M2M",
+      "start_page": 76,
+      "end_page": 77,
+      "subsections": [],
+      "chapter_id": "Chapter 3",
+      "chapter_title": "IoT and M2M",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "3.3",
+      "title": "Difference between IoT and M2M",
+      "start_page": 77,
+      "end_page": 80,
+      "subsections": [],
+      "chapter_id": "Chapter 3",
+      "chapter_title": "IoT and M2M",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "3.4",
+      "title": "SDN and NFV for IoT",
+      "start_page": 80,
+      "end_page": 90,
+      "subsections": [
+        {
+          "id": "3.4.1",
+          "title": "Software Defined Networking",
+          "start_page": 81
+        },
+        {
+          "id": "3.4.2",
+          "title": "Network Function Virtualization",
+          "start_page": 85
+        }
+      ],
+      "chapter_id": "Chapter 3",
+      "chapter_title": "IoT and M2M",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.1",
+      "title": "Need for IoT Systems Management",
+      "start_page": 92,
+      "end_page": 93,
+      "subsections": [],
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.2",
+      "title": "Simple Network Management Protocol (SNMP)",
+      "start_page": 93,
+      "end_page": 94,
+      "subsections": [
+        {
+          "id": "4.2.1",
+          "title": "Limitations of SNMP",
+          "start_page": 93
+        }
+      ],
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.3",
+      "title": "Network Operator Requirements",
+      "start_page": 94,
+      "end_page": 96,
+      "subsections": [],
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.4",
+      "title": "NETCONF",
+      "start_page": 96,
+      "end_page": 97,
+      "subsections": [],
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.5",
+      "title": "YANG",
+      "start_page": 97,
+      "end_page": 106,
+      "subsections": [],
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.6",
+      "title": "IoT Systems Management with NETCONF-YANG",
+      "start_page": 106,
+      "end_page": 110,
+      "subsections": [
+        {
+          "id": "4.6.1",
+          "title": "NETOPEER",
+          "start_page": 107
+        }
+      ],
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "5.1",
+      "title": "Introduction",
+      "start_page": 114,
+      "end_page": 114,
+      "subsections": [],
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2",
+      "title": "IoT Design Methodology",
+      "start_page": 114,
+      "end_page": 127,
+      "subsections": [
+        {
+          "id": "5.2.1",
+          "title": "Step 1: Purpose & Requirements Specification",
+          "start_page": 114
+        },
+        {
+          "id": "5.2.2",
+          "title": "Step 2: Process Specification",
+          "start_page": 116
+        },
+        {
+          "id": "5.2.3",
+          "title": "Step 3: Domain Model Specification",
+          "start_page": 117
+        },
+        {
+          "id": "5.2.4",
+          "title": "Step 4: Information Model Specification",
+          "start_page": 119
+        },
+        {
+          "id": "5.2.5",
+          "title": "Step 5: Service Specifications",
+          "start_page": 119
+        },
+        {
+          "id": "5.2.6",
+          "title": "Step 6: IoT Level Specification",
+          "start_page": 121
+        },
+        {
+          "id": "5.2.7",
+          "title": "Step 7: Functional View Specification",
+          "start_page": 121
+        },
+        {
+          "id": "5.2.8",
+          "title": "Step 8: Operational View Specification",
+          "start_page": 125
+        },
+        {
+          "id": "5.2.9",
+          "title": "Step 9: Device & Component Integration",
+          "start_page": 127
+        },
+        {
+          "id": "5.2.10",
+          "title": "Step 10: Application Development",
+          "start_page": 127
+        }
+      ],
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.3",
+      "title": "Case Study on IoT System for Weather Monitoring",
+      "start_page": 127,
+      "end_page": 131,
+      "subsections": [],
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.4",
+      "title": "Motivation for Using Python",
+      "start_page": 131,
+      "end_page": 138,
+      "subsections": [],
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.1",
+      "title": "Introduction",
+      "start_page": 140,
+      "end_page": 141,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.2",
+      "title": "Installing Python",
+      "start_page": 141,
+      "end_page": 142,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.3",
+      "title": "Python Data Types & Data Structures",
+      "start_page": 142,
+      "end_page": 148,
+      "subsections": [
+        {
+          "id": "6.3.1",
+          "title": "Numbers",
+          "start_page": 142
+        },
+        {
+          "id": "6.3.2",
+          "title": "Strings",
+          "start_page": 143
+        },
+        {
+          "id": "6.3.3",
+          "title": "Lists",
+          "start_page": 145
+        },
+        {
+          "id": "6.3.4",
+          "title": "Tuples",
+          "start_page": 146
+        },
+        {
+          "id": "6.3.5",
+          "title": "Dictionaries",
+          "start_page": 147
+        },
+        {
+          "id": "6.3.6",
+          "title": "Type Conversions",
+          "start_page": 148
+        }
+      ],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.4",
+      "title": "Control Flow",
+      "start_page": 149,
+      "end_page": 153,
+      "subsections": [
+        {
+          "id": "6.4.1",
+          "title": "if",
+          "start_page": 149
+        },
+        {
+          "id": "6.4.2",
+          "title": "for",
+          "start_page": 150
+        },
+        {
+          "id": "6.4.3",
+          "title": "while",
+          "start_page": 151
+        },
+        {
+          "id": "6.4.4",
+          "title": "range",
+          "start_page": 151
+        },
+        {
+          "id": "6.4.5",
+          "title": "break/continue",
+          "start_page": 151
+        },
+        {
+          "id": "6.4.6",
+          "title": "pass",
+          "start_page": 152
+        }
+      ],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.5",
+      "title": "Functions",
+      "start_page": 153,
+      "end_page": 156,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.6",
+      "title": "Modules",
+      "start_page": 156,
+      "end_page": 159,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.7",
+      "title": "Packages",
+      "start_page": 159,
+      "end_page": 159,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.8",
+      "title": "File Handling",
+      "start_page": 159,
+      "end_page": 162,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.9",
+      "title": "Date/Time Operations",
+      "start_page": 162,
+      "end_page": 163,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.10",
+      "title": "Classes",
+      "start_page": 163,
+      "end_page": 167,
+      "subsections": [],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.11",
+      "title": "Python Packages of Interest for IoT",
+      "start_page": 167,
+      "end_page": 176,
+      "subsections": [
+        {
+          "id": "6.11.1",
+          "title": "JSON",
+          "start_page": 167
+        },
+        {
+          "id": "6.11.2",
+          "title": "XML",
+          "start_page": 169
+        },
+        {
+          "id": "6.11.3",
+          "title": "HTTPLib & URLLib",
+          "start_page": 171
+        },
+        {
+          "id": "6.11.4",
+          "title": "SMTPLib",
+          "start_page": 173
+        }
+      ],
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.1",
+      "title": "What is an IoT Device",
+      "start_page": 178,
+      "end_page": 179,
+      "subsections": [
+        {
+          "id": "7.1.1",
+          "title": "Basic building blocks of an IoT Device",
+          "start_page": 178
+        }
+      ],
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.2",
+      "title": "Exemplary Device: Raspberry Pi",
+      "start_page": 179,
+      "end_page": 180,
+      "subsections": [],
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.3",
+      "title": "About the Board",
+      "start_page": 180,
+      "end_page": 181,
+      "subsections": [],
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.4",
+      "title": "Linux on Raspberry Pi",
+      "start_page": 181,
+      "end_page": 185,
+      "subsections": [],
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.5",
+      "title": "Raspberry Pi Interfaces",
+      "start_page": 186,
+      "end_page": 186,
+      "subsections": [
+        {
+          "id": "7.5.1",
+          "title": "Serial",
+          "start_page": 186
+        },
+        {
+          "id": "7.5.2",
+          "title": "SPI",
+          "start_page": 186
+        },
+        {
+          "id": "7.5.3",
+          "title": "I2C",
+          "start_page": 186
+        }
+      ],
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.6",
+      "title": "Programming Raspberry Pi with Python",
+      "start_page": 186,
+      "end_page": 192,
+      "subsections": [
+        {
+          "id": "7.6.1",
+          "title": "Controlling LED with Raspberry Pi",
+          "start_page": 186
+        },
+        {
+          "id": "7.6.2",
+          "title": "Interfacing an LED and Switch with Raspberry Pi",
+          "start_page": 188
+        },
+        {
+          "id": "7.6.3",
+          "title": "Interfacing a Light Sensor (LDR) with Raspberry Pi",
+          "start_page": 191
+        }
+      ],
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.7",
+      "title": "Other IoT Devices",
+      "start_page": 193,
+      "end_page": 196,
+      "subsections": [
+        {
+          "id": "7.7.1",
+          "title": "pcDuino",
+          "start_page": 193
+        },
+        {
+          "id": "7.7.2",
+          "title": "BeagleBone Black",
+          "start_page": 194
+        },
+        {
+          "id": "7.7.3",
+          "title": "Cubieboard",
+          "start_page": 194
+        }
+      ],
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.1",
+      "title": "Introduction to Cloud Storage Models & Communication APIs",
+      "start_page": 198,
+      "end_page": 198,
+      "subsections": [],
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.2",
+      "title": "WAMP - AutoBahn for IoT",
+      "start_page": 198,
+      "end_page": 202,
+      "subsections": [],
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.3",
+      "title": "Xively Cloud for IoT",
+      "start_page": 202,
+      "end_page": 206,
+      "subsections": [],
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.4",
+      "title": "Python Web Application Framework - Django",
+      "start_page": 206,
+      "end_page": 218,
+      "subsections": [
+        {
+          "id": "8.4.1",
+          "title": "Django Architecture",
+          "start_page": 208
+        },
+        {
+          "id": "8.4.2",
+          "title": "Starting Development with Django",
+          "start_page": 208
+        }
+      ],
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.5",
+      "title": "Designing a RESTful Web API",
+      "start_page": 218,
+      "end_page": 224,
+      "subsections": [],
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6",
+      "title": "Amazon Web Services for IoT",
+      "start_page": 225,
+      "end_page": 245,
+      "subsections": [
+        {
+          "id": "8.6.1",
+          "title": "Amazon EC2",
+          "start_page": 225
+        },
+        {
+          "id": "8.6.2",
+          "title": "Amazon AutoScaling",
+          "start_page": 227
+        },
+        {
+          "id": "8.6.3",
+          "title": "Amazon S3",
+          "start_page": 230
+        },
+        {
+          "id": "8.6.4",
+          "title": "Amazon RDS",
+          "start_page": 231
+        },
+        {
+          "id": "8.6.5",
+          "title": "Amazon DynamoDB",
+          "start_page": 234
+        },
+        {
+          "id": "8.6.6",
+          "title": "Amazon Kinesis",
+          "start_page": 237
+        },
+        {
+          "id": "8.6.7",
+          "title": "Amazon SQS",
+          "start_page": 240
+        },
+        {
+          "id": "8.6.8",
+          "title": "Amazon EMR",
+          "start_page": 243
+        }
+      ],
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.7",
+      "title": "SkyNet IoT Messaging Platform",
+      "start_page": 246,
+      "end_page": 252,
+      "subsections": [],
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.1",
+      "title": "Introduction",
+      "start_page": 254,
+      "end_page": 254,
+      "subsections": [],
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.2",
+      "title": "Home Automation",
+      "start_page": 254,
+      "end_page": 276,
+      "subsections": [
+        {
+          "id": "9.2.1",
+          "title": "Smart Lighting",
+          "start_page": 254
+        },
+        {
+          "id": "9.2.2",
+          "title": "Home Intrusion Detection",
+          "start_page": 264
+        }
+      ],
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.3",
+      "title": "Cities",
+      "start_page": 277,
+      "end_page": 288,
+      "subsections": [
+        {
+          "id": "9.3.1",
+          "title": "Smart Parking",
+          "start_page": 277
+        }
+      ],
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.4",
+      "title": "Environment",
+      "start_page": 289,
+      "end_page": 322,
+      "subsections": [
+        {
+          "id": "9.4.1",
+          "title": "Weather Monitoring System",
+          "start_page": 289
+        },
+        {
+          "id": "9.4.2",
+          "title": "Weather Reporting Bot",
+          "start_page": 308
+        },
+        {
+          "id": "9.4.3",
+          "title": "Air Pollution Monitoring",
+          "start_page": 312
+        },
+        {
+          "id": "9.4.4",
+          "title": "Forest Fire Detection",
+          "start_page": 317
+        }
+      ],
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.5",
+      "title": "Agriculture",
+      "start_page": 323,
+      "end_page": 326,
+      "subsections": [
+        {
+          "id": "9.5.1",
+          "title": "Smart Irrigation",
+          "start_page": 323
+        }
+      ],
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.6",
+      "title": "Productivity Applications",
+      "start_page": 327,
+      "end_page": 332,
+      "subsections": [
+        {
+          "id": "9.6.1",
+          "title": "IoT Printer",
+          "start_page": 327
+        }
+      ],
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "10.1",
+      "title": "Introduction",
+      "start_page": 336,
+      "end_page": 342,
+      "subsections": [],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.2",
+      "title": "Apache Hadoop",
+      "start_page": 343,
+      "end_page": 353,
+      "subsections": [
+        {
+          "id": "10.2.1",
+          "title": "MapReduce Programming Model",
+          "start_page": 343
+        },
+        {
+          "id": "10.2.2",
+          "title": "Hadoop MapReduce Job Execution",
+          "start_page": 344
+        },
+        {
+          "id": "10.2.3",
+          "title": "MapReduce Job Execution Workflow",
+          "start_page": 345
+        },
+        {
+          "id": "10.2.4",
+          "title": "Hadoop Cluster Setup",
+          "start_page": 347
+        }
+      ],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.3",
+      "title": "Using Hadoop MapReduce for Batch Data Analysis",
+      "start_page": 354,
+      "end_page": 365,
+      "subsections": [
+        {
+          "id": "10.3.1",
+          "title": "Hadoop YARN",
+          "start_page": 357
+        }
+      ],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.4",
+      "title": "Apache Oozie",
+      "start_page": 366,
+      "end_page": 376,
+      "subsections": [
+        {
+          "id": "10.4.1",
+          "title": "Setting up Oozie",
+          "start_page": 366
+        },
+        {
+          "id": "10.4.2",
+          "title": "Oozie Workflows for IoT Data Analysis",
+          "start_page": 368
+        }
+      ],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.5",
+      "title": "Apache Spark",
+      "start_page": 377,
+      "end_page": 383,
+      "subsections": [],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.6",
+      "title": "Apache Storm",
+      "start_page": 384,
+      "end_page": 387,
+      "subsections": [
+        {
+          "id": "10.6.1",
+          "title": "Setting up a Storm Cluster",
+          "start_page": 385
+        }
+      ],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.7",
+      "title": "Using Apache Storm for Real-time Data Analysis",
+      "start_page": 388,
+      "end_page": 403,
+      "subsections": [
+        {
+          "id": "10.7.1",
+          "title": "REST-based approach",
+          "start_page": 389
+        },
+        {
+          "id": "10.7.2",
+          "title": "WebSocket-based approach",
+          "start_page": 398
+        }
+      ],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.8",
+      "title": "Structural Health Monitoring Case Study",
+      "start_page": 404,
+      "end_page": 412,
+      "subsections": [],
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.1",
+      "title": "Introduction",
+      "start_page": 414,
+      "end_page": 414,
+      "subsections": [],
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.2",
+      "title": "Chef",
+      "start_page": 414,
+      "end_page": 417,
+      "subsections": [
+        {
+          "id": "11.2.1",
+          "title": "Setting up Chef",
+          "start_page": 417
+        }
+      ],
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.3",
+      "title": "Chef Case Studies",
+      "start_page": 417,
+      "end_page": 437,
+      "subsections": [
+        {
+          "id": "11.3.1",
+          "title": "Multi-tier Application Deployment",
+          "start_page": 417
+        },
+        {
+          "id": "11.3.2",
+          "title": "Hadoop Cluster",
+          "start_page": 424
+        },
+        {
+          "id": "11.3.3",
+          "title": "Storm Cluster",
+          "start_page": 433
+        }
+      ],
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.4",
+      "title": "Puppet",
+      "start_page": 438,
+      "end_page": 440,
+      "subsections": [],
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.5",
+      "title": "Puppet Case Study - Multi-tier Deployment",
+      "start_page": 440,
+      "end_page": 443,
+      "subsections": [],
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.6",
+      "title": "NETCONF-YANG Case Studies",
+      "start_page": 444,
+      "end_page": 475,
+      "subsections": [
+        {
+          "id": "11.6.1",
+          "title": "Steps for IoT device Management with NETCONF-YANG",
+          "start_page": 445
+        },
+        {
+          "id": "11.6.2",
+          "title": "Managing Smart Irrigation IoT System with NETCONF-YANG",
+          "start_page": 446
+        },
+        {
+          "id": "11.6.3",
+          "title": "Managing Home Intrusion Detection IoT System with NETCONF-YANG",
+          "start_page": 462
+        }
+      ],
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.7",
+      "title": "IoT Code Generator",
+      "start_page": 476,
+      "end_page": 485,
+      "subsections": [],
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    }
+  ],
+  "subsections": [
+    {
+      "id": "1.1.1",
+      "title": "Definition & Characteristics of IoT",
+      "start_page": 22,
+      "section_id": "1.1",
+      "section_title": "Introduction",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.2.1",
+      "title": "Things in IoT",
+      "start_page": 24,
+      "section_id": "1.2",
+      "section_title": "Physical Design of IoT",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.2.2",
+      "title": "IoT Protocols",
+      "start_page": 24,
+      "section_id": "1.2",
+      "section_title": "Physical Design of IoT",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.3.1",
+      "title": "IoT Functional Blocks",
+      "start_page": 31,
+      "section_id": "1.3",
+      "section_title": "Logical Design of IoT",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.3.2",
+      "title": "IoT Communication Models",
+      "start_page": 31,
+      "section_id": "1.3",
+      "section_title": "Logical Design of IoT",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.3.3",
+      "title": "IoT Communication APIs",
+      "start_page": 34,
+      "section_id": "1.3",
+      "section_title": "Logical Design of IoT",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.4.1",
+      "title": "Wireless Sensor Networks",
+      "start_page": 39,
+      "section_id": "1.4",
+      "section_title": "IoT Enabling Technologies",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.4.2",
+      "title": "Cloud Computing",
+      "start_page": 39,
+      "section_id": "1.4",
+      "section_title": "IoT Enabling Technologies",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.4.3",
+      "title": "Big Data Analytics",
+      "start_page": 40,
+      "section_id": "1.4",
+      "section_title": "IoT Enabling Technologies",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.4.4",
+      "title": "Communication Protocols",
+      "start_page": 41,
+      "section_id": "1.4",
+      "section_title": "IoT Enabling Technologies",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.4.5",
+      "title": "Embedded Systems",
+      "start_page": 42,
+      "section_id": "1.4",
+      "section_title": "IoT Enabling Technologies",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.5.1",
+      "title": "IoT Level-1",
+      "start_page": 44,
+      "section_id": "1.5",
+      "section_title": "IoT Levels & Deployment Templates",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.5.2",
+      "title": "IoT Level-2",
+      "start_page": 44,
+      "section_id": "1.5",
+      "section_title": "IoT Levels & Deployment Templates",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.5.3",
+      "title": "IoT Level-3",
+      "start_page": 44,
+      "section_id": "1.5",
+      "section_title": "IoT Levels & Deployment Templates",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.5.4",
+      "title": "IoT Level-4",
+      "start_page": 46,
+      "section_id": "1.5",
+      "section_title": "IoT Levels & Deployment Templates",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.5.5",
+      "title": "IoT Level-5",
+      "start_page": 48,
+      "section_id": "1.5",
+      "section_title": "IoT Levels & Deployment Templates",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "1.5.6",
+      "title": "IoT Level-6",
+      "start_page": 49,
+      "section_id": "1.5",
+      "section_title": "IoT Levels & Deployment Templates",
+      "chapter_id": "Chapter 1",
+      "chapter_title": "Introduction to Internet of Things",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Smart Lighting",
+      "start_page": 54,
+      "section_id": "2.2",
+      "section_title": "Home Automation",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Smart Appliances",
+      "start_page": 54,
+      "section_id": "2.2",
+      "section_title": "Home Automation",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.2.3",
+      "title": "Intrusion Detection",
+      "start_page": 56,
+      "section_id": "2.2",
+      "section_title": "Home Automation",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.2.4",
+      "title": "Smoke/Gas Detectors",
+      "start_page": 56,
+      "section_id": "2.2",
+      "section_title": "Home Automation",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Smart Parking",
+      "start_page": 56,
+      "section_id": "2.3",
+      "section_title": "Cities",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Smart Lighting",
+      "start_page": 57,
+      "section_id": "2.3",
+      "section_title": "Cities",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.3.3",
+      "title": "Smart Roads",
+      "start_page": 58,
+      "section_id": "2.3",
+      "section_title": "Cities",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.3.4",
+      "title": "Structural Health Monitoring",
+      "start_page": 58,
+      "section_id": "2.3",
+      "section_title": "Cities",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.3.5",
+      "title": "Surveillance",
+      "start_page": 58,
+      "section_id": "2.3",
+      "section_title": "Cities",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.3.6",
+      "title": "Emergency Response",
+      "start_page": 58,
+      "section_id": "2.3",
+      "section_title": "Cities",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Weather Monitoring",
+      "start_page": 59,
+      "section_id": "2.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Air Pollution Monitoring",
+      "start_page": 59,
+      "section_id": "2.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Noise Pollution Monitoring",
+      "start_page": 60,
+      "section_id": "2.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Forest Fire Detection",
+      "start_page": 61,
+      "section_id": "2.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.4.5",
+      "title": "River Floods Detection",
+      "start_page": 61,
+      "section_id": "2.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Smart Grids",
+      "start_page": 61,
+      "section_id": "2.5",
+      "section_title": "Energy",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Renewable Energy Systems",
+      "start_page": 61,
+      "section_id": "2.5",
+      "section_title": "Energy",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Prognostics",
+      "start_page": 62,
+      "section_id": "2.5",
+      "section_title": "Energy",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.6.1",
+      "title": "Inventory Management",
+      "start_page": 64,
+      "section_id": "2.6",
+      "section_title": "Retail",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.6.2",
+      "title": "Smart Payments",
+      "start_page": 64,
+      "section_id": "2.6",
+      "section_title": "Retail",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.6.3",
+      "title": "Smart Vending Machines",
+      "start_page": 64,
+      "section_id": "2.6",
+      "section_title": "Retail",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.7.1",
+      "title": "Route Generation & Scheduling",
+      "start_page": 65,
+      "section_id": "2.7",
+      "section_title": "Logistics",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.7.2",
+      "title": "Fleet Tracking",
+      "start_page": 66,
+      "section_id": "2.7",
+      "section_title": "Logistics",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.7.3",
+      "title": "Shipment Monitoring",
+      "start_page": 66,
+      "section_id": "2.7",
+      "section_title": "Logistics",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.7.4",
+      "title": "Remote Vehicle Diagnostics",
+      "start_page": 67,
+      "section_id": "2.7",
+      "section_title": "Logistics",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.8.1",
+      "title": "Smart Irrigation",
+      "start_page": 68,
+      "section_id": "2.8",
+      "section_title": "Agriculture",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.8.2",
+      "title": "Green House Control",
+      "start_page": 69,
+      "section_id": "2.8",
+      "section_title": "Agriculture",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.9.1",
+      "title": "Machine Diagnosis & Prognosis",
+      "start_page": 69,
+      "section_id": "2.9",
+      "section_title": "Industry",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.9.2",
+      "title": "Indoor Air Quality Monitoring",
+      "start_page": 70,
+      "section_id": "2.9",
+      "section_title": "Industry",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.10.1",
+      "title": "Health & Fitness Monitoring",
+      "start_page": 71,
+      "section_id": "2.10",
+      "section_title": "Health & Lifestyle",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "2.10.2",
+      "title": "Wearable Electronics",
+      "start_page": 72,
+      "section_id": "2.10",
+      "section_title": "Health & Lifestyle",
+      "chapter_id": "Chapter 2",
+      "chapter_title": "Domain Specific IoTs",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "3.4.1",
+      "title": "Software Defined Networking",
+      "start_page": 81,
+      "section_id": "3.4",
+      "section_title": "SDN and NFV for IoT",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "IoT and M2M",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "3.4.2",
+      "title": "Network Function Virtualization",
+      "start_page": 85,
+      "section_id": "3.4",
+      "section_title": "SDN and NFV for IoT",
+      "chapter_id": "Chapter 3",
+      "chapter_title": "IoT and M2M",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Limitations of SNMP",
+      "start_page": 93,
+      "section_id": "4.2",
+      "section_title": "Simple Network Management Protocol (SNMP)",
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "4.6.1",
+      "title": "NETOPEER",
+      "start_page": 107,
+      "section_id": "4.6",
+      "section_title": "IoT Systems Management with NETCONF-YANG",
+      "chapter_id": "Chapter 4",
+      "chapter_title": "IoT System Management with NETCONF-YANG",
+      "part_id": "PART 1",
+      "part_title": "INTRODUCTION & CONCEPTS"
+    },
+    {
+      "id": "5.2.1",
+      "title": "Step 1: Purpose & Requirements Specification",
+      "start_page": 114,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.2",
+      "title": "Step 2: Process Specification",
+      "start_page": 116,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.3",
+      "title": "Step 3: Domain Model Specification",
+      "start_page": 117,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.4",
+      "title": "Step 4: Information Model Specification",
+      "start_page": 119,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.5",
+      "title": "Step 5: Service Specifications",
+      "start_page": 119,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.6",
+      "title": "Step 6: IoT Level Specification",
+      "start_page": 121,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.7",
+      "title": "Step 7: Functional View Specification",
+      "start_page": 121,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.8",
+      "title": "Step 8: Operational View Specification",
+      "start_page": 125,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.9",
+      "title": "Step 9: Device & Component Integration",
+      "start_page": 127,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "5.2.10",
+      "title": "Step 10: Application Development",
+      "start_page": 127,
+      "section_id": "5.2",
+      "section_title": "IoT Design Methodology",
+      "chapter_id": "Chapter 5",
+      "chapter_title": "IoT Platforms Design Methodology",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.3.1",
+      "title": "Numbers",
+      "start_page": 142,
+      "section_id": "6.3",
+      "section_title": "Python Data Types & Data Structures",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.3.2",
+      "title": "Strings",
+      "start_page": 143,
+      "section_id": "6.3",
+      "section_title": "Python Data Types & Data Structures",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.3.3",
+      "title": "Lists",
+      "start_page": 145,
+      "section_id": "6.3",
+      "section_title": "Python Data Types & Data Structures",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.3.4",
+      "title": "Tuples",
+      "start_page": 146,
+      "section_id": "6.3",
+      "section_title": "Python Data Types & Data Structures",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.3.5",
+      "title": "Dictionaries",
+      "start_page": 147,
+      "section_id": "6.3",
+      "section_title": "Python Data Types & Data Structures",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.3.6",
+      "title": "Type Conversions",
+      "start_page": 148,
+      "section_id": "6.3",
+      "section_title": "Python Data Types & Data Structures",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.4.1",
+      "title": "if",
+      "start_page": 149,
+      "section_id": "6.4",
+      "section_title": "Control Flow",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.4.2",
+      "title": "for",
+      "start_page": 150,
+      "section_id": "6.4",
+      "section_title": "Control Flow",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.4.3",
+      "title": "while",
+      "start_page": 151,
+      "section_id": "6.4",
+      "section_title": "Control Flow",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.4.4",
+      "title": "range",
+      "start_page": 151,
+      "section_id": "6.4",
+      "section_title": "Control Flow",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.4.5",
+      "title": "break/continue",
+      "start_page": 151,
+      "section_id": "6.4",
+      "section_title": "Control Flow",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.4.6",
+      "title": "pass",
+      "start_page": 152,
+      "section_id": "6.4",
+      "section_title": "Control Flow",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.11.1",
+      "title": "JSON",
+      "start_page": 167,
+      "section_id": "6.11",
+      "section_title": "Python Packages of Interest for IoT",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.11.2",
+      "title": "XML",
+      "start_page": 169,
+      "section_id": "6.11",
+      "section_title": "Python Packages of Interest for IoT",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.11.3",
+      "title": "HTTPLib & URLLib",
+      "start_page": 171,
+      "section_id": "6.11",
+      "section_title": "Python Packages of Interest for IoT",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "6.11.4",
+      "title": "SMTPLib",
+      "start_page": 173,
+      "section_id": "6.11",
+      "section_title": "Python Packages of Interest for IoT",
+      "chapter_id": "Chapter 6",
+      "chapter_title": "IoT Systems - Logical Design using Python",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.1.1",
+      "title": "Basic building blocks of an IoT Device",
+      "start_page": 178,
+      "section_id": "7.1",
+      "section_title": "What is an IoT Device",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.5.1",
+      "title": "Serial",
+      "start_page": 186,
+      "section_id": "7.5",
+      "section_title": "Raspberry Pi Interfaces",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.5.2",
+      "title": "SPI",
+      "start_page": 186,
+      "section_id": "7.5",
+      "section_title": "Raspberry Pi Interfaces",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.5.3",
+      "title": "I2C",
+      "start_page": 186,
+      "section_id": "7.5",
+      "section_title": "Raspberry Pi Interfaces",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.6.1",
+      "title": "Controlling LED with Raspberry Pi",
+      "start_page": 186,
+      "section_id": "7.6",
+      "section_title": "Programming Raspberry Pi with Python",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.6.2",
+      "title": "Interfacing an LED and Switch with Raspberry Pi",
+      "start_page": 188,
+      "section_id": "7.6",
+      "section_title": "Programming Raspberry Pi with Python",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.6.3",
+      "title": "Interfacing a Light Sensor (LDR) with Raspberry Pi",
+      "start_page": 191,
+      "section_id": "7.6",
+      "section_title": "Programming Raspberry Pi with Python",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.7.1",
+      "title": "pcDuino",
+      "start_page": 193,
+      "section_id": "7.7",
+      "section_title": "Other IoT Devices",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.7.2",
+      "title": "BeagleBone Black",
+      "start_page": 194,
+      "section_id": "7.7",
+      "section_title": "Other IoT Devices",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "7.7.3",
+      "title": "Cubieboard",
+      "start_page": 194,
+      "section_id": "7.7",
+      "section_title": "Other IoT Devices",
+      "chapter_id": "Chapter 7",
+      "chapter_title": "IoT Physical Devices & Endpoints",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.4.1",
+      "title": "Django Architecture",
+      "start_page": 208,
+      "section_id": "8.4",
+      "section_title": "Python Web Application Framework - Django",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.4.2",
+      "title": "Starting Development with Django",
+      "start_page": 208,
+      "section_id": "8.4",
+      "section_title": "Python Web Application Framework - Django",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.1",
+      "title": "Amazon EC2",
+      "start_page": 225,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.2",
+      "title": "Amazon AutoScaling",
+      "start_page": 227,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.3",
+      "title": "Amazon S3",
+      "start_page": 230,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.4",
+      "title": "Amazon RDS",
+      "start_page": 231,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.5",
+      "title": "Amazon DynamoDB",
+      "start_page": 234,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.6",
+      "title": "Amazon Kinesis",
+      "start_page": 237,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.7",
+      "title": "Amazon SQS",
+      "start_page": 240,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "8.6.8",
+      "title": "Amazon EMR",
+      "start_page": 243,
+      "section_id": "8.6",
+      "section_title": "Amazon Web Services for IoT",
+      "chapter_id": "Chapter 8",
+      "chapter_title": "IoT Physical Servers & Cloud Offerings",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.2.1",
+      "title": "Smart Lighting",
+      "start_page": 254,
+      "section_id": "9.2",
+      "section_title": "Home Automation",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.2.2",
+      "title": "Home Intrusion Detection",
+      "start_page": 264,
+      "section_id": "9.2",
+      "section_title": "Home Automation",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.3.1",
+      "title": "Smart Parking",
+      "start_page": 277,
+      "section_id": "9.3",
+      "section_title": "Cities",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.4.1",
+      "title": "Weather Monitoring System",
+      "start_page": 289,
+      "section_id": "9.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.4.2",
+      "title": "Weather Reporting Bot",
+      "start_page": 308,
+      "section_id": "9.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.4.3",
+      "title": "Air Pollution Monitoring",
+      "start_page": 312,
+      "section_id": "9.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.4.4",
+      "title": "Forest Fire Detection",
+      "start_page": 317,
+      "section_id": "9.4",
+      "section_title": "Environment",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.5.1",
+      "title": "Smart Irrigation",
+      "start_page": 323,
+      "section_id": "9.5",
+      "section_title": "Agriculture",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "9.6.1",
+      "title": "IoT Printer",
+      "start_page": 327,
+      "section_id": "9.6",
+      "section_title": "Productivity Applications",
+      "chapter_id": "Chapter 9",
+      "chapter_title": "Case Studies Illustrating IoT Design",
+      "part_id": "PART 2",
+      "part_title": "DEVELOPING INTERNET OF THINGS"
+    },
+    {
+      "id": "10.2.1",
+      "title": "MapReduce Programming Model",
+      "start_page": 343,
+      "section_id": "10.2",
+      "section_title": "Apache Hadoop",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.2.2",
+      "title": "Hadoop MapReduce Job Execution",
+      "start_page": 344,
+      "section_id": "10.2",
+      "section_title": "Apache Hadoop",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.2.3",
+      "title": "MapReduce Job Execution Workflow",
+      "start_page": 345,
+      "section_id": "10.2",
+      "section_title": "Apache Hadoop",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.2.4",
+      "title": "Hadoop Cluster Setup",
+      "start_page": 347,
+      "section_id": "10.2",
+      "section_title": "Apache Hadoop",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.3.1",
+      "title": "Hadoop YARN",
+      "start_page": 357,
+      "section_id": "10.3",
+      "section_title": "Using Hadoop MapReduce for Batch Data Analysis",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.4.1",
+      "title": "Setting up Oozie",
+      "start_page": 366,
+      "section_id": "10.4",
+      "section_title": "Apache Oozie",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.4.2",
+      "title": "Oozie Workflows for IoT Data Analysis",
+      "start_page": 368,
+      "section_id": "10.4",
+      "section_title": "Apache Oozie",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.6.1",
+      "title": "Setting up a Storm Cluster",
+      "start_page": 385,
+      "section_id": "10.6",
+      "section_title": "Apache Storm",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.7.1",
+      "title": "REST-based approach",
+      "start_page": 389,
+      "section_id": "10.7",
+      "section_title": "Using Apache Storm for Real-time Data Analysis",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "10.7.2",
+      "title": "WebSocket-based approach",
+      "start_page": 398,
+      "section_id": "10.7",
+      "section_title": "Using Apache Storm for Real-time Data Analysis",
+      "chapter_id": "Chapter 10",
+      "chapter_title": "Data Analytics for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.2.1",
+      "title": "Setting up Chef",
+      "start_page": 417,
+      "section_id": "11.2",
+      "section_title": "Chef",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.3.1",
+      "title": "Multi-tier Application Deployment",
+      "start_page": 417,
+      "section_id": "11.3",
+      "section_title": "Chef Case Studies",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.3.2",
+      "title": "Hadoop Cluster",
+      "start_page": 424,
+      "section_id": "11.3",
+      "section_title": "Chef Case Studies",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.3.3",
+      "title": "Storm Cluster",
+      "start_page": 433,
+      "section_id": "11.3",
+      "section_title": "Chef Case Studies",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.6.1",
+      "title": "Steps for IoT device Management with NETCONF-YANG",
+      "start_page": 445,
+      "section_id": "11.6",
+      "section_title": "NETCONF-YANG Case Studies",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.6.2",
+      "title": "Managing Smart Irrigation IoT System with NETCONF-YANG",
+      "start_page": 446,
+      "section_id": "11.6",
+      "section_title": "NETCONF-YANG Case Studies",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    },
+    {
+      "id": "11.6.3",
+      "title": "Managing Home Intrusion Detection IoT System with NETCONF-YANG",
+      "start_page": 462,
+      "section_id": "11.6",
+      "section_title": "NETCONF-YANG Case Studies",
+      "chapter_id": "Chapter 11",
+      "chapter_title": "Tools for IoT",
+      "part_id": "PART 3",
+      "part_title": "ADVANCED TOPICS"
+    }
+  ]
+}
