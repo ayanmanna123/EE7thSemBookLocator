@@ -1,11 +1,22 @@
-import { useState, useMemo } from "react";
-import { Search, X, Globe, ArrowRight, Sparkles } from "lucide-react";
+import { useState, useMemo, useEffect } from "react";
+import { Search, X, Globe, ArrowRight, Sparkles, History as HistoryIcon } from "lucide-react";
 import { PartRibbon } from "@/components/layout/PartRibbon";
 import { SpotlightCard } from "@/components/cards/SpotlightCard";
 import { TopicCard } from "@/components/cards/TopicCard";
 import { scoreEntry } from "@/lib/searchUtils";
 
 const ALPHABET = ["ALL", "#", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")];
+const SEARCH_HISTORY_KEY = "ee7th_recent_searches";
+
+function getRecentSearches() {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(SEARCH_HISTORY_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
 
 export function SearchView({
   subject,
@@ -33,6 +44,38 @@ export function SearchView({
   searchInputRef,
 }) {
   const [currentLimit, setCurrentLimit] = useState(75);
+  const [recentSearches, setRecentSearches] = useState(getRecentSearches);
+
+  // Auto-persist search queries to localStorage when user types a search term
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (trimmed.length >= 2) {
+      const timer = setTimeout(() => {
+        setRecentSearches((prev) => {
+          const next = [
+            trimmed,
+            ...prev.filter((s) => s.toLowerCase() !== trimmed.toLowerCase()),
+          ].slice(0, 8);
+          try {
+            localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(next));
+          } catch {
+            /* ignore storage error */
+          }
+          return next;
+        });
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [query]);
+
+  const handleClearRecentSearches = () => {
+    setRecentSearches([]);
+    try {
+      localStorage.removeItem(SEARCH_HISTORY_KEY);
+    } catch {
+      /* ignore storage clear error */
+    }
+  };
 
   const isQuestionLike = useMemo(() => {
     const q = query.trim();
@@ -228,6 +271,32 @@ export function SearchView({
             >
               <Sparkles className="size-3" />
               <span>Ask AI Locator →</span>
+            </button>
+          </div>
+        )}
+
+        {/* Recent Search Queries (from Local Storage) */}
+        {!query.trim() && recentSearches.length > 0 && (
+          <div className="flex items-center gap-2 flex-wrap text-xs pt-1">
+            <span className="flex items-center gap-1 font-bold text-muted-foreground text-[11px] uppercase tracking-wider">
+              <HistoryIcon className="size-3 text-sky-400" />
+              Recent Searches:
+            </span>
+            {recentSearches.map((s, idx) => (
+              <button
+                key={idx}
+                onClick={() => setQuery(s)}
+                className="rounded-md border border-border/80 bg-secondary/50 px-2 py-0.5 text-xs font-medium text-foreground hover:border-sky-400 hover:bg-sky-500/10 transition-colors cursor-pointer"
+              >
+                {s}
+              </button>
+            ))}
+            <button
+              onClick={handleClearRecentSearches}
+              className="text-[11px] text-muted-foreground/60 hover:text-destructive transition-colors cursor-pointer ml-1"
+              title="Clear recent searches from local storage"
+            >
+              Clear
             </button>
           </div>
         )}

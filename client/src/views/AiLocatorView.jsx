@@ -10,6 +10,9 @@ import {
   Lightbulb,
   CheckCircle2,
   Bookmark,
+  Trash2,
+  Clock,
+  History as HistoryIcon,
 } from "lucide-react";
 import {
   askGeminiTextbookLocator,
@@ -17,6 +20,21 @@ import {
   setGeminiApiKey,
   hasGeminiApiKey,
 } from "@/services/geminiService";
+
+const AI_HISTORY_STORAGE_KEY = "ee7th_ai_locator_queries";
+
+function getStoredHistory() {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(AI_HISTORY_STORAGE_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (e) {
+    console.error("Failed to load stored queries from localStorage:", e);
+    return [];
+  }
+}
 
 const SUGGESTED_PROMPTS = [
   "Where is regenerative braking in DC and induction motors?",
@@ -39,7 +57,7 @@ export function AiLocatorView({
   const [query, setQuery] = useState(initialQuery);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState(getStoredHistory);
   const [apiKey, setApiKeyState] = useState(getGeminiApiKey());
   const [showKeyModal, setShowKeyModal] = useState(false);
   const [tempKey, setTempKey] = useState(apiKey);
@@ -47,6 +65,18 @@ export function AiLocatorView({
   const inputRef = useRef(null);
   const resultsEndRef = useRef(null);
   const hasTriggeredRef = useRef(false);
+
+  // Sync all queries to localStorage whenever history changes
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        AI_HISTORY_STORAGE_KEY,
+        JSON.stringify(history.slice(0, 50))
+      );
+    } catch (e) {
+      console.error("Failed to save queries to localStorage:", e);
+    }
+  }, [history]);
 
   const handleAsk = useCallback(async (promptToAsk) => {
     const q = (promptToAsk || query).trim();
@@ -69,10 +99,19 @@ export function AiLocatorView({
           hour: "2-digit",
           minute: "2-digit",
         }),
+        date: new Date().toLocaleDateString([], {
+          month: "short",
+          day: "numeric",
+        }),
         data: response,
       };
 
-      setHistory((prev) => [newEntry, ...prev]);
+      setHistory((prev) => [
+        newEntry,
+        ...prev.filter(
+          (item) => item.question.trim().toLowerCase() !== q.toLowerCase()
+        ),
+      ]);
       setQuery("");
       setTimeout(() => {
         resultsEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -100,6 +139,21 @@ export function AiLocatorView({
     setGeminiApiKey(tempKey);
     setApiKeyState(tempKey);
     setShowKeyModal(false);
+  };
+
+  const handleClearHistory = () => {
+    if (window.confirm("Are you sure you want to clear all stored queries from local storage?")) {
+      setHistory([]);
+      try {
+        localStorage.removeItem(AI_HISTORY_STORAGE_KEY);
+      } catch {
+        /* ignore storage clear error */
+      }
+    }
+  };
+
+  const handleDeleteEntry = (idToDelete) => {
+    setHistory((prev) => prev.filter((item) => item.id !== idToDelete));
   };
 
   return (
@@ -205,6 +259,39 @@ export function AiLocatorView({
               ))}
             </div>
           </div>
+
+          {/* Stored Queries in LocalStorage Quick Chips */}
+          {history.length > 0 && (
+            <div className="space-y-1.5 pt-2 border-t border-border/40">
+              <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center justify-between">
+                <div className="flex items-center gap-1.5">
+                  <HistoryIcon className="size-3.5 text-sky-400" />
+                  <span>Recent Stored Queries ({history.length}):</span>
+                </div>
+                <span className="flex items-center gap-1 text-[10px] text-emerald-400 font-semibold">
+                  <span className="size-1.5 rounded-full bg-emerald-400" />
+                  Synced with LocalStorage
+                </span>
+              </div>
+              <div className="flex items-center gap-2 flex-wrap">
+                {history.slice(0, 6).map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => {
+                      setQuery(item.question);
+                    }}
+                    className="group inline-flex items-center gap-1.5 rounded-lg border border-sky-500/30 bg-sky-500/5 px-2.5 py-1 text-[11px] font-medium text-foreground hover:bg-sky-500/15 hover:border-sky-400 transition-colors cursor-pointer text-left"
+                    title="Click to fill into search box"
+                  >
+                    <span className="truncate max-w-[220px]">{item.question}</span>
+                    <span className="text-[10px] text-sky-400 font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+                      ↑
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -243,10 +330,35 @@ export function AiLocatorView({
         </div>
       )}
 
+      {/* Stored Query History Control Bar */}
+      {history.length > 0 && (
+        <div className="flex items-center justify-between gap-3 px-1 pt-1">
+          <div className="flex items-center gap-2">
+            <HistoryIcon className="size-4 text-sky-400" />
+            <span className="text-xs font-black uppercase tracking-wider text-foreground">
+              Stored Queries in Local Storage ({history.length})
+            </span>
+            <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+              <span className="size-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              Persisted
+            </span>
+          </div>
+
+          <button
+            onClick={handleClearHistory}
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border/70 bg-card/70 px-2.5 py-1 text-xs font-semibold text-muted-foreground hover:bg-destructive/10 hover:text-destructive hover:border-destructive/30 transition-colors cursor-pointer"
+            title="Clear all stored queries from local storage"
+          >
+            <Trash2 className="size-3.5" />
+            <span>Clear History</span>
+          </button>
+        </div>
+      )}
+
       {/* Q&A Results Stream */}
       <div className="space-y-6" ref={resultsEndRef}>
         {history.map((entry) => {
-          const { question, timestamp, data } = entry;
+          const { question, timestamp, date, data } = entry;
           const { quickAnswer, citations = [], keyPages = [] } = data || {};
 
           return (
@@ -264,8 +376,18 @@ export function AiLocatorView({
                     {question}
                   </h3>
                 </div>
-                <div className="text-[11px] font-mono text-muted-foreground self-start sm:self-auto">
-                  {timestamp}
+                <div className="flex items-center gap-3 self-start sm:self-auto">
+                  <div className="text-[11px] font-mono text-muted-foreground flex items-center gap-1">
+                    <Clock className="size-3 text-muted-foreground/70" />
+                    <span>{date ? `${date}, ` : ""}{timestamp}</span>
+                  </div>
+                  <button
+                    onClick={() => handleDeleteEntry(entry.id)}
+                    className="p-1 rounded-md text-muted-foreground/50 hover:text-destructive hover:bg-destructive/10 transition-colors cursor-pointer"
+                    title="Delete this query from local storage"
+                  >
+                    <Trash2 className="size-3.5" />
+                  </button>
                 </div>
               </div>
 
