@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { SearchView } from "@/views/SearchView";
 import { TocView } from "@/views/TocView";
 import { PageInspectorView } from "@/views/PageInspectorView";
+import { AiLocatorView } from "@/views/AiLocatorView";
 import { KnowMoreModal } from "@/components/modals/KnowMoreModal";
 import { BookOpen, AlertCircle, RefreshCw } from "lucide-react";
 
@@ -35,6 +36,7 @@ export function App() {
   );
 
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const [aiInitialQuery, setAiInitialQuery] = useState("");
   const [modalState, setModalState] = useState({
     isOpen: false,
     topicText: "",
@@ -126,6 +128,12 @@ export function App() {
     setInspectorPage(sub.defaultInspectorPage || 1);
   };
 
+  const handleAskAi = (promptText = "") => {
+    setAiInitialQuery(promptText);
+    setActiveTab("ai");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground transition-colors selection:bg-sky-500/20 selection:text-sky-300">
       <Header
@@ -202,6 +210,7 @@ export function App() {
                 onSelectTopic={handleSelectTopic}
                 onOpenKnowMore={handleOpenKnowMore}
                 onSwitchSubject={(subId) => handleSubjectChange(subId, true)}
+                onAskAi={handleAskAi}
                 searchInputRef={searchInputRef}
               />
             )}
@@ -227,6 +236,17 @@ export function App() {
                 onOpenKnowMore={handleOpenKnowMore}
               />
             )}
+
+            {activeTab === "ai" && (
+              <AiLocatorView
+                subjects={SUBJECTS}
+                activeSubject={activeSubject}
+                onSwitchSubject={(subId) => handleSubjectChange(subId, true)}
+                onSelectPage={handleSelectPage}
+                onSelectTopic={handleSelectTopic}
+                initialQuery={aiInitialQuery}
+              />
+            )}
           </>
         )}
       </main>
@@ -239,6 +259,7 @@ export function App() {
         subject={activeSubject}
         allSearchData={allSearchData}
         onOpenTopic={handleOpenKnowMore}
+        onAskAi={handleAskAi}
       />
 
       <footer className="border-t border-border/60 bg-secondary/30 py-6 text-center text-xs text-muted-foreground">

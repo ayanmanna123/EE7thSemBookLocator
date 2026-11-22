@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Dialog, DialogHeader, DialogTitle, DialogClose, DialogBody } from "@/components/ui/dialog";
 import { getAllUniquePages } from "@/lib/searchUtils";
-import { ExternalLink, Globe, BookOpen, Search, Video, Code, FileText, GraduationCap } from "lucide-react";
+import { ExternalLink, Globe, BookOpen, Search, Video, Code, FileText, GraduationCap, Sparkles } from "lucide-react";
 
 export function KnowMoreModal({
   isOpen,
@@ -11,6 +11,7 @@ export function KnowMoreModal({
   subject,
   allSearchData = [],
   onOpenTopic,
+  onAskAi,
 }) {
   const [loadingWiki, setLoadingWiki] = useState(false);
   const [wikiData, setWikiData] = useState(null);
@@ -144,6 +145,20 @@ export function KnowMoreModal({
             🚀 Search This Topic Across the Web
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+            <button
+              onClick={() => {
+                onClose(false);
+                onAskAi?.(`Explain ${displayTitle} and where it is present in the textbooks`);
+              }}
+              className="flex items-center gap-2 rounded-lg border border-sky-500/50 bg-gradient-to-r from-sky-500/20 via-indigo-500/20 to-purple-500/20 px-3 py-2 text-xs font-bold text-sky-300 hover:border-sky-400 hover:from-sky-500/30 transition-all hover:-translate-y-0.5 cursor-pointer col-span-2 sm:col-span-3 shadow-xs"
+            >
+              <Sparkles className="size-4 text-amber-400 animate-pulse shrink-0" />
+              <span className="truncate">
+                ✨ Ask Gemini AI about "{topicText}" (Deep Explanation & Exact Page Citations)
+              </span>
+              <ExternalLink className="size-3 ml-auto opacity-50 shrink-0" />
+            </button>
+
             <a
               href={searchUrls.google}
               target="_blank"

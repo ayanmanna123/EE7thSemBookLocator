@@ -1,4 +1,4 @@
-import { Sun, Moon, Search, BookOpen, Hash } from "lucide-react";
+import { Sun, Moon, Search, BookOpen, Hash, Sparkles } from "lucide-react";
 
 export function Header({
   subject,
@@ -131,6 +131,18 @@ export function Header({
             >
               <Hash className="size-3.5 text-emerald-400" />
               <span>Page Inspector (1–{subject?.totalPages || 1134})</span>
+            </button>
+
+            <button
+              onClick={() => onChangeTab("ai")}
+              className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all cursor-pointer ${
+                activeTab === "ai"
+                  ? "bg-gradient-to-r from-sky-500/20 via-indigo-500/20 to-purple-500/20 text-sky-300 shadow-xs border border-sky-400/50"
+                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+              }`}
+            >
+              <Sparkles className="size-3.5 text-amber-400 animate-pulse" />
+              <span>✨ AI Locator</span>
             </button>
           </div>
 

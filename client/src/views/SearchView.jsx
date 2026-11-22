@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Search, X, Globe, ArrowRight } from "lucide-react";
+import { Search, X, Globe, ArrowRight, Sparkles } from "lucide-react";
 import { PartRibbon } from "@/components/layout/PartRibbon";
 import { SpotlightCard } from "@/components/cards/SpotlightCard";
 import { TopicCard } from "@/components/cards/TopicCard";
@@ -29,9 +29,20 @@ export function SearchView({
   onSelectTopic,
   onOpenKnowMore,
   onSwitchSubject,
+  onAskAi,
   searchInputRef,
 }) {
   const [currentLimit, setCurrentLimit] = useState(75);
+
+  const isQuestionLike = useMemo(() => {
+    const q = query.trim();
+    if (!q) return false;
+    return (
+      q.includes("?") ||
+      q.split(/\s+/).length >= 4 ||
+      /^(how|why|what|where|when|explain|describe|difference|compare|which|tell|find)\b/i.test(q)
+    );
+  }, [query]);
 
   // 1. Current Subject Filtered Results
   const filteredResults = useMemo(() => {
@@ -198,6 +209,28 @@ export function SearchView({
             )}
           </div>
         </div>
+
+        {/* AI Question Prompt Banner */}
+        {isQuestionLike && (
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-xl border border-sky-500/40 bg-gradient-to-r from-sky-500/15 via-indigo-500/10 to-transparent p-3 shadow-xs">
+            <div className="flex items-center gap-2.5">
+              <Sparkles className="size-4 text-amber-400 animate-pulse shrink-0" />
+              <div className="text-xs">
+                <span className="font-bold text-foreground">Have a concept or question? </span>
+                <span className="text-muted-foreground">
+                  Ask Gemini AI to locate its exact textbook chapters, sections, and page references!
+                </span>
+              </div>
+            </div>
+            <button
+              onClick={() => onAskAi?.(query.trim())}
+              className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-3 py-1.5 text-xs font-extrabold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer shrink-0 self-start sm:self-auto"
+            >
+              <Sparkles className="size-3" />
+              <span>Ask AI Locator →</span>
+            </button>
+          </div>
+        )}
 
         {/* Filters Toolbar */}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pt-1 border-t border-border/50">
@@ -419,20 +452,30 @@ export function SearchView({
 
       {/* 4. CASE: 0 results anywhere */}
       {filteredResults.length === 0 && otherSubjectsMatches.length === 0 && (
-        <div className="rounded-2xl border border-dashed border-border/80 bg-card/60 p-12 text-center space-y-4">
+        <div className="rounded-2xl border border-dashed border-border/80 bg-card/60 p-10 text-center space-y-4">
           <div className="text-base font-bold text-foreground">
             No textbook index entry found matching "{query}"
           </div>
           <p className="text-xs text-muted-foreground max-w-md mx-auto">
-            You can still explore this topic directly across Google, Wikipedia, YouTube, or GeeksforGeeks:
+            You can ask Gemini AI to analyze your question across all 3 textbooks or search web resources:
           </p>
-          <button
-            onClick={() => onOpenKnowMore(query, "")}
-            className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 px-4 py-2 text-xs font-bold text-white shadow-md hover:opacity-90 transition-opacity cursor-pointer"
-          >
-            <Globe className="size-4" />
-            <span>Search "{query}" on Web Resources</span>
-          </button>
+          <div className="flex items-center justify-center gap-2 pt-1 flex-wrap">
+            <button
+              onClick={() => onAskAi?.(query.trim())}
+              className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 px-4 py-2 text-xs font-bold text-white shadow-md hover:opacity-90 transition-all cursor-pointer hover:scale-102 active:scale-98"
+            >
+              <Sparkles className="size-4 animate-pulse" />
+              <span>Ask Gemini AI: "Where is this in the textbooks?"</span>
+            </button>
+
+            <button
+              onClick={() => onOpenKnowMore(query, "")}
+              className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-secondary px-4 py-2 text-xs font-bold text-foreground hover:bg-secondary/80 transition-colors cursor-pointer"
+            >
+              <Globe className="size-4" />
+              <span>Search on Web Resources</span>
+            </button>
+          </div>
         </div>
       )}
 
