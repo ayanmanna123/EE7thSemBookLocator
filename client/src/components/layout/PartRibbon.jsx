@@ -12,10 +12,15 @@ export function PartRibbon({
     1134;
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 mb-6">
+    <div
+      role="group"
+      aria-label="Filter by book part"
+      className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 mb-6"
+    >
       {/* ALL Card */}
       <button
         onClick={() => onSelectPart("ALL")}
+        aria-label="Show all book parts"
         className={`flex flex-col justify-between rounded-xl p-3 text-left transition-all border cursor-pointer ${
           selectedPart === "ALL"
             ? "border-sky-400 bg-sky-500/15 shadow-md ring-2 ring-sky-500/40"
@@ -23,12 +28,12 @@ export function PartRibbon({
         }`}
         style={
           selectedPart === "ALL"
-            ? { borderTopWidth: "3px", borderTopColor: "#38bdf8" }
+            ? { borderTopWidth: "3px", borderTopColor: "#0284c7" }
             : undefined
         }
       >
         <div className="flex items-center justify-between text-xs font-black text-foreground">
-          <span className={selectedPart === "ALL" ? "text-sky-400" : "text-foreground"}>
+          <span className={selectedPart === "ALL" ? "text-sky-600 dark:text-sky-400" : "text-foreground"}>
             ALL
           </span>
           <span className="font-mono text-[10px] text-muted-foreground">1–{maxPage}</span>
@@ -42,13 +47,14 @@ export function PartRibbon({
       {parts.map((pt) => {
         const label = `${pt.id}: ${pt.title}`;
         const isActive = selectedPart === label;
-        const clr = partColors[pt.id] || "#38bdf8";
+        const clr = partColors[pt.id] || "#0284c7";
         const shortId = pt.id === "APPENDICES" ? "APPX" : pt.id;
 
         return (
           <button
             key={pt.id}
             onClick={() => onSelectPart(isActive ? "ALL" : label)}
+            aria-label={`Filter by ${label}`}
             className={`flex flex-col justify-between rounded-xl p-3 text-left transition-all border cursor-pointer ${
               isActive
                 ? "shadow-md ring-2"

@@ -1,13 +1,20 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { SUBJECTS, DEFAULT_SUBJECT_ID } from "@/config/subjects";
 import { useSubjectData } from "@/hooks/useSubjectData";
 import { Header } from "@/components/layout/Header";
 import { SearchView } from "@/views/SearchView";
-import { TocView } from "@/views/TocView";
-import { PageInspectorView } from "@/views/PageInspectorView";
-import { AiLocatorView } from "@/views/AiLocatorView";
-import { KnowMoreModal } from "@/components/modals/KnowMoreModal";
-import { AlertCircle, RefreshCw } from "lucide-react";
+import { AlertCircle, RefreshCw, Loader2 } from "lucide-react";
+
+const TocView = lazy(() => import("@/views/TocView").then((m) => ({ default: m.TocView })));
+const PageInspectorView = lazy(() =>
+  import("@/views/PageInspectorView").then((m) => ({ default: m.PageInspectorView }))
+);
+const AiLocatorView = lazy(() =>
+  import("@/views/AiLocatorView").then((m) => ({ default: m.AiLocatorView }))
+);
+const KnowMoreModal = lazy(() =>
+  import("@/components/modals/KnowMoreModal").then((m) => ({ default: m.KnowMoreModal }))
+);
 
 export function App() {
   const [activeSubjectId, setActiveSubjectId] = useState(DEFAULT_SUBJECT_ID);
@@ -155,15 +162,17 @@ export function App() {
                 <img
                   src="/logo.svg"
                   alt="EE Book Locator Logo"
+                  width="80"
+                  height="80"
                   className="size-full object-contain animate-pulse"
                 />
               </div>
               <div className="absolute -inset-1 rounded-2xl border-2 border-sky-400/40 animate-ping" />
             </div>
             <div className="space-y-1">
-              <h3 className="text-lg font-extrabold text-foreground">
+              <h2 className="text-lg font-extrabold text-foreground">
                 Loading {activeSubject.name}...
-              </h3>
+              </h2>
               <p className="text-xs text-muted-foreground">
                 Indexing Table of Contents, Chapters, and 4,700+ topics
               </p>
@@ -174,9 +183,9 @@ export function App() {
         {error && !loading && (
           <div className="max-w-md mx-auto my-16 rounded-2xl border border-destructive/30 bg-destructive/10 p-6 text-center space-y-3">
             <AlertCircle className="size-8 text-destructive mx-auto" />
-            <h3 className="text-base font-bold text-foreground">
+            <h2 className="text-base font-bold text-foreground">
               Failed to load subject data
-            </h3>
+            </h2>
             <p className="text-xs text-muted-foreground">{error}</p>
             <button
               onClick={() => window.location.reload()}
@@ -189,7 +198,14 @@ export function App() {
         )}
 
         {!loading && !error && (
-          <>
+          <Suspense
+            fallback={
+              <div className="py-20 flex flex-col items-center justify-center gap-3 text-muted-foreground">
+                <Loader2 className="size-8 animate-spin text-sky-500" />
+                <span className="text-xs font-bold">Loading view...</span>
+              </div>
+            }
+          >
             {activeTab === "search" && (
               <SearchView
                 subject={activeSubject}
@@ -251,20 +267,24 @@ export function App() {
                 initialQuery={aiInitialQuery}
               />
             )}
-          </>
+          </Suspense>
         )}
       </main>
 
-      <KnowMoreModal
-        isOpen={modalState.isOpen}
-        onClose={(open) => setModalState((prev) => ({ ...prev, isOpen: open }))}
-        topicText={modalState.topicText}
-        parentTopic={modalState.parentTopic}
-        subject={activeSubject}
-        allSearchData={allSearchData}
-        onOpenTopic={handleOpenKnowMore}
-        onAskAi={handleAskAi}
-      />
+      <Suspense fallback={null}>
+        {modalState.isOpen && (
+          <KnowMoreModal
+            isOpen={modalState.isOpen}
+            onClose={(open) => setModalState((prev) => ({ ...prev, isOpen: open }))}
+            topicText={modalState.topicText}
+            parentTopic={modalState.parentTopic}
+            subject={activeSubject}
+            allSearchData={allSearchData}
+            onOpenTopic={handleOpenKnowMore}
+            onAskAi={handleAskAi}
+          />
+        )}
+      </Suspense>
 
       <footer className="border-t border-border/60 bg-secondary/30 py-6 text-center text-xs text-muted-foreground">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
@@ -272,6 +292,10 @@ export function App() {
             <img
               src="/logo.svg"
               alt="EE Book Locator Logo"
+              width="24"
+              height="24"
+              loading="lazy"
+              decoding="async"
               className="size-6 object-contain rounded bg-white/90 p-0.5 border border-border"
             />
             <span>EE 7th Semester Multi-Subject Book Locator • Built with React, Tailwind CSS & Shadcn UI</span>

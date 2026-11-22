@@ -17,4 +17,8 @@ export default defineConfig({
     open: true,
     port: 5173,
   },
+  build: {
+    target: "esnext",
+    cssMinify: true,
+  },
 });

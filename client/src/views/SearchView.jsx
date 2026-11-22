@@ -40,7 +40,7 @@ export function SearchView({
   onAskAi,
   searchInputRef,
 }) {
-  const [currentLimit, setCurrentLimit] = useState(75);
+  const [currentLimit, setCurrentLimit] = useState(24);
   const [recentSearches, setRecentSearches] = useState(getRecentSearches);
 
   // Auto-persist search queries to localStorage when user types a search term
@@ -162,14 +162,14 @@ export function SearchView({
 
   const handleClear = () => {
     setQuery("");
-    setCurrentLimit(75);
+    setCurrentLimit(24);
     searchInputRef?.current?.focus();
   };
 
   const handlePartFilterChange = (val) => {
     setSelectedPart(val);
     setSelectedChapter("ALL");
-    setCurrentLimit(75);
+    setCurrentLimit(24);
   };
 
   const handleChapterFilterChange = (val) => {
@@ -185,7 +185,7 @@ export function SearchView({
         }
       }
     }
-    setCurrentLimit(75);
+    setCurrentLimit(24);
   };
 
   return (
@@ -197,11 +197,14 @@ export function SearchView({
           <Search className="absolute left-3.5 size-4.5 shrink-0 text-muted-foreground pointer-events-none" />
           <input
             ref={searchInputRef}
+            id="main-search-input"
+            name="searchQuery"
+            aria-label="Search textbook topics, formulas, or page numbers"
             type="text"
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
-              setCurrentLimit(75);
+              setCurrentLimit(24);
             }}
             placeholder={`Search any topic (e.g., ATM, ARP, CRC, TCP, firewall, Raspberry Pi, MQTT) or page number...`}
             className="w-full rounded-xl border-2 border-border/80 bg-background/90 py-3.5 pl-11 pr-32 text-sm sm:text-base font-medium text-foreground placeholder:text-muted-foreground outline-none transition-all focus:border-sky-500 focus:ring-3 focus:ring-sky-500/20"
@@ -211,6 +214,7 @@ export function SearchView({
             {query.trim() && (
               <button
                 onClick={() => onOpenKnowMore(query.trim(), "")}
+                aria-label="Search query across web resources"
                 className="hidden sm:inline-flex items-center rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-2.5 py-1.5 text-xs font-bold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer"
                 title="Search this query across the web"
               >
@@ -218,11 +222,10 @@ export function SearchView({
               </button>
             )}
 
-
-
             {query.trim() && (
               <button
                 onClick={handleClear}
+                aria-label="Clear search input"
                 className="rounded-lg p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors cursor-pointer"
                 title="Clear search"
               >
@@ -286,6 +289,7 @@ export function SearchView({
             <select
               value={selectedPart}
               onChange={(e) => handlePartFilterChange(e.target.value)}
+              aria-label="Filter by book part"
               className="rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground outline-none focus:border-sky-400 cursor-pointer"
             >
               <option value="ALL">
@@ -305,6 +309,7 @@ export function SearchView({
             <select
               value={selectedChapter}
               onChange={(e) => handleChapterFilterChange(e.target.value)}
+              aria-label="Filter by chapter"
               className="rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground outline-none focus:border-sky-400 cursor-pointer max-w-[280px]"
             >
               <option value="ALL">
@@ -330,6 +335,7 @@ export function SearchView({
                 type="checkbox"
                 checked={includeSubtopics}
                 onChange={(e) => setIncludeSubtopics(e.target.checked)}
+                aria-label="Search inside subtopics"
                 className="size-3.5 rounded border-border text-sky-500 focus:ring-sky-400"
               />
               <span>Search inside subtopics</span>
@@ -340,6 +346,7 @@ export function SearchView({
                 type="checkbox"
                 checked={showPageBreakdown}
                 onChange={(e) => setShowPageBreakdown(e.target.checked)}
+                aria-label="Show Part Chapter Section breakdown"
                 className="size-3.5 rounded border-border text-sky-500 focus:ring-sky-400"
               />
               <span>Show Part → Chapter → Section breakdown</span>
@@ -481,7 +488,7 @@ export function SearchView({
       {filteredResults.length === 0 && otherSubjectsMatches.length === 0 && (
         <div className="rounded-2xl border border-dashed border-border/80 bg-card/60 p-10 text-center space-y-4">
           <div className="size-14 mx-auto rounded-xl bg-white p-1.5 border border-border shadow-sm flex items-center justify-center">
-            <img src="/logo.svg" alt="EE Book Locator" className="size-full object-contain" />
+            <img src="/logo.svg" alt="EE Book Locator Logo" width="56" height="56" className="size-full object-contain" />
           </div>
           <div className="text-base font-bold text-foreground">
             No textbook index entry found matching "{query}"
@@ -510,10 +517,11 @@ export function SearchView({
 
       {/* 5. CASE: Display active subject results */}
       {displayedList.length > 0 && (
-        <div className="space-y-4">
+        <section aria-label="Search Results" className="space-y-4">
+          <h2 className="sr-only">Topic Search Results</h2>
           {displayedList.map((entry, idx) => (
             <TopicCard
-              key={idx}
+              key={`${entry.topic}-${entry.index_page || idx}`}
               entry={entry}
               query={query}
               subject={subject}
@@ -523,14 +531,14 @@ export function SearchView({
               onOpenKnowMore={onOpenKnowMore}
             />
           ))}
-        </div>
+        </section>
       )}
 
       {/* Load More Button */}
       {filteredResults.length > currentLimit && (
         <div className="pt-2 text-center">
           <button
-            onClick={() => setCurrentLimit((prev) => prev + 100)}
+            onClick={() => setCurrentLimit((prev) => prev + 50)}
             className="rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 px-6 py-2.5 text-xs font-extrabold text-white shadow-md hover:opacity-90 transition-all cursor-pointer hover:scale-102 active:scale-98"
           >
             Show More Topics ({(filteredResults.length - currentLimit).toLocaleString()} remaining)

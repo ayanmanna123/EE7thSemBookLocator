@@ -32,9 +32,9 @@ export function TopicCard({
       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
         <div className="space-y-1.5 flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <h4 className="text-base sm:text-lg font-bold text-foreground break-words">
+            <h3 className="text-base sm:text-lg font-bold text-foreground break-words">
               <HighlightText text={entry.topic} query={query} />
-            </h4>
+            </h3>
             {entry.isToc ? (
               <span className="rounded bg-sky-500/10 px-2 py-0.5 text-[10px] font-bold text-sky-400 border border-sky-500/20">
                 {entry.tocKind}

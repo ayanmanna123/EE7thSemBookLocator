@@ -21,19 +21,22 @@ export function Header({
             <div className="relative flex size-12 shrink-0 items-center justify-center rounded-xl bg-white/95 p-1 border border-border shadow-md shadow-sky-500/10 overflow-hidden transition-transform hover:scale-105">
               <img
                 src={logoSvg}
-                alt="Electrical Engineering Book Locator"
+                alt="Electrical Engineering Book Locator Logo"
+                width="48"
+                height="48"
                 className="h-full w-full object-contain"
               />
             </div>
             <div className="flex items-center gap-2.5 flex-wrap">
-              <span className="text-lg sm:text-xl font-extrabold tracking-tight text-foreground">
+              <h1 className="text-lg sm:text-xl font-extrabold tracking-tight text-foreground">
                 {subject?.bookTitle || "Book Locator"}
-              </span>
+              </h1>
               {subjects.length > 1 && (
                 <div className="relative inline-block ml-1">
                   <select
                     value={subject?.id}
                     onChange={(e) => onSelectSubject(e.target.value)}
+                    aria-label="Select textbook subject"
                     className="rounded-lg border border-border bg-secondary/80 px-2.5 py-1 text-xs font-bold text-foreground cursor-pointer outline-none focus:ring-1 focus:ring-sky-400"
                   >
                     {subjects.map((sub) => (
@@ -69,6 +72,7 @@ export function Header({
 
             <button
               onClick={onToggleTheme}
+              aria-label={isDarkMode ? "Switch to light theme" : "Switch to dark theme"}
               className="flex items-center gap-1.5 rounded-lg border border-border/80 bg-secondary/70 px-3 py-1.5 text-xs font-bold text-foreground hover:bg-secondary transition-colors cursor-pointer"
               title="Switch Dark / Light Theme"
             >
@@ -90,8 +94,14 @@ export function Header({
         {/* Command Deck: Tabs & Quick Chips */}
         <div className="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-3">
           {/* Navigation Tabs - Clean, high contrast without micro icons */}
-          <div className="flex items-center gap-1 bg-secondary/50 p-1 rounded-xl border border-border/70 self-start flex-wrap">
+          <nav
+            role="tablist"
+            aria-label="Navigation Tabs"
+            className="flex items-center gap-1 bg-secondary/50 p-1 rounded-xl border border-border/70 self-start flex-wrap"
+          >
             <button
+              role="tab"
+              aria-selected={activeTab === "search"}
               onClick={() => onChangeTab("search")}
               className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "search"
@@ -103,6 +113,8 @@ export function Header({
             </button>
 
             <button
+              role="tab"
+              aria-selected={activeTab === "toc"}
               onClick={() => onChangeTab("toc")}
               className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "toc"
@@ -114,6 +126,8 @@ export function Header({
             </button>
 
             <button
+              role="tab"
+              aria-selected={activeTab === "page"}
               onClick={() => onChangeTab("page")}
               className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "page"
@@ -125,6 +139,8 @@ export function Header({
             </button>
 
             <button
+              role="tab"
+              aria-selected={activeTab === "ai"}
               onClick={() => onChangeTab("ai")}
               className={`rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                 activeTab === "ai"
@@ -134,7 +150,7 @@ export function Header({
             >
               AI Locator
             </button>
-          </div>
+          </nav>
         </div>
       </div>
     </header>

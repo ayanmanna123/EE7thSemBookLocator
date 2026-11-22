@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ee-7th-sem-book-locator.vercel.app/sitemap.xml
