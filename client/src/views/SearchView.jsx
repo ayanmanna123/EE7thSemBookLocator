@@ -84,9 +84,41 @@ export function SearchView({
     );
   }, [query]);
 
-  // 1. Current Subject Filtered Results
+  const isElectricDrives =
+    subject.id === "electric-drives" ||
+    subject.id === "electric-drives-krishnan";
+
+  const companionSubjectId = isElectricDrives
+    ? subject.id === "electric-drives"
+      ? "electric-drives-krishnan"
+      : "electric-drives"
+    : null;
+
+  const companionSubject = useMemo(
+    () => subjects.find((s) => s.id === companionSubjectId),
+    [subjects, companionSubjectId]
+  );
+
+  const [driveScope, setDriveScope] = useState("both"); // "both" | "active" | "companion"
+
+  // 1. Current Subject / Dual-Book Filtered Results
   const filteredResults = useMemo(() => {
-    let list = allSearchData;
+    let list = allSearchData.map((it) => ({ ...it, _sourceSubject: subject }));
+
+    // If viewing an Electric Drives book and driveScope includes both or companion
+    if (isElectricDrives && companionSubject) {
+      const companionData = allSubjectsDataMap.get(companionSubject.id);
+      const companionList = (companionData?.allSearchData || []).map((it) => ({
+        ...it,
+        _sourceSubject: companionSubject,
+      }));
+
+      if (driveScope === "both") {
+        list = [...list, ...companionList];
+      } else if (driveScope === "companion") {
+        list = companionList;
+      }
+    }
 
     if (selectedPart !== "ALL") {
       list = list.filter((item) => (item.parts || []).includes(selectedPart));
@@ -108,7 +140,18 @@ export function SearchView({
     }
 
     return list;
-  }, [allSearchData, selectedPart, selectedChapter, query, includeSubtopics]);
+  }, [
+    allSearchData,
+    selectedPart,
+    selectedChapter,
+    query,
+    includeSubtopics,
+    isElectricDrives,
+    companionSubject,
+    allSubjectsDataMap,
+    driveScope,
+    subject,
+  ]);
 
   // 2. Cross-Subject Search Matches (Searches across other registered subjects)
   const otherSubjectsMatches = useMemo(() => {
@@ -118,6 +161,15 @@ export function SearchView({
     const matches = [];
     for (const otherSub of subjects) {
       if (otherSub.id === subject.id) continue;
+      // If we are in Electric Drives and driveScope is "both", skip companion drive book here since it's already in filteredResults!
+      if (
+        isElectricDrives &&
+        driveScope === "both" &&
+        (otherSub.id === "electric-drives" || otherSub.id === "electric-drives-krishnan")
+      ) {
+        continue;
+      }
+
       const otherData = allSubjectsDataMap.get(otherSub.id);
       if (!otherData || !otherData.allSearchData) continue;
 
@@ -131,13 +183,13 @@ export function SearchView({
         scored.sort((a, b) => b.s - a.s || (a.item.topic || "").localeCompare(b.item.topic || ""));
         matches.push({
           subject: otherSub,
-          results: scored.map((x) => x.item),
+          results: scored.map((x) => ({ ...x.item, _sourceSubject: otherSub })),
           count: scored.length,
         });
       }
     }
     return matches;
-  }, [query, allSubjectsDataMap, subject.id, subjects, includeSubtopics]);
+  }, [query, allSubjectsDataMap, subject.id, subjects, includeSubtopics, isElectricDrives, driveScope]);
 
   const displayedList = useMemo(() => {
     return filteredResults.slice(0, currentLimit);
@@ -206,7 +258,7 @@ export function SearchView({
               setQuery(e.target.value);
               setCurrentLimit(24);
             }}
-            placeholder={`Search any topic (e.g., ATM, ARP, CRC, TCP, firewall, Raspberry Pi, MQTT) or page number...`}
+            placeholder="Search..."
             className="w-full rounded-xl border-2 border-border/80 bg-background/90 py-3.5 pl-11 pr-32 text-sm sm:text-base font-medium text-foreground placeholder:text-muted-foreground outline-none transition-all focus:border-sky-500 focus:ring-3 focus:ring-sky-500/20"
           />
 
@@ -279,6 +331,54 @@ export function SearchView({
             >
               Clear
             </button>
+          </div>
+        )}
+
+        {/* Electric Drives Dual-Book Scope Selector */}
+        {isElectricDrives && (
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 rounded-xl bg-secondary/50 border border-sky-500/20 p-2.5">
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="text-[11px] font-extrabold uppercase tracking-wider text-muted-foreground">
+                Drives Search:
+              </span>
+              <button
+                onClick={() => setDriveScope("both")}
+                className={`rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer ${
+                  driveScope === "both"
+                    ? "bg-gradient-to-r from-sky-500 to-indigo-600 text-white shadow-xs"
+                    : "bg-secondary text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                ⚡ Both Books (Dubey + Krishnan)
+              </button>
+              <button
+                onClick={() => setDriveScope("active")}
+                className={`rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer ${
+                  driveScope === "active"
+                    ? "bg-sky-500 text-white shadow-xs"
+                    : "bg-secondary text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                📖 {subject.name}
+              </button>
+              {companionSubject && (
+                <button
+                  onClick={() => setDriveScope("companion")}
+                  className={`rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer ${
+                    driveScope === "companion"
+                      ? "bg-indigo-600 text-white shadow-xs"
+                      : "bg-secondary text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  📘 {companionSubject.name}
+                </button>
+              )}
+            </div>
+            {driveScope === "both" && (
+              <span className="text-[11px] font-semibold text-sky-400">
+                Searching both Dubey & Krishnan simultaneously
+              </span>
+            )}
           </div>
         )}
 
@@ -470,9 +570,9 @@ export function SearchView({
                     query={query}
                     subject={matchSub}
                     showPageBreakdown={showPageBreakdown}
-                    onSelectPage={(pageNum) => {
-                      onSwitchSubject(matchSub.id);
-                      onSelectPage(pageNum);
+                    onSelectPage={(pageNum, subId) => {
+                      onSwitchSubject(subId || matchSub.id);
+                      onSelectPage(pageNum, subId || matchSub.id);
                     }}
                     onSelectTopic={onSelectTopic}
                     onOpenKnowMore={onOpenKnowMore}
@@ -494,7 +594,7 @@ export function SearchView({
             No textbook index entry found matching "{query}"
           </div>
           <p className="text-xs text-muted-foreground max-w-md mx-auto">
-            You can ask Gemini AI to analyze your question across all 3 textbooks or search web resources:
+            You can ask Gemini AI to locate this topic across all 4 textbooks or search web resources:
           </p>
           <div className="flex items-center justify-center gap-2 pt-1 flex-wrap">
             <button
@@ -524,7 +624,7 @@ export function SearchView({
               key={`${entry.topic}-${entry.index_page || idx}`}
               entry={entry}
               query={query}
-              subject={subject}
+              subject={entry._sourceSubject || subject}
               showPageBreakdown={showPageBreakdown}
               onSelectPage={onSelectPage}
               onSelectTopic={onSelectTopic}
@@ -580,9 +680,9 @@ export function SearchView({
                     query={query}
                     subject={matchSub}
                     showPageBreakdown={showPageBreakdown}
-                    onSelectPage={(pageNum) => {
-                      onSwitchSubject(matchSub.id);
-                      onSelectPage(pageNum);
+                    onSelectPage={(pageNum, subId) => {
+                      onSwitchSubject(subId || matchSub.id);
+                      onSelectPage(pageNum, subId || matchSub.id);
                     }}
                     onSelectTopic={onSelectTopic}
                     onOpenKnowMore={onOpenKnowMore}

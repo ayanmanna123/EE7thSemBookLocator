@@ -1,11 +1,10 @@
 /**
  * Subject Registry & Configuration for EE 7th Semester Book Locator
  * -----------------------------------------------------------------
- * To add a new subject:
- * 1. Put its `topics.json` and `chapters.json` inside `public/data/<subjectId>/`
- * 2. Add an entry to the `SUBJECTS` array below with metadata and colors.
- * 3. The UI will automatically render it in the subject switcher, load its TOC,
- *    and enable instant search, page inspection, and knowledge exploration!
+ * 1. Computer Networks (Forouzan NetAtlas - EE-701A)
+ * 2. Internet of Things (Bahga & Madisetti IoT - EE-702B)
+ * 3. Electric Drives - Dubey (Fundamentals of Electrical Drives, 2nd Ed. - EE-701B)
+ * 4. Electric Motor Drives - Krishnan (Modeling, Analysis, and Control - EE-701B)
  */
 
 export const SUBJECTS = [
@@ -240,9 +239,9 @@ export const SUBJECTS = [
   },
   {
     id: "electric-drives",
-    name: "Electric Drives",
-    shortName: "ED",
-    code: "EE-701B",
+    name: "Electric Drives (Dubey)",
+    shortName: "ED (Dubey)",
+    code: "EE-701B (Dubey)",
     bookTitle: "Dubey Electric Drives",
     editionBadge: "Fundamentals of Electrical Drives (2nd Ed.)",
     subtitle: "Dynamics, dc Motors, Induction & Synchronous Drives, Traction & Control",
@@ -308,6 +307,89 @@ export const SUBJECTS = [
       const scholarQuery = encodeURIComponent(`${expanded} Electrical Drives Dubey`);
       const nptelQuery = encodeURIComponent(
         `site:nptel.ac.in ${expanded} electrical drives`
+      );
+
+      return {
+        cleanTopic,
+        expanded,
+        google: `https://www.google.com/search?q=${netQuery}`,
+        wikipedia: `https://en.wikipedia.org/wiki/Special:Search?search=${wikiQuery}`,
+        youtube: `https://www.youtube.com/results?search_query=${ytQuery}`,
+        gfg: `https://www.google.com/search?q=${gfgQuery}`,
+        scholar: `https://scholar.google.com/scholar?q=${scholarQuery}`,
+        ietf: `https://www.google.com/search?q=${nptelQuery}`,
+      };
+    },
+  },
+  {
+    id: "electric-drives-krishnan",
+    name: "Electric Motor Drives (Krishnan)",
+    shortName: "ED (Krishnan)",
+    code: "EE-701B (Krishnan)",
+    bookTitle: "Krishnan Electric Motor Drives",
+    editionBadge: "Modeling, Analysis, and Control (Pearson Ed.)",
+    subtitle: "DC Machine Modeling, Phase/Chopper Drives, Vector Control & BLDC Drives",
+    author: "R. Krishnan",
+    totalPages: 626,
+    defaultInspectorPage: 412,
+    topicsFile: "/data/drive2/topics.json",
+    chaptersFile: "/data/drive2/chapters.json",
+    quickChips: [
+      "Vector Control",
+      "Space-Vector Modulation",
+      "Field Weakening",
+      "Chopper Controlled DC",
+      "PMSM Drive",
+      "PMBDCM Drive",
+      "Constant Volts/Hz",
+      "Direct Self Control",
+      "Symmetric Optimum",
+      "Slip Energy Recovery",
+      "Dynamic Modeling",
+      "C-Dump Topology",
+    ],
+    partColors: {
+      "PART 1": "#38bdf8",
+      "PART 2": "#10b981",
+      "PART 3": "#6366f1",
+      "PART 4": "#a855f7",
+      "APPENDICES": "#64748b",
+    },
+    acronyms: {
+      pmsm: "Permanent Magnet Synchronous Motor",
+      pmbdcm: "Permanent Magnet Brushless DC Motor",
+      bldc: "Brushless DC Motor",
+      svm: "Space-Vector Modulation",
+      pwm: "Pulse-Width Modulation",
+      dsc: "Direct Self Control",
+      dtc: "Direct Torque Control",
+      foc: "Field-Oriented Control (Vector Control)",
+      vsi: "Voltage Source Inverter",
+      csi: "Current Source Inverter",
+      csim: "Current Source Inverter-Fed Induction Motor",
+      asci: "Auto Sequentially Commutated Inverter",
+      scr: "Silicon Controlled Rectifier",
+      gto: "Gate Turn-Off Thyristor",
+      igbt: "Insulated Gate Bipolar Transistor",
+      mosfet: "Metal-Oxide-Semiconductor Field-Effect Transistor",
+    },
+    getSearchUrls: (cleanTopic, parentTopic = "") => {
+      const fullContext = parentTopic ? `${parentTopic} ${cleanTopic}` : cleanTopic;
+      const expanded =
+        SUBJECTS[3]?.acronyms?.[cleanTopic.toLowerCase()] || fullContext;
+      const netQuery = encodeURIComponent(
+        `${expanded} Electric Motor Drives Krishnan`
+      );
+      const ytQuery = encodeURIComponent(
+        `${expanded} Electric Motor Drives Krishnan lecture NPTEL`
+      );
+      const gfgQuery = encodeURIComponent(
+        `site:geeksforgeeks.org ${expanded} electric drives`
+      );
+      const wikiQuery = encodeURIComponent(expanded);
+      const scholarQuery = encodeURIComponent(`${expanded} Electric Motor Drives Krishnan`);
+      const nptelQuery = encodeURIComponent(
+        `site:nptel.ac.in ${expanded} Krishnan motor drives`
       );
 
       return {

@@ -168,8 +168,9 @@ export function hasGeminiApiKey() {
 
 function normalizeSubjectId(subjectId) {
   const s = String(subjectId || "").toLowerCase();
-  if (s.includes("net") || s.includes("forouzan") || s.includes("701")) return "computer-networks";
+  if (s.includes("net") || s.includes("forouzan") || s.includes("701a")) return "computer-networks";
   if (s.includes("iot") || s.includes("bahga") || s.includes("702")) return "iot";
+  if (s.includes("krishnan") || s.includes("drive2") || s.includes("ed2")) return "electric-drives-krishnan";
   return "electric-drives";
 }
 
@@ -260,19 +261,43 @@ export function searchLocalIndex(
     }
   }
 
-  // Cross-subject lookup if 0 matches found in active book
-  if (
-    matched.length === 0 &&
-    allSubjectsDataMap &&
-    typeof allSubjectsDataMap.forEach === "function"
-  ) {
-    allSubjectsDataMap.forEach((data, subId) => {
-      if (subId === activeSubject?.id || !data?.allSearchData) return;
-      const otherMatches = searchLocalIndex(keywords, { id: subId }, data.allSearchData);
-      if (otherMatches.length > 0) {
-        matched.push(...otherMatches.slice(0, 2));
+  // If searching in an Electric Drives book, ALWAYS query the other Electric Drives book too so both books are searched!
+  const isElectricDrives =
+    activeSubject?.id === "electric-drives" ||
+    activeSubject?.id === "electric-drives-krishnan" ||
+    String(activeSubject?.id || "").includes("drive");
+
+  if (allSubjectsDataMap && typeof allSubjectsDataMap.get === "function") {
+    if (isElectricDrives) {
+      const companionId =
+        activeSubject?.id === "electric-drives-krishnan"
+          ? "electric-drives"
+          : "electric-drives-krishnan";
+      const companionData = allSubjectsDataMap.get(companionId);
+      if (companionData?.allSearchData) {
+        const companionBookTitle =
+          companionId === "electric-drives-krishnan"
+            ? "Krishnan Electric Motor Drives"
+            : "Dubey Electric Drives";
+        const companionMatches = searchLocalIndex(
+          keywords,
+          { id: companionId, bookTitle: companionBookTitle },
+          companionData.allSearchData
+        );
+        matched.push(...companionMatches);
       }
-    });
+    }
+
+    // Cross-subject lookup if 0 matches found in active book(s)
+    if (matched.length === 0) {
+      allSubjectsDataMap.forEach((data, subId) => {
+        if (subId === activeSubject?.id || !data?.allSearchData) return;
+        const otherMatches = searchLocalIndex(keywords, { id: subId }, data.allSearchData);
+        if (otherMatches.length > 0) {
+          matched.push(...otherMatches.slice(0, 2));
+        }
+      });
+    }
   }
 
   matched.sort((a, b) => b.score - a.score);
@@ -341,9 +366,11 @@ export async function askGeminiAgenticLocator(
     },
   ];
 
+  const isElectricDrivesTopic = normSubId.includes("drive");
   const systemInstruction = `You are an expert Textbook Reference Locator for ${subjectName} (${bookTitle}).
 The user has a question about a topic, formula, or exam concept.
 Your task is to find the EXACT textbook locations (Chapter, Section, Page Numbers) by searching our real database.
+${isElectricDrivesTopic ? "NOTE: There are two verified Electric Drives textbooks in our database: 1) Gopal K. Dubey 'Dubey Electric Drives' and 2) R. Krishnan 'Krishnan Electric Motor Drives'. When searching, both books are indexed. If matches are found in both books, provide citations for BOTH books to provide maximum coverage!" : ""}
 
 CRITICAL RULES:
 1. You MUST call the 'search_textbook_index' tool to search for 1-3 concise keywords from the user's question.

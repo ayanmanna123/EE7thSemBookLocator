@@ -90,17 +90,26 @@ export function App() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  const handleSelectPage = (pageNum) => {
+  const handleSelectPage = (pageNum, targetSubjectId) => {
+    if (targetSubjectId && targetSubjectId !== activeSubjectId) {
+      handleSubjectChange(targetSubjectId, true);
+    }
+    const currentSub =
+      (targetSubjectId && SUBJECTS.find((s) => s.id === targetSubjectId)) ||
+      activeSubject;
     const pg = Math.max(
       1,
-      Math.min(activeSubject?.totalPages || 1134, parseInt(pageNum, 10) || 1)
+      Math.min(currentSub?.totalPages || 1134, parseInt(pageNum, 10) || 1)
     );
     setInspectorPage(pg);
     setActiveTab("page");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleSelectTopic = (topicName) => {
+  const handleSelectTopic = (topicName, targetSubjectId) => {
+    if (targetSubjectId && targetSubjectId !== activeSubjectId) {
+      handleSubjectChange(targetSubjectId, true);
+    }
     setActiveTab("search");
     setQuery(topicName);
     setSelectedPart("ALL");
@@ -116,11 +125,15 @@ export function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleOpenKnowMore = (topicText, parentTopic = "") => {
+  const handleOpenKnowMore = (topicText, parentTopic = "", targetSubjectId = "") => {
+    const sub =
+      (targetSubjectId && SUBJECTS.find((s) => s.id === targetSubjectId)) ||
+      activeSubject;
     setModalState({
       isOpen: true,
       topicText,
       parentTopic,
+      subject: sub,
     });
   };
 
@@ -278,7 +291,7 @@ export function App() {
             onClose={(open) => setModalState((prev) => ({ ...prev, isOpen: open }))}
             topicText={modalState.topicText}
             parentTopic={modalState.parentTopic}
-            subject={activeSubject}
+            subject={modalState.subject || activeSubject}
             allSearchData={allSearchData}
             onOpenTopic={handleOpenKnowMore}
             onAskAi={handleAskAi}

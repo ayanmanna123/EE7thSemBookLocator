@@ -15,8 +15,11 @@ export function TopicCard({
   const isExact = q && (entry.topic || "").toLowerCase() === q;
   const directPages = entry.pages || [];
   const allPages = getAllUniquePages(entry);
-  const accentClr = getPartColorForEntry(entry, subject?.partColors);
-  const searchUrls = subject?.getSearchUrls ? subject.getSearchUrls(entry.topic) : null;
+
+  const cardSubject = entry._sourceSubject || subject;
+  const targetSubId = cardSubject?.id || subject?.id;
+  const accentClr = getPartColorForEntry(entry, cardSubject?.partColors || subject?.partColors);
+  const searchUrls = cardSubject?.getSearchUrls ? cardSubject.getSearchUrls(entry.topic) : null;
 
   return (
     <div
@@ -35,13 +38,27 @@ export function TopicCard({
             <h3 className="text-base sm:text-lg font-bold text-foreground break-words">
               <HighlightText text={entry.topic} query={query} />
             </h3>
+
+            {/* Book Origin Badge if provided or multiple books */}
+            {entry._sourceSubject && (
+              <span
+                className={`rounded-md px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider border shadow-2xs ${
+                  entry._sourceSubject.id === "electric-drives-krishnan"
+                    ? "bg-purple-500/15 text-purple-400 border-purple-500/30"
+                    : "bg-sky-500/15 text-sky-400 border-sky-500/30"
+                }`}
+              >
+                {entry._sourceSubject.shortName || entry._sourceSubject.bookTitle}
+              </span>
+            )}
+
             {entry.isToc ? (
               <span className="rounded bg-sky-500/10 px-2 py-0.5 text-[10px] font-bold text-sky-400 border border-sky-500/20">
                 {entry.tocKind}
               </span>
             ) : (
               <span className="rounded bg-secondary/80 px-2 py-0.5 font-mono text-[10px] font-semibold text-muted-foreground border border-border">
-                Index p. {entry.index_page}
+                Index p. {entry.index_page || entry.pages?.[0] || ""}
               </span>
             )}
           </div>
@@ -69,7 +86,7 @@ export function TopicCard({
           {/* Web Actions Bar */}
           <div className="flex items-center gap-1.5 flex-wrap pt-1">
             <button
-              onClick={() => onOpenKnowMore(entry.topic, "")}
+              onClick={() => onOpenKnowMore(entry.topic, "", targetSubId)}
               className="rounded-md border border-sky-500/40 bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-bold text-sky-400 hover:bg-sky-500 hover:text-white transition-all shadow-xs cursor-pointer"
               title="Read live topic explanation & explore resources"
             >
@@ -123,13 +140,13 @@ export function TopicCard({
               return (
                 <button
                   key={idx}
-                  onClick={() => onSelectPage(firstPg)}
+                  onClick={() => onSelectPage(firstPg, targetSubId)}
                   className={`rounded-lg px-2.5 py-1 font-mono text-xs font-bold transition-all hover:scale-105 active:scale-95 cursor-pointer ${
                     directPages.length > 1
                       ? "bg-gradient-to-r from-sky-500/20 to-indigo-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-400 hover:bg-sky-500/30"
                       : "bg-secondary text-foreground border border-border hover:border-sky-400 hover:text-sky-400"
                   }`}
-                  title={`Inspect Page ${p}`}
+                  title={`Inspect Page ${p} in ${cardSubject?.bookTitle || "textbook"}`}
                 >
                   p. {p}
                 </button>
@@ -152,7 +169,7 @@ export function TopicCard({
             <span className="inline-flex items-center gap-1">
               <span>See:</span>
               <button
-                onClick={() => onSelectTopic(entry.see)}
+                onClick={() => onSelectTopic(entry.see, targetSubId)}
                 className="font-bold text-sky-400 hover:underline inline-flex items-center gap-1 cursor-pointer"
               >
                 <span>{entry.see}</span>
@@ -164,7 +181,7 @@ export function TopicCard({
             <span className="inline-flex items-center gap-1">
               <span>See also:</span>
               <button
-                onClick={() => onSelectTopic(entry.see_also)}
+                onClick={() => onSelectTopic(entry.see_also, targetSubId)}
                 className="font-bold text-sky-400 hover:underline inline-flex items-center gap-1 cursor-pointer"
               >
                 <span>{entry.see_also}</span>
@@ -198,7 +215,7 @@ export function TopicCard({
             return (
               <div key={idx} className="flex items-start gap-2 leading-relaxed">
                 <button
-                  onClick={() => onSelectPage(firstPg)}
+                  onClick={() => onSelectPage(firstPg, targetSubId)}
                   className="font-mono font-bold text-sky-400 hover:underline shrink-0 cursor-pointer"
                 >
                   Page {pd.page}:
@@ -252,7 +269,7 @@ export function TopicCard({
                         return (
                           <button
                             key={pIdx}
-                            onClick={() => onSelectPage(firstPg)}
+                            onClick={() => onSelectPage(firstPg, targetSubId)}
                             className="rounded bg-secondary px-1.5 py-0.5 font-mono text-[10px] font-bold text-sky-400 hover:bg-sky-500 hover:text-white transition-colors cursor-pointer"
                           >
                             p. {p}
@@ -260,7 +277,7 @@ export function TopicCard({
                         );
                       })}
                       <button
-                        onClick={() => onOpenKnowMore(sub.topic, entry.topic)}
+                        onClick={() => onOpenKnowMore(sub.topic, entry.topic, targetSubId)}
                         className="rounded border border-border/60 px-1 py-0.5 text-[10px] font-bold text-muted-foreground hover:border-sky-400 hover:text-sky-400 transition-colors cursor-pointer"
                         title="Know more about subtopic"
                       >
@@ -273,7 +290,7 @@ export function TopicCard({
                     <div className="mt-1 text-[11px] text-muted-foreground">
                       See:{" "}
                       <button
-                        onClick={() => onSelectTopic(sub.see)}
+                        onClick={() => onSelectTopic(sub.see, targetSubId)}
                         className="font-semibold text-sky-400 hover:underline cursor-pointer"
                       >
                         {sub.see}

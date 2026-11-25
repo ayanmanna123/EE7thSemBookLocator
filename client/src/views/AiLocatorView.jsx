@@ -41,7 +41,7 @@ function ExternalResourceGrid({ topic, subject }) {
       };
 
   const standardsLabel =
-    subject?.id === "electric-drives" ? "NPTEL / Video Lectures" : "IETF / RFC Standards";
+    subject?.id?.includes("drive") ? "NPTEL / Video Lectures" : "IETF / RFC Standards";
 
   return (
     <div className="space-y-2 pt-1">
@@ -656,7 +656,7 @@ export function AiLocatorView({
                                 if (cite.subjectId && cite.subjectId !== activeSubject.id) {
                                   onSwitchSubject(cite.subjectId);
                                 }
-                                onSelectPage(pageNum);
+                                onSelectPage(pageNum, cite.subjectId);
                               }}
                               className="rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 px-3.5 py-1.5 text-xs font-extrabold text-white shadow-xs hover:opacity-90 transition-opacity cursor-pointer"
                             >
