@@ -1,5 +1,115 @@
 [
   {
+    "topic": "1.1 Introduction",
+    "pages": [
+      "1",
+      "36",
+      "124",
+      "174",
+      "262",
+      "313",
+      "411",
+      "513"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 1: Introduction",
+      "Chapter 3: Phase-Controlled DC Motor Drives",
+      "Chapter 4: Chopper-Controlled DC Motor Drive",
+      "Chapter 5: Polyphase Induction Machines",
+      "Chapter 6: Phase-Controlled Induction Motor Drives",
+      "Chapter 7: Frequency-Controlled Induction Motor Drives",
+      "Chapter 8: Vector-Controlled Induction Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "1",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 1: Introduction",
+        "section": "1.1 Introduction",
+        "subsection": ""
+      },
+      {
+        "page": "36",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.1 Introduction",
+        "subsection": ""
+      },
+      {
+        "page": "124",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.1 Introduction",
+        "subsection": ""
+      },
+      {
+        "page": "174",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.1 Introduction",
+        "subsection": ""
+      },
+      {
+        "page": "262",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.1 Introduction",
+        "subsection": ""
+      },
+      {
+        "page": "313",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.1 Introduction",
+        "subsection": ""
+      },
+      {
+        "page": "411",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.1 Introduction",
+        "subsection": ""
+      },
+      {
+        "page": "513",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.1 Introduction",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "1.2 Power Devices and Switching",
+    "pages": [
+      "2"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 1: Introduction"
+    ],
+    "page_details": [
+      {
+        "page": "2",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 1: Introduction",
+        "section": "1.2 Power Devices and Switching",
+        "subsection": "1.2.1 Power Devices"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "1.2.1 Power Devices",
     "pages": [
       "2"
@@ -39,6 +149,28 @@
         "chapter": "Chapter 1: Introduction",
         "section": "1.2 Power Devices and Switching",
         "subsection": "1.2.2 Switching of Power Devices"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "1.3 Motor Drive",
+    "pages": [
+      "7"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 1: Introduction"
+    ],
+    "page_details": [
+      {
+        "page": "7",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 1: Introduction",
+        "section": "1.3 Motor Drive",
+        "subsection": ""
       }
     ],
     "subtopics": []
@@ -127,6 +259,468 @@
         "chapter": "Chapter 1: Introduction",
         "section": "1.3 Motor Drive",
         "subsection": "1.3.4 Load"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "1.4 Scope of the Book",
+    "pages": [
+      "16"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 1: Introduction"
+    ],
+    "page_details": [
+      {
+        "page": "16",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 1: Introduction",
+        "section": "1.4 Scope of the Book",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "1.5 References",
+    "pages": [
+      "17",
+      "257",
+      "308",
+      "406",
+      "505",
+      "615"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 1: Introduction",
+      "Chapter 5: Polyphase Induction Machines",
+      "Chapter 6: Phase-Controlled Induction Motor Drives",
+      "Chapter 7: Frequency-Controlled Induction Motor Drives",
+      "Chapter 8: Vector-Controlled Induction Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "17",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 1: Introduction",
+        "section": "1.5 References",
+        "subsection": ""
+      },
+      {
+        "page": "257",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.13 References",
+        "subsection": ""
+      },
+      {
+        "page": "308",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.4 References",
+        "subsection": ""
+      },
+      {
+        "page": "406",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.7 References",
+        "subsection": ""
+      },
+      {
+        "page": "505",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.16 References",
+        "subsection": ""
+      },
+      {
+        "page": "615",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.11 References",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.1 Theory of Operation",
+    "pages": [
+      "18"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "18",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.1 Theory of Operation",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.10 Suggested Readings",
+    "pages": [
+      "35",
+      "119",
+      "170"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines",
+      "Chapter 3: Phase-Controlled DC Motor Drives",
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "35",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.10 Suggested Readings",
+        "subsection": ""
+      },
+      {
+        "page": "119",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.17 Research Status",
+        "subsection": ""
+      },
+      {
+        "page": "170",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.15 Suggested Readings",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.11 Discussion Questions",
+    "pages": [
+      "35",
+      "120",
+      "171",
+      "258",
+      "309",
+      "407",
+      "509",
+      "616"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines",
+      "Chapter 3: Phase-Controlled DC Motor Drives",
+      "Chapter 4: Chopper-Controlled DC Motor Drive",
+      "Chapter 5: Polyphase Induction Machines",
+      "Chapter 6: Phase-Controlled Induction Motor Drives",
+      "Chapter 7: Frequency-Controlled Induction Motor Drives",
+      "Chapter 8: Vector-Controlled Induction Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "35",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.10 Suggested Readings",
+        "subsection": ""
+      },
+      {
+        "page": "120",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.19 Discussion Questions",
+        "subsection": ""
+      },
+      {
+        "page": "171",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.16 Discussion Questions",
+        "subsection": ""
+      },
+      {
+        "page": "258",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.14 Discussion Questions",
+        "subsection": ""
+      },
+      {
+        "page": "309",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.5 Discussion Questions",
+        "subsection": ""
+      },
+      {
+        "page": "407",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.8 Discussion Questions",
+        "subsection": ""
+      },
+      {
+        "page": "509",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.17 Discussion Questions",
+        "subsection": ""
+      },
+      {
+        "page": "616",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.12 Discussion Questions",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.12 Exercise Problems",
+    "pages": [
+      "35",
+      "121",
+      "172",
+      "259",
+      "311",
+      "409",
+      "511",
+      "620"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines",
+      "Chapter 3: Phase-Controlled DC Motor Drives",
+      "Chapter 4: Chopper-Controlled DC Motor Drive",
+      "Chapter 5: Polyphase Induction Machines",
+      "Chapter 6: Phase-Controlled Induction Motor Drives",
+      "Chapter 7: Frequency-Controlled Induction Motor Drives",
+      "Chapter 8: Vector-Controlled Induction Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "35",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.10 Suggested Readings",
+        "subsection": ""
+      },
+      {
+        "page": "121",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.20 Exercise Problems",
+        "subsection": ""
+      },
+      {
+        "page": "172",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.17 Exercise Problems",
+        "subsection": ""
+      },
+      {
+        "page": "259",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.15 Exercise Problems",
+        "subsection": ""
+      },
+      {
+        "page": "311",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.6 Exercise Problems",
+        "subsection": ""
+      },
+      {
+        "page": "409",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.9 Exercise Problems",
+        "subsection": ""
+      },
+      {
+        "page": "511",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.18 Exercise Problems",
+        "subsection": ""
+      },
+      {
+        "page": "620",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.13 Exercise Problems",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.2 Induced Emf",
+    "pages": [
+      "19"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "19",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.2 Induced Emf",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.3 Equivalent Circuit and Electromagnetic Torque",
+    "pages": [
+      "21"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "21",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.3 Equivalent Circuit and Electromagnetic Torque",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.4 Electromechanical Modeling",
+    "pages": [
+      "22"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "22",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.4 Electromechanical Modeling",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.5 State-Space Modeling",
+    "pages": [
+      "22"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "22",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.4 Electromechanical Modeling",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.6 Block Diagram and Transfer Functions",
+    "pages": [
+      "23"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "23",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.6 Block Diagram and Transfer Functions",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.7 Field Excitation",
+    "pages": [
+      "24"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "24",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.7 Field Excitation",
+        "subsection": "2.7.1 Separately-Excited DC Machine"
       }
     ],
     "subtopics": []
@@ -242,6 +836,94 @@
     "subtopics": []
   },
   {
+    "topic": "2.8 Measurement of Motor Constants",
+    "pages": [
+      "31"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "31",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.8 Measurement of Motor Constants",
+        "subsection": "2.8.1 Armature Resistance"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "2.9 Flow Chart for Computation",
+    "pages": [
+      "33"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 2: Modeling of DC Machines"
+    ],
+    "page_details": [
+      {
+        "page": "33",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 2: Modeling of DC Machines",
+        "section": "2.9 Flow Chart for Computation",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.10 Converter Selection and Characteristics",
+    "pages": [
+      "91"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "91",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.10 Converter Selection and Characteristics",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.11 Simulation of the One-Quadrant DC Motor Drive",
+    "pages": [
+      "92"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "92",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.11 Simulation of the One-Quadrant DC Motor Drive",
+        "subsection": "3.11.1 The Motor Equations"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "3.11.1 The Motor Equations",
     "pages": [
       "92"
@@ -352,6 +1034,28 @@
     "subtopics": []
   },
   {
+    "topic": "3.12 Harmonics and Associated Problems",
+    "pages": [
+      "98"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "98",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.12 Harmonics and Associated Problems",
+        "subsection": "3.12.1 Harmonic Resonance"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "3.12.1 Harmonic Resonance",
     "pages": [
       "98"
@@ -418,6 +1122,28 @@
     "subtopics": []
   },
   {
+    "topic": "3.13 Sixth-Harmonic Torque",
+    "pages": [
+      "107"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "107",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.13 Sixth-Harmonic Torque",
+        "subsection": "3.13.1 Continuous Current-Conduction Mode"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "3.13.1 Continuous Current-Conduction Mode",
     "pages": [
       "107"
@@ -457,6 +1183,172 @@
         "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
         "section": "3.13 Sixth-Harmonic Torque",
         "subsection": "3.13.2 Discontinuous Current-Conduction Mode"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.14 Application Considerations",
+    "pages": [
+      "114"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "114",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.14 Application Considerations",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.15 Applications",
+    "pages": [
+      "115",
+      "282",
+      "305",
+      "405"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives",
+      "Chapter 6: Phase-Controlled Induction Motor Drives",
+      "Chapter 7: Frequency-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "115",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.15 Applications",
+        "subsection": ""
+      },
+      {
+        "page": "282",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.2 Stator-Voltage Control",
+        "subsection": "6.2.9 Applications"
+      },
+      {
+        "page": "305",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.3 Slip-Energy Recovery Scheme",
+        "subsection": "6.3.10 Applications"
+      },
+      {
+        "page": "405",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.6 Applications",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.16 Parameter Sensitivity",
+    "pages": [
+      "118",
+      "552",
+      "567"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "118",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.16 Parameter Sensitivity",
+        "subsection": ""
+      },
+      {
+        "page": "552",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.6 Flux-Weakening Operation",
+        "subsection": "9.6.3.5 Parameter Sensitivity"
+      },
+      {
+        "page": "567",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.9 Parameter Sensitivity",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.17 Research Status",
+    "pages": [
+      "119",
+      "504"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives",
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "119",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.17 Research Status",
+        "subsection": ""
+      },
+      {
+        "page": "504",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.15 Research Status",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.2 Principles of DC Motor Speed Control",
+    "pages": [
+      "37"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "37",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.2 Principles of DC Motor Speed Control",
+        "subsection": "3.2.2 Field Control"
       }
     ],
     "subtopics": []
@@ -523,6 +1415,28 @@
         "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
         "section": "3.2 Principles of DC Motor Speed Control",
         "subsection": "3.2.5 Four-Quadrant Operation"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.3 Phase-Controlled Converters",
+    "pages": [
+      "47"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "47",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.3 Phase-Controlled Converters",
+        "subsection": "3.3.1 Single-Phase-Controlled Converter"
       }
     ],
     "subtopics": []
@@ -704,6 +1618,28 @@
     "subtopics": []
   },
   {
+    "topic": "3.4 Steady-State Analysis of the Three-Phase Converter-Controlled DC Motor Drive",
+    "pages": [
+      "60"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "60",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.4 Steady-State Analysis of the Three-Phase Converter-Controlled DC Motor Drive",
+        "subsection": "3.4.1 Average Analysis"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "3.4.1 Average Analysis",
     "pages": [
       "60"
@@ -796,6 +1732,50 @@
         "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
         "section": "4.9 Steady-State Analysis of Chopper-Controlled DC Motor Drive",
         "subsection": "4.9.4 Discontinuous Current Conduction"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.5 Two-Quadrant, Three-Phase Converter-Controlled DC Motor Drive",
+    "pages": [
+      "71"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "71",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.5 Two-Quadrant, Three-Phase Converter-Controlled DC Motor Drive",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.6 Transfer Functions of the Subsystems",
+    "pages": [
+      "73"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "73",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.6 Transfer Functions of the Subsystems",
+        "subsection": "3.6.1 DC Motor and Load"
       }
     ],
     "subtopics": []
@@ -920,6 +1900,28 @@
     "subtopics": []
   },
   {
+    "topic": "3.7 Design of Controllers",
+    "pages": [
+      "76"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "76",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.7 Design of Controllers",
+        "subsection": "3.7.1 Current Controller"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "3.7.1 Current Controller",
     "pages": [
       "76",
@@ -1025,6 +2027,126 @@
         "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
         "section": "8.13 Speed-Controller Design for an Indirect Vector-Controlled Induction Motor Drive",
         "subsection": "8.13.1.4 Feedback Transfer Functions"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.8 Two-Quadrant DC Motor Drive with Field Weakening",
+    "pages": [
+      "88"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "88",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.8 Two-Quadrant DC Motor Drive with Field Weakening",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "3.9 Four-Quadrant DC Motor Drive",
+    "pages": [
+      "89"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 3: Phase-Controlled DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "89",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 3: Phase-Controlled DC Motor Drives",
+        "section": "3.9 Four-Quadrant DC Motor Drive",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.10 Rating of the Devices",
+    "pages": [
+      "143"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "143",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.10 Rating of the Devices",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.11 Pulsating Torques",
+    "pages": [
+      "144"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "144",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.11 Pulsating Torques",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.12 Closed-Loop Operation",
+    "pages": [
+      "151",
+      "279"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive",
+      "Chapter 6: Phase-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "151",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.12 Closed-Loop Operation",
+        "subsection": "4.12.2 Current Control Loop"
+      },
+      {
+        "page": "279",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.2 Stator-Voltage Control",
+        "subsection": "6.2.8 Efficiency"
       }
     ],
     "subtopics": []
@@ -1162,6 +2284,28 @@
     "subtopics": []
   },
   {
+    "topic": "4.13 Dynamic Simulation of the Speed-Controlled DC Motor Drive",
+    "pages": [
+      "160"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "160",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.13 Dynamic Simulation of the Speed-Controlled DC Motor Drive",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "4.13.1 Motor Equations",
     "pages": [
       "161"
@@ -1223,6 +2367,72 @@
         "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
         "section": "4.13 Dynamic Simulation of the Speed-Controlled DC Motor Drive",
         "subsection": "4.13.6 System Simulation"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.14 Application",
+    "pages": [
+      "167"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "167",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.14 Application",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.2 Principle of Operation of the Chopper",
+    "pages": [
+      "124"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "124",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.1 Introduction",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.3 Four-Quadrant Chopper Circuit",
+    "pages": [
+      "126"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "126",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.3 Four-Quadrant Chopper Circuit",
+        "subsection": "4.3.1 First-Quadrant Operation"
       }
     ],
     "subtopics": []
@@ -1316,6 +2526,138 @@
     "subtopics": []
   },
   {
+    "topic": "4.4 Chopper for Inversion",
+    "pages": [
+      "132"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "132",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.4 Chopper for Inversion",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.5 Chopper With Other Power Devices",
+    "pages": [
+      "133"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "133",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.5 Chopper With Other Power Devices",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.6 Model of the Chopper",
+    "pages": [
+      "133"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "133",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.5 Chopper With Other Power Devices",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.7 Input to the Chopper",
+    "pages": [
+      "133"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "133",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.5 Chopper With Other Power Devices",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.8 Other Chopper Circuits",
+    "pages": [
+      "135"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "135",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.8 Other Chopper Circuits",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "4.9 Steady-State Analysis of Chopper-Controlled DC Motor Drive",
+    "pages": [
+      "136"
+    ],
+    "parts": [
+      "PART 1: DC MOTOR MODELING & CONVERTER DRIVES"
+    ],
+    "chapters": [
+      "Chapter 4: Chopper-Controlled DC Motor Drive"
+    ],
+    "page_details": [
+      {
+        "page": "136",
+        "part": "PART 1: DC MOTOR MODELING & CONVERTER DRIVES",
+        "chapter": "Chapter 4: Chopper-Controlled DC Motor Drive",
+        "section": "4.9 Steady-State Analysis of Chopper-Controlled DC Motor Drive",
+        "subsection": "4.9.1 Analysis by Averaging"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "4.9.1 Analysis by Averaging",
     "pages": [
       "136"
@@ -1382,6 +2724,28 @@
     "subtopics": []
   },
   {
+    "topic": "5.10 Evaluation of Control Characteristics of the Induction Machine",
+    "pages": [
+      "236"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "236",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.10 Evaluation of Control Characteristics of the Induction Machine",
+        "subsection": "5.10.1 Transfer Functions and Frequency Responses"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "5.10.1 Transfer Functions and Frequency Responses",
     "pages": [
       "236"
@@ -1421,6 +2785,28 @@
         "chapter": "Chapter 5: Polyphase Induction Machines",
         "section": "5.10 Evaluation of Control Characteristics of the Induction Machine",
         "subsection": "5.10.2 Computation of Time Responses"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.11 Space-Phasor Model",
+    "pages": [
+      "242"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "242",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.11 Space-Phasor Model",
+        "subsection": "5.11.1 Principle"
       }
     ],
     "subtopics": []
@@ -1612,6 +2998,50 @@
     "subtopics": []
   },
   {
+    "topic": "5.12 Control Principle of the Induction Motor",
+    "pages": [
+      "254"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "254",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.12 Control Principle of the Induction Motor",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.2 Construction and Principle of Operation",
+    "pages": [
+      "175"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "175",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.2 Construction and Principle of Operation",
+        "subsection": "5.2.1 Machine Construction"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "5.2.1 Machine Construction",
     "pages": [
       "175"
@@ -1670,6 +3100,121 @@
         "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
         "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
         "subsection": "7.4.7.2 Drive Strategy"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.3 Induction Motor Equivalent Circuit",
+    "pages": [
+      "181"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "181",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.3 Induction Motor Equivalent Circuit",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.4 Steady-State Performance Equations of the Induction Motor",
+    "pages": [
+      "184"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "184",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.4 Steady-State Performance Equations of the Induction Motor",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.5 Steady-State Performance",
+    "pages": [
+      "188",
+      "330",
+      "385",
+      "478"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines",
+      "Chapter 7: Frequency-Controlled Induction Motor Drives",
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "188",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.5 Steady-State Performance",
+        "subsection": ""
+      },
+      {
+        "page": "330",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
+        "subsection": "7.4.5.4 Dynamic Simulation"
+      },
+      {
+        "page": "385",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.5 Current-Source Induction Motor Drives",
+        "subsection": "7.5.3 Steady-State Performance"
+      },
+      {
+        "page": "478",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.11 Parameter Sensitivity Compensation",
+        "subsection": "8.11.2.1 Steady-State Performance"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.6 Measurement of Motor Parameters",
+    "pages": [
+      "193"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "193",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.6 Measurement of Motor Parameters",
+        "subsection": "5.6.2 No-Load Test"
       }
     ],
     "subtopics": []
@@ -1736,6 +3281,28 @@
         "chapter": "Chapter 5: Polyphase Induction Machines",
         "section": "5.6 Measurement of Motor Parameters",
         "subsection": "5.6.3 Locked-Rotor Test"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.7 Dynamic Modeling of Induction Machines",
+    "pages": [
+      "196"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "196",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.7 Dynamic Modeling of Induction Machines",
+        "subsection": ""
       }
     ],
     "subtopics": []
@@ -1983,6 +3550,70 @@
     "subtopics": []
   },
   {
+    "topic": "5.8 Dynamic Simulation",
+    "pages": [
+      "223",
+      "330",
+      "581"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines",
+      "Chapter 7: Frequency-Controlled Induction Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "223",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.8 Dynamic Simulation",
+        "subsection": ""
+      },
+      {
+        "page": "330",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
+        "subsection": "7.4.5.4 Dynamic Simulation"
+      },
+      {
+        "page": "581",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.10 PM Brushless DC Motor (PMBDCM)",
+        "subsection": "9.10.3 Dynamic Simulation"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "5.9 Small-Signal Equations of the Induction Machine",
+    "pages": [
+      "226"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 5: Polyphase Induction Machines"
+    ],
+    "page_details": [
+      {
+        "page": "226",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 5: Polyphase Induction Machines",
+        "section": "5.9 Small-Signal Equations of the Induction Machine",
+        "subsection": "5.9.1 Derivation"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "5.9.1 Derivation",
     "pages": [
       "226"
@@ -2022,6 +3653,28 @@
         "chapter": "Chapter 5: Polyphase Induction Machines",
         "section": "5.9 Small-Signal Equations of the Induction Machine",
         "subsection": "5.9.2 Normalized Small-Signal Equations"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "6.2 Stator-Voltage Control",
+    "pages": [
+      "263"
+    ],
+    "parts": [
+      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
+    ],
+    "chapters": [
+      "Chapter 6: Phase-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "263",
+        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
+        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
+        "section": "6.2 Stator-Voltage Control",
+        "subsection": "6.2.2 Reversible Controller"
       }
     ],
     "subtopics": []
@@ -2309,59 +3962,7 @@
     "subtopics": []
   },
   {
-    "topic": "6.2.7 Closed-Loop Operation",
-    "pages": [
-      "279"
-    ],
-    "parts": [
-      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
-    ],
-    "chapters": [
-      "Chapter 6: Phase-Controlled Induction Motor Drives"
-    ],
-    "page_details": [
-      {
-        "page": "279",
-        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
-        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
-        "section": "6.2 Stator-Voltage Control",
-        "subsection": "6.2.8 Efficiency"
-      }
-    ],
-    "subtopics": []
-  },
-  {
-    "topic": "6.2.9 Applications",
-    "pages": [
-      "282",
-      "305"
-    ],
-    "parts": [
-      "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL"
-    ],
-    "chapters": [
-      "Chapter 6: Phase-Controlled Induction Motor Drives"
-    ],
-    "page_details": [
-      {
-        "page": "282",
-        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
-        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
-        "section": "6.2 Stator-Voltage Control",
-        "subsection": "6.2.9 Applications"
-      },
-      {
-        "page": "305",
-        "part": "PART 2: INDUCTION MACHINE DYNAMICS & STATOR CONTROL",
-        "chapter": "Chapter 6: Phase-Controlled Induction Motor Drives",
-        "section": "6.3 Slip-Energy Recovery Scheme",
-        "subsection": "6.3.10 Applications"
-      }
-    ],
-    "subtopics": []
-  },
-  {
-    "topic": "6.3.2 Slip-Energy Recovery Scheme",
+    "topic": "6.3 Slip-Energy Recovery Scheme",
     "pages": [
       "283"
     ],
@@ -2647,6 +4248,50 @@
     "subtopics": []
   },
   {
+    "topic": "7.2 Static Frequency Changers",
+    "pages": [
+      "313"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 7: Frequency-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "313",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.1 Introduction",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "7.3 Voltage-Source Inverter",
+    "pages": [
+      "317"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 7: Frequency-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "317",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.3 Voltage-Source Inverter",
+        "subsection": "7.3.1 Modified McMurray Inverter"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "7.3.1 Modified McMurray Inverter",
     "pages": [
       "317"
@@ -2686,6 +4331,28 @@
         "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
         "section": "7.3 Voltage-Source Inverter",
         "subsection": "7.3.2 Full-Bridge Inverter Operation"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "7.4 Voltage-Source Inverter-Driven Induction Motor",
+    "pages": [
+      "320"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 7: Frequency-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "320",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
+        "subsection": "7.4.1 Voltage Waveforms"
       }
     ],
     "subtopics": []
@@ -2825,13 +4492,18 @@
   {
     "topic": "7.4.11 Flux-Weakening Operation",
     "pages": [
-      "377"
+      "377",
+      "484",
+      "539"
     ],
     "parts": [
-      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
     ],
     "chapters": [
-      "Chapter 7: Frequency-Controlled Induction Motor Drives"
+      "Chapter 7: Frequency-Controlled Induction Motor Drives",
+      "Chapter 8: Vector-Controlled Induction Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
     ],
     "page_details": [
       {
@@ -2840,6 +4512,20 @@
         "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
         "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
         "subsection": "7.4.11.1 Flux Weakening"
+      },
+      {
+        "page": "484",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.12 Flux-Weakening Operation",
+        "subsection": ""
+      },
+      {
+        "page": "539",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.6 Flux-Weakening Operation",
+        "subsection": "9.6.1 Maximum Speed"
       }
     ],
     "subtopics": []
@@ -3038,77 +4724,6 @@
         "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
         "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
         "subsection": "7.4.5.2 Implementation of Volts/Hz Strategy"
-      }
-    ],
-    "subtopics": []
-  },
-  {
-    "topic": "7.4.5.3 Steady-State Performance",
-    "pages": [
-      "330",
-      "385",
-      "478"
-    ],
-    "parts": [
-      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
-    ],
-    "chapters": [
-      "Chapter 7: Frequency-Controlled Induction Motor Drives",
-      "Chapter 8: Vector-Controlled Induction Motor Drives"
-    ],
-    "page_details": [
-      {
-        "page": "330",
-        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
-        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
-        "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
-        "subsection": "7.4.5.4 Dynamic Simulation"
-      },
-      {
-        "page": "385",
-        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
-        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
-        "section": "7.5 Current-Source Induction Motor Drives",
-        "subsection": "7.5.3 Steady-State Performance"
-      },
-      {
-        "page": "478",
-        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
-        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
-        "section": "8.11 Parameter Sensitivity Compensation",
-        "subsection": "8.11.2.1 Steady-State Performance"
-      }
-    ],
-    "subtopics": []
-  },
-  {
-    "topic": "7.4.5.4 Dynamic Simulation",
-    "pages": [
-      "330",
-      "581"
-    ],
-    "parts": [
-      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
-      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
-    ],
-    "chapters": [
-      "Chapter 7: Frequency-Controlled Induction Motor Drives",
-      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
-    ],
-    "page_details": [
-      {
-        "page": "330",
-        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
-        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
-        "section": "7.4 Voltage-Source Inverter-Driven Induction Motor",
-        "subsection": "7.4.5.4 Dynamic Simulation"
-      },
-      {
-        "page": "581",
-        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
-        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
-        "section": "9.10 PM Brushless DC Motor (PMBDCM)",
-        "subsection": "9.10.3 Dynamic Simulation"
       }
     ],
     "subtopics": []
@@ -3402,6 +5017,28 @@
     "subtopics": []
   },
   {
+    "topic": "7.5 Current-Source Induction Motor Drives",
+    "pages": [
+      "381"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 7: Frequency-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "381",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
+        "section": "7.5 Current-Source Induction Motor Drives",
+        "subsection": "7.5.1 General"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "7.5.2 ASCI (Auto Sequentially Commutated Inverter)",
     "pages": [
       "382"
@@ -3551,6 +5188,28 @@
         "chapter": "Chapter 7: Frequency-Controlled Induction Motor Drives",
         "section": "7.5 Current-Source Induction Motor Drives",
         "subsection": "7.5.6 Dynamic Simulation of the Closed-Loop CSIM Drive System"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.10 Parameter Sensitivity of the Indirect Vector-Controlled Induction Motor Drive",
+    "pages": [
+      "461"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "461",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.10 Parameter Sensitivity of the Indirect Vector-Controlled Induction Motor Drive",
+        "subsection": "8.10.1.1 Expression for Electromagnetic Torque"
       }
     ],
     "subtopics": []
@@ -3732,6 +5391,28 @@
     "subtopics": []
   },
   {
+    "topic": "8.11 Parameter Sensitivity Compensation",
+    "pages": [
+      "475"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "475",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.11 Parameter Sensitivity Compensation",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "8.11.1 Modified Reactive-Power Compensation Scheme",
     "pages": [
       "476"
@@ -3886,6 +5567,28 @@
     "subtopics": []
   },
   {
+    "topic": "8.13 Speed-Controller Design for an Indirect Vector-Controlled Induction Motor Drive",
+    "pages": [
+      "492"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "492",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.13 Speed-Controller Design for an Indirect Vector-Controlled Induction Motor Drive",
+        "subsection": "8.13.1.1 Vector-Controlled Induction Machine"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "8.13.1 Block-Diagram Derivation",
     "pages": [
       "492",
@@ -4008,7 +5711,39 @@
   {
     "topic": "8.13.4 Speed-Controller Design",
     "pages": [
-      "499"
+      "499",
+      "555"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives",
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "499",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.13 Speed-Controller Design for an Indirect Vector-Controlled Induction Motor Drive",
+        "subsection": "8.13.4 Speed-Controller Design"
+      },
+      {
+        "page": "555",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.7 Speed-Controller Design",
+        "subsection": "9.7.1 Block-Diagram Derivation"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.14 Performance and Applications",
+    "pages": [
+      "502"
     ],
     "parts": [
       "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
@@ -4018,11 +5753,11 @@
     ],
     "page_details": [
       {
-        "page": "499",
+        "page": "502",
         "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
         "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
-        "section": "8.13 Speed-Controller Design for an Indirect Vector-Controlled Induction Motor Drive",
-        "subsection": "8.13.4 Speed-Controller Design"
+        "section": "8.14 Performance and Applications",
+        "subsection": ""
       }
     ],
     "subtopics": []
@@ -4045,6 +5780,28 @@
         "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
         "section": "8.14 Performance and Applications",
         "subsection": "8.14.1 Application: Centrifuge Drive"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.2 Principle of Vector Control",
+    "pages": [
+      "412"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "412",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.2 Principle of Vector Control",
+        "subsection": ""
       }
     ],
     "subtopics": []
@@ -4199,6 +5956,160 @@
         "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
         "section": "8.3 Direct Vector Control",
         "subsection": "8.3.5 Direct Vector Control with Space-Vector Modulation"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.4 Derivation of Indirect Vector-Control Scheme",
+    "pages": [
+      "446"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "446",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.4 Derivation of Indirect Vector-Control Scheme",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.5 Indirect Vector-Control Scheme",
+    "pages": [
+      "448"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "448",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.5 Indirect Vector-Control Scheme",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.6 An Implementation of an Indirect Vector-Control Scheme",
+    "pages": [
+      "450"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "450",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.6 An Implementation of an Indirect Vector-Control Scheme",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.7 Tuning of the Vector Controller",
+    "pages": [
+      "454"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "454",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.7 Tuning of the Vector Controller",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.8 Flowchart for Dynamic Computation",
+    "pages": [
+      "457"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "457",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.8 Flowchart for Dynamic Computation",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "8.9 Dynamic Simulation Results",
+    "pages": [
+      "458"
+    ],
+    "parts": [
+      "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES"
+    ],
+    "chapters": [
+      "Chapter 8: Vector-Controlled Induction Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "458",
+        "part": "PART 3: FREQUENCY & VECTOR CONTROLLED AC DRIVES",
+        "chapter": "Chapter 8: Vector-Controlled Induction Motor Drives",
+        "section": "8.9 Dynamic Simulation Results",
+        "subsection": ""
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "9.10 PM Brushless DC Motor (PMBDCM)",
+    "pages": [
+      "577"
+    ],
+    "parts": [
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "577",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.10 PM Brushless DC Motor (PMBDCM)",
+        "subsection": ""
       }
     ],
     "subtopics": []
@@ -4490,6 +6401,28 @@
     "subtopics": []
   },
   {
+    "topic": "9.2 Permanent Magnets and Characteristics",
+    "pages": [
+      "514"
+    ],
+    "parts": [
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "514",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.2 Permanent Magnets and Characteristics",
+        "subsection": "9.2.2 Air Gap Line"
+      }
+    ],
+    "subtopics": []
+  },
+  {
     "topic": "9.2.1 Permanent Magnets",
     "pages": [
       "514"
@@ -4535,6 +6468,28 @@
   },
   {
     "topic": "9.2.4 Magnet Volume",
+    "pages": [
+      "518"
+    ],
+    "parts": [
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "518",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.2 Permanent Magnets and Characteristics",
+        "subsection": "9.2.4 Magnet Volume"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "9.3 Synchronous Machines with PMs",
     "pages": [
       "518"
     ],
@@ -4639,6 +6594,28 @@
         "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
         "section": "9.3 Synchronous Machines with PMs",
         "subsection": "9.3.4 Types of PM Synchronous Machines"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "9.4 Vector Control of PM Synchronous Motor (PMSM)",
+    "pages": [
+      "525"
+    ],
+    "parts": [
+      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
+    ],
+    "chapters": [
+      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
+    ],
+    "page_details": [
+      {
+        "page": "525",
+        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
+        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
+        "section": "9.4 Vector Control of PM Synchronous Motor (PMSM)",
+        "subsection": "9.4.1 Model of the PMSM"
       }
     ],
     "subtopics": []
@@ -5021,28 +6998,6 @@
         "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
         "section": "9.6 Flux-Weakening Operation",
         "subsection": "9.6.3.3 Implementation Strategy"
-      }
-    ],
-    "subtopics": []
-  },
-  {
-    "topic": "9.6.3.5 Parameter Sensitivity",
-    "pages": [
-      "552"
-    ],
-    "parts": [
-      "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES"
-    ],
-    "chapters": [
-      "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives"
-    ],
-    "page_details": [
-      {
-        "page": "552",
-        "part": "PART 4: PM SYNCHRONOUS & BLDC MOTOR DRIVES",
-        "chapter": "Chapter 9: Permanent-Magnet Synchronous and Brushless DC Motor Drives",
-        "section": "9.6 Flux-Weakening Operation",
-        "subsection": "9.6.3.5 Parameter Sensitivity"
       }
     ],
     "subtopics": []
@@ -9248,6 +11203,28 @@
         "chapter": "Chapter 1: Introduction",
         "section": "1.2 Power Devices and Switching",
         "subsection": "1.2.1 Power Devices"
+      }
+    ],
+    "subtopics": []
+  },
+  {
+    "topic": "Index Alphabetical Subject Index",
+    "pages": [
+      "621"
+    ],
+    "parts": [
+      "APPENDICES: SUBJECT INDEX & REFERENCES"
+    ],
+    "chapters": [
+      "Index: Subject Index"
+    ],
+    "page_details": [
+      {
+        "page": "621",
+        "part": "APPENDICES: SUBJECT INDEX & REFERENCES",
+        "chapter": "Index: Subject Index",
+        "section": "Index Alphabetical Subject Index",
+        "subsection": ""
       }
     ],
     "subtopics": []

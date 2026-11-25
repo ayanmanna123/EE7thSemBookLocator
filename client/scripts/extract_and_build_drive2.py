@@ -1313,6 +1313,23 @@ toc_topic_dict = {}
 
 for ch in RAW_CHAPTERS:
     for sc in ch.get("sections", []):
+        sc_id = sc["id"]
+        sc_title = sc["title"]
+        sc_page = sc["start_page"]
+        clean_sc = f"{sc_title}".strip()
+        sc_key = clean_sc.lower()
+
+        if sc_key not in toc_topic_dict:
+            toc_topic_dict[sc_key] = {
+                "topic": clean_sc,
+                "section_code": sc_id,
+                "pages": [sc_page],
+                "subtopics": [],
+            }
+        else:
+            if sc_page not in toc_topic_dict[sc_key]["pages"]:
+                toc_topic_dict[sc_key]["pages"].append(sc_page)
+
         for sub in sc.get("subsections", []):
             sub_id = sub["id"]
             sub_title = sub["title"]

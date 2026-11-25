@@ -1,4 +1,4 @@
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, ChevronDown } from "lucide-react";
 import logoSvg from "@/assets/Electrical Engineering Book Locator Logo.svg";
 
 export function Header({
@@ -32,19 +32,21 @@ export function Header({
                 {subject?.bookTitle || "Book Locator"}
               </h1>
               {subjects.length > 1 && (
-                <div className="relative inline-block ml-1">
+                <div className="relative inline-flex items-center ml-1">
                   <select
                     value={subject?.id}
                     onChange={(e) => onSelectSubject(e.target.value)}
                     aria-label="Select textbook subject"
-                    className="rounded-lg border border-border bg-secondary/80 px-2.5 py-1 text-xs font-bold text-foreground cursor-pointer outline-none focus:ring-1 focus:ring-sky-400"
+                    className="appearance-none rounded-lg border border-border/80 bg-secondary/70 hover:bg-secondary pl-2.5 pr-7 py-1 text-xs font-bold text-foreground cursor-pointer outline-none transition-all focus:border-sky-400 focus:ring-2 focus:ring-sky-400/20 max-w-[190px] sm:max-w-[230px] truncate shadow-2xs"
+                    title={subject?.name}
                   >
                     {subjects.map((sub) => (
-                      <option key={sub.id} value={sub.id}>
-                        📚 {sub.name} ({sub.code})
+                      <option key={sub.id} value={sub.id} className="bg-popover text-popover-foreground">
+                        📚 {sub.name}
                       </option>
                     ))}
                   </select>
+                  <ChevronDown className="pointer-events-none absolute right-2 size-3 text-muted-foreground" />
                 </div>
               )}
             </div>

@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
-import { Search, X, Sparkles, History as HistoryIcon, ArrowRight } from "lucide-react";
+import { Search, X, Sparkles, History as HistoryIcon, ArrowRight, ChevronDown } from "lucide-react";
 import { PartRibbon } from "@/components/layout/PartRibbon";
 import { SpotlightCard } from "@/components/cards/SpotlightCard";
 import { TopicCard } from "@/components/cards/TopicCard";
@@ -386,46 +386,54 @@ export function SearchView({
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pt-1 border-t border-border/50">
           <div className="flex items-center gap-2 flex-wrap">
             {/* Parts Dropdown */}
-            <select
-              value={selectedPart}
-              onChange={(e) => handlePartFilterChange(e.target.value)}
-              aria-label="Filter by book part"
-              className="rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground outline-none focus:border-sky-400 cursor-pointer"
-            >
-              <option value="ALL">
-                All Book Parts ({tocData?.parts?.length || 0} Parts)
-              </option>
-              {(tocData?.parts || []).map((pt) => {
-                const label = `${pt.id}: ${pt.title}`;
-                return (
-                  <option key={pt.id} value={label}>
-                    {label} (pp. {pt.start_page}–{pt.end_page})
-                  </option>
-                );
-              })}
-            </select>
+            <div className="relative inline-flex items-center max-w-[170px] sm:max-w-[195px] w-auto">
+              <select
+                value={selectedPart}
+                onChange={(e) => handlePartFilterChange(e.target.value)}
+                aria-label="Filter by book part"
+                className="w-full appearance-none rounded-lg border border-border/80 bg-background/90 hover:bg-secondary/40 pl-2.5 pr-6 py-1 text-xs font-semibold text-foreground outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-400/20 cursor-pointer truncate shadow-2xs transition-all"
+                title={selectedPart === "ALL" ? "All Book Parts" : selectedPart}
+              >
+                <option value="ALL">
+                  All Parts ({tocData?.parts?.length || 0})
+                </option>
+                {(tocData?.parts || []).map((pt) => {
+                  const label = `${pt.id}: ${pt.title}`;
+                  return (
+                    <option key={pt.id} value={label} className="bg-popover text-popover-foreground">
+                      {pt.id}: {pt.title}
+                    </option>
+                  );
+                })}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-2 size-3 text-muted-foreground" />
+            </div>
 
             {/* Chapters Dropdown */}
-            <select
-              value={selectedChapter}
-              onChange={(e) => handleChapterFilterChange(e.target.value)}
-              aria-label="Filter by chapter"
-              className="rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground outline-none focus:border-sky-400 cursor-pointer max-w-[280px]"
-            >
-              <option value="ALL">
-                {selectedPart === "ALL"
-                  ? `All Chapters (${tocData?.chapters?.length || 0} Chapters)`
-                  : `All Chapters in this Part (${availableChapters.length} Chapters)`}
-              </option>
-              {availableChapters.map((ch) => {
-                const label = `${ch.id}: ${ch.title}`;
-                return (
-                  <option key={ch.id} value={label}>
-                    {label} (pp. {ch.start_page}–{ch.end_page})
-                  </option>
-                );
-              })}
-            </select>
+            <div className="relative inline-flex items-center max-w-[180px] sm:max-w-[210px] w-auto">
+              <select
+                value={selectedChapter}
+                onChange={(e) => handleChapterFilterChange(e.target.value)}
+                aria-label="Filter by chapter"
+                className="w-full appearance-none rounded-lg border border-border/80 bg-background/90 hover:bg-secondary/40 pl-2.5 pr-6 py-1 text-xs font-semibold text-foreground outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-400/20 cursor-pointer truncate shadow-2xs transition-all"
+                title={selectedChapter === "ALL" ? "All Chapters" : selectedChapter}
+              >
+                <option value="ALL">
+                  {selectedPart === "ALL"
+                    ? `All Chapters (${tocData?.chapters?.length || 0})`
+                    : `Chapters (${availableChapters.length})`}
+                </option>
+                {availableChapters.map((ch) => {
+                  const label = `${ch.id}: ${ch.title}`;
+                  return (
+                    <option key={ch.id} value={label} className="bg-popover text-popover-foreground">
+                      {ch.id}: {ch.title}
+                    </option>
+                  );
+                })}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-2 size-3 text-muted-foreground" />
+            </div>
           </div>
 
           {/* Search Toggles */}

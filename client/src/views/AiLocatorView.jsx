@@ -578,7 +578,14 @@ export function AiLocatorView({
                   <BookMarked className="size-4 text-sky-400 mt-0.5 shrink-0" />
                   <div className="flex-1">
                     <span className="font-bold text-sky-400 mr-1.5">Textbook Location:</span>
-                    <span>{quickAnswer}</span>
+                    <span>
+                      {typeof quickAnswer === "string"
+                        ? quickAnswer
+                            .replace(/^\{[\s\S]*?"(?:quickAnswer|answer)"\s*:\s*"/i, "")
+                            .replace(/",\s*"citations"[\s\S]*$/i, "")
+                            .replace(/\\"/g, '"')
+                        : quickAnswer}
+                    </span>
                   </div>
                 </div>
               )}

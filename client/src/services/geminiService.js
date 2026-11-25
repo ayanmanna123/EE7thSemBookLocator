@@ -425,7 +425,7 @@ CRITICAL RULES:
       generationConfig: {
         temperature: 0.1,
         topP: 0.8,
-        maxOutputTokens: 800,
+        maxOutputTokens: 3072,
       },
     };
 
@@ -517,6 +517,29 @@ CRITICAL RULES:
         );
         finalResult.stepCount = step;
         finalResult.verifiedWithRealData = true;
+
+        // If AI synthesized an answer but didn't output structured citation cards,
+        // automatically backfill exact citation cards from verified index matches
+        if (finalResult.citations.length === 0) {
+          const termsToTry = [...searchedTerms.slice().reverse(), trimmed];
+          for (const t of termsToTry) {
+            const matches = searchLocalIndex(t, activeSubject, allSearchData, allSubjectsDataMap);
+            if (matches.length > 0) {
+              finalResult.citations = matches.slice(0, 4).map((m) => ({
+                subjectId: m.subjectId || normSubId,
+                bookTitle: m.bookTitle || bookTitle,
+                chapter: m.chapter,
+                section: m.section,
+                page: m.page,
+                pageRange: m.pageRange,
+                details: m.details,
+                relevance: `Verified index match: "${m.topic}"`,
+              }));
+              finalResult.keyPages = matches.slice(0, 4).map((m) => `Page ${m.page}: ${m.topic}`);
+              break;
+            }
+          }
+        }
       }
       break;
     }
@@ -524,14 +547,19 @@ CRITICAL RULES:
 
   // Fallback if loop ended without finalResult (e.g. after 5 tool calls)
   if (!finalResult) {
-    const lastTerm = searchedTerms[searchedTerms.length - 1] || trimmed;
-    const finalMatches = searchLocalIndex(lastTerm, activeSubject, allSearchData, allSubjectsDataMap);
+    const termsToTry = [...searchedTerms.slice().reverse(), trimmed];
+    let finalMatches = [];
+    for (const t of termsToTry) {
+      finalMatches = searchLocalIndex(t, activeSubject, allSearchData, allSubjectsDataMap);
+      if (finalMatches.length > 0) break;
+    }
+
     if (finalMatches.length > 0) {
       finalResult = {
-        quickAnswer: `Found relevant sections in ${bookTitle} for "${trimmed}".`,
-        citations: finalMatches.map((m) => ({
-          subjectId: normSubId,
-          bookTitle,
+        quickAnswer: `Found verified reference locations in ${bookTitle} for "${trimmed}".`,
+        citations: finalMatches.slice(0, 4).map((m) => ({
+          subjectId: m.subjectId || normSubId,
+          bookTitle: m.bookTitle || bookTitle,
           chapter: m.chapter,
           section: m.section,
           page: m.page,
@@ -539,7 +567,7 @@ CRITICAL RULES:
           details: m.details,
           relevance: `Matched verified topic "${m.topic}"`,
         })),
-        keyPages: finalMatches.map((m) => `Page ${m.page}: ${m.topic}`),
+        keyPages: finalMatches.slice(0, 4).map((m) => `Page ${m.page}: ${m.topic}`),
         searchedTerms,
         stepCount: searchedTerms.length,
         verifiedWithRealData: true,
@@ -588,7 +616,7 @@ export async function askGeminiTextbookLocator(
 }
 
 /**
- * Robust JSON parser for textbook citations
+ * Robust JSON parser for textbook citations with partial recovery
  */
 export function parseGeminiResponse(rawText) {
   if (!rawText || typeof rawText !== "string") {
@@ -598,10 +626,12 @@ export function parseGeminiResponse(rawText) {
   let clean = rawText.trim();
   clean = clean.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```$/, "").trim();
 
+  // 1. Direct JSON parse
   try {
     const parsed = JSON.parse(clean);
     return normalizeParsedOutput(parsed);
   } catch {
+    // 2. Bracket match
     const match = clean.match(/\{[\s\S]*\}/);
     if (match) {
       try {
@@ -613,8 +643,54 @@ export function parseGeminiResponse(rawText) {
     }
   }
 
+  // 3. Robust partial recovery: extract fields if JSON was truncated
+  let recoveredAnswer = "";
+  const qaMatch = clean.match(/"(?:quickAnswer|summary|answer)"\s*:\s*"((?:\\.|[^"\\])*)"/s);
+  if (qaMatch) {
+    recoveredAnswer = qaMatch[1].replace(/\\"/g, '"').replace(/\\n/g, "\n");
+  }
+
+  const recoveredCitations = [];
+  const citationsPartMatch = clean.match(/"citations"\s*:\s*\[([\s\S]*)/);
+  if (citationsPartMatch) {
+    const citeObjRegex = /\{[^{}]*?"page"\s*:[^{}]*?\}/g;
+    let cm;
+    while ((cm = citeObjRegex.exec(citationsPartMatch[1])) !== null) {
+      try {
+        const cObj = JSON.parse(cm[0]);
+        if (cObj) recoveredCitations.push(cObj);
+      } catch {
+        /* skip */
+      }
+    }
+  }
+
+  const recoveredKeyPages = [];
+  const kpMatch = clean.match(/"keyPages"\s*:\s*\[([\s\S]*?)\]/);
+  if (kpMatch) {
+    const strRegex = /"([^"\\]+)"/g;
+    let sm;
+    while ((sm = strRegex.exec(kpMatch[1])) !== null) {
+      recoveredKeyPages.push(sm[1]);
+    }
+  }
+
+  if (recoveredAnswer || recoveredCitations.length > 0) {
+    return normalizeParsedOutput({
+      quickAnswer: recoveredAnswer || "Textbook location found below:",
+      citations: recoveredCitations,
+      keyPages: recoveredKeyPages,
+    });
+  }
+
+  // Fallback: Strip JSON syntax so raw code is never shown to the user
+  let safeClean = clean
+    .replace(/^\{\s*"quickAnswer"\s*:\s*"/i, "")
+    .replace(/",\s*"citations"[\s\S]*$/i, "")
+    .replace(/\\"/g, '"');
+
   return {
-    quickAnswer: clean.slice(0, 300),
+    quickAnswer: safeClean.slice(0, 300) || "Textbook location found.",
     citations: [],
     keyPages: [],
   };
